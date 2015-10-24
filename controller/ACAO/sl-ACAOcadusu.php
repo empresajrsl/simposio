@@ -18,8 +18,6 @@ $email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $contato = $_POST['contato'];
 
-
-
 $tabela = 'sl_cadusu';
 $campos = 'senha, nome, sobrenome, nascimento, sexo, deficiente,cpf, endereco, cidade, estado, instituicao, email, telefone, contato';
 $argumentos  = "'".$senha."','".$nome."', '".$sobrenome."', '".$nascimento."', '".$sexo."', '".$deficiente."','".$cpf."', '".$endereco."', '".$cidade."', '".$estado."', '".$instituicao."', '".$email."', '".$telefone."', '".$contato."'";
