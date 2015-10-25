@@ -7,6 +7,7 @@
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
+   <script type="text/javascript" src="../plugin/mask/jquery.mask.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <title>Tela de Cadastro</title>
 </head>
@@ -164,6 +165,20 @@
 
     </form>
 </div>
+
+<script>
+    $(document).ready( function(){
+        // mascara telefone/contato
+        $("#telefone").mask("(99) 9999 - 9999");
+        $("#contato").mask("(99) 9999 - 9999");
+        // mascara cpf
+        $("#cpf").mask("999.999.999-29");  
+        // mascara cep
+        $("#cep").mask("99.999-999");
+        // mascara data nascimento
+        $("#nascimento").mask("99/99/9999")
+    });
+</script>
 
 	<script type="text/javascript">
 		$(document).ready(function(){

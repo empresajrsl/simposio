@@ -66,13 +66,13 @@ $descricao = $_POST['descricao'];
             $(document).on('click','#continuar1',function(){
 
 				env = {};
-                env.titulo = <?php echo "'titulo'"; ?> ;
-                env.resumo = <?php echo "'resumo'"; ?> ;
-                env.area = <?php echo "'area'"; ?> ;
-                env.coautor = <?php echo "'coautor'"; ?> ;
-                env.apresentacao = <?php echo "'apresentacao'"; ?> ;
-                env.orientador = <?php echo "'orientador'"; ?> ;
-                env.descricao = <?php echo "'descricao'"; ?> ;
+                env.titulo = <?php echo "'$titulo'"; ?> ;
+                env.resumo = <?php echo "'$resumo'"; ?> ;
+                env.area = <?php echo "'$area'"; ?> ;
+                env.coautor = <?php echo "'$coautor'"; ?> ;
+                env.apresentacao = <?php echo "'$apresentacao'"; ?> ;
+                env.orientador = <?php echo "'$orientador'"; ?> ;
+                env.descricao = <?php echo "'$descricao'"; ?> ;
 
                $.ajax({
 			            type: "POST",
