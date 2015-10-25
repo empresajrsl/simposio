@@ -11,6 +11,10 @@ exit;
 <head>
 	<meta charset="UTF-8">
 	<LINK type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></LINK>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/tooltip.js"></script>
+    <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
 	<title>Submição do Artigo</title>
 </head>
 <body>
@@ -45,23 +49,23 @@ exit;
 			</br>
 
 			<div class="row">
-				<div class="col-md-6" id="area">
+				<div class="col-md-6" >
 					<label>Area do Artigo</label></br>
-					<select class="form-control col-md-12">
-						<option>Informática</option>
-						<option>Biologia</option>
-						<option>Psicologia</option>
+					<select class="form-control col-md-12" id="area" name="area">
+						<option value="Informática">Informática</option>
+						<option value="Biologia">Biologia</option>
+						<option value="Psicologia">Psicologia</option>
 					</select>
 				</div>
 
-				<div class="col-md-3" id="coautor">
+				<div class="col-md-3">
 					<label>Co-Autores</label></br>
-					<select class="form-control col-md-12">
-						<option>Nenhum</option>
-						<option>1 co-autor</option>
-						<option>2 co-autores</option>
-						<option>3 co-autores</option>
-						<option>4 co-autores</option>
+					<select class="form-control col-md-12" id="coautor" name="coautor">
+						<option value="Nenhum" >Nenhum</option>
+						<option value="1 co-autor">1 co-autor</option>
+						<option value="2 co-autores">2 co-autores</option>
+						<option value="3 co-autores">3 co-autores</option>
+						<option value="4 co-autores">4 co-autores</option>
 					</select>
 				</div>
 				
@@ -117,8 +121,9 @@ exit;
 				env = {};
                 env.titulo = $('#titulo').val();
                 env.resumo = $('#resumo').val();
-                env.area = $('#area').val();
-                env.coautor = $('#coautor').val();
+                env.area = $('#area option:selected' ).val();
+                console.log(env.area);
+                env.coautor = $('#coautor option:selected').val();
                 env.apresentacao = $('#apresentacao').val();
                 env.orientador = $('#orientador').val();
                 env.descricao = $('#descricao').val();
@@ -148,9 +153,6 @@ exit;
 
                     $("#form_submissao").submit();
                      
-                    
-				
-				
 			});
 		});
 

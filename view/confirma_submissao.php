@@ -6,6 +6,7 @@ $coautor = $_POST['coautor'];
 $apresentacao = $_POST['apresentacao'];
 $orientador = $_POST['orientador'];
 $descricao = $_POST['descricao'];
+
 ?>
 
 <html>
@@ -33,13 +34,16 @@ $descricao = $_POST['descricao'];
 								<center>
 									<div class="row">
 										<email class="col-md-4"><?php echo "<b>Artigo:</b> " . $titulo; ?> </email>
-										<senha class="col-md-4"><?php echo "<b>Resumo do Artigo:</b> " . $resumo; ?></senha> 
 										<usuario class="col-md-4"><?php echo "<b>Area:</b> " . $area;  ?> </usuario>
 									</div>
-									<div class="row">
+									<div class="row"></br>
 										<email class="col-md-4"><?php echo "<b>Co-Autor:</b> " . $coautor; ?> </email>
 										<senha class="col-md-4"><?php echo "<b>Orientador:</b> " . $orientador; ?></senha> 
 										<usuario class="col-md-4"><?php echo "<b>Descrição do Orientador:</b> " . $descricao;  ?> </usuario>
+									</div>
+									<div class="row">
+									</br>
+										<resumo class="col-md-12"><?php echo "<b>Resumo do Artigo:</b> </br>" . $resumo; ?></resumo> 
 									</div>
 								</center>
 							</div>
@@ -62,13 +66,13 @@ $descricao = $_POST['descricao'];
             $(document).on('click','#continuar1',function(){
 
 				env = {};
-                env.titulo = $('#titulo').val();
-                env.resumo = $('#resumo').val();
-                env.area = $('#area').val();
-                env.coautor = $('#coautor').val();
-                env.apresentacao = $('#apresentacao').val();
-                env.orientador = $('#orientador').val();
-                env.descricao = $('#descricao').val();
+                env.titulo = <?php echo "'titulo'"; ?> ;
+                env.resumo = <?php echo "'resumo'"; ?> ;
+                env.area = <?php echo "'area'"; ?> ;
+                env.coautor = <?php echo "'coautor'"; ?> ;
+                env.apresentacao = <?php echo "'apresentacao'"; ?> ;
+                env.orientador = <?php echo "'orientador'"; ?> ;
+                env.descricao = <?php echo "'descricao'"; ?> ;
 
                $.ajax({
 			            type: "POST",
