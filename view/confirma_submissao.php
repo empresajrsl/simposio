@@ -6,6 +6,7 @@ $coautor = $_POST['coautor'];
 $apresentacao = $_POST['apresentacao'];
 $orientador = $_POST['orientador'];
 $descricao = $_POST['descricao'];
+$categoria = $_POST['categoria'];
 
 ?>
 
@@ -35,6 +36,7 @@ $descricao = $_POST['descricao'];
 									<div class="row">
 										<email class="col-md-4"><?php echo "<b>Artigo:</b> " . $titulo; ?> </email>
 										<usuario class="col-md-4"><?php echo "<b>Area:</b> " . $area;  ?> </usuario>
+										<categoria class="col-md-4"><?php echo "<b>categoria:</b> " . $categoria;  ?> </categoria>
 									</div>
 									<div class="row"></br>
 										<email class="col-md-4"><?php echo "<b>Co-Autor:</b> " . $coautor; ?> </email>
@@ -73,6 +75,7 @@ $descricao = $_POST['descricao'];
                 env.apresentacao = <?php echo "'$apresentacao'"; ?> ;
                 env.orientador = <?php echo "'$orientador'"; ?> ;
                 env.descricao = <?php echo "'$descricao'"; ?> ;
+                env.categoria = <?php echo "'$categoria'"; ?> ;
 
                $.ajax({
 			            type: "POST",
