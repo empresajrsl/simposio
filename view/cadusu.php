@@ -226,15 +226,34 @@
                     // verifica se a confirmação de senha e mail correspondem
                     if(env.senha != env.confirmar_senha & env.email != env.confirmar_email){
                        alert('O campo de confirmação da senha e do email não correspondem aos mesmos, verifique e tente novamente');
+                       $('#senha').css({"border" : "2px inset #F00", "padding": "2px"});
+                       $('#confirmar_senha').css({"border" : "2px inset #F00", "padding": "2px"});
+                       $('#email').css({"border" : "2px inset #F00", "padding": "2px"});
+                       $('#confirmar_email').css({"border" : "2px inset #F00", "padding": "2px"});
                        return;
+                    }else{
+                        $('#senha').css({"border" : "2px inset"});
+                        $('#confirmar_senha').css({"border" : "2px inset"});
+                        $('#email').css({"border" : "2px inset"});
+                        $('#confirmar_email').css({"border" : "2px inset"});
                     }
                     if(env.senha != env.confirmar_senha){
                        alert('O campo de confirmação da senha não corresponde a mesma, verifique e tente novamente');
+                       $('#senha').css({"border" : "2px inset #F00", "padding": "2px"});
+                       $('#confirmar_senha').css({"border" : "2px inset #F00", "padding": "2px"});
                         return;
-                    }
+                    }else{
+                        $('#senha').css({"border" : "2px inset"});
+                        $('#confirmar_senha').css({"border" : "2px inset"});
+                }
                     if(env.email != env.confirmar_email){
                        alert('O campo de confirmação do email não correspondem ao mesmo, verifique e tente novamente');
+                       $('#email').css({"border" : "2px inset #F00", "padding": "2px"});
+                       $('#confirmar_email').css({"border" : "2px inset #F00", "padding": "2px"});
                        return;
+                    }else{
+                        $('#email').css({"border" : "2px inset"});
+                        $('#confirmar_email').css({"border" : "2px inset"});
                     }
                     console.log(env);
 
