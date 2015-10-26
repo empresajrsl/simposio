@@ -3,7 +3,7 @@
 session_start();
 if(isset($_SESSION['logado']) == false)
 {
-	echo("<h1>Voce não está logado no sitema, para continuar faça login novamente</h1> <h2> <a href='../index.php'> Fazer login </a></h2>");
+	echo("<h1>Sessão encerrada, para continuar faça login novamente</h1> <h2> <a href='../index.php'> Fazer login </a></h2>");
 exit;
 }
 ?>
