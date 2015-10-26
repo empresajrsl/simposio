@@ -49,27 +49,36 @@ exit;
 			</br>
 
 			<div class="row">
-				<div class="col-md-6" >
-					<label>Area do Artigo</label></br>
-					<select class="form-control col-md-12" id="area" name="area">
-						<option value="Informática">Informática</option>
-						<option value="Biologia">Biologia</option>
-						<option value="Psicologia">Psicologia</option>
+				<div class="col-md-4" id="categoriadiv">
+					<label>Categoria do artigo</label></br>
+					<select class="form-control col-md-12" id="categoria" name="categoria">
+						<option>Resumo Expandido</option>
+						<option>Relato Técnico</option>
+						<option>Artigo Completo</option>
 					</select>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-4" id="areadiv">
+					<label>Área do Artigo</label></br>
+					<select class="form-control col-md-12" id="area" name="area">
+						<option>Informática</option>
+						<option>Biologia</option>
+						<option>Psicologia</option>
+					</select>
+				</div>
+
+				<div class="col-md-2" id="coautordiv">
 					<label>Co-Autores</label></br>
 					<select class="form-control col-md-12" id="coautor" name="coautor">
-						<option value="Nenhum" >Nenhum</option>
-						<option value="1 co-autor">1 co-autor</option>
-						<option value="2 co-autores">2 co-autores</option>
-						<option value="3 co-autores">3 co-autores</option>
-						<option value="4 co-autores">4 co-autores</option>
+						<option>Nenhum</option>
+						<option>1 co-autor</option>
+						<option>2 co-autores</option>
+						<option>3 co-autores</option>
+						<option>4 co-autores</option>
 					</select>
 				</div>
 				
-				<div class="col-md-3">
+				<div class="col-md-2">
 					<label>Apresentação:</label></br>
 					<input type="radio" id="apresentacao" name="apresentacao" value="Banner">Banner</br>
 					<input type="radio" id="apresentacao" name="apresentacao" value="Palestra">Palestra		
@@ -95,9 +104,9 @@ exit;
 
 			<div class="row">
 				<div class="col-md-12">
-					<label>Artigo em PDF</label></br>
-					<div class="input-group">
-  						<input type="file" id="buscar" name="buscar" class="col-md-12 btn btn-default btn btn-info">Buscar no computador</input>
+					<label>Artigo em PDF²</label></br>
+					<div> <!--class="input-group"-->
+  						<input type="file" id="buscar" name="buscar" class="col-md-12 btn btn-default"><!--btn btn-info">Buscar no computador</input-->
 					</div>
 				</div>
 			</div>
@@ -106,7 +115,7 @@ exit;
 
 			<div class="row">
 				<div class="col-md-12">
-					<button type="button" id="confirmar_submissao" name="confirmar_submissaos" class="col-md-4 col-md-offset-4 btn btn-primary">continuar</button>
+					<button type="submit" id="confirmar_submissao" name="confirmar_submissaos" class="col-md-4 col-md-offset-4 btn btn-primary">continuar</button>
 				</div>
 			</div>
 		</form>
@@ -127,7 +136,9 @@ exit;
                 env.apresentacao = $('#apresentacao').val();
                 env.orientador = $('#orientador').val();
                 env.descricao = $('#descricao').val();
-               
+                env.categoria = $('#categoria option:selected').val();
+
+               console.log('apresentacao'+env.apresentacao);
                 
                 var count = 0;
                 // verifica quais inputs estão vazios
