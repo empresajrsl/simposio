@@ -38,7 +38,7 @@ exit;
 		</br></br>
 
 		<div class="row">
-			<button type="submit" id="voltar" name="voltar" class="btn btn-warning col-md-3 col-md-offset-2" style="margin-bottom:60px" onClick="history.go(-1)">Voltar</button>
+			<button type="submit" id="voltar" name="voltar" class="btn btn-warning col-md-3 col-md-offset-2" style="margin-bottom:60px">Voltar</button>
 			<button type="submit" id="continuar" name="continuar" class="btn btn-success col-md-3 col-md-offset-2" style="margin-bottom:60px">concordar e continuar</button>
 		</div>
 	</div>
