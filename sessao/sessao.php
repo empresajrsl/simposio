@@ -12,7 +12,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 		$senhap = $_POST['senha'];
 			echo("post".$emailp.$senhap."</br>");
 				// faz um select no banco de dados dos campos email, senha, email verificado e status na tabela usuarios 
-				$busca = select('email, senha, emailverificado',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
+				$busca = select('email, senha, emailverificado,publicado',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
 				
 				$result = array();
 
@@ -53,9 +53,14 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 										echo 'não logado verifique a senha e o email e tente novamente';
 									}
 									if(isset($_SESSION['logado']) )
-									{
+									{	
+										if($result['publicado'] == 0){
 											// verifica se o usuário esta logado antes de mostrar a pagina 
 											header('location: ../view/regras.php');
+										}else{
+											header('location: ../view/fim.php');
+										}
+
 										
 									}else{
 											echo ('não logado');
