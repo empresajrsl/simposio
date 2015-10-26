@@ -115,7 +115,7 @@ exit;
 
 			<div class="row">
 				<div class="col-md-12">
-					<button type="submit" id="confirmar_submissao" name="confirmar_submissaos" class="col-md-4 col-md-offset-4 btn btn-primary">continuar</button>
+					<button type="button" id="confirmar_submissao" name="confirmar_submissaos" class="col-md-4 col-md-offset-4 btn btn-primary">continuar</button>
 				</div>
 			</div>
 		</form>
