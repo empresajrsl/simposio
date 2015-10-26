@@ -10,10 +10,11 @@ $coautor = $_POST['coautor'];
 $apresentacao = $_POST['apresentacao'];
 $orientador = $_POST['orientador'];
 $descricao = $_POST['descricao'];
+$categoria = $_POST['categoria'];
 
 $tabela = 'sl_artigo';
-$campos = 'titulo, resumo, area, coautor, apresentacao, orientador,descricao';
-$argumentos  = "'".$titulo."','".$resumo."', '".$area."', '".$coautor."', '".$apresentacao."', '".$orientador."','".$descricao."'";
+$campos = 'titulo, resumo, area, coautor, apresentacao, orientador,descricao,categoria';
+$argumentos  = "'".$titulo."','".$resumo."', '".$area."', '".$coautor."', '".$apresentacao."', '".$orientador."','".$descricao."','".$categoria."' ";
 
 
 $rp = insert($tabela,$campos,$argumentos);
