@@ -1,12 +1,4 @@
-<?php header ('Content-type: text/html; charset=UTF-8'); ?>
-<?php
-session_start();
-if(isset($_SESSION['logado']) == false)
-{
-	echo("<h1>Voce não está logado no sitema, para continuar faça login novamente</h1> <h2> <a href='../index.php'> Fazer login </a></h2>");
-exit;
-}
-?>
+
 <?php
 $titulo = $_POST['titulo'];
 $resumo = $_POST['resumo'];
@@ -65,8 +57,8 @@ $categoria = $_POST['categoria'];
 	</br>
 
 		<div class="row">
-			<button type="submit" id="voltar1" name="voltar1" class="btn btn-warning col-md-3 col-md-offset-2" onClick="history.go(-1)" >Voltar</button>
-			<button type="submit" id="continuar1" name="continuar1" class="btn btn-success col-md-3 col-md-offset-2">Continuar</button>
+			<button type="button" id="voltar1" name="voltar1" class="btn btn-warning col-md-3 col-md-offset-2" onClick="history.go(-1)" >Voltar</button>
+			<button type="button" id="continuar1" name="continuar1" class="btn btn-success col-md-3 col-md-offset-2">Continuar</button>
 		</div>
 	</div>
 
@@ -102,8 +94,9 @@ $categoria = $_POST['categoria'];
 
 		                var form = {};
 		                form.titulo = $('#titulo').val();
-		                                // envia a variavel email por GET   
-		    			location.href="../sessao/fecharsessaofinal.php?artigo?titulo="+env.titulo+"?enviado";	
+		                                
+		    			location.href="fim.php?artigo?titulo="+env.titulo+"?enviado";	
+
 
 			
 			});
