@@ -18,6 +18,11 @@ $argumentos  = "'".$titulo."','".$resumo."', '".$area."', '".$coautor."', '".$ap
 
 $rp = insert($tabela,$campos,$argumentos);
 
+if($rp){
+	session_start();
+	updatemysql('publicado = 1','sl_cadusu',"email = '".$_SESSION['usuario']."' ");
+}
+
 echo "</br>";      
 echo json_encode($rp);	
 
