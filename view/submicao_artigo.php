@@ -105,7 +105,7 @@ exit;
 			<div class="row">
 				<div class="col-md-12">
 					<label>Artigo em PDF²</label></br>
-					<div> <!--class="input-group"-->
+					<div>
   						<input type="file" id="arquivo" name="arquivo" class="col-md-12 btn btn-default">
 					</div>
 				</div>
