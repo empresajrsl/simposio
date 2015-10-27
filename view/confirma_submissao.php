@@ -83,7 +83,6 @@ echo "<pre>";print_r($arquivo); echo "</pre>";
 				env = {};
                 env.titulo = <?php echo "'$titulo'"; ?> ;
                 env.resumo = <?php echo "'$resumo'"; ?> ;
-                env.resumo = toString(env.resumo);
                 env.area = <?php echo "'$area'"; ?> ;
                 env.coautor = <?php echo "'$coautor'"; ?> ;
                 env.apresentacao = <?php echo "'$apresentacao'"; ?> ;
