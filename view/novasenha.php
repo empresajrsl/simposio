@@ -11,18 +11,48 @@
 </head>
 <body>
 	<div class="container">
+    <div class="jumbotron"><h1><center>Nova Senha</center></h1></div>
 		<form id="novasenha" name="novasenha" method="post" action="../controller/ACAO/sl-ACAOcriaNsenha.php">
-			<label > C.P.F. </label></br>
-				<input type="input" name="cpf" id="cpf" ></br>
-			<label > E-mail </label></br>
-				<input type="input" name="email" id="email" ></br>
-				<label >Confirmar e-mail </label></br>
-				<input type="input" name="confirma_email" id="confirma_email" ></br>
-			<label > Senha </label></br>
-				<input type="input" name="senha1" id="senha1" ></br>
-			<label >Digite a senha novamente </label></br>
-				<input type="input" name="senha2" id="senha2" ></br>
-				<button type="button" name="salvar" id="salvar"  class="btn btn-primary" > Salvar </button>
+
+			<div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <label> C.P.F. </label></br>
+          <input type="input" name="cpf" id="cpf" class="form-control"></br>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+          <label> E-mail </label></br>
+          <input type="input" name="email" id="email" class="form-control"></br>
+        </div>
+      
+        <div class="col-md-4">
+          <label>Confirmar e-mail </label></br>
+          <input type="input" name="confirma_email" id="confirma_email" class="form-control"></br>
+        </div>
+      </div>
+
+			<div class="row">
+        <div class="col-md-4 col-md-offset-2">
+          <label> Senha </label></br>
+          <input type="input" name="senha1" id="senha1" class="form-control"></br>
+        </div>
+
+        <div class="col-md-4">
+          <label>Digite a senha novamente </label></br>
+          <input type="input" name="senha2" id="senha2" class="form-control"></br>
+        </div>
+      </div>
+
+      </br>
+      
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <button type="button" name="salvar" id="salvar"  class="btn btn-primary col-md-12" >Salvar</button>
+        </div>
+      <div>
+
 		</form>
 	</div>	
 
