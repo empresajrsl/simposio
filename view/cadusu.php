@@ -25,6 +25,7 @@
                 <div class="panel-heading"><b>Login de Acesso</b></div>
                 <div class="panel-body">
                     <div class="row">
+<<<<<<< HEAD
                         <div class="col-md-10">
                             <div class="col-md-3">
                                 <label>E-Mail*</label></br>
@@ -55,6 +56,29 @@
                                 <option>Avaliador</option>
                             </select>
                         </div>
+=======
+                       <div class="col-md-3">
+                            <label>E-Mail*</label></br>
+                            <input type="text" id="email" name="email" class="col-md-12 form-control" >
+                        </div>
+
+                        <div class="col-md-3">
+                            <label>Confirmar E-mail*</label></br>
+                            <input type="text" id="confirmar_email" name="confirmar_email" class="col-md-12 form-control" >
+                        </div>
+
+                        <div class="col-md-3">
+                            <label>Senha*</label></br>
+                            <input type="text" id="senha" name="senha" class="col-md-12 form-control" >
+                        </div>
+
+                        <div class="col-md-3">
+                            <label>Confirmar Senha*</label></br>
+                            <input type="text" id="confirmar_senha" name="confirmar_senha" class="col-md-12 form-control" >
+                        </div>
+
+                        
+>>>>>>> origin/master
                     </div>
                 </div>
             </div>
@@ -77,6 +101,7 @@
                             <input type="text" id="sobrenome" name="sobrenome" class="col-md-12 form-control" >
                         </div>
 
+<<<<<<< HEAD
                         <div class="col-md-6">
                             <div class="col-md-5">
                                 <label>Data de nascimento*</label>
@@ -98,6 +123,27 @@
                                     <option>Sim</option>
                                 </select>
                             </div>
+=======
+                        <div class="col-md-2">
+                            <label>Data de nascimento*</label>
+                            <input type="text" id="nascimento" name="nascimento" class="col-md-12 form-control">
+                        </div>
+
+                        <div class="col-md-2">
+                            <label>Sexo*</label></br>
+                            <select id="sexo" name="sexo" class="form-control">
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-2">
+                            <label class=>Deficiente*</label></br>
+                            <select id="deficiente" name="deficiente" class="form-control">
+                                <option>Não</option>
+                                <option>Sim</option>
+                            </select>
+>>>>>>> origin/master
                         </div>
                     </div>
 
@@ -114,6 +160,7 @@
                             <input type="text" id="endereco" name="endereco" class="col-md-12 form-control">
                         </div>
 
+<<<<<<< HEAD
                         <div class="col-md-1">
                             <label>Numero</label></br>
                             <input type="text" id="numero" name="numero" class="col-md-12 form-control">
@@ -134,6 +181,21 @@
                                     <option>RS</option>
                                 </select>
                             </div>
+=======
+                        <div class="col-md-3">
+                            <label>Cidade*</label></br>
+                            <input type="text" id="cidade" name="cidade" class="col-md-12 form-control">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label>Estado*</label></br>
+                            <select id="estado" name="estado" class="form-control">
+                                <option>SP</option>
+                                <option>RJ</option>
+                                <option>MJ</option>
+                                <option>RS</option>
+                            </select>
+>>>>>>> origin/master
                         </div>
                     </div>
 
@@ -236,7 +298,7 @@
                 env.confirmar_email = $('#confirmar_email').val();
                 env.telefone = $('#telefone').val();
                 env.contato = $('#contato').val();
-                env.usuari = $('#cadastrar_como').val();
+                
                 
                 var count = 0;
                 // verifica quais inputs estão vazios
