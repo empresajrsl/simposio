@@ -25,29 +25,31 @@
                 <div class="panel-heading"><b>Login de Acesso</b></div>
                 <div class="panel-body">
                     <div class="row">
-                       <div class="col-md-3">
-                            <label>E-Mail*</label></br>
-                            <input type="text" id="email" name="email" class="col-md-12" >
+                        <div class="col-md-10">
+                            <div class="col-md-3">
+                                <label>E-Mail*</label></br>
+                                <input type="text" id="email" name="email" class="col-md-12 form-control" >
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>Confirmar E-mail*</label></br>
+                                <input type="text" id="confirmar_email" name="confirmar_email" class="col-md-12 form-control" >
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>Senha*</label></br>
+                                <input type="text" id="senha" name="senha" class="col-md-12 form-control" >
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>Confirmar Senha*</label></br>
+                                <input type="text" id="confirmar_senha" name="confirmar_senha" class="col-md-12 form-control" >
+                            </div>
                         </div>
 
-                        <div class="col-md-3">
-                            <label>Confirmar E-mail*</label></br>
-                            <input type="text" id="confirmar_email" name="confirmar_email" class="col-md-12" >
-                        </div>
-
-                        <div class="col-md-3">
-                            <label>Senha*</label></br>
-                            <input type="text" id="senha" name="senha" class="col-md-12" >
-                        </div>
-
-                        <div class="col-md-3">
-                            <label>Confirmar Senha*</label></br>
-                            <input type="text" id="confirmar_senha" name="confirmar_senha" class="col-md-12" >
-                        </div>
-
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <label>Cadastrar como*</label></br>
-                            <select id="cadastrar_como" name="cadastrar_como">
+                            <select id="cadastrar_como" name="cadastrar_como" class="form-control">
                                 <option>Leitor</option>
                                 <option>Autor</option>
                                 <option>Avaliador</option>
@@ -65,66 +67,98 @@
                 <div class="panel-heading"><b>Dados Pessoais</b></div>
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <label>Nome*</label></br>
-                            <input type="text" id="nome" name="nome" class="col-md-12" >
+                            <input type="text" id="nome" name="nome" class="col-md-12 form-control" >
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <label>Sobrenome*</label></br>
-                            <input type="text" id="sobrenome" name="sobrenome" class="col-md-12" >
+                            <input type="text" id="sobrenome" name="sobrenome" class="col-md-12 form-control" >
                         </div>
 
-                        <div class="col-md-2">
-                            <label>Data de nascimento*</label>
-                            <input type="text" id="nascimento" name="nascimento" class="col-md-12">
-                        </div>
+                        <div class="col-md-6">
+                            <div class="col-md-5">
+                                <label>Data de nascimento*</label>
+                                <input type="text" id="nascimento" name="nascimento" class="col-md-12 form-control">
+                            </div>
 
-                        <div class="col-md-1">
-                            <label>Sexo*</label></br>
-                            <select id="sexo" name="sexo">
-                                <option>Masculino</option>
-                                <option>Feminino</option>
-                            </select>
-                        </div>
+                            <div class="col-md-4">
+                                <label>Sexo*</label></br>
+                                <select id="sexo" name="sexo" class="form-control">
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                </select>
+                            </div>
 
-                        <div class="col-md-1">
-                            <label class=>Deficiente*</label></br>
-                            <select id="deficiente" name="deficiente">
-                                <option>Não</option>
-                                <option>Sim</option>
-                            </select>
+                            <div class="col-md-3">
+                                <label class=>Deficiente*</label></br>
+                                <select id="deficiente" name="deficiente" class="form-control">
+                                    <option>Não</option>
+                                    <option>Sim</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
                     </br>
 
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <label>CPF*</label></br>
-                            <input type="text" id="cpf" name="cpf" class="col-md-12">
-                        </div>
-
-                        <div class="col-md-4">
-                            <label>Endereço*</label></br>
-                            <input type="text" id="endereco" name="endereco" class="col-md-12">
+                            <input type="text" id="cpf" name="cpf" class="col-md-12 form-control">
                         </div>
 
                         <div class="col-md-3">
-                            <label>Cidade*</label></br>
-                            <input type="text" id="cidade" name="cidade" class="col-md-12">
+                            <label>Endereço*</label></br>
+                            <input type="text" id="endereco" name="endereco" class="col-md-12 form-control">
                         </div>
 
                         <div class="col-md-1">
-                            <label>Estado*</label></br>
-                            <select id="estado" name="estado">
-                                <option>SP</option>
-                                <option>RJ</option>
-                                <option>MJ</option>
-                                <option>RS</option>
-                            </select>
+                            <label>Numero</label></br>
+                            <input type="text" id="numero" name="numero" class="col-md-12 form-control">
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="col-md-9">
+                                <label>Cidade*</label></br>
+                                <input type="text" id="cidade" name="cidade" class="col-md-12 form-control">
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>Estado*</label></br>
+                                <select id="estado" name="estado" class="form-control">
+                                    <option>SP</option>
+                                    <option>RJ</option>
+                                    <option>MJ</option>
+                                    <option>RS</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
+
+                    </br>
+
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="col-md-4">
+                                <label>Complemento</label></br>
+                                <input type="text" id="bairro" name="bairro" class="col-md-12 form-control">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label>CEP</label></br>
+                                <input type="text" id="cep" name="cep" class="col-md-12 form-control">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label>Bairro</label></br>
+                                <input type="text" id="bairro" name="bairro" class="col-md-12 form-control">
+                            </div>
+                        </div>
+                        
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -138,17 +172,17 @@
                     <div class="row">
                         <div class="col-md-4">
                             <label>Instituição/Afiliação*</label></br>
-                            <input type="text" id="instituicao" name="instituicao" class="col-md-12" >
+                            <input type="text" id="instituicao" name="instituicao" class="col-md-12 form-control" >
                         </div>
 
                          <div class="col-md-4">
                             <label>Tefone/Celular*</label></br>
-                            <input type="text" id="telefone" name="telefone" class="col-md-12" >
+                            <input type="text" id="telefone" name="telefone" class="col-md-12 form-control" >
                         </div>
 
                         <div class="col-md-4">
                             <label>Telefone contato</label></br>
-                            <input type="text" id="contato" name="contato" class="col-md-12" >
+                            <input type="text" id="contato" name="contato" class="col-md-12 form-control" >
                         </div>
 
                     </div>
@@ -172,7 +206,7 @@
         $("#telefone").mask("(99) 9999 - 9999");
         $("#contato").mask("(99) 9999 - 9999");
         // mascara cpf
-        $("#cpf").mask("999.999.999-29");  
+        $("#cpf").mask("999.999.999-99");  
         // mascara cep
         $("#cep").mask("99.999-999");
         // mascara data nascimento
