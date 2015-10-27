@@ -8,6 +8,18 @@ $apresentacao = $_POST['apresentacao'];
 $orientador = $_POST['orientador'];
 $descricao = $_POST['descricao'];
 $categoria = $_POST['categoria'];
+$arquivo = $_FILES['arquivo'];
+
+$arquivoF = $_FILES['arquivo']; 
+$arq = $_FILES['arquivo']['name'];
+$tipo = $_FILES['arquivo']['type'];
+$tamanho = $_FILES['arquivo']['size'];
+$nametemp = $_FILES['arquivo']['tmp_name'];
+$arqerro = $_FILES['arquivo']['error'];
+$tipodef = "application/pdf";
+$tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
+
+echo "<pre>";print_r($arquivo); echo "</pre>"; 
 
 ?>
 
@@ -71,12 +83,23 @@ $categoria = $_POST['categoria'];
 				env = {};
                 env.titulo = <?php echo "'$titulo'"; ?> ;
                 env.resumo = <?php echo "'$resumo'"; ?> ;
+                env.resumo = toString(env.resumo);
                 env.area = <?php echo "'$area'"; ?> ;
                 env.coautor = <?php echo "'$coautor'"; ?> ;
                 env.apresentacao = <?php echo "'$apresentacao'"; ?> ;
                 env.orientador = <?php echo "'$orientador'"; ?> ;
                 env.descricao = <?php echo "'$descricao'"; ?> ;
                 env.categoria = <?php echo "'$categoria'"; ?> ;
+                env.arq = 	<?php echo "'$arq'"; ?> ;
+                env.tipo = 	<?php echo "'$tipo'"; ?> ;
+                env.tamanho = 	<?php echo "'$tamanho'"; ?> ;
+                env.nametemp = 	<?php echo "'$nametemp'"; ?> ;
+                env.arqerro = 	<?php echo "'$arqerro'"; ?> ;
+                
+                
+                
+                
+
 
                $.ajax({
 			            type: "POST",
@@ -95,7 +118,7 @@ $categoria = $_POST['categoria'];
 		                var form = {};
 		                form.titulo = $('#titulo').val();
 		                                
-		    			location.href="fim.php?artigo?titulo="+env.titulo+"?enviado";	
+		    			// location.href="fim.php?artigo?titulo="+env.titulo+"?enviado";	
 
 
 			
