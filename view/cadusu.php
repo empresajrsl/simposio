@@ -119,22 +119,21 @@
                             <input type="text" id="numero" name="numero" class="col-md-12 form-control">
                         </div>
 
-                        <div class="col-md-5">
-                            <div class="col-md-9">
-                                <label>Cidade*</label></br>
-                                <input type="text" id="cidade" name="cidade" class="col-md-12 form-control">
-                            </div>
-
-                            <div class="col-md-3">
-                                <label>Estado*</label></br>
-                                <select id="estado" name="estado" class="form-control">
-                                    <option>SP</option>
-                                    <option>RJ</option>
-                                    <option>MJ</option>
-                                    <option>RS</option>
-                                </select>
-                            </div>
+                        <div class="col-md-3">
+                            <label>Cidade*</label></br>
+                            <input type="text" id="cidade" name="cidade" class="col-md-12 form-control">
                         </div>
+
+                        <div class="col-md-2">
+                            <label>Estado*</label></br>
+                            <select id="estado" name="estado" class="form-control">
+                                <option>SP</option>
+                                <option>RJ</option>
+                                <option>MJ</option>
+                                <option>RS</option>
+                            </select>
+                        </div>
+                        
                     </div>
 
                     </br>
