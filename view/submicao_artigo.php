@@ -29,7 +29,7 @@ exit;
 		</div>
 		</br>
 
-		<form id="form_submissao" method="post" action="confirma_submissao.php" >
+		<form id="form_submissao" method="post" action="confirma_submissao.php" enctype="multipart/form-data">
 			<div class="row">
 				<div class="col-md-12">
 					<label>Titulo</label></br>
@@ -106,7 +106,7 @@ exit;
 				<div class="col-md-12">
 					<label>Artigo em PDF²</label></br>
 					<div> <!--class="input-group"-->
-  						<input type="file" id="buscar" name="buscar" class="col-md-12 btn btn-default"><!--btn btn-info">Buscar no computador</input-->
+  						<input type="file" id="arquivo" name="arquivo" class="col-md-12 btn btn-default">
 					</div>
 				</div>
 			</div>
@@ -137,6 +137,7 @@ exit;
                 env.orientador = $('#orientador').val();
                 env.descricao = $('#descricao').val();
                 env.categoria = $('#categoria option:selected').val();
+                env.artigo = $('#arquivo').val();
 
                console.log('apresentacao'+env.apresentacao);
                 
