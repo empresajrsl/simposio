@@ -35,7 +35,7 @@
                         
                         <div class="col-md-3">
                             <label>E-Mail*</label></br>
-                            <input type="text" id="email" name="email" class="col-md-12 form-control" >
+                            <input type="text" id="email" name="email" class="col-md-12 form-control" data-toggle="tooltip" data-placement="top" title="Email que será usado para efetuar o login.">
                         </div>
 
                         <div class="col-md-3">
@@ -210,7 +210,7 @@
 
         <div class="row">
             <div class="col-md-4"></div>
-            <button type="button" id="salvar" name="salvar" class="col-md-4 btn btn-primary">confirmar</button>
+            <button type="button" id="salvar" name="salvar" class="col-md-4 btn btn-primary">Confirmar</button>
             <div class="col-md-4"></div>
         </div>
 
