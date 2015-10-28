@@ -10,7 +10,8 @@ exit;
 <html>
 <head>
 	<meta charset="UTF-8">
-	<LINK type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></LINK>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>
+    <link type="text/css" rel="stylesheet" href="../css/style.css" ></link>
 	<script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
@@ -80,7 +81,7 @@ exit;
 				
 				<div class="col-md-2">
 					<label>Apresentação:</label></br>
-					<input type="radio" id="apresentacao" name="apresentacao" value="Banner">Banner</br>
+					<input type="radio" id="apresentacao" name="apresentacao" value="Banner" checked>Banner</br>
 					<input type="radio" id="apresentacao" name="apresentacao" value="Palestra">Palestra		
 				</div>
 

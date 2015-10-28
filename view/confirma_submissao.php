@@ -17,7 +17,8 @@ $categoria = $_POST['categoria'];
 <html>
 <head>
 	<meta charset="UTF-8">
-    <LINK type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></LINK>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>
+    <link type="text/css" rel="stylesheet" href="../css/style.css" ></link>
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
@@ -28,7 +29,7 @@ $categoria = $_POST['categoria'];
 
 	<div class="container">
 		<div class="jumbotron"><h1><center>Confirmação da submissão do artigo</center></h1></div>
-			<div class="row"><center><h4>Confira aqui se as informações estão corretas e clique em avançar, caso o contrario clique em voltar para corrigir as mesmas</h4></div>
+			<div class="row"><center><h4>Confira aqui se as informações estão corretas e clique em avançar, caso contrario clique em voltar para corrigi-las.</h4></div>
 				
 			<div class="panel panel-primary">
 
@@ -38,19 +39,19 @@ $categoria = $_POST['categoria'];
 							<div class="panel-body">
 								<center>
 									<div class="row">
-										<email class="col-md-4"><?php echo "<b>Artigo:</b> " . $titulo; ?> </email>
-										<usuario class="col-md-4"><?php echo "<b>Area:</b> " . $area;  ?> </usuario>
-										<categoria class="col-md-4"><?php echo "<b>categoria:</b> " . $categoria;  ?> </categoria>
+										<email class="col-md-3"><?php echo "<b>Artigo:</b> " . $titulo; ?> </email>
+										<usuario class="col-md-3"><?php echo "<b>Área:</b> " . $area;  ?> </usuario>
+										<categoria class="col-md-3"><?php echo "<b>Categoria:</b> " . $categoria;  ?> </categoria>
+										<apresentacao class="col-md-3"><?php echo "<b>Apresentação:</b> " . $apresentacao;  ?> </apresentacao>
+									</div>									<div class="row"></br>
+										<email class="col-md-3"><?php echo "<b>Co-Autor:</b> " . $coautor; ?> </email>
+										<senha class="col-md-3"><?php echo "<b>Orientador:</b> " . $orientador; ?></senha> 
+										<usuario class="col-md-3"><?php echo "<b>Descrição do Orientador:</b> " . $descricao;  ?> </usuario>
 									</div>
-									<div class="row"></br>
-										<email class="col-md-4"><?php echo "<b>Co-Autor:</b> " . $coautor; ?> </email>
-										<senha class="col-md-4"><?php echo "<b>Orientador:</b> " . $orientador; ?></senha> 
-										<usuario class="col-md-4"><?php echo "<b>Descrição do Orientador:</b> " . $descricao;  ?> </usuario>
-									</div>
-									<div class="row">
+									<div class="row"><div class="container-fluid">
 									</br>
 										<resumo class="col-md-12"><?php echo "<b>Resumo do Artigo:</b> </br>" . $resumo; ?></resumo> 
-									</div>
+									</div></div>
 								</center>
 							</div>
 					</div>

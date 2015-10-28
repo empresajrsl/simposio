@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <LINK type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></LINK>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>
+    <link type="text/css" rel="stylesheet" href="../css/style.css" ></link>
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>

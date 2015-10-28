@@ -115,10 +115,33 @@
                         <div class="col-md-2">
                             <label>Estado*</label></br>
                             <select id="estado" name="estado" class="form-control">
-                                <option>SP</option>
-                                <option>RJ</option>
-                                <option>MJ</option>
-                                <option>RS</option>
+                                
+                                <option>AC</option>
+                                <option>AL</option> 
+                                <option>AP</option> 
+                                <option>AM</option> 
+                                <option>CE</option> 
+                                <option>DF</option> 
+                                <option>ES</option> 
+                                <option>GO</option> 
+                                <option>MA</option> 
+                                <option>MT</option> 
+                                <option>MS</option> 
+                                <option>MG</option> 
+                                <option>PA</option> 
+                                <option>PB</option> 
+                                <option>PR</option> 
+                                <option>PE</option> 
+                                <option>PI</option> 
+                                <option>RJ</option> 
+                                <option>RN</option> 
+                                <option>RS</option> 
+                                <option>RO</option> 
+                                <option>RR</option>
+                                <option>SC</option>
+                                <option selected>SP</option> 
+                                <option>SE</option> 
+                                <option>TO</option>
                             </select>
                         </div>
                         
