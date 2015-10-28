@@ -94,7 +94,7 @@
                     <div class="row">
                         <div class="col-md-3">
                             <label>CPF*</label></br>
-                            <input type="number" id="cpf" name="cpf" class="col-md-12 form-control">
+                            <input type="text" id="cpf" name="cpf" class="col-md-12 form-control">
                         </div> 
 
                         <div class="col-md-3">
