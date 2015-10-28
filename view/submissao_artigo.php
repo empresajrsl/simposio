@@ -42,7 +42,7 @@ exit;
 			<div class="row">
 				<div class="col-md-12">
 					<label>Resumo do Artigo¹</label></br>
-					<textarea type="text" id="resumo" name="resumo" rows="8" class="form-control"></textarea>
+					<textarea id="resumo" name="resumo" rows="8" class="form-control"></textarea>
 				</div>
 			</div>
 
