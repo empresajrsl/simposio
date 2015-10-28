@@ -1,7 +1,9 @@
 
 <?php
+$search = array("\n","\r");
 $titulo = $_POST['titulo'];
-$resumo = $_POST['resumo'];
+$resumoerro = $_POST['resumo'];
+$resumo = str_replace($search,'' , $resumoerro);
 $area = $_POST['area'];
 $coautor = $_POST['coautor'];
 $apresentacao = $_POST['apresentacao'];
