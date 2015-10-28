@@ -13,10 +13,10 @@
 </head>
 <body>
 <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
         <div class="row">
-            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
-            <div class="col-md-8"><h1><center>Cadastro do Participante</center></h1></div>
+            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
+            <div class="col-md-8"><h1><center><br>Cadastro do Autor</center></h1></div>
             <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
         </div>
     </div>
