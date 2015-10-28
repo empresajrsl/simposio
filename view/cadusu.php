@@ -13,7 +13,14 @@
 </head>
 <body>
 <div class="container">
-    <div class="jumbotron"><h1><center>Cadastro do Participante</center></h1></div>
+    <div class="jumbotron">
+        <div class="row">
+            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+            <div class="col-md-8"><h1><center>Cadastro do Participante</center></h1></div>
+            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+        </div>
+    </div>
+
     <div><center><b>Os campos marcados com (*) são campos de preenchimento obrigatorio</b></center></div>
 
     </br>
