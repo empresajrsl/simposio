@@ -45,7 +45,7 @@ exit;
 
 	<script type="text/javascript">
 		$(document).on('click','#continuar', function(){
-			location.href="submicao_artigo.php";
+			location.href="submissao_artigo.php";
 
 		});
 	</script>

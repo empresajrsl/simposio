@@ -94,8 +94,8 @@
                     <div class="row">
                         <div class="col-md-3">
                             <label>CPF*</label></br>
-                            <input type="text" id="cpf" name="cpf" class="col-md-12 form-control">
-                        </div>
+                            <input type="number" id="cpf" name="cpf" class="col-md-12 form-control">
+                        </div> 
 
                         <div class="col-md-3">
                             <label>Endereço*</label></br>
@@ -103,7 +103,7 @@
                         </div>
 
                         <div class="col-md-1">
-                            <label>Numero</label></br>
+                            <label>Numero*</label></br>
                             <input type="text" id="numero" name="numero" class="col-md-12 form-control">
                         </div>
 
@@ -130,7 +130,7 @@
                         <div class="col-md-10 col-md-offset-1">
                             <div class="col-md-4">
                                 <label>Complemento</label></br>
-                                <input type="text" id="bairro" name="bairro" class="col-md-12 form-control">
+                                <input type="text" id="complemento" name="complemento" class="col-md-12 form-control">
                             </div>
 
                             <div class="col-md-4">
@@ -223,12 +223,15 @@
                 env.confirmar_email = $('#confirmar_email').val();
                 env.telefone = $('#telefone').val();
                 env.contato = $('#contato').val();
-                env.usuari = $('#cadastrar_como').val();
+                env.numero = $('#numero').val();
+                env.complemento = $('#complemento').val();
+                env.cep = $('#cep').val();
+                env.bairro = $('#bairro').val();
                 
                 var count = 0;
                 // verifica quais inputs estão vazios
                 $.each(env, function(key,val){
-                    if (val == '' & key != 'contato'){
+                    if (val == '' & key != 'contato' & key != 'complemento'){
                         // aplica formatação css os inputs vazios
                         $("#"+key).css({"border" : "2px inset #F00", "padding": "2px"});
                         count++;

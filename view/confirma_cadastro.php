@@ -13,7 +13,11 @@ $instituicao = $_POST['instituicao'];
 $email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $contato = $_POST['contato'];
-$usuario = $_POST['cadastrar_como'];
+$numero = $_POST['numero'];
+$Complemento = $_POST['complemento'];
+$cep = $_POST['cep'];
+$bairro = $_POST['bairro'];
+
 
 ?>
 <html>
@@ -42,7 +46,6 @@ $usuario = $_POST['cadastrar_como'];
 									<div class="row">
 										<email class="col-md-4"><?php echo "<b>Email:</b> " . $email; ?> </email>
 										<senha class="col-md-4"><?php echo "<b>Senha:</b> " . $senha; ?></senha> 
-										<usuario class="col-md-4"><?php echo "<b>Tipo de usuario:</b> " . $usuario;  ?> </usuario>
 									</div>
 								</center>
 							</div>
@@ -120,7 +123,11 @@ $usuario = $_POST['cadastrar_como'];
 				env.email = <?php echo "'$email'"; ?> ;
                 env.telefone = <?php echo "'$telefone'"; ?> ;
                 env.contato = <?php echo "'$contato'"; ?> ;
-                env.usuario = <?php echo "'$usuario'"; ?> ;
+                env.numero = <?php echo "'$numero'"; ?> ;
+                env.Complemento = <?php echo "'$Complemento'"; ?> ;
+                env.cep = <?php echo "'$cep'"; ?> ;
+                env.bairro = <?php echo "'$bairro'"; ?> ;
+                
 				$.ajax({
 			            type: "POST",
 			            url: "../controller/ACAO/sl-ACAOcadusu.php",
