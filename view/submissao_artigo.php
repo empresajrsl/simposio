@@ -121,6 +121,7 @@ exit;
 				</div>
 			</div>
 		</form>
+		</div>
 	</div>
 
 <!-- se nescessário adciona couatores -->

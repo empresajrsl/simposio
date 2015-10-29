@@ -35,14 +35,19 @@ $categoria = $_POST['categoria'];
 </head>
 <body>
 
-	<div class="container">
-		<div class="jumbotron"><h1><center>Confirmação da submissão do artigo</center></h1></div>
+	<div class="container"><div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
+        <div class="row">
+            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
+            <div class="col-md-8"><h1><center>Confirmação da submissão do artigo</center></h1></div>
+            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+        </div>
+    </div>
 			<div class="row"><center><h4>Confira aqui se as informações estão corretas e clique em avançar, caso contrario clique em voltar para corrigi-las.</h4></div>
 				
-			<div class="panel panel-primary">
+			<div class="panel panel-default">
 
 
-				<div class="panel-heading"><center><b>Artigo</b></center></div>
+				<div class="panel-heading"><center><b>ARTIGO</b></center></div>
 					<div class="row">
 							<div class="panel-body">
 								<center>

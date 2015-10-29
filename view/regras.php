@@ -18,12 +18,18 @@ exit;
 	<title>Regras de submição</title>
 </head>
 <body>
-	<div class="container">
-		<div class="jumbotron"><h1><center>Regras de submição do Artigo</center></h1></div>
-		<div class="row">
-			<h3 class="col-md-12">Por favor leia com atenção ao regulamento abaixo caso deseje publicar um artigo, logo após clique em <strong>Continuar</strong> para ir a tela de submição do artigo.</h3>
-			
-		</div>
+<div class="container">
+	<div class="row">
+		<div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
+	        <div class="row">
+	            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
+	            <div class="col-md-8"><h1><center><br>Regras</center></h1></div>
+	            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+	        </div>
+	        
+	        	<h3 class="col-md-12">Por favor leia com atenção ao regulamento abaixo caso deseje publicar um artigo, logo após clique em Continuar para ir a tela de submição do artigo.</h3>
+	        
+	    </div>
 
 		<div class="row">
 			<div class=" col-md-10 col-md-offset-1">
@@ -39,10 +45,10 @@ exit;
 		</br></br>
 
 		<div class="row">
-			<button type="submit" id="voltar" name="voltar" class="btn btn-warning col-md-3 col-md-offset-2" style="margin-bottom:60px">Voltar</button>
-			<button type="submit" id="continuar" name="continuar" class="btn btn-success col-md-3 col-md-offset-2" style="margin-bottom:60px">concordar e continuar</button>
+			<button type="submit" id="voltar" name="voltar" class="btn btn-warning col-md-3 col-md-offset-2" style="margin-bottom:60px">Discordar</button>
+			<button type="submit" id="continuar" name="continuar" class="btn btn-success col-md-3 col-md-offset-2" style="margin-bottom:60px">Concordar</button>
 		</div>
-	</div>
+	
 
 	<script type="text/javascript">
 		$(document).on('click','#continuar', function(){

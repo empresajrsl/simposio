@@ -35,16 +35,16 @@ $bairro = $_POST['bairro'];
 
 	<div class="container">
 		<div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
-        	<div class="row">
-            	<div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
-            	<div class="col-md-8"><h1><center>Confirmação de Cadastro</center></h1></div>
-            	<div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
-        	</div>
-    	</div>
+	        <div class="row">
+	            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
+	            <div class="col-md-8"><h1><center>Confirmação de Cadastro</center></h1></div>
+	            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+	        </div>
+  		  </div>
 
 			<div class="row"><center><h4>Confira aqui se as informações estão corretas e clique em avançar, caso o contrario clique em voltar para corrigir as mesmas</h4></div>
 				
-			<div class="panel panel-primary">
+			<div class="panel panel-default">
 
 
 				<div class="panel-heading"><center><b>Login</b></center></div>

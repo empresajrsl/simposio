@@ -12,7 +12,13 @@
 </head>
 <body>
 	<div class="container">
-    <div class="jumbotron"><h1><center>Nova Senha</center></h1></div>
+   <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
+        <div class="row">
+            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
+            <div class="col-md-8"><h1><center><br>Nova Senha</center></h1></div>
+            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+        </div>
+    </div>
 		<form id="novasenha" name="novasenha" method="post" action="../controller/ACAO/sl-ACAOcriaNsenha.php">
 
 			<div class="row">

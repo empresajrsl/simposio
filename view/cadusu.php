@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <LINK type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></LINK>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>
+    <link type="text/css" rel="stylesheet" href="../css/style.css" ></link>
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
@@ -16,7 +17,7 @@
     <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
         <div class="row">
             <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
-            <div class="col-md-8"><h1><center><br>Cadastro do Autor</center></h1></div>
+            <div class="col-md-8"><h1><center>Cadastro do Autor</center></h1></div>
             <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
         </div>
     </div>
@@ -32,7 +33,7 @@
                 <div class="panel-heading"><b>Login de Acesso</b></div>
                 <div class="panel-body">
                     <div class="row">
-                       
+                        
                         <div class="col-md-3">
                             <label>E-Mail*</label></br>
                             <input type="text" id="email" name="email" class="col-md-12 form-control" data-toggle="tooltip" data-placement="top" title="Email que será usado para efetuar o login.">
@@ -43,12 +44,12 @@
                             <input type="text" id="confirmar_email" name="confirmar_email" class="col-md-12 form-control" >
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label>Senha*</label></br>
                             <input type="text" id="senha" name="senha" class="col-md-12 form-control" >
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label>Confirmar Senha*</label></br>
                             <input type="text" id="confirmar_senha" name="confirmar_senha" class="col-md-12 form-control" >
                         </div>
@@ -93,6 +94,14 @@
                             <select id="sexo" name="sexo" class="form-control">
                                 <option>Masculino</option>
                                 <option>Feminino</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-2">
+                            <label class=>Deficiente*</label></br>
+                            <select id="deficiente" name="deficiente" class="form-control">
+                                <option>Não</option>
+                                <option>Sim</option>
                             </select>
                         </div>
                     </div>
@@ -181,7 +190,6 @@
                                     <option>Sim</option>
                                 </select>
                             </div>
-                        <!--/div-->
                         
                     </div>
 
@@ -225,6 +233,13 @@
 
     </form>
 </div>
+
+<script>
+$(document).ready( function(){
+$( ".target" ).change(function() {
+  alert( "Handler for .change() called." );
+});
+</script>
 
 <script>
     $(document).ready( function(){
