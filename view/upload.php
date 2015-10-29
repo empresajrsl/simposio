@@ -1,4 +1,12 @@
 <?php header ('Content-type: text/html; charset=UTF-8'); ?>
+<?php
+session_start();
+if(isset($_SESSION['logado']) == false)
+{
+	echo("<h1>Sessão encerrada, para continuar faça login novamente</h1> <h2> <a href='../index.php'> Fazer login </a></h2>");
+exit;
+}
+?>
 <head>
 	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>
@@ -44,10 +52,9 @@ $tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
 
 						if($arqerro == 0){
 							    $upload = move_uploaded_file($nametemp,$pasta);
-							    echo("<div class='alert alert-success' role='alert'><center>Arquivo enviado com Sucesso!<br/> Aguarde o resultado pelo email.   </br> <center></div>");
+							   
 							    $idart = explode(".", $id);
-							    echo("<div class='alert alert-warning' role='alert'><center>O artigo recebeu o seguinte id: "."  ".$idart[0] ."<br>Guarde em local seguro até o retorno do resultado.</br> <center></div>");
-
+							    
 							    session_start();
 							    $email = $_SESSION['usuario'];
 							   
@@ -62,7 +69,8 @@ $tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
 							    $email = $_SESSION['usuario'];
 								updatemysql('publicado = 2','sl_cadusu',"email = '".$email."' ");
 								updatemysql("idartigo = '".$idartigo."'", "sl_artigo","email = '".$email."' ");
-							
+								
+								header("Location:../sessao/fecharsessaofinal.php");
 
 						}else{
 							echo 'erro ao fazer o upload   ';
