@@ -32,7 +32,7 @@
                 <div class="panel-heading"><b>Login de Acesso</b></div>
                 <div class="panel-body">
                     <div class="row">
-                        
+                       
                         <div class="col-md-3">
                             <label>E-Mail*</label></br>
                             <input type="text" id="email" name="email" class="col-md-12 form-control" data-toggle="tooltip" data-placement="top" title="Email que será usado para efetuar o login.">
@@ -43,14 +43,23 @@
                             <input type="text" id="confirmar_email" name="confirmar_email" class="col-md-12 form-control" >
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <label>Senha*</label></br>
                             <input type="text" id="senha" name="senha" class="col-md-12 form-control" >
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <label>Confirmar Senha*</label></br>
                             <input type="text" id="confirmar_senha" name="confirmar_senha" class="col-md-12 form-control" >
+                        </div>
+
+                        <div class="col-md-2">
+                            <label>Cadastrar como</label></br>
+                            <select class="form-control">
+                                <option>Academico</option>
+                                <option>Estudante</option>
+                                <option>Profissional</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -69,12 +78,12 @@
                             <input type="text" id="nome" name="nome" class="col-md-12 form-control" >
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <label>Sobrenome*</label></br>
                             <input type="text" id="sobrenome" name="sobrenome" class="col-md-12 form-control" >
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <label>Data de nascimento*</label>
                             <input type="text" id="nascimento" name="nascimento" class="col-md-12 form-control">
                         </div>
@@ -84,14 +93,6 @@
                             <select id="sexo" name="sexo" class="form-control">
                                 <option>Masculino</option>
                                 <option>Feminino</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-2">
-                            <label class=>Deficiente*</label></br>
-                            <select id="deficiente" name="deficiente" class="form-control">
-                                <option>Não</option>
-                                <option>Sim</option>
                             </select>
                         </div>
                     </div>
@@ -157,22 +158,30 @@
                     </br>
 
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
+                        <!--div class="col-md-10 "-->
                             <div class="col-md-4">
                                 <label>Complemento</label></br>
                                 <input type="text" id="complemento" name="complemento" class="col-md-12 form-control">
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <label>CEP*</label></br>
                                 <input type="text" id="cep" name="cep" class="col-md-12 form-control">
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <label>Bairro*</label></br>
                                 <input type="text" id="bairro" name="bairro" class="col-md-12 form-control">
                             </div>
-                        </div>
+
+                            <div class="col-md-2">
+                                <label class=>Deficiente*</label></br>
+                                <select id="deficiente" name="deficiente" class="form-control">
+                                    <option>Não</option>
+                                    <option>Sim</option>
+                                </select>
+                            </div>
+                        <!--/div-->
                         
                     </div>
 
