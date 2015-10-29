@@ -16,11 +16,18 @@ exit;
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
-	<title>Submição do Artigo</title>
+	<title>Submissão do Artigo</title>
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron"><h1><center>Submissão do Artigo</center></h1></div>
+		<div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
+        	<div class="row">
+            	<div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
+            	<div class="col-md-8"><h1><center>Submissão do Artigo</center></h1></div>
+            	<div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+        	</div>
+    	</div>
+    	
 		<div class="row">
 			<center><b>¹O resumo deve possuir no minimo 1.400 caracteres e no maximo 2.200 caracteres contando espaços, pulo de linhas e outros caracteres.</b></center>
 		</div>
