@@ -10,7 +10,13 @@
 	
 	<div class="container">
 
-		<div class="jumbotron"><center><h1>Login</h1></center></div>
+		<div class="jumbotron" style="background: url('images/SGAGRO LOGO.png'); height:250px; widht:200px;">
+        	<div class="row">
+            	<div class="thumbnail col-md-2"><img src="images/unesp.jpg"></div>
+            	<div class="col-md-8"><center><h1>Login</h1></center></div>
+            	<div class="thumbnail col-md-2"><img src="images/SGAGRO LOGO.png"></div>
+        	</div>
+    	</div>
 
 		<center><h4>Preencha os campos com o E-Mail e a senha Cadastradas</h4></center><br><br>
 		
