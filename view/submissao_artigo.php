@@ -71,12 +71,15 @@ exit;
 				<div class="col-md-2" id="coautordiv">
 					<label>Co-Autores</label></br>
 					<select class="form-control col-md-12" id="coautor" name="coautor">
-						<option>Nenhum</option>
-						<option>1 co-autor</option>
-						<option>2 co-autores</option>
-						<option>3 co-autores</option>
-						<option>4 co-autores</option>
+						<option value="0">Nenhum</option>
+						<option value="1">1 co-autor</option>
+						<option value="2">2 co-autores</option>
+						<option value="3">3 co-autores</option>
+						<option value="4">4 co-autores</option>
 					</select>
+				</div>
+				<div id="coautoresdiv" name="coautoresdiv">
+					
 				</div>
 				
 				<div class="col-md-2">
@@ -107,12 +110,43 @@ exit;
 
 			<div class="row">
 				<div class="col-md-12">
-					<button type="button" id="confirmar_submissao" name="confirmar_submissaos" class="col-md-4 col-md-offset-4 btn btn-primary">continuar</button>
+					<button type="button" id="confirmar_submissao" name="confirmar_submissao" class="col-md-4 col-md-offset-4 btn btn-primary">continuar</button>
 				</div>
 			</div>
 		</form>
 	</div>
 
+<!-- se nescessário adciona couatores -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(document).on('change','#coautor',function(){
+			var ncoautor = $('#coautor option:selected').attr('value');
+			ncoautor = parseInt(ncoautor) + 1;
+			var count = 0;
+			console.log(ncoautor);
+			$('#coautoresdiv').html('');
+			for(count = 1;count < ncoautor;count++){
+
+				var linha = '<div class="row"><div class="col-md-4" id="coautores" name="coautores">'+
+'<label>Nome do couator- '+count+'</label></br>'+
+'<input type="text" id="nomecouator'+count+'" name="nomecouator'+count+'" class="form-control">'+
+'</div>'+
+'<div class="col-md-4" id="coautores'+count+'" name="coautores'+count+'">'+
+'<label>sobrenome do couator- '+count+'</label></br>'+
+'<input type="text" id="nomecouator'+count+'" name="nomecouator'+count+'" class="form-control">'+
+'</div>'+
+'<div class="col-md-4"'+
+'<label>CPF do coautor- '+count+'</label>'+
+'<input type="text" id="cpfcouator'+count+'" name="cpfcouator'+count+'" class="form-control">'+
+'<div></div>';
+
+				$('#coautoresdiv').append(linha);
+			}
+		});
+	});	
+
+</script>
+<!-- envia as variaveis do form via post -->
 <script type="text/javascript">
 
 		$(document).ready(function(){
