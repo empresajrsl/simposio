@@ -1,4 +1,12 @@
-
+<?php header ('Content-type: text/html; charset=UTF-8'); ?>
+<?php
+session_start();
+if(isset($_SESSION['logado']) == false)
+{
+	echo("<h1>Sessão encerrada, para continuar faça login novamente</h1> <h2> <a href='../index.php'> Fazer login </a></h2>");
+exit;
+}
+?>
 <?php
 $search = array("\n","\r");
 $titulo = $_POST['titulo'];
