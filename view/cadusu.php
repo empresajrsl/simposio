@@ -58,6 +58,7 @@
                             <label>Cadastrar como</label></br>
                             <select class="form-control">
                                 <option>Academico</option>
+                                <option>Avaliador</option>
                                 <option>Estudante</option>
                                 <option>Profissional</option>
                             </select>

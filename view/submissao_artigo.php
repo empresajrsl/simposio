@@ -69,9 +69,14 @@ exit;
 				<div class="col-md-4" id="areadiv">
 					<label>Área do Artigo</label></br>
 					<select class="form-control col-md-12" id="area" name="area">
-						<option>Informática</option>
-						<option>Biologia</option>
-						<option>Psicologia</option>
+						<option selected>Gestão de Pessoas e Estudos Organizacionais</option>
+						<option>Desenvolvimento e Gestão</option>
+						<option>Economia e Finanças</option>
+						<option>Empreendedorismo, Inovação e Tecnologia</option>
+						<option>Estratégia, Planejamento e Governança</option>
+						<option>Logísticas e Operações</option>
+						<option>Marketing e Mercados</option>
+						<option>Sustentabilidade e Responsabilidade Sócio Ambiental</option>
 					</select>
 				</div>
 
