@@ -32,13 +32,14 @@ exit;
 						<label class="col-md-offset-3">Artigo em PDF²</label></br>
 						<span class="text-warning col-md-offset-3">O tamanho max permitido é de 8mb.</span>
 						<div>
-								<input type="file" id="arquivo" name="arquivo" class="col-md-6 col-md-offset-3 btn btn-default">
+								<input type="file" id="arquivo" name="arquivo" class="col-md-7 col-md-offset-3 btn btn-default">
 						</div>
 					</div>
 				</div>
 				<div class="row"><br>
 							<div class="col-md-12">
-								<button type="submit" id="confirmar_submissao" name="confirmar_submissaos" class="col-md-4 col-md-offset-4 btn btn-primary">Continuar</button>
+								<button type="button" id="voltar" name="voltar" class="col-md-3 col-md-offset-3 btn btn-primary" onclick="javascript: location.href='../sessao/fecharsessao.php';">Voltar</button>
+								<button type="submit" id="confirmar_submissao" name="confirmar_submissaos" class="col-md-3 col-md-offset-1  btn btn-success">Continuar</button>
 							</div>
 				</div>
 			</form>
