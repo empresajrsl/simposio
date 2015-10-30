@@ -76,13 +76,13 @@ exit;
 				</div>
 
 				<div class="col-md-2" id="coautordiv">
-					<label>Co-Autores</label></br>
+					<label>Coautores</label></br>
 					<select class="form-control col-md-12" id="coautor" name="coautor">
 						<option value="0">Nenhum</option>
-						<option value="1">1 co-autor</option>
-						<option value="2">2 co-autores</option>
-						<option value="3">3 co-autores</option>
-						<option value="4">4 co-autores</option>
+						<option value="1">1 coautor</option>
+						<option value="2">2 coautores</option>
+						<option value="3">3 coautores</option>
+						<option value="4">4 coautores</option>
 					</select>
 				</div>
 
@@ -140,10 +140,10 @@ exit;
 '</div>'+
 '<div class="col-md-4" id="coautores'+count+'" name="coautores'+count+'">'+
 '<label></br>Sobrenome do coautor - '+count+'</label></br>'+
-'<input type="text" id="nomecoautor'+count+'" name="nomecoautor'+count+'" class="form-control">'+
+'<input type="text" id="snomecoautor'+count+'" name="snomecoautor'+count+'" class="form-control">'+
 '</div>'+
-'<div class="col-md-4"'+
-'<label></br><b>CPF do coautor - '+count+'</b></cpf></label></br>'+
+'<div class="col-md-4">'+
+'<label></br>CPF do coautor - '+count+'</cpf></label></br>'+
 '<input type="text" id="cpfcoautor'+count+'" name="cpfcoautor'+count+'" class="form-control">'+
 '<div></div>';
 
@@ -165,7 +165,6 @@ exit;
                 env.titulo = $('#titulo').val();
                 env.resumo = $('#resumo').val();
                 env.area = $('#area option:selected' ).val();
-                console.log(env.area);
                 env.coautor = $('#coautor option:selected').val();
                 env.apresentacao = $('#apresentacao').val();
                 env.orientador = $('#orientador').val();
@@ -173,7 +172,23 @@ exit;
                 env.categoria = $('#categoria option:selected').val();
                 env.artigo = $('#arquivo').val();
 
-               console.log('apresentacao'+env.apresentacao);
+
+                if ($("#coautores").length){
+                	console.log("coautores existem");
+                	var coautor = $('#coautor option:selected').attr('value');
+            		var	ncoautor = parseInt(coautor) + 1;
+                	var count = 0;
+
+                	for(count = 1;count < ncoautor;count++){
+                		eval('env.nomecoautor'+count+'= $("#nomecoautor'+count+'").val();');
+                		eval('env.snomecoautor'+count+'= $("#snomecoautor'+count+'").val();');
+                		eval('env.cpfcoautor'+count+'= $("#cpfcoautor'+count+'").val();');
+                	}
+                }
+                
+               
+
+               console.log(env);
                 
                 var count = 0;
                 // verifica quais inputs estão vazios

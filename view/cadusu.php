@@ -232,6 +232,7 @@ $(document).ready( function(){
 $( ".target" ).change(function() {
   alert( "Handler for .change() called." );
 });
+});
 </script>
 
 <script>

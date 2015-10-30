@@ -19,6 +19,30 @@ $orientador = $_POST['orientador'];
 $descricao = $_POST['descricao'];
 $categoria = $_POST['categoria'];
 
+if($coautor != "0"){
+	$ncoautor = (int) $coautor + 1;
+	$count = 0;
+	for($count = 1; $count < $ncoautor;$count++){
+		eval('$nomecoautor'.$count.' = $_POST["nomecoautor'.$count.'"]; ');
+		eval('$snomecoautor'.$count.' = $_POST["snomecoautor'.$count.'"]; ');
+		eval('$cpfcoautor'.$count.' = $_POST["cpfcoautor'.$count.'"]; ');
+	}
+	$sobra = 5;
+	for($i = $ncoautor ;$i < $sobra;$i++){
+		eval('$nomecoautor'.$i.' = "coautor não cadastrado"; ');
+		eval('$snomecoautor'.$i.' = "coautor não cadastrado "; ');
+		eval('$cpfcoautor'.$i.' = " coautor não cadastrado "; ');
+	} 
+}else{
+	for($count = 1; $count < 5;$count++){
+		eval('$nomecoautor'.$count.' = "coautor não cadastrado"; ');
+		eval('$snomecoautor'.$count.' = "coautor não cadastrado "; ');
+		eval('$cpfcoautor'.$count.' = " coautor não cadastrado "; ');
+	}
+}
+
+
+echo $nomecoautor1;
 
 ?>
 
@@ -74,7 +98,7 @@ $categoria = $_POST['categoria'];
 	</br>
 
 		<div class="row">
-			<button type="button" id="voltar1" name="voltar1" class="btn btn-warning col-md-3 col-md-offset-2" onClick="history.go(-1)" >Voltar</button>
+			<button type="button" id="voltar1" name="voltar1" class="btn btn-primary col-md-3 col-md-offset-2" onClick="history.go(-1)" >Voltar</button>
 			<button type="button" id="continuar1" name="continuar1" class="btn btn-success col-md-3 col-md-offset-2">Continuar</button>
 		</div>
 	</div>
@@ -94,8 +118,25 @@ $categoria = $_POST['categoria'];
                 env.orientador = <?php echo "'$orientador'"; ?> ;
                 env.descricao = <?php echo "'$descricao'"; ?> ;
                 env.categoria = <?php echo "'$categoria'"; ?> ;
-              
+
+              	env.nomecoautor1 = <?php echo "'$nomecoautor1'"; ?> ;
+              	env.snomecoautor1 = <?php echo "'$snomecoautor1'"; ?> ;
+              	env.cpfcoautor1 = <?php echo "'$cpfcoautor1'"; ?> ;
+
+              	env.nomecoautor2 = <?php echo "'$snomecoautor2'"; ?> ;
+              	env.snomecoautor2 = <?php echo "'$snomecoautor2'"; ?> ;
+              	env.cpfcoautor2 = <?php echo "'$cpfcoautor2'"; ?> ;
+
+              	env.nomecoautor3 = <?php echo "'$snomecoautor3'"; ?> ;
+              	env.snomecoautor3 = <?php echo "'$snomecoautor3'"; ?> ;
+              	env.cpfcoautor3 = <?php echo "'$cpfcoautor3'"; ?> ;
+
+              	env.nomecoautor4 = <?php echo "'$snomecoautor4'"; ?> ;
+              	env.snomecoautor4 = <?php echo "'$snomecoautor4'"; ?> ;
+              	env.cpfcoautor4 = <?php echo "'$cpfcoautor4'"; ?> ;
                 
+               
+               
                 
                $.ajax({
 			            type: "POST",
