@@ -107,8 +107,8 @@ $bairro = $_POST['bairro'];
 
 	</br>
 
-		<div class="row">
-			<button type="submit" id="voltar1" name="voltar1" class="btn btn-warning col-md-3 col-md-offset-2" onClick="history.go(-1)" >Voltar</button>
+		<div class="row" id="btnconfcad">
+			<button type="submit" id="voltar1" name="voltar1" class="btn btn-primary col-md-3 col-md-offset-2" onClick="history.go(-1)" >Voltar</button>
 			<button type="submit" id="continuar1" name="continuar1" class="btn btn-success col-md-3 col-md-offset-2">Continuar</button>
 		</div>
 	</div>

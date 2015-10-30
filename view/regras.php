@@ -30,6 +30,7 @@ exit;
 	        	<h3 class="col-md-12">Por favor leia com atenção ao regulamento abaixo caso deseje publicar um artigo, logo após clique em Continuar para ir a tela de submição do artigo.</h3>
 	        
 	    </div>
+	</div>
 
 		<div class="row">
 			<div class=" col-md-10 col-md-offset-1">

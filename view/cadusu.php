@@ -44,12 +44,12 @@
                             <input type="text" id="confirmar_email" name="confirmar_email" class="col-md-12 form-control" >
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <label>Senha*</label></br>
                             <input type="text" id="senha" name="senha" class="col-md-12 form-control" >
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <label>Confirmar Senha*</label></br>
                             <input type="text" id="confirmar_senha" name="confirmar_senha" class="col-md-12 form-control" >
                         </div>
@@ -97,13 +97,6 @@
                             </select>
                         </div>
 
-                        <div class="col-md-2">
-                            <label class=>Deficiente*</label></br>
-                            <select id="deficiente" name="deficiente" class="form-control">
-                                <option>Não</option>
-                                <option>Sim</option>
-                            </select>
-                        </div>
                     </div>
 
                     </br>
@@ -210,7 +203,7 @@
                         </div>
 
                          <div class="col-md-4">
-                            <label>Tefone/Celular*</label></br>
+                            <label>Telefone/Celular*</label></br>
                             <input type="text" id="telefone" name="telefone" class="col-md-12 form-control" >
                         </div>
 

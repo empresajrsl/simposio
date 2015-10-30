@@ -85,31 +85,30 @@ exit;
 						<option value="4">4 co-autores</option>
 					</select>
 				</div>
-				<div id="coautoresdiv" name="coautoresdiv">
-					
-				</div>
-				
+
 				<div class="col-md-2">
 					<label>Apresentação:</label></br>
 					<input type="radio" id="apresentacao" name="apresentacao" value="Banner" checked>Banner</br>
 					<input type="radio" id="apresentacao" name="apresentacao" value="Palestra">Palestra		
 				</div>
-
+			</div>
+			
+				<div id="coautoresdiv" name="coautoresdiv">
 					
-			</div>
-
-			</br>
-
-			<div class="row">
-				<div class="col-md-4">
-					<label>Orientador</label></br>
-					<input type="text" id="orientador" name="orientador" class="form-control">
 				</div>
-				<div class="col-md-8">
-					<label>Descrição do Orientador</label></br>
-					<input type="text" id="descricao" name="descricao" class="form-control">
+				
+				</br>
+
+				<div class="row">
+					<div class="col-md-4">
+						<label>Orientador</label></br>
+						<input type="text" id="orientador" name="orientador" class="form-control">
+					</div>
+					<div class="col-md-8">
+						<label>Descrição do Orientador</label></br>
+						<input type="text" id="descricao" name="descricao" class="form-control">
+					</div>
 				</div>
-			</div>
 
 			</br>
 
@@ -124,7 +123,7 @@ exit;
 		</div>
 	</div>
 
-<!-- se nescessário adciona couatores -->
+				<!-- se nescessário adciona coautores -->
 <script type="text/javascript">
 	$(document).ready(function(){
 		$(document).on('change','#coautor',function(){
@@ -136,16 +135,16 @@ exit;
 			for(count = 1;count < ncoautor;count++){
 
 				var linha = '<div class="row"><div class="col-md-4" id="coautores" name="coautores">'+
-'<label>Nome do couator- '+count+'</label></br>'+
-'<input type="text" id="nomecouator'+count+'" name="nomecouator'+count+'" class="form-control">'+
+'<label></br>Nome do coautor - '+count+'</label></br>'+
+'<input type="text" id="nomecoautor'+count+'" name="nomecoautor'+count+'" class="form-control">'+
 '</div>'+
 '<div class="col-md-4" id="coautores'+count+'" name="coautores'+count+'">'+
-'<label>sobrenome do couator- '+count+'</label></br>'+
-'<input type="text" id="nomecouator'+count+'" name="nomecouator'+count+'" class="form-control">'+
+'<label></br>Sobrenome do coautor - '+count+'</label></br>'+
+'<input type="text" id="nomecoautor'+count+'" name="nomecoautor'+count+'" class="form-control">'+
 '</div>'+
 '<div class="col-md-4"'+
-'<label>CPF do coautor- '+count+'</label>'+
-'<input type="text" id="cpfcouator'+count+'" name="cpfcouator'+count+'" class="form-control">'+
+'<label></br><b>CPF do coautor - '+count+'</b></cpf></label></br>'+
+'<input type="text" id="cpfcoautor'+count+'" name="cpfcoautor'+count+'" class="form-control">'+
 '<div></div>';
 
 				$('#coautoresdiv').append(linha);
@@ -154,6 +153,7 @@ exit;
 	});	
 
 </script>
+
 <!-- envia as variaveis do form via post -->
 <script type="text/javascript">
 

@@ -32,14 +32,7 @@ $tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
 
 ?>
 <body>
-	<div class="container">
-		<div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
-        <div class="row">
-            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
-            <div class="col-md-8"><h1><center><br>Aguarde</center></h1></div>
-            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
-        </div>
-    </div>
+	
 
 		<?php
 		// se arquivo existir e for diferente de vazio
@@ -59,10 +52,8 @@ $tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
 
 						if($arqerro == 0){
 							    $upload = move_uploaded_file($nametemp,$pasta);
-							    echo("<div class='alert alert-success' role='alert'><center><h3>Arquivo enviado com Sucesso!</h3><br/> Aguarde o resultado pelo email.   </br> <center></div>");
 							    $idart = explode(".", $id);
-							    echo("<div class='alert alert-warning' role='alert'><center><h4>O artigo recebeu o seguinte id: "."  '".$idart[0] ."'.<br>Guarde em local seguro até o retorno do resultado.</h4></br> <center></div>");
-
+							    
 							    session_start();
 							    $email = $_SESSION['usuario'];
 							   
