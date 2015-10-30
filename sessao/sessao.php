@@ -53,7 +53,9 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									if($result['publicado'] == 0){
 										// verifica se o usuário esta logado antes de mostrar a pagina 
 										header('location: ../view/regras.php');
-									}else{
+									}elseif($result['publicado'] == 1){
+										header('location: ../view/submit.php');
+									}elseif($result['publicado'] == 2){
 										header('location: ../view/fim.php');
 									}
 
