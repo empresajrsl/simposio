@@ -56,7 +56,7 @@
 
                         <div class="col-md-2">
                             <label>Cadastrar como</label></br>
-                            <select class="form-control">
+                            <select class="form-control" id="tipocadastro" name="tipocadastro">
                                 <option>Academico</option>
                                 <option>Avaliador</option>
                                 <option>Estudante</option>
@@ -228,13 +228,7 @@
     </form>
 </div>
 
-<script>
-$(document).ready( function(){
-$( ".target" ).change(function() {
-  alert( "Handler for .change() called." );
-});
-});
-</script>
+
 
 <script>
     $(document).ready( function(){
@@ -276,6 +270,7 @@ $( ".target" ).change(function() {
                 env.complemento = $('#complemento').val();
                 env.cep = $('#cep').val();
                 env.bairro = $('#bairro').val();
+                env.tipocadastro = $('#tipocadastro option:selected').val();
                 
                 var count = 0;
                 // verifica quais inputs estão vazios

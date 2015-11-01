@@ -1,3 +1,13 @@
+<?php 
+
+include("../controller/funcoes/funcoesmysql.php");
+session_start();
+$email = $_SESSION['usuario'];
+$busca = select('idartigo',"sl_cadusu", " email='".$email."'");
+	foreach ($busca as $key => $val) {
+					$result = $val;	
+				}			
+?>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -17,12 +27,21 @@
 	        </div>
     	</div>
     
+													
 
 		<br>
-
 		<div class="row">
-			<center class="col-md-12"><h2>Aguarde para receber em seu E-mail se seu artigo foi aprovado.</h2></center>
+			<div class"alert-warning">
+			<center class="col-md-12"><h3><div class="alert-success">Parabéns seu artigo foi enviado!</br>Por favor, aguarde o resultado.</div></h3></center>
 		</div>
+		</div>
+		<div class="row"></div>
+				<center class="col-md-12"><h3><div class="alert-warning">O seu artigo recebeu o seguinte id: <?php echo $result['idartigo']; ?></div></h3></center>
 	</div>
+
+<?php 
+
+session_destroy(); // Destrói a sessão limpando todos os valores salvos 
+?>
 </body>
 </html>

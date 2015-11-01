@@ -14,9 +14,10 @@ $email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $contato = $_POST['contato'];
 $numero = $_POST['numero'];
-$Complemento = $_POST['complemento'];
+$complemento = $_POST['complemento'];
 $cep = $_POST['cep'];
 $bairro = $_POST['bairro'];
+$tipocadastro = $_POST['tipocadastro'];
 
 
 ?>
@@ -54,6 +55,8 @@ $bairro = $_POST['bairro'];
 									<div class="row">
 										<email class="col-md-4"><?php echo "<b>Email:</b> " . $email; ?> </email>
 										<senha class="col-md-4"><?php echo "<b>Senha:</b> " . $senha; ?></senha> 
+										<tipocadastro class="col-md-4"><?php echo "<b>Tipo de cadastro:</b> " . $tipocadastro; ?></tipocadastro> 
+									
 									</div>
 								</center>
 							</div>
@@ -66,22 +69,25 @@ $bairro = $_POST['bairro'];
 									<div class="row">
 
 										<div class="row">
-											<nome class="col-md-4"><?php echo "<b>Nome: </b> " . $nome; ?> </nome>
-											<sobrenome class="col-md-4"><?php echo "<b>Sobrenome: </b> " . $sobrenome; ?></sobrenome> 
-											<cpf class="col-md-4"><?php echo "<b>CPF: </b> " . $cpf; ?> </cpf>
-											
+											<nome class="col-md-3"><?php echo "<b>Nome: </b> " . $nome; ?> </nome>
+											<sobrenome class="col-md-3"><?php echo "<b>Sobrenome: </b> " . $sobrenome; ?></sobrenome> 
+											<nascimento class="col-md-3"><?php echo "<b>Data de nascimento: </b> " . $nascimento; ?></nascimento> 
+											<sexo class="col-md-2"><?php echo "<b>Sexo: </b> " . $sexo; ?></sexo> 										
 										</div>
 
 										<div class="row"><br/>
-											<nascimento class="col-md-4"><?php echo "<b>Data de nascimento: </b> " . $nascimento; ?></nascimento> 
-											<sexo class="col-md-4"><?php echo "<b>Sexo: </b> " . $sexo; ?></sexo> 
-											<deficiente class="col-md-4"><?php echo "<b>Deficiente: </b> " . $deficiente; ?></deficiente> 
+											<cpf class="col-md-3"><?php echo "<b>CPF: </b> " . $cpf; ?> </cpf>
+											<endereco class="col-md-3"><?php echo "<b>Endereço: </b> " . $endereco; ?></endereco> 
+											<numero class="col-md-2"><?php echo "<b>Numero: </b> " . $numero; ?></numero> 
+											<cidade class="col-md-2"><?php echo "<b>Cidade: </b> " . $cidade; ?></cidade> 
+											<estado class="col-md-2"><?php echo "<b>Estado: </b> " . $estado; ?></estado> 
 										</div>
 
 										<div class="row"><br/>
-											<endereco class="col-md-4"><?php echo "<b>Endereço: </b> " . $endereco; ?></endereco> 
-											<cidade class="col-md-4"><?php echo "<b>Cidade: </b> " . $cidade; ?></cidade> 
-											<estado class="col-md-4"><?php echo "<b>Estado: </b> " . $estado; ?></estado> 
+											<complemento class="col-md-3"><?php echo "<b>Complemento: </b> " . $complemento; ?></complemento> 
+											<cep class="col-md-3"><?php echo "<b>CEP: </b> " . $cep; ?></cep> 
+											<bairro class="col-md-3"><?php echo "<b>Bairro: </b> " . $bairro; ?></bairro> 
+											<deficiente class="col-md-3"><?php echo "<b>Deficiente: </b> " . $deficiente; ?></deficiente> 
 										</div>
 
 									</div>
@@ -132,9 +138,10 @@ $bairro = $_POST['bairro'];
                 env.telefone = <?php echo "'$telefone'"; ?> ;
                 env.contato = <?php echo "'$contato'"; ?> ;
                 env.numero = <?php echo "'$numero'"; ?> ;
-                env.Complemento = <?php echo "'$Complemento'"; ?> ;
+                env.complemento = <?php echo "'$complemento'"; ?> ;
                 env.cep = <?php echo "'$cep'"; ?> ;
                 env.bairro = <?php echo "'$bairro'"; ?> ;
+                env.tipocadastro = <?php echo "'$tipocadastro'"; ?> ;
                 
 				$.ajax({
 			            type: "POST",

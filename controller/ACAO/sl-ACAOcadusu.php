@@ -21,10 +21,11 @@ $numero = $_POST['numero'];
 $complemento = $_POST['complemento'];
 $cep = $_POST['cep'];
 $bairro = $_POST['bairro'];
+$tipocadastro = $_POST['tipocadastro'];
 
 $tabela = 'sl_cadusu';
-$campos = 'senha, nome, sobrenome, nascimento, sexo, deficiente,cpf, endereco, cidade, estado, instituicao, email, telefone, contato,numero,complemento,cep,bairro';
-$argumentos  = "'".$senha."','".$nome."', '".$sobrenome."', '".$nascimento."', '".$sexo."', '".$deficiente."','".$cpf."', '".$endereco."', '".$cidade."', '".$estado."', '".$instituicao."', '".$email."', '".$telefone."', '".$contato."', '".$numero."', '".$complemento."','".$cep."', '".$bairro."'";
+$campos = 'senha, nome, sobrenome, nascimento, sexo, deficiente,cpf, endereco, cidade, estado, instituicao, email, telefone, contato,numero,complemento,cep,bairro,tipocadastro';
+$argumentos  = "'".$senha."','".$nome."', '".$sobrenome."', '".$nascimento."', '".$sexo."', '".$deficiente."','".$cpf."', '".$endereco."', '".$cidade."', '".$estado."', '".$instituicao."', '".$email."', '".$telefone."', '".$contato."', '".$numero."', '".$complemento."','".$cep."', '".$bairro."', '".$tipocadastro."'";
 
 
 $rp = insert($tabela,$campos,$argumentos);

@@ -9,14 +9,14 @@ $string = sha1('sigma').$email.sha1('sigma');
 // cria uma chave publica criptrografada
 $cod= base64_encode($string);
 
-$mensagem = '<html>  <body style="padding-left:30px"> 
+$mensagem = '<html>  <body style="padding-left:30px;background-color: #FAF6F5"> 
 <div style="margin-top:30px"> 
 	
 </div> 
 <p style=margin-left:15px> Olá,</br>
 Seu cadastro está quase concluído, após clicar no link o acesso ao sistema será concedido a '.$email.'</br>
-Caso isto seja um erro, sugerimos que entre em contato com os desenvolvedores do sistema em</br> 
-sigmajr@gmail.com </p>
+Caso ocorra algum erro, sugerimos que entre em contato com os desenvolvedores do sistema em</br> 
+<b>sigmajr@gmail.com</b> </p>
 <h2 style="color: #3a3f51; margin-left:15px"> Clique no link abaixo para confirmar seu cadastro </h2> 
 <a href="../model/confirmacad.php?email='.$cod.'" target="_blank" style="font-size: 20px; margin-left:15px"> Confirmar cadastro </a> </body> </html> ';
 

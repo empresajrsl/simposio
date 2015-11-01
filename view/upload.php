@@ -39,8 +39,12 @@ $tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
 		if(isset($arq)){
 					if($tipo != $tipodef){
 						echo ("<div class='alert alert-danger' role='alert'><center>Tipo de Arquivo não suportado! <br/> Verifique o erro e tente novamente.<center></div>");
+						echo("<button type='button' id='voltar1' name='voltar1' class='btn btn-primary col-md-4 col-md-offset-4' onClick='history.go(-1)' >Voltar</button>");
+			
 					}else if ($tamanho > $tamnhodef){
 						echo ("<div class='alert alert-danger' role='alert'><center>O arquivo excede o tamanho limite! <br/> Verifique o erro e tente novamente.<center></div>");
+						echo("<button type='button' id='voltar1' name='voltar1' class='btn btn-primary col-md-4 col-md-offset-4' onClick='history.go(-1)' >Voltar</button>");
+			
 					}else if ($tamanho <= $tamnhodef && $tipo == $tipodef && $arqerro == 0) {
 						
 
@@ -54,7 +58,6 @@ $tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
 							    $upload = move_uploaded_file($nametemp,$pasta);
 							    $idart = explode(".", $id);
 							    
-							    session_start();
 							    $email = $_SESSION['usuario'];
 							   
 							    $idartigo = $idart[0];
@@ -69,7 +72,8 @@ $tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
 								updatemysql('publicado = 2','sl_cadusu',"email = '".$email."' ");
 								updatemysql("idartigo = '".$idartigo."'", "sl_artigo","email = '".$email."' ");
 								
-								header("Location:../sessao/fecharsessaofinal.php");
+								header("Location:fim.php?id=".$idartigo);
+
 
 						}else{
 							echo 'erro ao fazer o upload   ';
