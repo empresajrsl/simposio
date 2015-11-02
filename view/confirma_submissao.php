@@ -1,12 +1,12 @@
-<?php header ('Content-type: text/html; charset=UTF-8'); ?>
-<?php
+<?php header ('Content-type: text/html; charset=UTF-8'); 
 session_start();
 if(isset($_SESSION['logado']) == false)
 {
 	echo("<h1>Sessão encerrada, para continuar faça login novamente</h1> <h2> <a href='../index.php'> Fazer login </a></h2>");
 exit;
 }
-?>
+?> 
+
 <?php
 $search = array("\n","\r");
 $titulo = $_POST['titulo'];
@@ -41,8 +41,27 @@ if($coautor != "0"){
 	}
 }
 
+if(isset($_POST['nomecoautor2']) and isset($_POST['snomecoautor2'])  and isset($_POST['cpfcoautor2'])){
+$nomecoautor2 = $_POST['nomecoautor2'];
+$snomecoautor2 = $_POST['snomecoautor2'];
+$cpfcoautor2 = $_POST['cpfcoautor2'];
+echo ("2existe");
+}
 
-echo $nomecoautor1;
+if(isset($_POST['nomecoautor3']) and isset($_POST['snomecoautor3'])  and isset($_POST['cpfcoautor3'])){
+$nomecoautor3 = $_POST['nomecoautor3'];
+$snomecoautor3 = $_POST['snomecoautor3'];
+$cpfcoautor3 = $_POST['cpfcoautor3'];
+echo ("3existe");
+}
+
+if(isset($_POST['nomecoautor4']) and isset($_POST['snomecoautor4'])  and isset($_POST['cpfcoautor4'])){
+$nomecoautor4 = $_POST['nomecoautor4'];
+$snomecoautor4 = $_POST['snomecoautor4'];
+$cpfcoautor4 = $_POST['cpfcoautor4'];
+echo ("4existe");
+}
+
 
 ?>
 
@@ -76,15 +95,90 @@ echo $nomecoautor1;
 							<div class="panel-body">
 								<center>
 									<div class="row">
-										<email class="col-md-3"><?php echo "<b>Artigo:</b> " . $titulo; ?> </email>
-										<usuario class="col-md-3"><?php echo "<b>Área:</b> " . $area;  ?> </usuario>
-										<categoria class="col-md-3"><?php echo "<b>Categoria:</b> " . $categoria;  ?> </categoria>
-										<apresentacao class="col-md-3"><?php echo "<b>Apresentação:</b> " . $apresentacao;  ?> </apresentacao>
-									</div>									<div class="row"></br>
-										<email class="col-md-3"><?php echo "<b>Co-Autor:</b> " . $coautor; ?> </email>
+										<email class="col-md-6"><?php echo "<b>Artigo:</b> " . $titulo; ?> </email>
+										<usuario class="col-md-6"><?php echo "<b>Área:</b> " . $area;  ?> </usuario>
+									</div>
+									<div class="row"><br
+										<categoria class="col-md-6"><?php echo "<b>Categoria:</b> " . $categoria;  ?> </categoria>
+										<apresentacao class="col-md-6"><?php echo "<b>Apresentação:</b> " . $apresentacao;  ?> </apresentacao>
+									</div>
+
+									<?php				
+									//Se Existir apenas o coautor 1;
+								if(isset($nomecoautor1) and !isset($nomecoautor2) and !isset($nomecoautor3) and !isset($nomecoautor4)){					
+									echo('<div class="row"></br>
+										<coautor class="col-md-4"> <b>Nome co-autor 1:</b> '.$nomecoautor1.' </coautor>
+										<coautor class="col-md-4"> <b>Sobrenome co-autor 1: </b> '.$snomecoautor1.' </coautor>
+										<coautor class="col-md-4"> <b>CPF co-autor 1:</b> '.$cpfcoautor1.' </coautor>
+									</div>');
+
+									//Se Existir apenas o coautor 1 e 2;
+								}else if(isset($nomecoautor1) and isset($nomecoautor2) and !isset($nomecoautor3) and !isset($nomecoautor4)){
+									echo('<div class="row"></br>
+											<coautor class="col-md-4"><b>Nome co-autor 1:</b> '.$nomecoautor1.' </coautor>
+											<coautor class="col-md-4"><b>Sobrenome co-autor 1: </b> '.$snomecoautor1.' </coautor>
+											<coautor class="col-md-4"><b>CPF co-autor 1:</b> '.$cpfcoautor1.' </coautor>
+										</div>');					
+									echo('	
+										<div class="row"></br>
+											<coautor class="col-md-4"><b>Nome co-autor 2:</b>  '.$nomecoautor2.' </coautor>
+											<coautor class="col-md-4"><b>Sobrenome co-autor 2: </b>  '.$snomecoautor2.' </coautor>
+											<coautor class="col-md-4"><b>CPF co-autor 2:</b>  '.$cpfcoautor2.' </coautor>
+										</div>');
+
+									//Se Existir apenas o coautor 1, 2 e 3;
+								}else if(isset($nomecoautor1) and isset($nomecoautor2) and isset($nomecoautor3) and !isset($nomecoautor4)){	
+									echo('<div class="row"></br>
+											<coautor class="col-md-4"><b>Nome co-autor 1:</b>  '.$nomecoautor1.' </coautor>
+											<coautor class="col-md-4"><b>Sobrenome co-autor 1: </b>  '.$snomecoautor1.' </coautor>
+											<coautor class="col-md-4"><b>CPF co-autor 1:</b>  '.$cpfcoautor1.' </coautor>
+										</div>');					
+									echo('	
+										<div class="row"></br>
+											<coautor class="col-md-4"><b>Nome co-autor 2:</b>  '.$nomecoautor2.' </coautor>
+											<coautor class="col-md-4"><b>Sobrenome co-autor 2: </b>  '.$snomecoautor2.' </coautor>
+											<coautor class="col-md-4"><b>CPF co-autor 2:</b>  '.$cpfcoautor2.' </coautor>
+										</div>');
+			
+									echo('	
+									<div class="row"></br>
+										<coautor class="col-md-4"><b>Nome co-autor 3:</b>  '. $nomecoautor3.' </coautor>
+										<coautor class="col-md-4"><b>Sobrenome co-autor 3: </b>  '. $snomecoautor3.' </coautor>
+										<coautor class="col-md-4"><b>CPF co-autor 3:</b>  '. $cpfcoautor3.' </coautor>
+									</div>');
+
+									//Se Existir todos os coautores ;
+								}else if(isset($nomecoautor1) and isset($nomecoautor2) and isset($nomecoautor3) and isset($nomecoautor4)){	
+									echo('<div class="row"></br>
+											<coautor class="col-md-4"><b>Nome co-autor 1:</b>  '.$nomecoautor1.' </coautor>
+											<coautor class="col-md-4"><b>Sobrenome co-autor 1: </b>  '.$snomecoautor1.' </coautor>
+											<coautor class="col-md-4"><b>CPF co-autor 1:</b>  '.$cpfcoautor1.' </coautor>
+										</div>');					
+									echo('	
+										<div class="row"></br>
+											<coautor class="col-md-4"><b>Nome co-autor 2:</b>  '.$nomecoautor2.' </coautor>
+											<coautor class="col-md-4"><b>Sobrenome co-autor 2: </b>  '.$snomecoautor2.' </coautor>
+											<coautor class="col-md-4"><b>CPF co-autor 2:</b>  '.$cpfcoautor2.' </coautor>
+										</div>');
+			
+									echo('	
+									<div class="row"></br>
+										<coautor class="col-md-4"><b>Nome co-autor 3:</b>  '. $nomecoautor3.' </coautor>
+										<coautor class="col-md-4"><b>Sobrenome co-autor 3: </b>  '. $snomecoautor3.' </coautor>
+										<coautor class="col-md-4"><b>CPF co-autor 3:</b>  '. $cpfcoautor3.' </coautor>
+									</div>');				
+									echo('	
+									<div class="row"></br>
+										<coautor class="col-md-4"><b>Nome co-autor 4:</b>  '. $nomecoautor4.' </coautor>
+										<coautor class="col-md-4"><b>Sobrenome co-autor 4: </b>  '.$snomecoautor4.' </coautor>
+										<coautor class="col-md-4"><b>CPF co-autor 4:</b>  '. $cpfcoautor4.' </coautor>
+									</div>');
+								}?>
+									<div class="row"></br>										
 										<senha class="col-md-3"><?php echo "<b>Orientador:</b> " . $orientador; ?></senha> 
 										<usuario class="col-md-3"><?php echo "<b>Descrição do Orientador:</b> " . $descricao;  ?> </usuario>
 									</div>
+									
 									<div class="row"><div class="container-fluid">
 									</br>
 										<resumo class="col-md-12"><?php echo "<b>Resumo do Artigo:</b> </br>" . $resumo; ?></resumo> 
@@ -98,7 +192,7 @@ echo $nomecoautor1;
 	</br>
 
 		<div class="row">
-			<button type="button" id="voltar1" name="voltar1" class="btn btn-primary col-md-3 col-md-offset-2" onClick="history.go(-1)" >Voltar</button>
+			<button type="button" id="voltar1" name="voltar1" class="btn btn-warning col-md-3 col-md-offset-2" onClick="history.go(-1)" >Voltar</button>
 			<button type="button" id="continuar1" name="continuar1" class="btn btn-success col-md-3 col-md-offset-2">Continuar</button>
 		</div>
 	</div>
@@ -119,24 +213,23 @@ echo $nomecoautor1;
                 env.descricao = <?php echo "'$descricao'"; ?> ;
                 env.categoria = <?php echo "'$categoria'"; ?> ;
 
-              	env.nomecoautor1 = <?php echo "'$nomecoautor1'"; ?> ;
-              	env.snomecoautor1 = <?php echo "'$snomecoautor1'"; ?> ;
-              	env.cpfcoautor1 = <?php echo "'$cpfcoautor1'"; ?> ;
+                env.nomecoautor1 = <?php echo "'$nomecoautor1'"; ?> ;
+                env.snomecoautor1 = <?php echo "'$snomecoautor1'"; ?> ;
+                env.cpfcoautor1 = <?php echo "'$cpfcoautor1'"; ?> ;
 
-              	env.nomecoautor2 = <?php echo "'$snomecoautor2'"; ?> ;
-              	env.snomecoautor2 = <?php echo "'$snomecoautor2'"; ?> ;
-              	env.cpfcoautor2 = <?php echo "'$cpfcoautor2'"; ?> ;
+                env.nomecoautor2 = <?php echo "'$nomecoautor2'"; ?> ;
+                env.snomecoautor2 = <?php echo "'$snomecoautor2'"; ?> ;
+                env.cpfcoautor2 = <?php echo "'$cpfcoautor2'"; ?> ;
 
-              	env.nomecoautor3 = <?php echo "'$snomecoautor3'"; ?> ;
-              	env.snomecoautor3 = <?php echo "'$snomecoautor3'"; ?> ;
-              	env.cpfcoautor3 = <?php echo "'$cpfcoautor3'"; ?> ;
+                env.nomecoautor3 = <?php echo "'$nomecoautor3'"; ?> ;
+                env.snomecoautor3 = <?php echo "'$snomecoautor3'"; ?> ;
+                env.cpfcoautor3 = <?php echo "'$cpfcoautor3'"; ?> ;
 
-              	env.nomecoautor4 = <?php echo "'$snomecoautor4'"; ?> ;
-              	env.snomecoautor4 = <?php echo "'$snomecoautor4'"; ?> ;
-              	env.cpfcoautor4 = <?php echo "'$cpfcoautor4'"; ?> ;
+                env.nomecoautor4 = <?php echo "'$nomecoautor4'"; ?> ;
+                env.snomecoautor4 = <?php echo "'$snomecoautor4'"; ?> ;
+                env.cpfcoautor4 = <?php echo "'$cpfcoautor4'"; ?> ;
+              
                 
-               
-               
                 
                $.ajax({
 			            type: "POST",
