@@ -177,6 +177,21 @@ exit;
                 env.categoria = $('#categoria option:selected').val();
                 env.artigo = $('#arquivo').val();
 
+                env.nomecoautor1 = $('#nomecoautor1').val();
+                env.snomecoautor1 = $('#snomecoautor1').val();
+                env.cpfcoautor1 = $('#cpfcoautor1').val();
+
+                env.nomecoautor2 = $('#nomecoautor2').val();
+                env.snomecoautor2 = $('#snomecoautor2').val();
+                env.cpfcoautor2 = $('#cpfcoautor2').val();
+
+                env.nomecoautor3 = $('#nomecoautor3').val();
+                env.snomecoautor3 = $('#snomecoautor3').val();
+                env.cpfcoautor3 = $('#cpfcoautor3').val();
+                env.nomecoautor4 = $('#nomecoautor4').val();
+                env.snomecoautor4 = $('#snomecoautor4').val();
+                env.cpfcoautor4 = $('#cpfcoautor4').val();
+
 
                 if ($("#coautores").length){
                 	console.log("coautores existem");
