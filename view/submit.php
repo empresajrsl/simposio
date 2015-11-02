@@ -38,8 +38,8 @@ exit;
 				</div>
 				<div class="row"><br>
 							<div class="col-md-12">
-								<button type="button" id="voltar" name="voltar" class="col-md-3 col-md-offset-3 btn btn-primary" onclick="javascript: location.href='../sessao/fecharsessao.php';">Voltar</button>
-								<button type="submit" id="confirmar_submissao" name="confirmar_submissaos" class="col-md-3 col-md-offset-1  btn btn-success">Continuar</button>
+								<button type="button" id="voltar" name="voltar" class="col-md-3 col-md-offset-3 btn btn-primary" onclick="javascript: location.href='../sessao/fecharsessao.php';">Enviar mais tarde</button>
+								<button type="submit" id="confirmar_submissao" name="confirmar_submissaos" class="col-md-3 col-md-offset-1  btn btn-success">Enviar agora</button>
 							</div>
 				</div>
 			</form>
