@@ -10,7 +10,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 
 		$emailp = $_POST['email'];
 		$senhap = $_POST['senha'];
-			echo("post".$emailp.$senhap."</br>");
+			
 				// faz um select no banco de dados dos campos email, senha, email verificado e status na tabela usuarios 
 				$busca = select('email, senha, emailverificado,publicado',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
 				
@@ -18,7 +18,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 
 				foreach ($busca as $key => $val) {
 					$result = $val;	
-					echo "resultado da busca".json_encode($result)."</br>";
+					
 				}
 
 					// verifica se a busca retornou resultados
@@ -27,7 +27,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 						// atribui numero 1 a variavel erro o que indica que o email ou a senha é incorrto
     					header('Location: ../index.php?erro=1');
     					
-					}else{
+				    }else{ 
 
 							echo "result".json_encode($result);
 							// atribui cada campo a sua respectiva variavel 
@@ -42,30 +42,30 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									// atribui true a variavel de sessão logado
 									$_SESSION['logado'] = true;
 									$_SESSION['usuario'] = $email;
-										echo ('logado');
-										echo ($_SESSION['usuario']);
+									
 
 								}else{
 									header('Location: ../index.php?erro=2');
 								}
-								if(isset($_SESSION['logado']) )
-								{	
+								// verifica se o usuário esta logado antes de mostrar a pagina 
+								if(isset($_SESSION['logado']) ){
+
 									if($result['publicado'] == 0){
-										// verifica se o usuário esta logado antes de mostrar a pagina 
 										header('location: ../view/regras.php');
 									}elseif($result['publicado'] == 1){
 										header('location: ../view/submit.php');
 									}elseif($result['publicado'] == 2){
+										session_destroy(); // Destrói a sessão limpando todos os valores salvos 
 										header('location: ../view/fim.php');
 									}
 
 									
 								}else{
-										echo ('não logado');
-											header('Location: ../index.php?erro=2');
+										// envia mensegem de erro para index 
+										header('Location: ../index.php?erro=2');
 								}
 
-							}		
+					}		
 								//fecha else principal
 
 //fecha if principal
