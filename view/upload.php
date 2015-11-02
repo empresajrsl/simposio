@@ -72,7 +72,7 @@ $tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
 								updatemysql('publicado = 2','sl_cadusu',"email = '".$email."' ");
 								updatemysql("idartigo = '".$idartigo."'", "sl_artigo","email = '".$email."' ");
 								
-								header("Location:fim.php?id=".$idartigo);
+								header("Location:../sessao/fecharsessaofinal.php?id=".$idartigo);
 
 
 						}else{
