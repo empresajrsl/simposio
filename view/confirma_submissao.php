@@ -224,7 +224,6 @@ echo ("4existe");
                 env.nomecoautor3 = <?php echo "'$nomecoautor3'"; ?> ;
                 env.snomecoautor3 = <?php echo "'$snomecoautor3'"; ?> ;
                 env.cpfcoautor3 = <?php echo "'$cpfcoautor3'"; ?> ;
-
                 env.nomecoautor4 = <?php echo "'$nomecoautor4'"; ?> ;
                 env.snomecoautor4 = <?php echo "'$snomecoautor4'"; ?> ;
                 env.cpfcoautor4 = <?php echo "'$cpfcoautor4'"; ?> ;

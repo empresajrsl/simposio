@@ -229,7 +229,6 @@
 </div>
 
 
-
 <script>
     $(document).ready( function(){
         // mascara telefone/contato
@@ -271,7 +270,10 @@
                 env.cep = $('#cep').val();
                 env.bairro = $('#bairro').val();
                 env.tipocadastro = $('#tipocadastro option:selected').val();
-                
+
+            
+
+				// verifica se todos os campos foram preenchidos 
                 var count = 0;
                 // verifica quais inputs estão vazios
                 $.each(env, function(key,val){
