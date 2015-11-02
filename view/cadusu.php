@@ -228,6 +228,29 @@
     </form>
 </div>
 
+<script>
+function calculaIdade(ano_aniversario, mes_aniversario, dia_aniversario) {
+    var d = new Date,
+        ano_atual = d.getFullYear(),
+        mes_atual = d.getMonth() + 1,
+        dia_atual = d.getDate(),
+
+        ano_aniversario = +ano_aniversario,
+        mes_aniversario = +mes_aniversario,
+        dia_aniversario = +dia_aniversario,
+
+        quantos_anos = ano_atual - ano_aniversario;
+
+    if (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual < dia_aniversario) {
+        quantos_anos--;
+    }
+
+    return quantos_anos < 0 ? 0 : quantos_anos;
+}
+</script>
+
+
+
 
 
 <script>
@@ -271,7 +294,23 @@
                 env.cep = $('#cep').val();
                 env.bairro = $('#bairro').val();
                 env.tipocadastro = $('#tipocadastro option:selected').val();
-                
+
+                // verifica a idade 
+                var idade = $('#nascimento').val();
+				var dia = idade.substr(0,2);
+				var mes = idade.substr(3,2);
+				var ano = idade.substr(6,4);
+				console.log(dia);
+				console.log(mes);
+				console.log(ano);
+				var anos = calculaIdade(ano, mes, dia);
+
+				if(anos < 17 || anos > 90){
+				    alert("Data de nascimento invalida, verifique e tente novamente");
+				    return;
+				}
+
+				// verifica se todos os campos foram preenchidos 
                 var count = 0;
                 // verifica quais inputs estão vazios
                 $.each(env, function(key,val){
