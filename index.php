@@ -21,7 +21,7 @@
 
 		<center><h4>Preencha os campos com o E-Mail e a senha Cadastradas</h4></center>
 		
-		<div class="panel panel-default">
+		<div class="jumbotron">
 		<form id="formcad" name="formcad" method="post" action="sessao/sessao.php">
 
 			<div class="row">
