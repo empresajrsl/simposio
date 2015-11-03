@@ -41,26 +41,7 @@ if($coautor != "0"){
 	}
 }
 
-if(isset($_POST['nomecoautor2']) and isset($_POST['snomecoautor2'])  and isset($_POST['cpfcoautor2'])){
-$nomecoautor2 = $_POST['nomecoautor2'];
-$snomecoautor2 = $_POST['snomecoautor2'];
-$cpfcoautor2 = $_POST['cpfcoautor2'];
-echo ("2existe");
-}
 
-if(isset($_POST['nomecoautor3']) and isset($_POST['snomecoautor3'])  and isset($_POST['cpfcoautor3'])){
-$nomecoautor3 = $_POST['nomecoautor3'];
-$snomecoautor3 = $_POST['snomecoautor3'];
-$cpfcoautor3 = $_POST['cpfcoautor3'];
-echo ("3existe");
-}
-
-if(isset($_POST['nomecoautor4']) and isset($_POST['snomecoautor4'])  and isset($_POST['cpfcoautor4'])){
-$nomecoautor4 = $_POST['nomecoautor4'];
-$snomecoautor4 = $_POST['snomecoautor4'];
-$cpfcoautor4 = $_POST['cpfcoautor4'];
-echo ("4existe");
-}
 
 
 ?>
@@ -105,7 +86,7 @@ echo ("4existe");
 
 									<?php				
 									//Se Existir apenas o coautor 1;
-								if(isset($nomecoautor1) and !isset($nomecoautor2) and !isset($nomecoautor3) and !isset($nomecoautor4)){					
+								if( ($nomecoautor1 != 'coautor não cadastrado') and ($nomecoautor2 == 'coautor não cadastrado') and ($nomecoautor3 == 'coautor não cadastrado') and ($nomecoautor4 == 'coautor não cadastrado')){					
 									echo('<div class="row"></br>
 										<coautor class="col-md-4"> <b>Nome co-autor 1:</b> '.$nomecoautor1.' </coautor>
 										<coautor class="col-md-4"> <b>Sobrenome co-autor 1: </b> '.$snomecoautor1.' </coautor>
@@ -113,7 +94,7 @@ echo ("4existe");
 									</div>');
 
 									//Se Existir apenas o coautor 1 e 2;
-								}else if(isset($nomecoautor1) and isset($nomecoautor2) and !isset($nomecoautor3) and !isset($nomecoautor4)){
+								}else if(($nomecoautor1 != 'coautor não cadastrado') and ($nomecoautor2 != 'coautor não cadastrado') and ($nomecoautor3 == 'coautor não cadastrado') and ($nomecoautor4 == 'coautor não cadastrado')){
 									echo('<div class="row"></br>
 											<coautor class="col-md-4"><b>Nome co-autor 1:</b> '.$nomecoautor1.' </coautor>
 											<coautor class="col-md-4"><b>Sobrenome co-autor 1: </b> '.$snomecoautor1.' </coautor>
@@ -127,7 +108,7 @@ echo ("4existe");
 										</div>');
 
 									//Se Existir apenas o coautor 1, 2 e 3;
-								}else if(isset($nomecoautor1) and isset($nomecoautor2) and isset($nomecoautor3) and !isset($nomecoautor4)){	
+								}else if(($nomecoautor1 != 'coautor não cadastrado') and ($nomecoautor2 != 'coautor não cadastrado') and ($nomecoautor3 != 'coautor não cadastrado') and ($nomecoautor4 == 'coautor não cadastrado')){	
 									echo('<div class="row"></br>
 											<coautor class="col-md-4"><b>Nome co-autor 1:</b>  '.$nomecoautor1.' </coautor>
 											<coautor class="col-md-4"><b>Sobrenome co-autor 1: </b>  '.$snomecoautor1.' </coautor>
@@ -148,7 +129,7 @@ echo ("4existe");
 									</div>');
 
 									//Se Existir todos os coautores ;
-								}else if(isset($nomecoautor1) and isset($nomecoautor2) and isset($nomecoautor3) and isset($nomecoautor4)){	
+								}else if(($nomecoautor1 != 'coautor não cadastrado') and ($nomecoautor2 != 'coautor não cadastrado') and ($nomecoautor3 != 'coautor não cadastrado') and ($nomecoautor4 != 'coautor não cadastrado')){	
 									echo('<div class="row"></br>
 											<coautor class="col-md-4"><b>Nome co-autor 1:</b>  '.$nomecoautor1.' </coautor>
 											<coautor class="col-md-4"><b>Sobrenome co-autor 1: </b>  '.$snomecoautor1.' </coautor>
