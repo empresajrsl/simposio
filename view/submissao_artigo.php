@@ -83,7 +83,7 @@ exit;
 				<div class="col-md-2" id="coautordiv">
 					<label>Coautores</label></br>
 					<select class="form-control col-md-12" id="coautor" name="coautor">
-						<option value="0">Nenhum</option>
+						<option selected value="0">Nenhum</option>
 						<option value="1">1 coautor</option>
 						<option value="2">2 coautores</option>
 						<option value="3">3 coautores</option>
