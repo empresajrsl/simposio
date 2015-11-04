@@ -11,13 +11,17 @@
 	
 	<div class="container">
 
-		<div class="jumbotron" style="background: url('images/SGAGRO LOGO.png'); height:250px; widht:200px;">
-        <div class="row">
-            <div class="thumbnail col-md-2"><img src="images/unesp.jpg"></div>
-            <div class="col-md-8"><h1><center><br>Login</center></h1></div>
-            <div class="thumbnail col-md-2"><img src="images/SGAGRO LOGO.png"></div>
-        </div>
-    </div>
+		<!--Banner-->
+		<div class="jumbotron" style="background: url('images/SGAGRO LOGO.png');">
+	        <div class="row">
+	        	<div class="col-md-12 col-xs-12 col-lg-12">
+	            	<img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="images/unesp.jpg">
+	            	<h1 class="col-md-8 col-xs-8 col-lg-8"><center>Login</center></h1>
+	            	<img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="images/SGAGRO LOGO.png">
+	        	</div>
+	    	</div>
+	    </div>
+		<!--Fim Banner-->
 
 		<center><h4>Preencha os campos com o E-Mail e a senha Cadastradas</h4></center>
 		
@@ -25,7 +29,7 @@
 		<form id="formcad" name="formcad" method="post" action="sessao/sessao.php">
 
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 col-xs-12 col-lg-12">
 				<?php if(isset($_GET['erro'])){
 					$erro = $_GET['erro'];
 					if($erro == 1){
@@ -37,15 +41,15 @@
 					if($erro == 3){
 						echo '<div class="alert-warning"><center> Preencha todos os campos antes de continuar.<center></div>';
 					}
-					} ?>
-					
+					}
+				?>	
 				</div>
 			</div>
 
 			<br>
 
 			<div class="row">
-				<div class="col-md-4 col-md-offset-4">
+				<div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-4">
 					<label>E-Mail</label>
 					<input type="text" id="email" name="email" class="form-control">
 					<br/><label>Senha</label>
@@ -56,9 +60,14 @@
 			<br>
 
 			<div class="row">
-				<div class="col-md-4 col-md-offset-4">
-					<button type="button" id="registrar" name="registrar" class="col-md-4 col-md-offset-1 btn btn-primary">Registrar</button> 
-					<button type="submit" id="logar" name="logar" class="col-md-4 col-md-offset-1 btn btn-success">Logar</button> 
+				<div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-4">
+					<button type="button" id="registrar" name="registrar" class="col-md-5 col-xs-5 col-lg-5 btn btn-primary">
+						Registrar
+					</button>
+
+					<button type="submit" id="logar" name="logar" class="col-md-5 col-md-offset-2 col-xs-5 col-xs-offset-2 col-lg-5 col-lg-offset-2 btn btn-success">
+						Logar
+					</button>
 				</div>	
 			</div>
 
