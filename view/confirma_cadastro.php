@@ -44,7 +44,7 @@ $tipocadastro = $_POST['tipocadastro'];
 	        </div>
   		  </div>
 
-			<div class="row"><center><h4>Confira aqui se as informações estão corretas e clique em avançar, caso o contrario clique em voltar para corrigir as mesmas</h4></div>
+			<div class="row"><center><h4>Confira aqui se as informações estão corretas e clique em continuar, caso o contrario clique em voltar para corrigir as mesmas</h4></div>
 				
 			<div class="panel panel-default">
 
