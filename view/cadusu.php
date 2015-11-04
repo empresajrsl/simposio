@@ -256,7 +256,7 @@ function calculaIdade(ano_aniversario, mes_aniversario, dia_aniversario) {
 <script>
     $(document).ready( function(){
         // mascara telefone/contato
-        $("#telefone").mask("(99) 9999 - 9999");
+        $("#telefone").mask("(99) 99999 - 9999");
         $("#contato").mask("(99) 9999 - 9999");
         // mascara cpf
         $("#cpf").mask("999.999.999-99");  
