@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -36,22 +36,22 @@
                         
                         <div class="col-md-3">
                             <label>E-Mail*</label></br>
-                            <input type="text" id="email" name="email" class="col-md-12 form-control" data-toggle="tooltip" data-placement="top" title="Email que será usado para efetuar o login.">
+                            <input type="email" id="email" name="email" class="col-md-12 form-control">
                         </div>
 
                         <div class="col-md-3">
                             <label>Confirmar E-mail*</label></br>
-                            <input type="text" id="confirmar_email" name="confirmar_email" class="col-md-12 form-control" >
+                            <input type="email" id="confirmar_email" name="confirmar_email" class="col-md-12 form-control" >
                         </div>
 
                         <div class="col-md-2">
                             <label>Senha*</label></br>
-                            <input type="text" id="senha" name="senha" class="col-md-12 form-control" >
+                            <input type="password" id="senha" name="senha" class="col-md-12 form-control" >
                         </div>
 
                         <div class="col-md-2">
                             <label>Confirmar Senha*</label></br>
-                            <input type="text" id="confirmar_senha" name="confirmar_senha" class="col-md-12 form-control" >
+                            <input type="password" id="confirmar_senha" name="confirmar_senha" class="col-md-12 form-control" >
                         </div>
 
                         <div class="col-md-2">
@@ -305,10 +305,7 @@ function calculaIdade(ano_aniversario, mes_aniversario, dia_aniversario) {
 				console.log(ano);
 				var anos = calculaIdade(ano, mes, dia);
 
-				if(anos < 17 || anos > 90){
-				    alert("Data de nascimento invalida, verifique e tente novamente");
-				    return;
-				}
+				
 
 				// verifica se todos os campos foram preenchidos 
                 var count = 0;
@@ -329,6 +326,11 @@ function calculaIdade(ano_aniversario, mes_aniversario, dia_aniversario) {
                         return;
                     // senão submete    
                     }
+
+                    if(anos < 17 || anos > 90){
+				    alert("Data de nascimento invalida, verifique e tente novamente");
+				    return;
+				}
 
                     // verifica se a confirmação de senha e mail correspondem
                     if(env.senha != env.confirmar_senha & env.email != env.confirmar_email){
