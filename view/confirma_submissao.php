@@ -71,108 +71,108 @@ if($coautor != "0"){
 			<div class="panel panel-default">
 
 
-				<div class="panel-heading"><center><b>ARTIGO</b></center></div>
-					<div class="row">
+				<div class="panel-heading"><b>ARTIGO</b></div>
+					
 							<div class="panel-body">
-								<center>
+								
 									<div class="row">
-										<email class="col-md-6"><?php echo "<b>Artigo:</b> " . $titulo; ?> </email>
-										<usuario class="col-md-6"><?php echo "<b>Área:</b> " . $area;  ?> </usuario>
+										<email class="col-md-12"><?php echo "<b>Artigo:</b> " . $titulo; ?> </email>
+										<usuario class="col-md-12"><?php echo "<b>Área:</b> " . $area;  ?> </usuario>
 									</div>
-									<div class="row"><br
-										<categoria class="col-md-6"><?php echo "<b>Categoria:</b> " . $categoria;  ?> </categoria>
-										<apresentacao class="col-md-6"><?php echo "<b>Apresentação:</b> " . $apresentacao;  ?> </apresentacao>
+									<div class="row">
+										<categoria class="col-md-12"><?php echo "<b>Categoria:</b> " . $categoria;  ?> </categoria>
+										<apresentacao class="col-md-12"><?php echo "<b>Apresentação:</b> " . $apresentacao;  ?> </apresentacao>
 									</div>
 
 									<?php				
 									//Se Existir apenas o coautor 1;
 								if( ($nomecoautor1 != 'coautor não cadastrado') and ($nomecoautor2 == 'coautor não cadastrado') and ($nomecoautor3 == 'coautor não cadastrado') and ($nomecoautor4 == 'coautor não cadastrado')){					
 									echo('<div class="row"></br>
-										<coautor class="col-md-4"> <b>Nome co-autor 1:</b> '.$nomecoautor1.' </coautor>
-										<coautor class="col-md-4"> <b>Sobrenome co-autor 1: </b> '.$snomecoautor1.' </coautor>
-										<coautor class="col-md-4"> <b>CPF co-autor 1:</b> '.$cpfcoautor1.' </coautor>
+										<coautor class="col-md-12"> <b>Nome co-autor 1:</b> '.$nomecoautor1.' </coautor>
+										<coautor class="col-md-12"> <b>Sobrenome co-autor 1: </b> '.$snomecoautor1.' </coautor>
+										<coautor class="col-md-12"> <b>CPF co-autor 1:</b> '.$cpfcoautor1.' </coautor>
 									</div>');
 
 									//Se Existir apenas o coautor 1 e 2;
 								}else if(($nomecoautor1 != 'coautor não cadastrado') and ($nomecoautor2 != 'coautor não cadastrado') and ($nomecoautor3 == 'coautor não cadastrado') and ($nomecoautor4 == 'coautor não cadastrado')){
 									echo('<div class="row"></br>
-											<coautor class="col-md-4"><b>Nome co-autor 1:</b> '.$nomecoautor1.' </coautor>
-											<coautor class="col-md-4"><b>Sobrenome co-autor 1: </b> '.$snomecoautor1.' </coautor>
-											<coautor class="col-md-4"><b>CPF co-autor 1:</b> '.$cpfcoautor1.' </coautor>
+											<coautor class="col-md-12"><b>Nome co-autor 1:</b> '.$nomecoautor1.' </coautor>
+											<coautor class="col-md-12"><b>Sobrenome co-autor 1: </b> '.$snomecoautor1.' </coautor>
+											<coautor class="col-md-12"><b>CPF co-autor 1:</b> '.$cpfcoautor1.' </coautor>
 										</div>');					
 									echo('	
 										<div class="row"></br>
-											<coautor class="col-md-4"><b>Nome co-autor 2:</b>  '.$nomecoautor2.' </coautor>
-											<coautor class="col-md-4"><b>Sobrenome co-autor 2: </b>  '.$snomecoautor2.' </coautor>
-											<coautor class="col-md-4"><b>CPF co-autor 2:</b>  '.$cpfcoautor2.' </coautor>
+											<coautor class="col-md-12"><b>Nome co-autor 2:</b>  '.$nomecoautor2.' </coautor>
+											<coautor class="col-md-12"><b>Sobrenome co-autor 2: </b>  '.$snomecoautor2.' </coautor>
+											<coautor class="col-md-12"><b>CPF co-autor 2:</b>  '.$cpfcoautor2.' </coautor>
 										</div>');
 
 									//Se Existir apenas o coautor 1, 2 e 3;
 								}else if(($nomecoautor1 != 'coautor não cadastrado') and ($nomecoautor2 != 'coautor não cadastrado') and ($nomecoautor3 != 'coautor não cadastrado') and ($nomecoautor4 == 'coautor não cadastrado')){	
 									echo('<div class="row"></br>
-											<coautor class="col-md-4"><b>Nome co-autor 1:</b>  '.$nomecoautor1.' </coautor>
-											<coautor class="col-md-4"><b>Sobrenome co-autor 1: </b>  '.$snomecoautor1.' </coautor>
-											<coautor class="col-md-4"><b>CPF co-autor 1:</b>  '.$cpfcoautor1.' </coautor>
+											<coautor class="col-md-12"><b>Nome co-autor 1:</b>  '.$nomecoautor1.' </coautor>
+											<coautor class="col-md-12"><b>Sobrenome co-autor 1: </b>  '.$snomecoautor1.' </coautor>
+											<coautor class="col-md-12"><b>CPF co-autor 1:</b>  '.$cpfcoautor1.' </coautor>
 										</div>');					
 									echo('	
 										<div class="row"></br>
-											<coautor class="col-md-4"><b>Nome co-autor 2:</b>  '.$nomecoautor2.' </coautor>
-											<coautor class="col-md-4"><b>Sobrenome co-autor 2: </b>  '.$snomecoautor2.' </coautor>
-											<coautor class="col-md-4"><b>CPF co-autor 2:</b>  '.$cpfcoautor2.' </coautor>
+											<coautor class="col-md-12"><b>Nome co-autor 2:</b>  '.$nomecoautor2.' </coautor>
+											<coautor class="col-md-12"><b>Sobrenome co-autor 2: </b>  '.$snomecoautor2.' </coautor>
+											<coautor class="col-md-12"><b>CPF co-autor 2:</b>  '.$cpfcoautor2.' </coautor>
 										</div>');
 			
 									echo('	
 									<div class="row"></br>
-										<coautor class="col-md-4"><b>Nome co-autor 3:</b>  '. $nomecoautor3.' </coautor>
-										<coautor class="col-md-4"><b>Sobrenome co-autor 3: </b>  '. $snomecoautor3.' </coautor>
-										<coautor class="col-md-4"><b>CPF co-autor 3:</b>  '. $cpfcoautor3.' </coautor>
+										<coautor class="col-md-12"><b>Nome co-autor 3:</b>  '. $nomecoautor3.' </coautor>
+										<coautor class="col-md-12"><b>Sobrenome co-autor 3: </b>  '. $snomecoautor3.' </coautor>
+										<coautor class="col-md-12"><b>CPF co-autor 3:</b>  '. $cpfcoautor3.' </coautor>
 									</div>');
 
 									//Se Existir todos os coautores ;
 								}else if(($nomecoautor1 != 'coautor não cadastrado') and ($nomecoautor2 != 'coautor não cadastrado') and ($nomecoautor3 != 'coautor não cadastrado') and ($nomecoautor4 != 'coautor não cadastrado')){	
 									echo('<div class="row"></br>
-											<coautor class="col-md-4"><b>Nome co-autor 1:</b>  '.$nomecoautor1.' </coautor>
-											<coautor class="col-md-4"><b>Sobrenome co-autor 1: </b>  '.$snomecoautor1.' </coautor>
-											<coautor class="col-md-4"><b>CPF co-autor 1:</b>  '.$cpfcoautor1.' </coautor>
+											<coautor class="col-md-12"><b>Nome co-autor 1:</b>  '.$nomecoautor1.' </coautor>
+											<coautor class="col-md-12"><b>Sobrenome co-autor 1: </b>  '.$snomecoautor1.' </coautor>
+											<coautor class="col-md-12"><b>CPF co-autor 1:</b>  '.$cpfcoautor1.' </coautor>
 										</div>');					
 									echo('	
 										<div class="row"></br>
-											<coautor class="col-md-4"><b>Nome co-autor 2:</b>  '.$nomecoautor2.' </coautor>
-											<coautor class="col-md-4"><b>Sobrenome co-autor 2: </b>  '.$snomecoautor2.' </coautor>
-											<coautor class="col-md-4"><b>CPF co-autor 2:</b>  '.$cpfcoautor2.' </coautor>
+											<coautor class="col-md-12"><b>Nome co-autor 2:</b>  '.$nomecoautor2.' </coautor>
+											<coautor class="col-md-12"><b>Sobrenome co-autor 2: </b>  '.$snomecoautor2.' </coautor>
+											<coautor class="col-md-12"><b>CPF co-autor 2:</b>  '.$cpfcoautor2.' </coautor>
 										</div>');
 			
 									echo('	
 									<div class="row"></br>
-										<coautor class="col-md-4"><b>Nome co-autor 3:</b>  '. $nomecoautor3.' </coautor>
-										<coautor class="col-md-4"><b>Sobrenome co-autor 3: </b>  '. $snomecoautor3.' </coautor>
-										<coautor class="col-md-4"><b>CPF co-autor 3:</b>  '. $cpfcoautor3.' </coautor>
+										<coautor class="col-md-12"><b>Nome co-autor 3:</b>  '. $nomecoautor3.' </coautor>
+										<coautor class="col-md-12"><b>Sobrenome co-autor 3: </b>  '. $snomecoautor3.' </coautor>
+										<coautor class="col-md-12"><b>CPF co-autor 3:</b>  '. $cpfcoautor3.' </coautor>
 									</div>');				
 									echo('	
 									<div class="row"></br>
-										<coautor class="col-md-4"><b>Nome co-autor 4:</b>  '. $nomecoautor4.' </coautor>
-										<coautor class="col-md-4"><b>Sobrenome co-autor 4: </b>  '.$snomecoautor4.' </coautor>
-										<coautor class="col-md-4"><b>CPF co-autor 4:</b>  '. $cpfcoautor4.' </coautor>
+										<coautor class="col-md-12"><b>Nome co-autor 4:</b>  '. $nomecoautor4.' </coautor>
+										<coautor class="col-md-12"><b>Sobrenome co-autor 4: </b>  '.$snomecoautor4.' </coautor>
+										<coautor class="col-md-12"><b>CPF co-autor 4:</b>  '. $cpfcoautor4.' </coautor>
 									</div>');
 								}?>
 									<div class="row"></br>										
-										<senha class="col-md-3"><?php echo "<b>Orientador:</b> " . $orientador; ?></senha> 
-										<usuario class="col-md-3"><?php echo "<b>Descrição do Orientador:</b> " . $descricao;  ?> </usuario>
+										<senha class="col-md-12"><?php echo "<b>Orientador:</b> " . $orientador; ?></senha> 
+										<usuario class="col-md-12"><?php echo "<b>Descrição do Orientador:</b> " . $descricao;  ?> </usuario>
 									</div>
 									
-									<div class="row"><div class="container-fluid">
-									</br>
-										<resumo class="col-md-12"><?php echo "<b>Resumo do Artigo:</b> </br>" . $resumo; ?></resumo> 
-									</div></div>
-								</center>
+									<div class="row">
+
+										<resumo class="col-md-12"><?php echo "<b>Resumo do Artigo:</b>" . $resumo; ?></resumo> 
+									</div>
+								
 							</div>
-					</div>
+					
 				
 			</div>
 
 	</br>
 
-		<div class="row">
+		<div class="row" style="margin-bottom:30px">
 			<button type="button" id="voltar1" name="voltar1" class="btn btn-warning col-md-3 col-md-offset-2" onClick="history.go(-1)" >Voltar</button>
 			<button type="button" id="continuar1" name="continuar1" class="btn btn-success col-md-3 col-md-offset-2">Continuar</button>
 		</div>
