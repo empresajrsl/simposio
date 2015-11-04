@@ -25,10 +25,17 @@
 			<center class="col-md-12"><h3><div class="alert-success">Parabéns seu artigo foi enviado!</br>Por favor, aguarde o resultado.</div></h3></center>
 		</div>
 		</div>
-		<div class="row"></div>
-				<center class="col-md-12"><h3><div class="alert-warning"><?php   if(isset($_GET['id'])){echo 'O seu artigo recebeu o seguinte id:'.$_GET['id'];} ?></div></h3></center>
-	</div>
+		<br>
+		<div class="row">
+			<center><input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary"></input></center>
+		</div>
 
+
+		<script type="text/javascript">
+			 $(document).on('click','#sair',function(){
+			 	location.href='../index.php';
+			 });
+		</script>
 
 </body>
 </html>
