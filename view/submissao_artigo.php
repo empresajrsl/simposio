@@ -50,7 +50,7 @@ exit;
 			<div class="row">
 				<div class="col-md-12">
 					<label>Resumo do Artigo¹</label></br>
-					<textarea id="resumo" name="resumo" rows="8" class="form-control"></textarea>
+					<textarea id="resumo" name="resumo" rows="8" class="form-control" min="14" max="2200"></textarea>
 				</div>
 			</div>
 
@@ -192,6 +192,19 @@ exit;
                 env.snomecoautor4 = $('#snomecoautor4').val();
                 env.cpfcoautor4 = $('#cpfcoautor4').val();
 
+                var quant = env.resumo.length;
+
+                if(quant < 1400){
+                	alert('O resumo deve possuir no mínimo 1.400 caracteres, contando com os espaços');
+                	console.log(quant);
+                	return;
+                }
+
+                if(quant > 2200){
+                	alert('O resumo deve possuir no maximo 2.200 caracteres, contando com os espaços');
+                	console.log(quant);
+                	return;
+                }
 
                 if ($("#coautores").length){
                 	console.log("coautores existem");
