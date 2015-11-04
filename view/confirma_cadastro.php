@@ -21,6 +21,7 @@ $tipocadastro = $_POST['tipocadastro'];
 
 
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -48,63 +49,64 @@ $tipocadastro = $_POST['tipocadastro'];
 			<div class="panel panel-default">
 
 
-				<div class="panel-heading"><center><b>Login</b></center></div>
+				<div class="panel-heading"><b>Login</b></div>
 					<div class="row">
 							<div class="panel-body">
-								<center>
-									<div class="row">
-										<email class="col-md-4"><?php echo "<b>Email:</b> " . $email; ?> </email>
-										<senha class="col-md-4"><?php echo "<b>Senha:</b> " . $senha; ?></senha> 
-										<tipocadastro class="col-md-4"><?php echo "<b>Tipo de cadastro:</b> " . $tipocadastro; ?></tipocadastro> 
+								<!--center-->
+									<div class="row" style="margin-left: 15px">
+										<email class="col-md-12"><?php echo "<b>Email:</b> " . $email; ?> </email>
+										<senha class="col-md-12"><?php echo "<b>Senha:</b> " . $senha; ?></senha>
+										<tipocadastro class="col-md-12"><?php echo "<b>Tipo de cadastro:</b> " . $tipocadastro; ?></tipocadastro>
 									
 									</div>
-								</center>
+								<!--/center-->
 							</div>
 					</div>
 				
-				<div class="panel-heading"><center><b>Dados Pessoais </b></center></div>
+				<div class="panel-heading"><b>Dados Pessoais</b></div>
 					<div class="row">
 							<div class="panel-body">
-								<center>
-									<div class="row">
+								
+									
 
-										<div class="row">
-											<nome class="col-md-3"><?php echo "<b>Nome: </b> " . $nome; ?> </nome>
-											<sobrenome class="col-md-3"><?php echo "<b>Sobrenome: </b> " . $sobrenome; ?></sobrenome> 
-											<nascimento class="col-md-3"><?php echo "<b>Data de nascimento: </b> " . $nascimento; ?></nascimento> 
+										<div class="row" style="margin-left: 15px">
+											<nome class="col-md-12"><?php echo "<b>Nome: </b> " . $nome; ?> </nome>
+											<sobrenome class="col-md-12"><?php echo "<b>Sobrenome: </b> " . $sobrenome; ?></sobrenome> 
+											<nascimento class="col-md-12"><?php echo "<b>Data de nascimento: </b> " . $nascimento; ?></nascimento> 
 											<sexo class="col-md-2"><?php echo "<b>Sexo: </b> " . $sexo; ?></sexo> 										
 										</div>
 
-										<div class="row"><br/>
-											<cpf class="col-md-3"><?php echo "<b>CPF: </b> " . $cpf; ?> </cpf>
-											<endereco class="col-md-3"><?php echo "<b>Endereço: </b> " . $endereco; ?></endereco> 
-											<numero class="col-md-2"><?php echo "<b>Numero: </b> " . $numero; ?></numero> 
-											<cidade class="col-md-2"><?php echo "<b>Cidade: </b> " . $cidade; ?></cidade> 
-											<estado class="col-md-2"><?php echo "<b>Estado: </b> " . $estado; ?></estado> 
+										<div class="row" style="margin-left: 15px"><br/>
+											<cpf class="col-md-12"><?php echo "<b>CPF: </b> " . $cpf; ?> </cpf>
+											<endereco class="col-md-12"><?php echo "<b>Endereço: </b> " . $endereco; ?></endereco> 
+											<numero class="col-md-12"><?php echo "<b>Numero: </b> " . $numero; ?></numero> 
+											<cidade class="col-md-12"><?php echo "<b>Cidade: </b> " . $cidade; ?></cidade> 
+											<estado class="col-md-12"><?php echo "<b>Estado: </b> " . $estado; ?></estado> 
 										</div>
 
-										<div class="row"><br/>
-											<complemento class="col-md-3"><?php echo "<b>Complemento: </b> " . $complemento; ?></complemento> 
-											<cep class="col-md-3"><?php echo "<b>CEP: </b> " . $cep; ?></cep> 
-											<bairro class="col-md-3"><?php echo "<b>Bairro: </b> " . $bairro; ?></bairro> 
-											<deficiente class="col-md-3"><?php echo "<b>Deficiente: </b> " . $deficiente; ?></deficiente> 
+										<div class="row" style="margin-left: 15px"><br/>
+											<complemento class="col-md-12"><?php echo "<b>Complemento: </b> " . $complemento; ?></complemento> 
+											<cep class="col-md-12"><?php echo "<b>CEP: </b> " . $cep; ?></cep> 
+											<bairro class="col-md-12"><?php echo "<b>Bairro: </b> " . $bairro; ?></bairro> 
+											<deficiente class="col-md-12"><?php echo "<b>Deficiente: </b> " . $deficiente; ?></deficiente> 
 										</div>
 
-									</div>
-								</center>
+									
+								
 							</div>
 					</div>
 
-				<div class="panel-heading"><center><b>Contato</b></center></div>
+
+				<div class="panel-heading"><b>Contato</b></div>
 					<div class="row">
 							<div class="panel-body">
-								<center>
-									<div class="row">
-										<instituicao class="col-md-4"><?php echo "<b>Instituição:</b> " . $instituicao; ?> </instituicao>
-										<telefone class="col-md-4"><?php echo "<b>Telefone:</b> " . $telefone; ?></telefone> 
-										<contato class="col-md-4"><?php echo "<b>Contato:</b> " . $contato; ?></contato> 
+								
+									<div class="row" style="margin-left: 15px">
+										<instituicao class="col-md-12"><?php echo "<b>Instituição:</b> " . $instituicao; ?> </instituicao>
+										<telefone class="col-md-12"><?php echo "<b>Telefone:</b> " . $telefone; ?></telefone> 
+										<contato class="col-md-12"><?php echo "<b>Contato:</b> " . $contato; ?></contato> 
 									</div>
-								</center>
+								
 							</div>
 					</div>
 
