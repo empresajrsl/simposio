@@ -41,7 +41,7 @@ $tipocadastro = $_POST['tipocadastro'];
 	        <div class="row">
 	            <div class="col-md-12 col-xs-12 col-lg-12">
 	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
-	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Cadastro do Autor</center></h1>
+	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Confirmação de Cadastro</center></h1>
 	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
 	            </div>
 	        </div>
