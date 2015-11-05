@@ -6,6 +6,7 @@
     <link type="text/css" rel="stylesheet" href="../css/style.css" ></link>
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../plugin/mask/jquery.mask.js"></script>
     <script src="../js/tooltip.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <title>Criar nova senha</title>

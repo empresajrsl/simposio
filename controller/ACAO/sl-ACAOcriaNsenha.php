@@ -27,16 +27,7 @@ include("../funcoes/funcoesmysql.php");
 	}
 	else if(empty($result))
 	{
-		updatemysql("senha = $senhap","sl_cadusu","email='$emailp'");
 		header('location: ../../view/novasenha.php?msg=2');
-		echo 'senha atualizada com sucesso';
-
-	}
-	// se o usuario não estiver cadastrado envia a mensagem de erro 
-	else
-	{
-		// 
-		echo 'Erro, os dados informados não estão cadastrado no sistema';
 	}
 	
  ?>
