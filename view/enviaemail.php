@@ -44,33 +44,35 @@ echo ($mensagem);*/
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
+		<!--Banner-->
+	    <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png');">
 	        <div class="row">
-	            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
-	            <div class="col-md-8"><h1><center>E-Mail</center></h1></div>
-	            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+	            <div class="col-md-12 col-xs-12 col-lg-12">
+	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
+	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>E-Mail</center></h1>
+	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
+	            </div>
 	        </div>
-    	</div>
+	    </div>
+	    <!--Fim Banner-->
 
     	<div class="jumbotron">
     		<div>
     			<?php 
-    			echo "<center>Seu cadastro está quase concluído, após clicar no link o acesso ao sistema será concedido a ".$email."
+    			echo "<center>Seu cadastro está quase concluído, após clicar no link o acesso ao sistema será concedido a <u>".$email."</u>.
     			Caso ocorra algum erro, sugerimos que entre em contato com os desenvolvedores do sistema em:</center>";
     		 	?>
     		</div>
 
     		</br>
 
-    		<center><b>sigmajr@gmail.com</b></center>
+    		<center><b>sigmajr@gmail.com<b></center>
 
-			<center><h3> Clique no link abaixo para confirmar seu cadastro </h2></center>
+			<center class="col-md-12 col-xs-12 col-lg-12"><h3>Clique no link abaixo para confirmar seu cadastro.</h3></center>
 
 			</br>
 
-			<center>
-				<?php echo "<a href='../model/confirmacad.php?email=".$cod."' target='_blank' style='font-size: 20px;'> Confirmar Cadastro </a>"; ?>
-			</center>
+			<center><?php echo "<a href='../model/confirmacad.php?email=".$cod."' target='_blank' style='font-size: 20px;'> Confirmar Cadastro </a>"; ?></center>
 		</div>
 
 	</div>
