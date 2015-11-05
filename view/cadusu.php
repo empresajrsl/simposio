@@ -31,7 +31,7 @@
 
     </br>
 
-    <form id="formcad" method="post" action="confirma_cadastro.php" class="jumbotron col-md-12 col-xs-12 col-lg-12">
+    <form id="formcad" method="post" action="confirma_cadastro.php" class="col-md-12 col-xs-12 col-lg-12">
         
         <!-- painel Login de cadastro -->
         <div class="row">
@@ -230,6 +230,8 @@
                 Confirmar
             </button>
         </div>
+
+        </br>
 
     </form>
 </div>
