@@ -20,24 +20,33 @@ exit;
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
-        	<div class="row">
-            	<div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
-            	<div class="col-md-8"><h1><center>Submissão do Artigo</center></h1></div>
-            	<div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
-        	</div>
-    	</div>
+
+		<!--Banner-->
+	    <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png');">
+	        <div class="row">
+	            <div class="col-md-12 col-xs-12 col-lg-12">
+	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
+	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Submissão de Artigo</center></h1>
+	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
+	            </div>
+	        </div>
+	    </div>
+	    <!--Fim Banner-->
     	
 		<div class="row">
-			<center><b>¹O resumo deve possuir no minimo 1.400 caracteres e no maximo 2.200 caracteres contando espaços, pulo de linhas e outros caracteres.</b></center>
+			<center class="col-md-12 col-xs-12 col-lg-12">
+				<b>¹O resumo deve possuir no minimo 1.400 caracteres e no maximo 2.200 caracteres contando espaços, pulo de linhas e outros caracteres.</b>
+			</center>
 		</div>
 		</br>
 		<div class="row">
-			<center><b>²Os artigo devem ser submetidos no formato pdf e não podem ser publicados em outros formatos como '.doc', '.docx', entre outros.</b></center>
+			<center class="col-md-12 col-xs-12 col-lg-12">
+				<b>²Os artigo devem ser submetidos no formato pdf e não podem ser publicados em outros formatos como '.doc', '.docx', entre outros.</b>
+			</center>
 		</div>
 		</br>
 
-		<form id="form_submissao" method="post" action="confirma_submissao.php" enctype="multipart/form-data">
+		<form id="form_submissao" method="post" action="confirma_submissao.php" enctype="multipart/form-data" class="jumbotron">
 			<div class="row">
 				<div class="col-md-12">
 					<label>Titulo</label></br>
@@ -59,7 +68,7 @@ exit;
 			<div class="row">
 				<div class="col-md-4" id="categoriadiv">
 					<label>Categoria do artigo</label></br>
-					<select class="form-control col-md-12" id="categoria" name="categoria">
+					<select class="form-control" id="categoria" name="categoria">
 						<option>Resumo Expandido</option>
 						<option>Relato Técnico</option>
 						<option>Artigo Completo</option>
@@ -68,7 +77,7 @@ exit;
 
 				<div class="col-md-4" id="areadiv">
 					<label>Área do Artigo</label></br>
-					<select class="form-control col-md-12" id="area" name="area">
+					<select class="form-control" id="area" name="area">
 						<option selected>Gestão de Pessoas e Estudos Organizacionais</option>
 						<option>Desenvolvimento e Gestão</option>
 						<option>Economia e Finanças</option>
@@ -82,7 +91,7 @@ exit;
 
 				<div class="col-md-2" id="coautordiv">
 					<label>Coautores</label></br>
-					<select class="form-control col-md-12" id="coautor" name="coautor">
+					<select class="form-control" id="coautor" name="coautor">
 						<option selected value="0">Nenhum</option>
 						<option value="1">1 coautor</option>
 						<option value="2">2 coautores</option>
@@ -121,7 +130,9 @@ exit;
 
 			<div class="row">
 				<div class="col-md-12">
-					<button type="button" id="confirmar_submissao" name="confirmar_submissao" class="col-md-4 col-md-offset-4 btn btn-primary">continuar</button>
+					<button type="button" id="confirmar_submissao" name="confirmar_submissao" class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4 btn btn-primary">
+						continuar
+					</button>
 				</div>
 			</div>
 		</form>
