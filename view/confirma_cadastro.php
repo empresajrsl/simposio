@@ -36,89 +36,86 @@ $tipocadastro = $_POST['tipocadastro'];
 <body>
 
 	<div class="container">
-		<div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
+		<!--Banner-->
+	    <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png');">
 	        <div class="row">
-	            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
-	            <div class="col-md-8"><h1><center>Confirmação de Cadastro</center></h1></div>
-	            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+	            <div class="col-md-12 col-xs-12 col-lg-12">
+	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
+	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Cadastro do Autor</center></h1>
+	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
+	            </div>
 	        </div>
-  		  </div>
+	    </div>
+	    <!--Fim Banner-->
 
-			<div class="row"><center><h4>Confira aqui se as informações estão corretas e clique em continuar, caso o contrario clique em voltar para corrigir as mesmas</h4></div>
+		<div class="row">
+			<center class="col-md-12 col-xs-12 col-lg-12">
+				<h4>Confira aqui se as informações estão corretas e clique em continuar, caso o contrario clique em voltar para corrigir as mesmas</h4>
+			</center>
+		</div>
 				
-			<div class="panel panel-default">
+		<div class="panel panel-default">
 
 
-				<div class="panel-heading"><b>Login</b></div>
-					<div class="row">
-							<div class="panel-body">
-								<!--center-->
-									<div class="row" style="margin-left: 15px">
-										<email class="col-md-12"><?php echo "<b>Email:</b> " . $email; ?> </email>
-										<senha class="col-md-12"><?php echo "<b>Senha:</b> " . $senha; ?></senha>
-										<tipocadastro class="col-md-12"><?php echo "<b>Tipo de cadastro:</b> " . $tipocadastro; ?></tipocadastro>
-									
-									</div>
-								<!--/center-->
-							</div>
+			<div class="panel-heading"><b>Login</b></div>
+			<div class="row">
+				<div class="panel-body">
+					<div class="row" style="margin-left: 15px">
+						<email class="col-md-12 col-xs-12 col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Email:</b> " . $email; ?> </email>
+						<senha class="col-md-12 col-xs-12 col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Senha:</b> " . $senha; ?></senha>
+						<tipocadastro class="col-md-12 col-xs-12 col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Tipo de cadastro:</b> " . $tipocadastro; ?></tipocadastro>
 					</div>
-				
-				<div class="panel-heading"><b>Dados Pessoais</b></div>
-					<div class="row">
-							<div class="panel-body">
-								
-									
-
-										<div class="row" style="margin-left: 15px">
-											<nome class="col-md-12"><?php echo "<b>Nome: </b> " . $nome; ?> </nome>
-											<sobrenome class="col-md-12"><?php echo "<b>Sobrenome: </b> " . $sobrenome; ?></sobrenome> 
-											<nascimento class="col-md-12"><?php echo "<b>Data de nascimento: </b> " . $nascimento; ?></nascimento> 
-											<sexo class="col-md-2"><?php echo "<b>Sexo: </b> " . $sexo; ?></sexo> 										
-										</div>
-
-										<div class="row" style="margin-left: 15px"><br/>
-											<cpf class="col-md-12"><?php echo "<b>CPF: </b> " . $cpf; ?> </cpf>
-											<endereco class="col-md-12"><?php echo "<b>Endereço: </b> " . $endereco; ?></endereco> 
-											<numero class="col-md-12"><?php echo "<b>Numero: </b> " . $numero; ?></numero> 
-											<cidade class="col-md-12"><?php echo "<b>Cidade: </b> " . $cidade; ?></cidade> 
-											<estado class="col-md-12"><?php echo "<b>Estado: </b> " . $estado; ?></estado> 
-										</div>
-
-										<div class="row" style="margin-left: 15px"><br/>
-											<complemento class="col-md-12"><?php echo "<b>Complemento: </b> " . $complemento; ?></complemento> 
-											<cep class="col-md-12"><?php echo "<b>CEP: </b> " . $cep; ?></cep> 
-											<bairro class="col-md-12"><?php echo "<b>Bairro: </b> " . $bairro; ?></bairro> 
-											<deficiente class="col-md-12"><?php echo "<b>Deficiente: </b> " . $deficiente; ?></deficiente> 
-										</div>
-
-									
-								
-							</div>
+				</div>
+			</div>
+			
+			<div class="panel-heading"><b>Dados Pessoais</b></div>
+			<div class="row">
+				<div class="panel-body">
+					<div class="row" style="margin-left: 15px">
+						<nome class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Nome: </b> " . $nome; ?> </nome>
+						<sobrenome class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Sobrenome: </b> " . $sobrenome; ?></sobrenome> 
+						<nascimento class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Data de nascimento: </b> " . $nascimento; ?></nascimento> 
+						<sexo class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Sexo: </b> " . $sexo; ?></sexo> 										
 					</div>
 
-
-				<div class="panel-heading"><b>Contato</b></div>
-					<div class="row">
-							<div class="panel-body">
-								
-									<div class="row" style="margin-left: 15px">
-										<instituicao class="col-md-12"><?php echo "<b>Instituição:</b> " . $instituicao; ?> </instituicao>
-										<telefone class="col-md-12"><?php echo "<b>Telefone:</b> " . $telefone; ?></telefone> 
-										<contato class="col-md-12"><?php echo "<b>Contato:</b> " . $contato; ?></contato> 
-									</div>
-								
-							</div>
+					<div class="row" style="margin-left: 15px"><br/>
+						<cpf class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>CPF: </b> " . $cpf; ?> </cpf>
+						<endereco class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Endereço: </b> " . $endereco; ?></endereco> 
+						<numero class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Numero: </b> " . $numero; ?></numero> 
+						<cidade class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Cidade: </b> " . $cidade; ?></cidade> 
+						<estado class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Estado: </b> " . $estado; ?></estado> 
 					</div>
 
-
+					<div class="row" style="margin-left: 15px"><br/>
+						<complemento class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Complemento: </b> " . $complemento; ?></complemento> 
+						<cep class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>CEP: </b> " . $cep; ?></cep> 
+						<bairro class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Bairro: </b> " . $bairro; ?></bairro> 
+						<deficiente class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Deficiente: </b> " . $deficiente; ?></deficiente> 
+					</div>
+				</div>
 			</div>
 
-	</br>
+
+			<div class="panel-heading"><b>Contato</b></div>
+			<div class="row">
+				<div class="panel-body">
+					<div class="row" style="margin-left: 15px">
+						<instituicao class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Instituição:</b> " . $instituicao; ?> </instituicao>
+						<telefone class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Telefone:</b> " . $telefone; ?></telefone> 
+						<contato class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Contato:</b> " . $contato; ?></contato> 
+					</div>	
+				</div>
+			</div>
+
+		</div>
+
+		</br>
 
 		<div class="row" id="btnconfcad">
-			<button type="submit" id="voltar1" name="voltar1" class="btn btn-primary col-md-3 col-md-offset-2" onClick="history.go(-1)" >Voltar</button>
-			<button type="submit" id="continuar1" name="continuar1" class="btn btn-success col-md-3 col-md-offset-2">Continuar</button>
+			<button type="submit" id="voltar1" name="voltar1" class="btn btn-primary col-md-3 col-md-offset-2 col-xs-3 col-xs-offset-2 col-lg-3 col-lg-offset-2" onClick="history.go(-1)" >Voltar</button>
+			<button type="submit" id="continuar1" name="continuar1" class="btn btn-success col-md-3 col-md-offset-2 col-xs-3 col-xs-offset-2 col-lg-3 col-lg-offset-2">Continuar</button>
 		</div>
+
 	</div>
 
 	<script type="text/javascript">
