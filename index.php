@@ -53,7 +53,7 @@
 					<label>E-Mail</label>
 					<input type="text" id="email" name="email" class="form-control">
 					<br/><label>Senha</label>
-					<input type="text" id="senha" name="senha" class="form-control">
+					<input type="password" id="senha" name="senha" class="form-control">
 				</div>
 			</div>
 
