@@ -21,6 +21,30 @@
     </div>
 		<form id="novasenha" name="novasenha" method="post" action="../controller/ACAO/sl-ACAOcriaNsenha.php">
 
+
+        <div class="row">
+          <div class="col-md-12 col-xs-12 col-lg-12">
+            <?php 
+                if(isset($_GET['msg'])){
+                  $msg = $_GET['msg'];
+                  if(isset($_GET['erro'])){
+                  $erro = $_GET['erro'];
+                  }
+                
+                
+                if($msg == 1){
+                  echo '<div class="alert-success"><center>Senha atualizada com sucesso!<center></div>';
+                }
+                else if($msg == 2){
+                  echo '<div class="alert-danger"><center>Os dados fornecidos não conferem.<center></div>';
+                }
+                else if($msg == 3){
+                  echo '<div class="alert-danger"><center>Erro ao efetuar alterações. <br/>'. $erro .' <center></div>';
+                }
+              }
+            ?>  
+        </div>
+
 			<div class="row">
         <div class="col-md-4 col-md-offset-4">
           <label> C.P.F. </label></br>
@@ -42,12 +66,12 @@
 
 			<div class="row">
         <div class="col-md-4 col-md-offset-2">
-          <label> Senha </label></br>
+          <label>Nova senha </label></br>
           <input type="input" name="senha1" id="senha1" class="form-control"></br>
         </div>
 
         <div class="col-md-4">
-          <label>Digite a senha novamente </label></br>
+          <label>Confirme a nova senha</label></br>
           <input type="input" name="senha2" id="senha2" class="form-control"></br>
         </div>
       </div>
@@ -56,13 +80,18 @@
       
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
-          <button type="button" name="salvar" id="salvar"  class="btn btn-primary col-md-12" >Salvar</button>
+          <button type="submit" name="salvar" id="salvar"  class="btn btn-primary col-md-12" >Salvar</button>
         </div>
       <div>
 
 		</form>
 	</div>	
-
+<script>
+    $(document).ready( function(){
+        // mascara 
+        $("#cpf").mask("999.999.999-99"); 
+    });
+</script>
 	<!-- função para enviar post via ajax  e validar o form -->
 	<script type="text/javascript">
 	$(document).on('click','#salvar', function(){

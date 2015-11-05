@@ -14,17 +14,21 @@ include("../funcoes/funcoesmysql.php");
 		$result = $val;
 	}
 	
-	// se a busca não retornar nada envia a mensagem de email ou cpf incorreto para a pagina
-	if(empty($result))
-	{
-		// header('location: novasenha.php?erro=1');
-		echo 'erro os dados informados não estão cadastrados no sistema';
+	
+	if($result['emailverificado'] == 1 )
+	{	
+		 $query = updatemysql("senha = $senhap","sl_cadusu","email='$emailp'");
+		if($query){
+		 header('location: ../../view/novasenha.php?msg=1');
+		} else if (!$query){
+			$erro = mysql_error();
+			header('location: ../../view/novasenha.php?msg=3?erro='.$erro);
+		}
 	}
-	// senão, verifica se o usuario esta cadastrado no sistema
-	elseif($result['emailverificado'] == 1 )
+	else if(empty($result))
 	{
 		updatemysql("senha = $senhap","sl_cadusu","email='$emailp'");
-		// header('location: novasenha.php?msg=1');
+		header('location: ../../view/novasenha.php?msg=2');
 		echo 'senha atualizada com sucesso';
 
 	}
@@ -34,5 +38,5 @@ include("../funcoes/funcoesmysql.php");
 		// 
 		echo 'Erro, os dados informados não estão cadastrado no sistema';
 	}
-
+	
  ?>
