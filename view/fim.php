@@ -9,27 +9,29 @@
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
+		<!--Banner-->
+	    <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png');">
 	        <div class="row">
-	            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
-	            <div class="col-md-8"><h1><center>Obrigado por se inscrever!</center></h1></div>
-	            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+	            <div class="col-md-12 col-xs-12 col-lg-12">
+	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
+	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Fim</center></h1>
+	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
+	            </div>
 	        </div>
-    	</div>
+	    </div>
+	    <!--Fim Banner-->
     
-													
-
-		<br>
-		<div class="row">
-			<div class"alert-warning">
-			<center class="col-md-12"><h3><div class="alert-success">Parabéns seu artigo foi enviado!</br>Por favor, aguarde o resultado.</div></h3></center>
+		<div class="jumbotron">
+			<div class="row">
+				<div class"alert-warning">
+				<center class="col-md-12"><h3><div class="alert-success">Parabéns seu artigo foi enviado!</br>Por favor, aguarde o resultado.</div></h3></center>
+			</div>
+			</div>
+			<br>
+			<div class="row">
+				<center><input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary"></input></center>
+			</div>
 		</div>
-		</div>
-		<br>
-		<div class="row">
-			<center><input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary"></input></center>
-		</div>
-
 
 		<script type="text/javascript">
 			 $(document).on('click','#sair',function(){
