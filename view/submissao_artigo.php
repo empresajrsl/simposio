@@ -206,13 +206,13 @@ exit;
                 var quant = env.resumo.length;
 
                 if(quant < 1400){
-                	alert('O resumo deve possuir no mínimo 1.400 caracteres, contando com os espaços');
+                	alert('O resumo deve possuir no mínimo 1.400 caracteres, contando com os espaços !!!\nO seu possui apenas '+quant+' caracteres');
                 	console.log(quant);
                 	return;
                 }
 
                 if(quant > 2200){
-                	alert('O resumo deve possuir no maximo 2.200 caracteres, contando com os espaços');
+                	alert('O resumo deve possuir no maximo 2.200 caracteres, contando com os espaços!!!\nO seu possui '+quant+' caracteres');
                 	console.log(quant);
                 	return;
                 }
