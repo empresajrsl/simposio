@@ -81,12 +81,19 @@
       
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
-          <button type="submit" name="salvar" id="salvar"  class="btn btn-primary col-md-12" >Salvar</button>
+          <button type="button" name="voltar" id="voltar"  class="btn btn-primary col-md-5" >Voltar</button>
+          <button type="submit" name="salvar" id="salvar"  class="btn btn-success col-md-5 col-md-offset-1" >Salvar</button>
         </div>
       <div>
 
 		</form>
 	</div>	
+  <script type="text/javascript">
+    $(document).on('click','#voltar', function(){
+      location.href="../index.php";
+
+    });
+  </script>
 <script>
     $(document).ready( function(){
         // mascara 
