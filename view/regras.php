@@ -3,7 +3,30 @@
 session_start();
 if(isset($_SESSION['logado']) == false)
 {
-	echo("<h1>Sessão encerrada, para continuar faça login novamente</h1> <h2> <a href='../index.php'> Fazer login </a></h2>");
+	echo('
+		<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>
+    <link type="text/css" rel="stylesheet" href="../css/style.css" ></link>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<div class="container">
+    <!--Banner-->
+    <div class="jumbotron" style="background: url("../images/SGAGRO LOGO.png");">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-lg-12">
+                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
+                <h2 class="col-md-8 col-xs-8 col-lg-8"><center>Sessão encerrada, para continuar faça login novamente</center></h2>
+                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+    	<div class="row">
+    		<h2> <a href="../index.php"> <center>Fazer login</center> </a></h2>
+    	</div>
+    </div>
+    </div>');
 exit;
 }
 ?>

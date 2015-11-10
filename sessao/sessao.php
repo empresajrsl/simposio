@@ -55,7 +55,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									}elseif($result['publicado'] == 1){
 										header('location: ../view/submit.php');
 									}elseif($result['publicado'] == 2){
-										session_destroy(); // Destrói a sessão limpando todos os valores salvos 
+										//session_destroy(); // Destrói a sessão limpando todos os valores salvos 
 										header('location: ../view/fim.php');
 									}
 
