@@ -11,7 +11,7 @@
 	
 	<div class="container">
 
-		<!--Banner-->
+		<!--Banner>
 		<div class="jumbotron" style="background: url('images/SGAGRO LOGO.png');">
 	        <div class="row">
 	        	<div class="col-md-12 col-xs-12 col-lg-12">
@@ -21,7 +21,22 @@
 	        	</div>
 	    	</div>
 	    </div>
+		<Fim Banner-->
+
+		<!--Banner-->
+		<div class="jumbotron" style="background-color: white;">
+	        <div class="row">
+	        	<div class="col-md-12 col-xs-12 col-lg-12">
+	            	<img class="col-md-3 col-xs-3 col-lg-3" src="images/SGAGRO LOGO.png">
+	            	<h1 class="col-md-6 col-xs-6 col-lg-6">
+	            		<center><i style="color: rgb(168,198,96); font-family: 'Plantagenet Cherokee';"><b>Login</b></i></center>
+	            	</h1>
+	            	<img class="col-md-3 col-xs-3 col-lg-3" src="images/unesp.jpg">
+	        	</div>
+	    	</div>
+	    </div>
 		<!--Fim Banner-->
+		
 
 		<center><h4>Preencha os campos com o E-Mail e a senha Cadastradas</h4></center>
 		
