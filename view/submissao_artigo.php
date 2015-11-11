@@ -162,7 +162,36 @@ exit;
 		</div>
 	</div>
 
-				<!-- se nescessário adciona coautores -->
+<!-- função buscar coautor atraves do cpf -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(document).on('change','#cpfcoautor1',function(){
+			var env = {};
+				env.cpfcoautor1 = $('#cpfcoautor1').val();
+
+				$.ajax({
+					type: 'POST',
+					url: '../controller/ACAO/buscacoautor.php',
+					data: env,
+					dataType: 'json',
+
+					success: function(data){
+						console.log(data);
+						$('#nomecoautor1').val(data['nome']);
+						$('#snomecoautor1').val(data['sobrenome']);
+
+					},
+					error: function(data){
+						console.log(data);
+					},
+					cache: false
+				});
+		});
+	});
+
+</script>	
+
+<!-- se nescessário adciona coautores -->
 <script type="text/javascript">
 	$(document).ready(function(){
 		$(document).on('change','#coautor',function(){
