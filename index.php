@@ -24,14 +24,16 @@
 		<Fim Banner-->
 
 		<!--Banner-->
-		<div class="jumbotron" style="background-color: white;">
+		<div class="jumbotron" style="background-image: url('images/fundo.png'); background-size: cover;">
 	        <div class="row">
 	        	<div class="col-md-12 col-xs-12 col-lg-12">
-	            	<img class="col-md-3 col-xs-3 col-lg-3" src="images/SGAGRO LOGO.png">
-	            	<h1 class="col-md-6 col-xs-6 col-lg-6">
-	            		<center><i style="color: rgb(168,198,96); font-family: 'Plantagenet Cherokee';"><b>Login</b></i></center>
+	        		<div class="col-md-2 col-xs-3 col-lg-2">
+	        			<img class="col-md-12 col-xs-12 col-lg-12" src="images/SGAGRO LOGO.png">
+	        			<img class="col-md-12 col-xs-12 col-lg-12" src="images/unesp.jpg" style="margin-top: 25%">
+	        		</div>
+	            	<h1 class="col-md-8 col-xs-6 col-lg-8">
+	            		<center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Login</b></i></center>
 	            	</h1>
-	            	<img class="col-md-3 col-xs-3 col-lg-3" src="images/unesp.jpg">
 	        	</div>
 	    	</div>
 	    </div>
