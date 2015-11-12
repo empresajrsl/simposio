@@ -19,7 +19,7 @@ if(isset($_SESSION['logado']) == false)
 	                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
 	                </div>
 	                <h1 class="col-md-8 col-xs-6 col-lg-8">
-	                    <center style="margin-top: 5%"><i style="font-family: "Plantagenet Cherokee";"><b>Submissao de Artigo</b></i></center>
+	                    <center style="margin-top: 5%"><i style="font-family: "Plantagenet Cherokee";"><b>Sessão encerrada, para continuar faça login novamente</b></i></center>
 	                </h1>
 	            </div>
 	        </div>
@@ -45,7 +45,7 @@ exit;
     <script src="../js/tooltip.js"></script>
      <script type="text/javascript" src="../plugin/mask/jquery.mask.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
-	<title>Submissão do Artigo</title>
+	<title>Submissão do trabalho</title>
 </head>
 <body>
 	<div class="container">
@@ -59,7 +59,7 @@ exit;
 	                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
 	                </div>
 	                <h1 class="col-md-8 col-xs-6 col-lg-8">
-	                    <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Submissao de Artigo</b></i></center>
+	                    <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Submissao do trabalho</b></i></center>
 	                </h1>
 	            </div>
 	        </div>
@@ -68,13 +68,13 @@ exit;
     	
 		<div class="row">
 			<center class="col-md-12 col-xs-12 col-lg-12">
-				<b>¹O resumo deve possuir entre 500 entre 1.500 caracteres contando espaços, pulo de linhas e outros caracteres.</b>
+				<b>¹O resumo deve possuir no maximo 1.500 caracteres contando espaços, pulo de linhas e outros caracteres.</b>
 			</center>
 		</div>
 		</br>
 		<div class="row">
 			<center class="col-md-12 col-xs-12 col-lg-12">
-				<b>²Os artigo devem ser submetidos no formato pdf e não podem ser publicados em outros formatos como '.doc', '.docx', entre outros.</b>
+				<b>²Os trabalhos devem ser submetidos no formato pdf e não podem ser publicados em outros formatos como '.doc', '.docx', entre outros.</b>
 			</center>
 		</div>
 		</br>
@@ -94,7 +94,7 @@ exit;
 			<div class="row">
 			<div class="col-md-12 col-xs-12 col-lg-12">
 				<div class="col-md-12 col-xs-12 col-lg-12">
-					<label>Resumo do Artigo¹</label></br>
+					<label>Resumo do trabalho¹</label></br>
 					<textarea id="resumo" name="resumo" rows="8" class="form-control" min="14" max="1500"></textarea>
 				</div>
 			</div>
@@ -105,7 +105,7 @@ exit;
 			<div class="row">
 			<div class="col-md-12 col-xs-12 col-lg-12">
 				<div class="col-md-4" id="categoriadiv">
-					<label>Categoria do artigo</label></br>
+					<label>Categoria do trabalho</label></br>
 					<select class="form-control" id="categoria" name="categoria">
 						<option>Resumo Expandido</option>
 						<option>Relato Técnico</option>
@@ -114,7 +114,7 @@ exit;
 				</div>
 
 				<div class="col-md-4" id="areadiv">
-					<label>Área do Artigo</label></br>
+					<label>Área temática</label></br>
 					<select class="form-control" id="area" name="area">
 						<option selected>Gestão de Pessoas e Estudos Organizacionais</option>
 						<option>Desenvolvimento e Gestão</option>
@@ -190,7 +190,7 @@ exit;
 
 				$.ajax({
 					type: 'POST',
-					url: '../controller/ACAO/buscacoautor.php',
+					url: '../controller/ACAO/sl-ACAObuscacoautor.php',
 					data: env,
 					dataType: 'json',
 
@@ -244,7 +244,7 @@ exit;
 
 				$('#coautoresdiv').append(linha);
 
-				 $("cpfcoautor"+count+"").mask("999.999.999-99");
+				 $("#cpfcoautor"+count+"").mask("999.999.999-99");
 			}
 		});
 	});	
@@ -286,14 +286,10 @@ exit;
 
                 var quant = env.resumo.length;
 
-                if(quant < 1400){
-                	alert('O resumo deve possuir no mínimo 1.400 caracteres, contando com os espaços !!!\nO seu possui apenas '+quant+' caracteres');
-                	console.log(quant);
-                	return;
-                }
+               
 
-                if(quant > 2200){
-                	alert('O resumo deve possuir no maximo 2.200 caracteres, contando com os espaços!!!\nO seu possui '+quant+' caracteres');
+                if(quant > 1500){
+                	alert('O resumo deve possuir no maximo 1.500 caracteres, contando com os espaços!!!\nO seu possui '+quant+' caracteres');
                 	console.log(quant);
                 	return;
                 }
