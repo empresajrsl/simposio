@@ -37,16 +37,20 @@ $tipocadastro = $_POST['tipocadastro'];
 
 	<div class="container">
 		<!--Banner-->
-	    <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png');">
-	        <div class="row">
-	            <div class="col-md-12 col-xs-12 col-lg-12">
-	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
-	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Confirmação de Cadastro</center></h1>
-	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
-	            </div>
-	        </div>
-	    </div>
-	    <!--Fim Banner-->
+        <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-lg-12">
+                    <div class="col-md-2 col-xs-3 col-lg-2">
+                        <img class="col-md-12 col-xs-12 col-lg-12" src="../images/SGAGRO LOGO.png">
+                        <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
+                    </div>
+                    <h1 class="col-md-8 col-xs-6 col-lg-8">
+                        <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Confirmação de Cadastro</b></i></center>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!--Fim Banner-->
 
 		<div class="row">
 			<center class="col-md-12 col-xs-12 col-lg-12">
