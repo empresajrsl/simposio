@@ -10,22 +10,28 @@ if(isset($_SESSION['logado']) == false)
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 	<div class="container">
-    <!--Banner-->
-    <div class="jumbotron" style="background: url("../images/SGAGRO LOGO.png");">
-        <div class="row">
-            <div class="col-md-12 col-xs-12 col-lg-12">
-                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
-                <h2 class="col-md-8 col-xs-8 col-lg-8"><center>Sessão encerrada, para continuar faça login novamente</center></h2>
-                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
-            </div>
-        </div>
-    </div>
 
-    <div class="jumbotron">
-    	<div class="row">
-    		<h2> <a href="../index.php"> <center>Fazer login</center> </a></h2>
-    	</div>
-    </div>
+	    <!--Banner-->
+	    <div class="jumbotron" style="background-image: url("../images/fundo.png"); background-size: cover;">
+	        <div class="row">
+	            <div class="col-md-12 col-xs-12 col-lg-12">
+	                <div class="col-md-2 col-xs-3 col-lg-2">
+	                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/SGAGRO LOGO.png">
+	                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
+	                </div>
+	                <h1 class="col-md-8 col-xs-6 col-lg-8">
+	                    <center style="margin-top: 5%"><i style="font-family: "Plantagenet Cherokee";"><b>Sessão encerrada, para continuar faça login novamente</b></i></center>
+	                </h1>
+	            </div>
+	        </div>
+	    </div>
+	    <!--Fim Banner-->
+
+	    <div class="jumbotron">
+	    	<div class="row">
+	    		<h2> <a href="../index.php"> <center>Fazer login</center> </a></h2>
+	    	</div>
+	    </div>
     </div>');
 exit;
 }
@@ -46,16 +52,20 @@ exit;
 <div class="container">
 	
 	<!--Banner-->
-	<div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png');">
+    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
         <div class="row">
-        	<div class="col-md-12 col-xs-12 col-lg-12">
-            	<img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
-            	<h1 class="col-md-8 col-xs-8 col-lg-8"><center>Regras</center></h1>
-            	<img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
-        	</div>
-    	</div>
+            <div class="col-md-12 col-xs-12 col-lg-12">
+                <div class="col-md-2 col-xs-3 col-lg-2">
+                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/SGAGRO LOGO.png">
+                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
+                </div>
+                <h1 class="col-md-8 col-xs-6 col-lg-8">
+                    <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Regras</b></i></center>
+                </h1>
+            </div>
+        </div>
     </div>
-	<!--Fim Banner-->
+    <!--Fim Banner-->
 
 	<div class="jumbotron"><!--Jumbotron-->
 
@@ -78,7 +88,19 @@ exit;
 			</div>
 		</div><!--Fim do texto com as mensagens-->
 		
-		</br></br>
+		</br>
+
+		<div class="row">
+			<center class="col-md-12 col-xs-12 col-lg-12">
+			<div class="checkbox">
+    			<label>
+      				<input type="checkbox" id="aceito" name="aceito"> Aceito as condições apresentadas e me responsabilizo pelo conteudo contido em meu artigo.
+    			</label>
+  			</div>
+  			</center>
+		</div>
+
+		</br>
 
 		<div class="row"><!--Botões-->
 			<button type="submit" id="voltar" name="voltar" class="btn btn-warning col-md-3 col-md-offset-2 col-xs-3 col-xs-offset-2 col-lg-3 col-lg-offset-2">
