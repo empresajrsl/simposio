@@ -43,6 +43,7 @@ exit;
 	<script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
+     <script type="text/javascript" src="../plugin/mask/jquery.mask.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
 	<title>Submissão do Artigo</title>
 </head>
@@ -180,9 +181,12 @@ exit;
 <!-- função buscar coautor atraves do cpf -->
 <script type="text/javascript">
 	$(document).ready(function(){
-		$(document).on('change','#cpfcoautor1',function(){
+		$(document).on('change','.cpfcoautor',function(){
 			var env = {};
-				env.cpfcoautor1 = $('#cpfcoautor1').val();
+				env.cpf = $(this).val();
+				env.coautor = $('#coautor option:selected').val();
+				var idcoautor = $(this).attr('id');
+				
 
 				$.ajax({
 					type: 'POST',
@@ -192,8 +196,16 @@ exit;
 
 					success: function(data){
 						console.log(data);
-						$('#nomecoautor1').val(data['nome']);
-						$('#snomecoautor1').val(data['sobrenome']);
+						var count = 0;
+						for(count = 1;count < 5;count++){
+							if(idcoautor == 'cpfcoautor'+count){
+								$('#nomecoautor'+count).val(data['nome']);
+								$('#snomecoautor'+count).val(data['sobrenome']);
+
+							}
+						}
+
+						
 
 					},
 					error: function(data){
@@ -217,7 +229,7 @@ exit;
 			$('#coautoresdiv').html('');
 			for(count = 1;count < ncoautor;count++){
 
-				var linha = '<div class="row"><div class="col-md-4" id="coautores" name="coautores">'+
+				var linha = '<div class="row"><div class="col-md-4 coautores" id="coautores'+count+'" name="coautores'+count+'">'+
 '<label></br>Nome do coautor - '+count+'</label></br>'+
 '<input type="text" id="nomecoautor'+count+'" name="nomecoautor'+count+'" class="form-control">'+
 '</div>'+
@@ -227,10 +239,12 @@ exit;
 '</div>'+
 '<div class="col-md-4">'+
 '<label></br>CPF do coautor - '+count+'</cpf></label></br>'+
-'<input type="text" id="cpfcoautor'+count+'" name="cpfcoautor'+count+'" class="form-control">'+
+'<input type="text" id="cpfcoautor'+count+'" name="cpfcoautor'+count+'" class="form-control cpfcoautor">'+
 '<div></div>';
 
 				$('#coautoresdiv').append(linha);
+
+				 $("cpfcoautor"+count+"").mask("999.999.999-99");
 			}
 		});
 	});	
