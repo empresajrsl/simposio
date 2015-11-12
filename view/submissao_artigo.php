@@ -10,22 +10,27 @@ if(isset($_SESSION['logado']) == false)
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 	<div class="container">
-    <!--Banner-->
-    <div class="jumbotron" style="background: url("../images/SGAGRO LOGO.png");">
-        <div class="row">
-            <div class="col-md-12 col-xs-12 col-lg-12">
-                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
-                <h2 class="col-md-8 col-xs-8 col-lg-8"><center>Sessão encerrada, para continuar faça login novamente</center></h2>
-                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
-            </div>
-        </div>
-    </div>
+    	<!--Banner-->
+	    <div class="jumbotron" style="background-image: url("../images/fundo.png"); background-size: cover;">
+	        <div class="row">
+	            <div class="col-md-12 col-xs-12 col-lg-12">
+	                <div class="col-md-2 col-xs-3 col-lg-2">
+	                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/SGAGRO LOGO.png">
+	                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
+	                </div>
+	                <h1 class="col-md-8 col-xs-6 col-lg-8">
+	                    <center style="margin-top: 5%"><i style="font-family: "Plantagenet Cherokee";"><b>Submissao de Artigo</b></i></center>
+	                </h1>
+	            </div>
+	        </div>
+	    </div>
+	    <!--Fim Banner-->
 
-    <div class="jumbotron">
-    	<div class="row">
-    		<h2> <a href="../index.php"> <center>Fazer login</center> </a></h2>
-    	</div>
-    </div>
+	    <div class="jumbotron">
+	    	<div class="row">
+	    		<h2> <a href="../index.php"> <center>Fazer login</center> </a></h2>
+	    	</div>
+	    </div>
     </div>');
 exit;
 }
@@ -45,12 +50,16 @@ exit;
 	<div class="container">
 
 		<!--Banner-->
-	    <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png');">
+	    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
 	        <div class="row">
 	            <div class="col-md-12 col-xs-12 col-lg-12">
-	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
-	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Submissão de Artigo</center></h1>
-	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
+	                <div class="col-md-2 col-xs-3 col-lg-2">
+	                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/SGAGRO LOGO.png">
+	                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
+	                </div>
+	                <h1 class="col-md-8 col-xs-6 col-lg-8">
+	                    <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Submissao de Artigo</b></i></center>
+	                </h1>
 	            </div>
 	        </div>
 	    </div>
@@ -58,7 +67,7 @@ exit;
     	
 		<div class="row">
 			<center class="col-md-12 col-xs-12 col-lg-12">
-				<b>¹O resumo deve possuir no minimo 1.400 caracteres e no maximo 2.200 caracteres contando espaços, pulo de linhas e outros caracteres.</b>
+				<b>¹O resumo deve possuir entre 500 entre 1.500 caracteres contando espaços, pulo de linhas e outros caracteres.</b>
 			</center>
 		</div>
 		</br>
@@ -71,24 +80,29 @@ exit;
 
 		<form id="form_submissao" method="post" action="confirma_submissao.php" enctype="multipart/form-data" class="jumbotron">
 			<div class="row">
-				<div class="col-md-12">
+			<div class="col-md-12 col-xs-12 col-lg-12">
+				<div class="col-md-12 col-xs-12 col-lg-12">
 					<label>Titulo</label></br>
 					<input type="text" id="titulo" name="titulo" class="form-control">
 				</div>
 			</div>
-
-			</br>
-
-			<div class="row">
-				<div class="col-md-12">
-					<label>Resumo do Artigo¹</label></br>
-					<textarea id="resumo" name="resumo" rows="8" class="form-control" min="14" max="2200"></textarea>
-				</div>
 			</div>
 
 			</br>
 
 			<div class="row">
+			<div class="col-md-12 col-xs-12 col-lg-12">
+				<div class="col-md-12 col-xs-12 col-lg-12">
+					<label>Resumo do Artigo¹</label></br>
+					<textarea id="resumo" name="resumo" rows="8" class="form-control" min="14" max="1500"></textarea>
+				</div>
+			</div>
+			</div>
+
+			</br>
+
+			<div class="row">
+			<div class="col-md-12 col-xs-12 col-lg-12">
 				<div class="col-md-4" id="categoriadiv">
 					<label>Categoria do artigo</label></br>
 					<select class="form-control" id="categoria" name="categoria">
@@ -125,18 +139,18 @@ exit;
 
 				<div class="col-md-2">
 					<label>Apresentação:</label></br>
-					<input type="radio" id="apresentacao" name="apresentacao" value="Banner" checked>Banner</br>
-					<input type="radio" id="apresentacao" name="apresentacao" value="Palestra">Palestra		
+					<input type="radio" id="apresentacao" name="apresentacao" value="Banner" checked> Painel</br>
+					<input type="radio" id="apresentacao" name="apresentacao" value="Palestra"> Oral	
 				</div>
 			</div>
+			</div>
 			
-				<div id="coautoresdiv" name="coautoresdiv">
-					
-				</div>
+				<div id="coautoresdiv" name="coautoresdiv"></div>
 				
 				</br>
 
 				<div class="row">
+				<div class="col-md-12 col-xs-12 col-lg-12">
 					<div class="col-md-4">
 						<label>Orientador</label></br>
 						<input type="text" id="orientador" name="orientador" class="form-control">
@@ -145,6 +159,7 @@ exit;
 						<label>Descrição do Orientador</label></br>
 						<input type="text" id="descricao" name="descricao" class="form-control">
 					</div>
+				</div>
 				</div>
 
 			</br>

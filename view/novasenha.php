@@ -12,16 +12,24 @@
     <title>Criar nova senha</title>
 </head>
 <body>
-	<div class="container">
-   <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">
+  <div class="container">
+    <!--Banner-->
+    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
         <div class="row">
-            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
-            <div class="col-md-8"><h1><center><br>Nova Senha</center></h1></div>
-            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
+            <div class="col-md-12 col-xs-12 col-lg-12">
+                <div class="col-md-2 col-xs-3 col-lg-2">
+                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/SGAGRO LOGO.png">
+                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
+                </div>
+                <h1 class="col-md-8 col-xs-6 col-lg-8">
+                    <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Nova Senha</b></i></center>
+                </h1>
+            </div>
         </div>
     </div>
-		<form id="novasenha" name="novasenha" method="post" action="../controller/ACAO/sl-ACAOcriaNsenha.php">
+    <!--Fim Banner-->
 
+		<form class="jumbotron" id="novasenha" name="novasenha" method="post" action="../controller/ACAO/sl-ACAOcriaNsenha.php">
 
         <div class="row">
           <div class="col-md-12 col-xs-12 col-lg-12">
@@ -45,47 +53,59 @@
               }
             ?>  
         </div>
-
-			<div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <label> C.P.F. </label></br>
-          <input type="input" name="cpf" id="cpf" class="form-control"></br>
-        </div>
       </div>
+        
+        <div class="row">
+        <div class="col-md-12 col-xs-12 col-lg-12">
+          <div class="col-md-4 col-md-offset-4">
+            <label> C.P.F. </label></br>
+            <input type="input" name="cpf" id="cpf" class="form-control"></br>
+          </div>
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-12 col-xs-12 col-lg-12">
+          <div class="col-md-4 col-md-offset-2">
+            <label> E-mail </label></br>
+            <input type="input" name="email" id="email" class="form-control"></br>
+          </div>
+        
+          <div class="col-md-4">
+            <label>Confirmar e-mail </label></br>
+            <input type="input" name="confirma_email" id="confirma_email" class="form-control"></br>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-md-12 col-xs-12 col-lg-12">
+          <div class="col-md-4 col-md-offset-2">
+            <label>Nova senha </label></br>
+            <input type="input" name="senha1" id="senha1" class="form-control"></br>
+          </div>
+        
+
+          <div class="col-md-4">
+            <label>Confirme a nova senha</label></br>
+            <input type="input" name="senha2" id="senha2" class="form-control"></br>
+          </div>
+        </div>
+        </div>
       
-      <div class="row">
-        <div class="col-md-4 col-md-offset-2">
-          <label> E-mail </label></br>
-          <input type="input" name="email" id="email" class="form-control"></br>
-        </div>
-      
-        <div class="col-md-4">
-          <label>Confirmar e-mail </label></br>
-          <input type="input" name="confirma_email" id="confirma_email" class="form-control"></br>
-        </div>
-      </div>
-
-			<div class="row">
-        <div class="col-md-4 col-md-offset-2">
-          <label>Nova senha </label></br>
-          <input type="input" name="senha1" id="senha1" class="form-control"></br>
-        </div>
-
-        <div class="col-md-4">
-          <label>Confirme a nova senha</label></br>
-          <input type="input" name="senha2" id="senha2" class="form-control"></br>
-        </div>
-      </div>
 
       </br>
       
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <button type="button" name="voltar" id="voltar"  class="btn btn-primary col-md-5" >Voltar</button>
-          <button type="submit" name="salvar" id="salvar"  class="btn btn-success col-md-5 col-md-offset-1" >Salvar</button>
-        </div>
-      <div>
-
+        
+          <div class="row">
+            <div class="col-md-12 col-xs-12 col-lg-12">
+            <button type="button" name="voltar" id="voltar" class="btn btn-primary col-md-2 col-md-offset-3 col-xs-2 col-xs-offset-3 col-lg-2 col-lg-offset-3">Voltar</button>            
+            <button type="submit" name="salvar" id="salvar" class="btn btn-success col-md-2 col-md-offset-2 col-xs-2 col-xs-offset-2 col-lg-2 col-lg-offset-2">Salvar</button>
+          </div>
+          </div>
+          
+        
+      
 		</form>
 	</div>	
   <script type="text/javascript">

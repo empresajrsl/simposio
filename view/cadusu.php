@@ -16,16 +16,20 @@
 <div class="container">
 
     <!--Banner-->
-    <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png');">
-        <div class="row">
-            <div class="col-md-12 col-xs-12 col-lg-12">
-                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
-                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Cadastro do Autor</center></h1>
-                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
+        <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-lg-12">
+                    <div class="col-md-2 col-xs-3 col-lg-2">
+                        <img class="col-md-12 col-xs-12 col-lg-12" src="../images/SGAGRO LOGO.png">
+                        <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
+                    </div>
+                    <h1 class="col-md-8 col-xs-6 col-lg-8">
+                        <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Área de Cadastro</b></i></center>
+                    </h1>
+                </div>
             </div>
         </div>
-    </div>
-    <!--Fim Banner-->
+        <!--Fim Banner-->
 
     <center><b>Os campos marcados com (*) são campos de preenchimento obrigatorio</b></center>
 
@@ -125,9 +129,9 @@
                         </div>
 
                         <div class="col-md-3">
-                            <label>Cidade*</label></br>
-                            <input type="text" id="cidade" name="cidade" class="form-control">
-                        </div>
+                                <label>Complemento</label></br>
+                                <input type="text" id="complemento" name="complemento" class="form-control">
+                            </div>
 
                         <div class="col-md-2">
                             <label>Estado*</label></br>
@@ -169,8 +173,8 @@
                     <div class="row">
                         <!--div class="col-md-10 "-->
                             <div class="col-md-4">
-                                <label>Complemento</label></br>
-                                <input type="text" id="complemento" name="complemento" class="form-control">
+                                <label>Cidade*</label></br>
+                                <input type="text" id="cidade" name="cidade" class="form-control">
                             </div>
 
                             <div class="col-md-3">
@@ -184,10 +188,10 @@
                             </div>
 
                             <div class="col-md-2">
-                                <label class=>Deficiente*</label></br>
+                                <label class=>País*</label></br>
                                 <select id="deficiente" name="deficiente" class="form-control">
-                                    <option>Não</option>
-                                    <option>Sim</option>
+                                    <option>Argentina</option>
+                                    <option>Brasil</option>
                                 </select>
                             </div>
                         
