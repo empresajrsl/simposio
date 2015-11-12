@@ -59,7 +59,7 @@ exit;
 	                    <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
 	                </div>
 	                <h1 class="col-md-8 col-xs-6 col-lg-8">
-	                    <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Submissao do trabalho</b></i></center>
+	                    <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Submissão do trabalho</b></i></center>
 	                </h1>
 	            </div>
 	        </div>
