@@ -240,6 +240,62 @@
     </form>
 </div>
 
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(document).on('change','#cpf',function(){
+            var env = {};
+                env.cpf = $(this).val();
+                
+                $.ajax({
+                    type: 'POST',
+                    url: '../controller/ACAO/sl-ACAOverificacpf.php',
+                    data: env,
+                    dataType: 'json',
+
+                    success: function(data){
+                        console.log(data);
+                     alert('Este cpf já esta cadastrado no sistema');
+                     $('#cpf').val('');                        
+
+                    },
+                    error: function(data){
+                        console.log(data);
+                    },
+                    cache: false
+                });
+        });
+    });
+
+</script>   
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(document).on('change','#email',function(){
+            var env = {};
+                env.email = $(this).val();
+                
+                $.ajax({
+                    type: 'POST',
+                    url: '../controller/ACAO/sl-ACAOverificaemail.php',
+                    data: env,
+                    dataType: 'json',
+
+                    success: function(data){
+                        console.log(data);
+                     alert('Este e-mail já esta cadastrado no sistema');
+                     $('#email').val('');                        
+
+                    },
+                    error: function(data){
+                        console.log(data);
+                    },
+                    cache: false
+                });
+        });
+    });
+
+</script>   
+
 <script>
 function calculaIdade(ano_aniversario, mes_aniversario, dia_aniversario) {
     var d = new Date,
