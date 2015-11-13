@@ -51,6 +51,8 @@ $nametemp = $_FILES['arquivo']['tmp_name'];
 $arqerro = $_FILES['arquivo']['error'];
 $tipodef = "application/pdf";
 $tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
+$idtbartigo = $_POST['idartigo'];
+print_r($_POST);
 
 ?>
 <body>
@@ -93,8 +95,8 @@ $tamnhodef = 1024*1024*2; //Definir tamanho maximo do arquivo.
 				    			
 							    $email = $_SESSION['usuario'];
 								updatemysql('publicado = 2','sl_cadusu',"email = '".$email."' ");
-								updatemysql("idartigo = '".$idartigo."'", "sl_artigo","email = '".$email."' ");
-								header("Location: ../view/fim.php");
+								updatemysql("idartigo = '".$idartigo."'", "sl_artigo","id_artigo = ".$idtbartigo." ");
+								 header("Location: ../view/submit.php");
 							
 
 
