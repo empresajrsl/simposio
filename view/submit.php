@@ -58,22 +58,40 @@ exit;
 
 	    <div class="jumbotron">
 			<div class="row" >
+
 				<div class="row">
-					<h2> Artigos cadastrados até o momento<h2>
+					<h2> Trabalhos cadastrados até o momento<h2>
 				</div>
+				<div class="row">	
 				<table id="trabalhos" name="trabalhos" class="table table-striped">
 								
 						<th> Título do trabalho </th>
 						<th>  </th>
 						<th> Status </th>
 						<th>  </th>
-						<th>  </th>
-
 						
 				</table>
+				</div>
+				<div class="row">
+					<input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary" style="width:170px"></input>
+					<input type="button" id="cad" name="cad" value="Cadastrar mais um trabalho" class="btn btn-primary"></input>
+				</div>
+					
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+			 $(document).on('click','#sair',function(){
+			 	location.href='../sessao/fecharsessao.php';
+			 });
+	</script>
+
+	<script type="text/javascript">
+			 $(document).on('click','#cad',function(){
+			 	location.href='submissao_artigo.php';
+			 });
+	</script>
 
 	<script type="text/javascript">
 	$(document).ready(function(){ 
@@ -91,12 +109,12 @@ exit;
 				                var count = 0;
 				                $.each(data,function(key,val){
 				                	if(data[count]['idartigo'] == ''){
-				                		var status = '<td>Pendente, arquivo PDF não enviado</td>  <td><input type="file" class="enviar btn btn-primary" id="enviar'+count+'"></input></td> <td><button type="button" class="enviar btn btn-primary" id="enviar'+count+'"> Enviar trabalho</button></td>';
+				                		var status = '<td>Pendente, arquivo PDF não enviado</td> <td> <form  method="POST" action="upload.php" enctype="multipart/form-data" id="form'+count+'"> <input type="file" class="enviar btn btn-success" id="enviar'+count+'" name="arquivo"></input> <br> <input type="submit" class="enviar btn btn-success" id="enviar'+count+'" value=" Enviar trabalho "> </input> <input type="hidden" name="idartigo" value="'+data[count]['id_artigo']+'"</input></form></td>';
 				                	}else{
-				                		var status = '<td>Arquivo PDF enviado com sucesso</td><td></td><td></td>';
+				                		var status = '<td>Arquivo PDF enviado com sucesso. Por favor aguarde o resultado. </td> <td><form method="POST" action="viewartigo.php"> <input type="submit" class="verartigo btn btn-primary" id="veratigo'+count+'" value="Vizualizar trabalho" >  </input> <input type="hidden" name="idartigo" value="'+data[count]['id_artigo']+'"</input> </form></td>';
 				                	}
 
-				                	var linha = '<tr id="'+data[count]['id_artigo']+'"><td>'+data[count]['titulo']+'</td> <td>'+status+'</td></tr>';
+				                	var linha = '<tr id="'+data[count]['id_artigo']+'"> <td>'+data[count]['titulo']+'</td> <td>'+status+'</td> </tr>';
 				                	$('#trabalhos').append(linha);
 				                	count++;
 				                });
@@ -111,32 +129,9 @@ exit;
 
 	</script>
 
-	// <script type="text/javascript">
-	// 	$(document).ready(function(){ 
-	// 		$(document).on('click','.enviar',function(){ 
-	// 			var env = {};
-				
-	// 			console.log(this);	
-				
+	
 
-	// 			$.ajax({
-	// 					            type: "POST",
-	// 					            url: "../controller/ACAO/sl-ACAOquanttrab.php",
-	// 					            data: env,
-	// 					            dataType : 'json',
-	// 					            success: function(data){
-	// 					                console.log(data);
-						                
-						             
-
-	// 					            }, error: function(data) {
-	// 					                console.log(data);
-						               
-	// 					            }
-	// 					    		});
-	// 	});
-	// });	
-	// </script>
+	
 
 	
 </body>
