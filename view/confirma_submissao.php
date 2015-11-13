@@ -274,7 +274,7 @@ if($coautor != "0"){
 		                var form = {};
 		                form.titulo = $('#titulo').val();
 		                                
-		    			 location.href="submit.php?titulo="+env.titulo;	
+		    			 location.href="submit.php";	
 
 
 			
