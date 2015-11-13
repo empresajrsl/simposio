@@ -73,7 +73,7 @@ exit;
 			</div>
 			<br>
 			<div class="row">
-				<center><input type="button" id="verartigo" name="verartigo" value="Visualizar meu artigo" class="btn btn-primary"></input>
+				<center>
 				<input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary" style="width:170px"></input>
                 <input type="button" id="cnovo" name="cnovo" value="enviar mais um trabalho" class="btn btn-primary" ></input></center>
 			</div>
