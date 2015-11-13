@@ -56,14 +56,13 @@ exit;
 	<div class="row"><br>	    
 		<?php
 		$email = $_SESSION['usuario'];
+		$id_artigo = $_POST['idartigo'];
+
+		$condicao = "`id_artigo` = '". $id_artigo."'";
 		$campo = '*';
 		$tabela = "`sl_artigo`";
-		$condicao = "`email` = '". $email."'";
-
 		$arquivos = select($campo, $tabela, $condicao);
 		$arquivo = $arquivos[0];
-		
-		
 
 			echo'
 				<h3><center> Titulo real do Artigo: '.$arquivo['titulo'].'<br>
