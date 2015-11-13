@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -11,27 +10,28 @@
    <script type="text/javascript" src="../plugin/mask/jquery.mask.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <title>Tela de Cadastro</title>
+    <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 </head>
 <body>
 <div class="container">
 
     <!--Banner-->
-        <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
-            <div class="row">
-                <div class="col-md-12 col-xs-12 col-lg-12">
-                    <div class="col-md-2 col-xs-3 col-lg-2">
-                        <img class="col-md-12 col-xs-12 col-lg-12" src="../images/SGAGRO LOGO.png">
-                        <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
-                    </div>
-                    <h1 class="col-md-8 col-xs-6 col-lg-8">
-                        <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Área de Cadastro</b></i></center>
-                    </h1>
+    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
+        <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">
+            <div class="col-md-12 col-xs-12 col-lg-12">
+                <div class="col-md-4 col-xs-4 col-lg-4">
+                    <img src="../images/SGAGRO LOGO.png" style="width: 40%; height: 15%;">
+                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
+                </div>
+                <div class="col-md-6 col-xs-6 col-lg-6">
+                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Área de Cadastro</b></i></center></h1>
                 </div>
             </div>
         </div>
-        <!--Fim Banner-->
+    </div>
+    <!--Fim Banner-->
 
-    <center><b>Os campos marcados com (*) são campos de preenchimento obrigatorio</b></center>
+    <center class=><h4>Os campos marcados com (*) são campos de preenchimento obrigatorio</h4></center>
 
     </br>
 
@@ -171,7 +171,7 @@
                     </br>
 
                     <div class="row">
-                        <!--div class="col-md-10 "-->
+                        
                             <div class="col-md-4">
                                 <label>Cidade*</label></br>
                                 <input type="text" id="cidade" name="cidade" class="form-control">
@@ -462,19 +462,24 @@
                 <div class="panel-heading"><b>Contato</b></div>
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <label>Instituição/Afiliação*</label></br>
-                            <input type="text" id="instituicao" name="instituicao" class="form-control" >
+                            <input type="text" id="instituicao" name="instituicao" class="form-control">
                         </div>
 
-                         <div class="col-md-4">
+                        <div class="col-md-3">
+                            <label>Cargo</label></br>
+                            <input type="text" id="cargo" name="cargo" class="form-control">
+                        </div>
+
+                         <div class="col-md-3">
                             <label>Telefone/Celular*</label></br>
-                            <input type="text" id="telefone" name="telefone" class="form-control" >
+                            <input type="text" id="telefone" name="telefone" class="form-control">
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <label>Telefone contato</label></br>
-                            <input type="text" id="contato" name="contato" class="form-control" >
+                            <input type="text" id="contato" name="contato" class="form-control">
                         </div>
 
                     </div>
