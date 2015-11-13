@@ -58,7 +58,7 @@ exit;
                         <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
                     </div>
                     <h1 class="col-md-8 col-xs-6 col-lg-8">
-                        <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Fim</b></i></center>
+                        <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Cadastro finalizado</b></i></center>
                     </h1>
                 </div>
             </div>
@@ -68,14 +68,14 @@ exit;
 		<div class="jumbotron">
 			<div class="row">
 				<div class"alert-warning">
-				<center class="col-md-12"><h3><div class="alert-success">Parabéns seu trabalho foi enviado!</br>Por favor, aguarde o resultado.</div></h3></center>
+				<center class="col-md-12"><h3><div class="alert-success">Parabéns seu trabalho foi cadastrado com sucesso!</br>.</div></h3></center>
 			</div>
 			</div>
 			<br>
 			<div class="row">
 				<center>
 				<input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary" style="width:170px"></input>
-                <input type="button" id="cnovo" name="cnovo" value="enviar mais um trabalho" class="btn btn-primary" ></input></center>
+                <input type="button" id="cnovo" name="cnovo" value="enviar arquivo PDF do trabalho" class="btn btn-primary" ></input></center>
 			</div>
 		</div>
 
