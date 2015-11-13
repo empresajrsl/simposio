@@ -21,7 +21,6 @@ $tipocadastro = $_POST['tipocadastro'];
 
 
 ?>
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -31,32 +30,34 @@ $tipocadastro = $_POST['tipocadastro'];
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
-	<title>Confirmação de Dados Cadastrado</title>
+	<title>Confirmar Cadastro</title>
+	<link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 </head>
 <body>
 
 	<div class="container">
 		<!--Banner-->
-        <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
-            <div class="row">
-                <div class="col-md-12 col-xs-12 col-lg-12">
-                    <div class="col-md-2 col-xs-3 col-lg-2">
-                        <img class="col-md-12 col-xs-12 col-lg-12" src="../images/SGAGRO LOGO.png">
-                        <img class="col-md-12 col-xs-12 col-lg-12" src="../images/unesp.jpg" style="margin-top: 25%">
-                    </div>
-                    <h1 class="col-md-8 col-xs-6 col-lg-8">
-                        <center style="margin-top: 5%"><i style="font-family: 'Plantagenet Cherokee';"><b>Confirmação de Cadastro</b></i></center>
-                    </h1>
-                </div>
-            </div>
-        </div>
-        <!--Fim Banner-->
+	    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
+	        <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">
+	            <div class="col-md-12 col-xs-12 col-lg-12">
+	                <div class="col-md-4 col-xs-4 col-lg-4">
+	                    <img src="../images/SGAGRO LOGO.png" style="width: 40%; height: 15%;">
+	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
+	                </div>
+	                <div class="col-md-6 col-xs-6 col-lg-6">
+	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Confirmar Cadastro</b></i></center></h1>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!--Fim Banner-->
 
 		<div class="row">
 			<center class="col-md-12 col-xs-12 col-lg-12">
-				<h4>Confira aqui se as informações estão corretas e clique em continuar, caso o contrario clique em voltar para corrigir as mesmas</h4>
+				<h4>Confira aqui se as informações estão corretas e clique em continuar. Caso o contrario, clique em voltar para corrigir as mesmas</h4>
 			</center>
 		</div>
+		</br>
 				
 		<div class="panel panel-default">
 
@@ -94,7 +95,7 @@ $tipocadastro = $_POST['tipocadastro'];
 						<complemento class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Complemento: </b> " . $complemento; ?></complemento> 
 						<cep class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>CEP: </b> " . $cep; ?></cep> 
 						<bairro class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Bairro: </b> " . $bairro; ?></bairro> 
-						<deficiente class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Deficiente: </b> " . $deficiente; ?></deficiente> 
+						<deficiente class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Pais: </b> " . $deficiente; ?></deficiente> 
 					</div>
 				</div>
 			</div>

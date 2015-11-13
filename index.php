@@ -1,4 +1,7 @@
-<title> Cadastro de usuários</title>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="shortcut icon" href="images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<meta charset="utf-8">
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" ></link>
     <link type="text/css" rel="stylesheet" href="css/style.css" ></link>
