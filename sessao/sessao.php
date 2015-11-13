@@ -12,22 +12,25 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 		$senhap = $_POST['senha'];
 			
 				// faz um select no banco de dados dos campos email, senha, email verificado e status na tabela usuarios 
-				$busca = select(',id_usuario,email, senha, emailverificado,publicado',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
+				$busca = select('id_usuario,email, senha, emailverificado,publicado',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
 				
 				$result = array();
 
-				foreach ($busca as $key => $val) {
-					$result = $val;	
-					
-				}
+				echo json_encode($busca);
 
 					// verifica se a busca retornou resultados
-					if (empty($result))
+					if (empty($busca))
 					{
 						// atribui numero 1 a variavel erro o que indica que o email ou a senha é incorrto
     					header('Location: ../index.php?erro=1');
     					
+    					
 				    }else{ 
+
+				    	foreach ($busca as $key => $val) {
+							$result = $val;	
+					
+						}
 
 							echo "result".json_encode($result);
 							// atribui cada campo a sua respectiva variavel 
@@ -58,7 +61,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 										header('location: ../view/submit.php');
 									}elseif($result['publicado'] == 2){
 										//session_destroy(); // Destrói a sessão limpando todos os valores salvos 
-										header('location: ../view/fim.php');
+										header('location: ../view/submit.php');
 									}
 
 									
