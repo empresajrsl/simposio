@@ -30,6 +30,8 @@ if(isset($_SESSION['logado']) == false)
 exit;
 }
 ?>
+
+<?php $email = $_SESSION['usuario']; ?>
 <head>
 	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>
@@ -38,7 +40,7 @@ exit;
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
-	<title>Tela de Envio de Artigo</title>
+	<title>Envio do trabalho</title>
 </head>
 <body>
 	<div class="container">
@@ -47,7 +49,7 @@ exit;
 	        <div class="row">
 	            <div class="col-md-12 col-xs-12 col-lg-12">
 	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
-	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Tela de Envio de Artigo</center></h1>
+	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Envio do trabalho</center></h1>
 	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
 	            </div>
 	        </div>
@@ -55,25 +57,86 @@ exit;
 	    <!--Fim Banner-->
 
 	    <div class="jumbotron">
-			<form id="form_submissao" method="post" action="upload.php" enctype="multipart/form-data">
+			<div class="row" >
 				<div class="row">
-					<div class="col-md-12 col-xs-12 col-lg-12">
-						<label class="col-md-offset-3 col-xs-offset-3 col-lg-offset-3">Artigo em PDF²</label></br>
-						<span class="text-warning col-md-offset-3 col-xs-offset-3 col-lg-offset-3">O tamanho max permitido é de 8mb.</span>
-						<div>
-								<input type="file" id="arquivo" name="arquivo" class="col-md-7 col-md-offset-3 col-xs-7 col-xs-offset-3 col-lg-7 col-lg-offset-3 btn btn-default">
-						</div>
-					</div>
+					<h2> Artigos cadastrados até o momento<h2>
 				</div>
-				<div class="row"><br>
-							<center class="col-md-12 col-xs-12 col-lg-12">
-								<button type="button" id="voltar" name="voltar" class="col-md-3 col-md-offset-3 btn btn-primary" onclick="javascript: location.href='../sessao/fecharsessao.php';">Enviar mais tarde</button>
-								<button type="submit" id="confirmar_submissao" name="confirmar_submissaos" class="col-md-3 col-md-offset-1  btn btn-success">Enviar agora</button>
-							</center>
-				</div>
-			</form>
+				<table id="trabalhos" name="trabalhos" class="table table-striped">
+								
+						<th> Título do trabalho </th>
+						<th>  </th>
+						<th> Status </th>
+						<th>  </th>
+						<th>  </th>
+
+						
+				</table>
+			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+		var env = {};
+			env.email = <?php echo "'$email'"; ?> ;
+		
+
+		$.ajax({
+				            type: "POST",
+				            url: "../controller/ACAO/sl-ACAOquanttrab.php",
+				            data: env,
+				            dataType : 'json',
+				            success: function(data){
+				                console.log(data);
+				                var count = 0;
+				                $.each(data,function(key,val){
+				                	if(data[count]['idartigo'] == ''){
+				                		var status = '<td>Pendente, arquivo PDF não enviado</td>  <td><input type="file" class="enviar btn btn-primary" id="enviar'+count+'"></input></td> <td><button type="button" class="enviar btn btn-primary" id="enviar'+count+'"> Enviar trabalho</button></td>';
+				                	}else{
+				                		var status = '<td>Arquivo PDF enviado com sucesso</td><td></td><td></td>';
+				                	}
+
+				                	var linha = '<tr id="'+data[count]['id_artigo']+'"><td>'+data[count]['titulo']+'</td> <td>'+status+'</td></tr>';
+				                	$('#trabalhos').append(linha);
+				                	count++;
+				                });
+				             
+
+				            }, error: function(data) {
+				                console.log(data);
+				               $('#trabalhos').append('Nehum artigo enviado até o momento');
+				            }
+				    		});
+	});	
+
+	</script>
+
+	// <script type="text/javascript">
+	// 	$(document).ready(function(){ 
+	// 		$(document).on('click','.enviar',function(){ 
+	// 			var env = {};
+				
+	// 			console.log(this);	
+				
+
+	// 			$.ajax({
+	// 					            type: "POST",
+	// 					            url: "../controller/ACAO/sl-ACAOquanttrab.php",
+	// 					            data: env,
+	// 					            dataType : 'json',
+	// 					            success: function(data){
+	// 					                console.log(data);
+						                
+						             
+
+	// 					            }, error: function(data) {
+	// 					                console.log(data);
+						               
+	// 					            }
+	// 					    		});
+	// 	});
+	// });	
+	// </script>
 
 	
 </body>

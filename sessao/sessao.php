@@ -12,7 +12,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 		$senhap = $_POST['senha'];
 			
 				// faz um select no banco de dados dos campos email, senha, email verificado e status na tabela usuarios 
-				$busca = select('email, senha, emailverificado,publicado',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
+				$busca = select(',id_usuario,email, senha, emailverificado,publicado',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
 				
 				$result = array();
 
@@ -42,6 +42,8 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									// atribui true a variavel de sessão logado
 									$_SESSION['logado'] = true;
 									$_SESSION['usuario'] = $email;
+									$_SESSION['idusu'] = $result['id_usuario'];
+
 									
 
 								}else{
