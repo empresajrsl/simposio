@@ -68,13 +68,14 @@ exit;
 		<div class="jumbotron">
 			<div class="row">
 				<div class"alert-warning">
-				<center class="col-md-12"><h3><div class="alert-success">Parabéns seu artigo foi enviado!</br>Por favor, aguarde o resultado.</div></h3></center>
+				<center class="col-md-12"><h3><div class="alert-success">Parabéns seu trabalho foi enviado!</br>Por favor, aguarde o resultado.</div></h3></center>
 			</div>
 			</div>
 			<br>
 			<div class="row">
 				<center><input type="button" id="verartigo" name="verartigo" value="Visualizar meu artigo" class="btn btn-primary"></input>
-				<input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary" style="width:170px"></input></center>
+				<input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary" style="width:170px"></input>
+                <input type="button" id="cnovo" name="cnovo" value="enviar mais um trabalho" class="btn btn-primary" ></input></center>
 			</div>
 		</div>
 
@@ -89,6 +90,12 @@ exit;
 			 	location.href='../sessao/fecharsessao.php';
 			 });
 		</script>
+
+        <script type="text/javascript">
+             $(document).on('click','#cnovo',function(){
+                location.href='submit.php';
+             });
+        </script>
 
 </body>
 </html>
