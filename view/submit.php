@@ -73,8 +73,8 @@ exit;
 				</table>
 				</div>
 				<div class="row">
-					<input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary" style="width:170px"></input>
-					<input type="button" id="cad" name="cad" value="Cadastrar mais um trabalho" class="btn btn-primary"></input>
+					<input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary" style="width:150px"></input>
+					<input type="button" id="cad" name="cad" value="Cadastrar trabalho" class="btn btn-primary"></input>
 				</div>
 					
 			</div>
