@@ -8,6 +8,7 @@ if(isset($_SESSION['logado']) == false)
     <link type="text/css" rel="stylesheet" href="../css/style.css" ></link>
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<div class="container">
 
 		<!--Banner-->
@@ -84,6 +85,7 @@ if($coautor != "0"){
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
+    <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Confirmação de Dados Cadastrado</title>
 </head>
 <body>
