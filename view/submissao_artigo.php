@@ -9,6 +9,7 @@ if(isset($_SESSION['logado']) == false)
     <link type="text/css" rel="stylesheet" href="../css/style.css" ></link>
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<div class="container">
 
 	    <!--Banner-->
@@ -44,9 +45,10 @@ exit;
 	<script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
-     <script type="text/javascript" src="../plugin/mask/jquery.mask.js"></script>
+    <script type="text/javascript" src="../plugin/mask/jquery.mask.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
-	<title>Submissão do trabalho</title>
+    <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
+	<title>Submissão do Trabalho</title>
 </head>
 <body>
 	<div class="container">
@@ -60,7 +62,7 @@ exit;
 	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
 	                </div>
 	                <div class="col-md-6 col-xs-6 col-lg-6">
-	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Submissão do trabalho</b></i></center></h1>
+	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Submissão do Trabalho</b></i></center></h1>
 	                </div>
 	            </div>
 	        </div>
