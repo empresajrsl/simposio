@@ -9,16 +9,22 @@ if(isset($_SESSION['logado']) == false)
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 	<div class="container">
-    <!--Banner-->
-    <div class="jumbotron" style="background: url("../images/SGAGRO LOGO.png");">
-        <div class="row">
-            <div class="col-md-12 col-xs-12 col-lg-12">
-                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
-                <h2 class="col-md-8 col-xs-8 col-lg-8"><center>Sessão encerrada, para continuar faça login novamente</center></h2>
-                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
-            </div>
-        </div>
-    </div>
+
+		<!--Banner-->
+    	<div class="jumbotron" style="background-image: url("../images/fundo.png"); background-size: cover;">
+	        <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">
+	            <div class="col-md-12 col-xs-12 col-lg-12">
+	                <div class="col-md-4 col-xs-4 col-lg-4">
+	                    <img src="../images/SGAGRO LOGO.png" style="width: 40%; height: 15%;">
+	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
+	                </div>
+	                <div class="col-md-6 col-xs-6 col-lg-6">
+	                    <center><h1><i style="font-family: "Plantagenet Cherokee";"><b>Sessão encerrada, para continuar faça login novamente</b></i></center></h1>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!--Fim Banner-->
 
     <div class="jumbotron">
     	<div class="row">
@@ -84,12 +90,16 @@ if($coautor != "0"){
 
 	<div class="container">
         <!--Banner-->
-	    <div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png');">
-	        <div class="row">
+	    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
+	        <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">
 	            <div class="col-md-12 col-xs-12 col-lg-12">
-	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/unesp.jpg">
-	                <h1 class="col-md-8 col-xs-8 col-lg-8"><center>Confirmação da submissão do artigo</center></h1>
-	                <img class="thumbnail col-md-2 col-xs-2 col-lg-2" src="../images/SGAGRO LOGO.png">
+	                <div class="col-md-4 col-xs-4 col-lg-4">
+	                    <img src="../images/SGAGRO LOGO.png" style="width: 40%; height: 15%;">
+	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
+	                </div>
+	                <div class="col-md-6 col-xs-6 col-lg-6">
+	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Confirmação da submissão</b></i></center></h1>
+	                </div>
 	            </div>
 	        </div>
 	    </div>
