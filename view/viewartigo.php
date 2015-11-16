@@ -87,10 +87,7 @@ exit;
 		$arquivo = $arquivos[0];
 
 			echo'
-				<h3><center> Titulo real do Artigo: '.$arquivo['titulo'].'<br>
-					O Artigo recebeu o seguinte id: '. $arquivo['idartigo'].'<br>
-					Este id passou a ser o nome do arquivo. <br>
-			 		</h3></center>
+				<h3><center> Titulo  do trabalho<br> '.$arquivo['titulo'].'</h3></center>
 			 				<div class="row">
 			 				<iframe  class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1"src="../uploads/'.$arquivo['idartigo'].'.pdf" height="500"> </iframe>
 			 				</div>
