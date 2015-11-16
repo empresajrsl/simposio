@@ -235,18 +235,18 @@ exit;
 				var linha = '<div class="row">'+
 								'<div class="col-md-12 col-xs-12 col-lg-12">'+
 									'<div class="col-md-4 coautores" id="coautores'+count+'" name="coautores'+count+'">'+
+										'<label></br>CPF do coautor - '+count+'</cpf></label></br>'+
+										'<input type="text" id="cpfcoautor'+count+'" name="cpfcoautor'+count+'" class="form-control cpfcoautor">'+
+									'</div>'+
+
+									'<div class="col-md-4" id="coautores'+count+'" name="coautores'+count+'">'+
 										'<label></br>Nome do coautor - '+count+'</label></br>'+
 										'<input type="text" id="nomecoautor'+count+'" name="nomecoautor'+count+'" class="form-control">'+
 									'</div>'+
 
-									'<div class="col-md-4" id="coautores'+count+'" name="coautores'+count+'">'+
+									'<div class="col-md-4">'+
 										'<label></br>Sobrenome do coautor - '+count+'</label></br>'+
 										'<input type="text" id="snomecoautor'+count+'" name="snomecoautor'+count+'" class="form-control">'+
-									'</div>'+
-
-									'<div class="col-md-4">'+
-										'<label></br>CPF do coautor - '+count+'</cpf></label></br>'+
-										'<input type="text" id="cpfcoautor'+count+'" name="cpfcoautor'+count+'" class="form-control cpfcoautor">'+
 									'<div>'+
 								'</div>'+
 							'</div>';
