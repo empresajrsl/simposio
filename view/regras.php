@@ -46,7 +46,7 @@ exit;
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/tooltip.js"></script>
-	<title>Regras de submição</title>
+	<title>Instruções para submissão do trabalho</title>
 	<link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 </head>
 <body>
@@ -61,7 +61,7 @@ exit;
                     <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
                 </div>
                 <div class="col-md-6 col-xs-6 col-lg-6">
-                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Regras</b></i></center></h1>
+                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Instruções para submissão do trabalho</b></i></center></h1>
                 </div>
             </div>
         </div>
@@ -117,7 +117,12 @@ exit;
 
 	<script type="text/javascript">
 		$(document).on('click','#continuar', function(){
+			if ($('#aceito').is(':checked')){
 			location.href="submissao_artigo.php";
+		}else{
+			alert('Clique no checkbox para aceitar as condições antes de continuar !!!');
+		}
+
 
 		});
 	</script>
