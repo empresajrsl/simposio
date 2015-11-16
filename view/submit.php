@@ -103,7 +103,7 @@ exit;
 
 			<script type="text/javascript">
 					 $(document).on('click','#cad',function(){
-					 	location.href='submissao_artigo.php';
+					 	location.href='regras.php';
 					 });
 			</script>
 
