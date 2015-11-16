@@ -118,12 +118,12 @@ if($coautor != "0"){
 		<div class="jumbotron">		
 			<div class="panel panel-default">
 
-				<div class="panel-heading"><b>ARTIGO</b></div>
+				<div class="panel-heading"><b>TRABALHO</b></div>
 					
 					<div class="panel-body">
 						
 							<div class="row">
-								<email class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Artigo:</b> " . $titulo; ?> </email>
+								<email class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Título do trabalho:</b> " . $titulo; ?> </email>
 								<usuario class="col-md-12 col-xs-12 col-lg-12"><?php echo "<b>Área:</b> " . $area;  ?> </usuario>
 							</div>
 							
