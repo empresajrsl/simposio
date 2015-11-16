@@ -205,6 +205,7 @@ exit;
 								$('#nomecoautor'+count).val(data['nome']);
 								$('#snomecoautor'+count).val(data['sobrenome']);
 
+
 							}
 						}
 
@@ -213,6 +214,16 @@ exit;
 					},
 					error: function(data){
 						console.log(data);
+						alert('Este coautor não possui cadastro no sistema !!!');
+						for(count = 1;count < 5;count++){
+							if(idcoautor == 'cpfcoautor'+count){
+								$('#cpfcoautor'+count).val('');
+								$('#nomecoautor'+count).val('');
+								$('#snomecoautor'+count).val('');	
+								
+							}
+						}
+						
 					},
 					cache: false
 				});
