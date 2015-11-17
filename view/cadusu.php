@@ -189,7 +189,7 @@
 
                             <div class="col-md-2">
                                 <label class=>País*</label></br>
-                                <select id="deficiente" name="deficiente" class="form-control">
+                                <select id="pais" name="pais" class="form-control">
                                     <option>Afeganistão</option>
                                     <option>África do Sul</option>
                                     <option>Akrotiri</option>
@@ -602,7 +602,7 @@ function calculaIdade(ano_aniversario, mes_aniversario, dia_aniversario) {
                 env.sobrenome = $('#sobrenome').val();
                 env.nascimento = $('#nascimento').val();
                 env.sexo = $('#sexo option:selected').val();
-                env.deficiente = $('#deficiente  option:selected').val();
+                env.pais = $('#pais  option:selected').val();
                 env.cpf = $('#cpf').val();
                 env.endereco = $('#endereco').val();
                 env.cidade = $('#cidade').val();
