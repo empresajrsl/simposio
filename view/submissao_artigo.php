@@ -110,9 +110,9 @@ exit;
 				<div class="col-md-4" id="categoriadiv">
 					<label>Categoria do trabalho</label></br>
 					<select class="form-control" id="categoria" name="categoria">
-						<option>Resumo Expandido</option>
-						<option>Relato Técnico</option>
-						<option>Artigo Completo</option>
+						<option value="Resumo Expandido">Resumo Expandido</option>
+						<option value="Relato Técnico">Relato Técnico</option>
+						<option value="Artigo Completo">Artigo Completo</option>
 					</select>
 				</div>
 
@@ -142,9 +142,16 @@ exit;
 				</div>
 
 				<div class="col-md-2">
-					<label>Apresentação:</label></br>
-					<input type="radio" id="apresentacao" name="apresentacao" value="Banner" checked> Painel</br>
-					<input type="radio" id="apresentacao" name="apresentacao" value="Palestra"> Oral	
+					
+					<div class="row">
+						<label> Apresentação:</label>
+
+					</div>
+					<div class="row" id="tipoapresenta" style="margin-top:7px">
+						Resumo Expandido
+
+					</div>	
+					<input type="hidden" id="apresentacao" name="apresentacao" value="Resumo Expandido"></input>
 				</div>
 			</div>
 			</div>
@@ -170,16 +177,42 @@ exit;
 
 		</br>
 
-			<div class="row">
-				<div class="col-md-12">
-					<button type="button" id="confirmar_submissao" name="confirmar_submissao" class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4 btn btn-primary">
-						continuar
-					</button>
-				</div>
-			</div>
+		<div class="row"><!--Botões-->
+			<button type="button" id="vstatus" name="vstatus" class="btn btn-success col-md-3 col-md-offset-2 col-xs-3 col-xs-offset-2 col-lg-3 col-lg-offset-2">
+				Voltar para status
+			</button>
+			<button type="button" id="confirmar_submissao" name="confirmar_submissao" class="btn btn-primary col-md-3 col-md-offset-2 col-xs-3 col-xs-offset-2 col-lg-3 col-lg-offset-2">
+				Confirmar
+			</button>
+		</div><!--Fim Botões-->
+
+			
 		</form>
 		</div>
 	</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+			$(document).on('change','#categoria',function(){ 
+				$('#tipoapresenta').html('');
+				$('#apresentacao').val('');
+				var categoria = $('#categoria option:selected').val();
+				$('#tipoapresenta').append(categoria);
+				$('#apresentacao').val(categoria);
+
+			});
+		});	
+
+</script>
+
+
+<script type="text/javascript">
+		$(document).ready(function(){
+			$(document).on('click','#vstatus',function(){ 
+				location.href="submit.php";
+			});
+		});	
+</script>		
 
 <!-- função buscar coautor atraves do cpf -->
 <script type="text/javascript">
