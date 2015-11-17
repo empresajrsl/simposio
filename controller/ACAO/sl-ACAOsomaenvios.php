@@ -25,7 +25,7 @@ $rp = ($somauser1[0]['qtdd'] + $somauser2[0]['qtdd'] + $somauser3[0]['qtdd'] + $
 
 
 
-echo"<br>";
+
  echo json_encode($dados);
 
 
