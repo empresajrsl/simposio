@@ -217,7 +217,7 @@ exit;
 <!-- função buscar coautor atraves do cpf -->
 <script type="text/javascript">
 	$(document).ready(function(){
-		$(document).on('change','.cpfcoautor',function(){
+		$(document).on('blur','.cpfcoautor',function(){
 			var env = {};
 				env.cpf = $(this).val();
 				env.coautor = $('#coautor option:selected').val();

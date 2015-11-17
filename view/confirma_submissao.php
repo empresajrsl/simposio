@@ -226,23 +226,14 @@ if($coautor != "0"){
 		</div>
 	</div>
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$(document).on('click','#voltar1',function(){
-				if(confirm('Ao voltar a página voce devera preencher todo o formulario novamente, deseja continuar ?')){
-					location.href="submissao_artigo.php";
-				}
-			});
-		});
-	</script>
-
+	<script type="text/javascript" src="../js/scripts/btnvoltarconfsubmissao.js"></script>
 	<script type="text/javascript">
 
-		$(document).ready(function(){
+        $(document).ready(function(){
             
             $(document).on('click','#continuar1',function(){
 
-				env = {};
+                env = {};
                 env.titulo = <?php echo "'$titulo'"; ?> ;
                 env.resumo = <?php echo "'$resumo'"; ?> ;
                 env.area = <?php echo "'$area'"; ?> ;
@@ -270,30 +261,31 @@ if($coautor != "0"){
                 
                 
                $.ajax({
-			            type: "POST",
-			            url: "../controller/ACAO/sl-ACAOcadartigo.php",
-			            data: env,
-			            dataType : 'html',
-			            success: function(data){
-			                console.log('sucesso'+data)
-			                //$('#erros').html('<img src="data:image/png;base64,'+data+'"/>');
-			            }, error: function(data) {
-			                console.log(data);
-			                alert("Erro, Houve uma falha ao salvar o registro!");
-			            }
-			    		});
+                        type: "POST",
+                        url: "../controller/ACAO/sl-ACAOcadartigo.php",
+                        data: env,
+                        dataType : 'html',
+                        success: function(data){
+                            console.log('sucesso'+data)
+                            //$('#erros').html('<img src="data:image/png;base64,'+data+'"/>');
+                        }, error: function(data) {
+                            console.log(data);
+                            alert("Erro, Houve uma falha ao salvar o registro!");
+                        }
+                        });
 
-		                var form = {};
-		                form.titulo = $('#titulo').val();
-		                                
-		    			 location.href="fim.php";	
+                        var form = {};
+                        form.titulo = $('#titulo').val();
+                                        
+                         location.href="fim.php";   
 
 
-			
-			});
+            
+            });
 
-		});				
+        });             
 	</script>
+
 
 	</body>
 </html>

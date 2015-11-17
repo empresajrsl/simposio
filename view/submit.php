@@ -101,35 +101,9 @@ exit;
 			 });
 			</script>
 
+			<script type="text/javascript" src="../js/scripts/enviosubmit.js"></script>
 			<script type="text/javascript">
-				$(document).on('click','#cad',function(){
-					env = {};
-				 	$.ajax({
-			            type: "POST",
-			            url: "../controller/ACAO/sl-ACAOsomaenvios.php",
-			            data: env,
-			            dataType : 'json',
-			            success: function(data){
-			                console.log(data);
-				            if(data < 5){
-				            	location.href='regras.php';
-				            }else{
-				            	alert('Você pode cadastrar apenas 5 trabalhos !!!');
-				            }
-			                              	                
-			            }, 
-			            error: function(data) {
-			                console.log(data);
-			               		
-			            	}
-	    			});
-
-				 	
-				 });
-			</script>
-
-			<script type="text/javascript">
-			$(document).ready(function(){ 
+$(document).ready(function(){ 
 				var env = {};
 					env.email = <?php echo "'$email'"; ?> ;
 				
@@ -159,7 +133,7 @@ exit;
 
 		            }, error: function(data) {
 		                	console.log(data);
-		               		$('#trabalhos').append('Nehum trabalho cadastrado até o momento');
+		               		$('#trabalhos').append('Nenhum trabalho cadastrado até o momento');
 		            	}
 		    		});
 				});
