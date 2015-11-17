@@ -231,17 +231,43 @@ exit;
 					dataType: 'json',
 
 					success: function(data){
+
+						if(env.cpf == data[2]){
+							alert('Você não pode se cadastrar como coautor');
+
+							for(count = 1;count < 5;count++){
+								if(idcoautor == 'cpfcoautor'+count){
+									$('#cpfcoautor'+count).val('');
+									$('#nomecoautor'+count).val('');
+									$('#snomecoautor'+count).val('');	
+									
+								}
+							}
+							return;
+						}
 						console.log(data);
 						var count = 0;
-						for(count = 1;count < 5;count++){
-							if(idcoautor == 'cpfcoautor'+count){
-								$('#nomecoautor'+count).val(data['nome']);
-								$('#snomecoautor'+count).val(data['sobrenome']);
-
-
+						if(data[1] < 5){
+							for(count = 1;count < 5;count++){
+								if(idcoautor == 'cpfcoautor'+count){
+									$('#nomecoautor'+count).val(data[0][0]['nome']);
+									$('#snomecoautor'+count).val(data[0][0]['sobrenome']);
+								}
 							}
-						}
+						}else{
+							alert('Este usuario ja enviou 5 trabalhos, portanto não pode mais participar de nehum trabalho');
 
+							for(count = 1;count < 5;count++){
+								if(idcoautor == 'cpfcoautor'+count){
+									$('#cpfcoautor'+count).val('');
+									$('#nomecoautor'+count).val('');
+									$('#snomecoautor'+count).val('');	
+									
+								}
+							}
+
+							
+						}
 						
 
 					},
