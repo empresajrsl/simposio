@@ -55,12 +55,11 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 								// verifica se o usuário esta logado antes de mostrar a pagina 
 								if(isset($_SESSION['logado']) ){
 
-									if($result['publicado'] == 0){
+									include ('../controller/ACAO/sl-ACAOsomaenvios.php');
+
+									if($dados == 0){
 										header('location: ../view/regras.php');
-									}elseif($result['publicado'] == 1){
-										header('location: ../view/submit.php');
-									}elseif($result['publicado'] == 2){
-										//session_destroy(); // Destrói a sessão limpando todos os valores salvos 
+									}else{
 										header('location: ../view/submit.php');
 									}
 
