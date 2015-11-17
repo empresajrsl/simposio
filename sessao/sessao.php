@@ -55,7 +55,17 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 								// verifica se o usuário esta logado antes de mostrar a pagina 
 								if(isset($_SESSION['logado']) ){
 
-									include ('../controller/ACAO/sl-ACAOsomaenvios.php');
+									$email = $_SESSION['usuario'];
+									$id = $_SESSION['idusu'];
+
+									$somauser1 = select("count(*) as qtdd","sl_grupo","id_usuario1 =".$id."");
+									$somauser2 = select("count(*) as qtdd","sl_grupo","id_usuario2 =".$id."");
+									$somauser3 = select("count(*) as qtdd","sl_grupo","id_usuario3 =".$id."");
+									$somauser4 = select("count(*) as qtdd","sl_grupo","id_usuario4 =".$id."");
+									$somauser5 = select("count(*) as qtdd","sl_grupo","id_usuario5 =".$id."");
+									$rp = ($somauser1[0]['qtdd'] + $somauser2[0]['qtdd'] + $somauser3[0]['qtdd'] + $somauser4[0]['qtdd'] + $somauser5[0]['qtdd']);
+
+									$dados = $rp;
 
 									if($dados == 0){
 										header('location: ../view/regras.php');
