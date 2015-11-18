@@ -3,7 +3,7 @@
 	
 	if(isset($_GET['key'])){
 		$sigla =  $_GET['key'];
-		$key = base64_encode($sigla);
+		$key = base64_decode($sigla);
 		if( $key != 'sigmajrsaoluis'){
 		echo '<h2> Para que possa alterar sua senha é necessário clicar no link, enviado para o seu email !!! </h2>';
 
