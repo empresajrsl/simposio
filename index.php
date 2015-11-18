@@ -96,7 +96,7 @@
 			<div class="row">
 				<div class="col-md-2 col-md-offset-5">
 					
-					<a href="view/novasenha.php"><center><b>Esqueci minha senha</b></center></a>
+					<a href="view/verificaremail.php"><center><b>Esqueci minha senha</b></center></a>
 				</div>	
 			</div>
 
