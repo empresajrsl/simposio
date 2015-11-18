@@ -72,7 +72,7 @@ exit;
 
 		<center class="row"><!--Mensagem-->
 
-				<h2>CONDIÇÕES PARA SUBMISSÃO </h2>
+				
 			<h3 class="col-md-12 col-xs-12 col-xs-12">
 				Como parte do processo de submissão, é preciso dar ciência da conformidade do trabalho submetido em relação a todos os itens listados a seguir:
 				</h3>
