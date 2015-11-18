@@ -97,7 +97,7 @@ exit;
 			<center class="col-md-12 col-xs-12 col-lg-12">
 			<div class="checkbox">
     			<label>
-      				<input type="checkbox" id="aceito1" name="aceito1"> Aceito as condições apresentadas e me responsabilizo pelo conteudo contido em meu artigo.
+      				<input type="checkbox" id="aceito1" name="aceito1"> Ciente e de acordo.</input>
     			</label>
   			</div>
   			</center>
@@ -116,7 +116,7 @@ exit;
 			<center class="col-md-12 col-xs-12 col-lg-12">
 			<div class="checkbox">
     			<label>
-      				<input type="checkbox" id="aceito2" name="aceito2"> Aceito as condições apresentadas e me responsabilizo pelo conteudo contido em meu artigo.
+      				<input type="checkbox" id="aceito2" name="aceito2"> Ciente e de acordo.</input>
     			</label>
   			</div>
   			</center>
@@ -137,7 +137,7 @@ exit;
 			</button>
 
 			<button type="submit" id="continuar" name="continuar" class="btn btn-success col-md-3 col-md-offset-2 col-xs-3 col-xs-offset-2 col-lg-3 col-lg-offset-2">
-				Concordar
+				Continuar
 			</button>
 		</div><!--Fim Botões-->
 
@@ -145,27 +145,18 @@ exit;
 
 	<script type="text/javascript">
 		$(document).on('click','#continuar', function(){
-			if ($('#aceito1').is(':checked')){
+
+			if ($('#aceito1').is(':checked') && $('#aceito2').is(':checked')){
 			location.href="submissao_artigo.php";
 		}else{
-			alert('Clique no checkbox para aceitar as condições antes de continuar !!!');
+			alert('Certifique-se de ter selecionado os dois checkbox antes de continuar !!!');
 		}
 
 
 		});
 	</script>
 
-	<script type="text/javascript">
-		$(document).on('click','#continuar', function(){
-			if ($('#aceito2').is(':checked')){
-			location.href="submissao_artigo.php";
-		}else{
-			alert('Clique no checkbox para aceitar as condições antes de continuar !!!');
-		}
-
-
-		});
-	</script>
+	
 
 	<script type="text/javascript">
 		$(document).on('click','#voltar', function(){
