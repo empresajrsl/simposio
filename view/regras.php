@@ -71,35 +71,63 @@ exit;
 	<div class="jumbotron"><!--Jumbotron-->
 
 		<center class="row"><!--Mensagem-->
+
+				<h2>CONDIÇÕES PARA SUBMISSÃO </h2>
 			<h3 class="col-md-12 col-xs-12 col-xs-12">
-				Por favor leia com atenção ao regulamento abaixo caso deseje publicar um artigo, logo após clique em Continuar para ir a tela de submição do artigo.
-			</h3>
+				Como parte do processo de submissão, é preciso dar ciência da conformidade do trabalho submetido em relação a todos os itens listados a seguir:
+				</h3>
 		</center><!--Fim Mensagem-->
 
 		<br>
 
 		<div class="row"><!--Testo com as regras-->
-			<div class=" col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
-				Termos Comuns na Área da Informática.</br></br>
-
-				A informática já é parte importante da vida das pessoas no mundo de hoje, más, muitos ainda tem dificuldade de entender os termos e nomes comuns que acompanham tudo que envolve computadores e tudo que o envolve, como Smartfones, Tablets, Videogames, entre outros. Vamos começar com Software e Hardware.</br>
-				Software são os programas que estão dentro do seu computador como jogos, programas de visualização de imagens e vídeos por exemplo. Já Hardware é toda a parte física do computador como Teclado, Mouse, Monitor entre outros. Ainda falando em Hardware encontramos termos que confundem muitas pessoas como HD que nada mais é do que uma abreviação em inglês para Disco Rígido que armazena as informações dentro do computador como músicas, programas, vídeos entre outros. Existe também a Memória RAM que é uma memória temporária do computador, ou seja, assim que o computador é desligado ou algum programa é fechado as informações são apagadas a não ser que sejam salvas antes no HD, Pendrive, ou qualquer outro dispositivo de armazenamento.</br>
-				Quando entrá na Internet, o usuário se depara com vários outros termos como Download, Upload e até mesmo o significado de Internet é confuso para eles. Vamos começar por Internet, que é uma abreviação em inglês para Rede Internacional de Computadores, ou seja, vários computadores interligados trocando informações. Essas informações são transmitidas na forma de Downloads e Uploads, sendo que, Download é quando o usuário recebe a informação e Upload quando envia uma informação. É como em uma conversa, quando uma pessoa fala(faz o Upload), a outra escuta (faz o Download) e vice e versa.</br>
-				Todos os termos aqui citados não equivalem nem a dez por cento dos termos encontrados na área de informática, más são os com o que mais nos deparamos no cotidiano até por que assim como dito no começo do texto, esses termos já não são mais exclusividade dos computadores, eles são encontrados também em Smartfones, Tablets, até mesmo em eletrodomésticos como TVs, Aparelhos de Blu-ray, Geladeiras e Fornos de Micro Ondas. O que só vem a confirmar que a informática já é, e irá se tornar cada vez mais, uma parte importante de nossas vidas.</br>
-			</div>
-		</div><!--Fim do texto com as mensagens-->
-		
-		</br>
-
-		<div class="row">
+			<div class="row">
+					<div class=" col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
+						<ol>
+							<li> 	A contribuição é original e inédita, e não está sendo avaliada para publicação por outro evento e/ou revista científica simultaneamente. </li>
+							<li> 	A versão submetida é definitiva, não sendo permitida a substituição do trabalho em nenhuma hipótese.</li>
+							<li> 	O arquivo submetido está no formato PDF e em total em aderência às normas dispostas no manual de submissão. </li>
+							<li> 	O arquivo submetido está destituído de qualquer tipo de informação que possa identificar os autores.</li>
+							<li> 	O trabalho está submetido a uma única área temática do evento e inscrito em uma única modalidade (artigo, relato técnico ou resumo expandido). </li>
+							<li> 	O número de autores do trabalho não ultrapassa cinco (05) pessoas. A contagem do número de trabalhos não distingue autoria. É proibida a inclusão/exclusão/alteração de autores após a submissão do trabalho.</li>
+							<li>    Os trabalhos que envolvem pesquisas com seres humanos estão acompanhados da cópia do parecer do Comitê de Ética e Pesquisa (CEP) ao qual o respectivo trabalho foi submetido. O parecer deve ser anexado no campo "documento suplementar".</li>
+						</ol>
+						<b>IMPORTANTE: As submissões que não estiverem de acordo com os respectivos itens serão automaticamente desclassificadas e devolvidas aos autores.</b>
+					<div class="row">
 			<center class="col-md-12 col-xs-12 col-lg-12">
 			<div class="checkbox">
     			<label>
-      				<input type="checkbox" id="aceito" name="aceito"> Aceito as condições apresentadas e me responsabilizo pelo conteudo contido em meu artigo.
+      				<input type="checkbox" id="aceito1" name="aceito1"> Aceito as condições apresentadas e me responsabilizo pelo conteudo contido em meu artigo.
     			</label>
   			</div>
   			</center>
 		</div>
+					<br/><br/><br/>
+						<center>	
+							<h3>DECLARAÇÃO DE DIREITO AUTORAL</h3>
+							<ul style="text-align:left;">
+							<li>Sendo o trabalho aprovado, o Simpósio em Gestão do Agronegócio se reserva o direito de efetuar, nos arquivos originais aprovados, alterações de ordem normativa, ortográfica e gramatical, com o intuito de manter o padrão culto da língua, respeitando, porém, o estilo dos autores.</li>
+							<li>A submissão do trabalho autoriza, automaticamente, sua publicação, com exclusividade, nos anais do evento, bem como autoriza a incorporação do trabalho no acervo eletrônico do Simpósio em Gestão do Agronegócio, sem ônus alusivos aos direitos autorais, com base no disposto na Lei Federal nº 9.610, de 19 de fevereiro de 1998. Assegura-se ao Simpósio em Gestão do Agronegócio o direito à divulgação da informação e os direitos autorais, na forma da Lei. </li>
+							<li>Cabe ressaltar que os trabalhos publicados no Simpósio em Gestão do Agronegócio são de acesso público e gratuito aos interessados, sendo proibido qualquer tipo de aplicação comercial. </li>
+							<li>Os autores são totalmente responsáveis pelo conteúdo dos trabalhos publicados. </li>
+							</ul>
+
+							<div class="row">
+			<center class="col-md-12 col-xs-12 col-lg-12">
+			<div class="checkbox">
+    			<label>
+      				<input type="checkbox" id="aceito2" name="aceito2"> Aceito as condições apresentadas e me responsabilizo pelo conteudo contido em meu artigo.
+    			</label>
+  			</div>
+  			</center>
+		</div>
+						</center>
+					</div>
+		</div><!--Fim do texto com as mensagens-->
+		
+		</br>
+
+		
 
 		</br>
 
@@ -117,7 +145,19 @@ exit;
 
 	<script type="text/javascript">
 		$(document).on('click','#continuar', function(){
-			if ($('#aceito').is(':checked')){
+			if ($('#aceito1').is(':checked')){
+			location.href="submissao_artigo.php";
+		}else{
+			alert('Clique no checkbox para aceitar as condições antes de continuar !!!');
+		}
+
+
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).on('click','#continuar', function(){
+			if ($('#aceito2').is(':checked')){
 			location.href="submissao_artigo.php";
 		}else{
 			alert('Clique no checkbox para aceitar as condições antes de continuar !!!');
