@@ -13,7 +13,7 @@ $mensagem = '
 			<center>
 			<h4> Olá!</br></br>
 			Foi solicitada uma alteração na senha de acesso do sistema pelo usuario <u>'.$email.'</u></br></br> 
-			Caso isto seja um erro, sugerimos que entre em contato com o desenvolvedor do sistema em <u>flavio@iedashboard.com.br</u>
+			Caso isto seja um erro, sugerimos que entre em contato com o desenvolvedor do sistema em <u>sigmajr@gmail.com</u>
 			</h4>
 
 			<h3> Clique no link abaixo para criar uma nova senha </h3></br> 
