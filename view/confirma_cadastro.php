@@ -55,7 +55,7 @@ $cargo = $_POST['cargo'];
 
 		<div class="row">
 			<center class="col-md-12 col-xs-12 col-lg-12">
-				<h4>Confira aqui se as informações estão corretas e clique em continuar. Caso o contrario, clique em voltar para corrigir as mesmas</h4>
+				<h4>Confira aqui se as informações estão corretas e clique em continuar. Caso o contrário, clique em voltar para corrigir.</h4>
 			</center>
 		</div>
 		</br>
