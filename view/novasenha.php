@@ -5,12 +5,12 @@
 		$sigla =  $_GET['key'];
 		$key = base64_decode($sigla);
 		if( $key != 'sigmajrsaoluis'){
-		echo '<h2> Para que possa alterar sua senha é necessário clicar no link, enviado para o seu email !!! </h2>';
+		echo '<h2> Para que possa alterar sua senha é necessário clicar no link enviado para o seu email1 !!! </h2>';
 
 		return;
 		}
 	}else{
-		echo '<h2> Para que possa alterar sua senha é necessário clicar no link, enviado para o seu email !!! </h2>';
+		echo '<h2> Para que possa alterar sua senha é necessário clicar no link enviado para o seu email2 !!! </h2>';
 		return;
 
 	}
@@ -61,40 +61,7 @@
 						<center><h2>Criar nova senha</h2></center>
 					</div>
 
-					<!-- verifica se o php retornou mesangem  -->
-					<?php  
-					// verifica se ocorreu erro
-					if(isset($_GET['erro']))
-					{ 
-					// armazena o valor do erro 	
-						$erro = $_GET['erro'];
-					// se erro for = 1 email incorreto	
-						if($erro == 3)
-					{
-						echo('<h5 style="color: black; font-size:15px">O e-mail está incorreto verifique e tente novamente </h5>');
-					}
-					// se não cpf incorreto
-					else if($erro == 2)
-					{
-						echo('<h5 style="color: black; font-size:15px"> Você não está cadastrado ou tem pendencias em seu cadastro</h5>');
-					}
-					// fim do isset
-					}
-					else{
-					// verifica se teve sucesso
-					if (isset($_GET['msg']))
-					{
-						$msg = $_GET['msg'];
-					if ($msg == 1)
-					{
-						echo('<h5 style="color: black; font-size:15px"> Atualização da senha feita com sucesso </h5>');
-					}
-					// fim do isset msg
-					}
-					// fim do else
-					}
-					?>
-					<!-- fim do php -->
+					
 
 					<!--começo form-->
 					<div class="row">
@@ -102,6 +69,7 @@
 						<form class="col-md-12 col-xs-12 col-lg-12" id="novasenha" method="post" action="../controller/ACAO/sl-ACAOcriaNsenha.php">
 							<div class="row">
 								<div class="col-md-4 col-md-offset-4">
+								<?php include('../model/errovalidacao.php') ?>
 									<label > E-mail </label>
 									<input class="form-control" type="input" name="email" id="email">
 								</div>
@@ -129,7 +97,7 @@
 
 							<div class="row">
 								<div class="col-md-4 col-md-offset-4">
-									<button type="button"  name="submit" id="submit"  class="btn btn-primary col-md-12 col-xs-12">Salvar</button>
+									<button type="button"  name="salvar" id="salvar"  class="btn btn-primary col-md-12 col-xs-12">Salvar</button>
 								</div>
 							</div>		 
 						</form>
@@ -149,7 +117,7 @@
 	 	$( document ).ready(function() {
 
 	// chamar a função quando clica no botão submit 
-			$(document).on("click","#submit",function(){	
+			$(document).on("click","#salvar",function(){	
 	// armazena os valores de senha e senha 2 em variaveis temporarias
 				var senha1 = $("#senha1").val();
 				var senha2 = $("#senha2").val();
