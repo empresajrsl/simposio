@@ -72,7 +72,7 @@ exit;
 
 		<center class="row"><!--Mensagem-->
 			<h3 class="col-md-12 col-xs-12 col-xs-12">
-				Por favor leia com atenção ao regulamento abaixo caso deseje publicar um artigo, logo após clique em Continuar para ir a tela de submição do artigo.
+				Por favor leia com atenção ao regulamento abaixo caso deseje publicar um artigo, logo após clique em Continuar para ir a tela de submissão do artigo.
 			</h3>
 		</center><!--Fim Mensagem-->
 
@@ -95,7 +95,7 @@ exit;
 			<center class="col-md-12 col-xs-12 col-lg-12">
 			<div class="checkbox">
     			<label>
-      				<input type="checkbox" id="aceito" name="aceito"> Aceito as condições apresentadas e me responsabilizo pelo conteudo contido em meu artigo.
+      				<input type="checkbox" id="aceito" name="aceito">Aceito as condições apresentadas e me responsabilizo pelo conteúdo contido em meu artigo.
     			</label>
   			</div>
   			</center>
