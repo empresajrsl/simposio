@@ -12,11 +12,21 @@
 <body>
 	<div class="container">
 
-		<div class="jumbotron" style="background: url('../images/SGAGRO LOGO.png'); height:250px; widht:200px;">    
-            <div class="thumbnail col-md-2"><img src="../images/unesp.jpg"></div>
-            <div class="col-md-8"><h1><center>Cadastro</center></h1></div>
-            <div class="thumbnail col-md-2"><img src="../images/SGAGRO LOGO.png"></div>
-        </div>
+        <!--Banner-->
+	    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
+	        <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">
+	            <div class="col-md-12 col-xs-12 col-lg-12">
+	                <div class="col-md-4 col-xs-4 col-lg-4">
+	                    <img src="../images/SGAGRO LOGO.png" style="width: 40%; height: 15%;">
+	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
+	                </div>
+	                <div class="col-md-6 col-xs-6 col-lg-6">
+	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Confirmar Cadastro</b></i></center></h1>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!--Fim Banner-->
     
     <div class="jumbotron">
     	<?php
