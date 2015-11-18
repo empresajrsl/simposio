@@ -6,7 +6,7 @@ include("../funcoes/funcoesmysql.php");
 	$emailp = $_POST['email'];
 	$cpfp = $_POST['cpf'];
 // faz uma busca no banco de dados dos campos senha email e cpf do usuario onde o email corresponder
-	$busca = select("*","sl_cadusu","email = '".$emailp."' and cpf = '".$cpfp."'");
+	$busca = select("*","sl_cadusu","email = '".$emailp."'");
 // resultado recebe um array vazio
 	$result = array();
 // info recebe a primeira linha retornada
@@ -22,12 +22,14 @@ include("../funcoes/funcoesmysql.php");
 		 header('location: ../../view/novasenha.php?msg=1');
 		} else if (!$query){
 			$erro = mysql_error();
-			header('location: ../../view/novasenha.php?msg=3?erro='.$erro);
+			header('location: ../../view/novasenha.php?erro=1?erro='.$erro);
 		}
+	}else{
+			header('location: ../../view/novasenha.php?erro=2');
 	}
-	else if(empty($result))
+	if(empty($result))
 	{
-		header('location: ../../view/novasenha.php?msg=2');
+		header('location: ../../view/novasenha.php?erro=3');
 	}
 	
  ?>
