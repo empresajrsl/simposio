@@ -27,9 +27,9 @@ $mensagem = '
 
 <html>
 <head>
-	<title>
+	
 		<meta charset="utf-8">
-		<title>SGAGRO</title>
+		<title>SGAgro</title>
 		<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>
 		<link type="text/css" rel="stylesheet" href="../css/style.css" ></link>
 		<script src="../js/jquery-2.1.1.min.js"></script>
