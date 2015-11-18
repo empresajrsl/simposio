@@ -35,40 +35,7 @@
 			<div class="col-md-12 col-xs-12 col-lg-12">
 				<div class="row"><center class="col-md-12 col-xs-12 col-lg-12"><h2>Informe seu email</h2></center></div>
 
-				<!-- verifica se o php retornou mesangem  -->
-				<?php  
-				// verifica se ocorreu erro
-				if(isset($_GET['erro']))
-				{ 
-				// armazena o valor do erro 	
-					$erro = $_GET['erro'];
-				// se erro for = 1 email incorreto	
-					if($erro == 1)
-				{
-					echo('<h5 style="color: black; font-size:15px">O e-mail está incorreto verifique e tente novamente </h5>');
-				}
-				// se não cpf incorreto
-				else
-				{
-					echo('<h5 style="color: black; font-size:15px"> Você não está cadastrado ou tem pendencias em seu cadastro</h5>');
-				}
-				// fim do isset
-				}
-				else{
-				// verifica se teve sucesso
-				if (isset($_GET['msg']))
-				{
-					$msg = $_GET['msg'];
-				if ($msg == 1)
-				{
-					echo('<h5 style="color: black; font-size:15px"> Atualização da senha feita com sucesso </h5>');
-				}
-				// fim do isset msg
-				}
-				// fim do else
-				}
-				?>
-				<!-- fim do php -->
+				
 				
 				<!-- inicio do form -->
 				<div class="row">
@@ -76,6 +43,40 @@
 						<div class="row">
 							<div class="col-md-12 col-xs-12 col-lg-12">	
 								<div class="col-md-offset-4 col-md-4">
+								<!-- verifica se o php retornou mesangem  -->
+										<?php  
+										// verifica se ocorreu erro
+										if(isset($_GET['erro']))
+										{ 
+										// armazena o valor do erro 	
+											$erro = $_GET['erro'];
+										// se erro for = 1 email incorreto	
+											if($erro == 1)
+										{
+											echo('<h5 style="color: black; font-size:15px">O e-mail está incorreto verifique e tente novamente !!! </h5>');
+										}
+										// se não cpf incorreto
+										else
+										{
+											echo('<h5 style="color: black; font-size:15px"> Você não está cadastrado ou tem pendencias em seu cadastro !!!</h5>');
+										}
+										// fim do isset
+										}
+										else{
+										// verifica se teve sucesso
+										if (isset($_GET['msg']))
+										{
+											$msg = $_GET['msg'];
+										if ($msg == 1)
+										{
+											echo('<h5 style="color: black; font-size:15px"> Atualização da senha feita com sucesso </h5>');
+										}
+										// fim do isset msg
+										}
+										// fim do else
+										}
+										?>
+										<!-- fim do php -->
 									<label > E-mail </label>
 									<input class="form-control"type="input" name="email" id="email" >
 								</div>
