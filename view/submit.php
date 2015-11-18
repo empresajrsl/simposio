@@ -89,7 +89,7 @@ exit;
 				<div class="row">
 					<div class="col-md-12 col-xs-12 col-lg-12">
 						<input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary" style="width:150px"></input>
-						<input type="button" id="cad" name="cad" value="Cadastrar trabalho" class="btn btn-primary"></input>
+						<input type="button" id="cad" name="cad" value="Cadastrar um novo trabalho" class="btn btn-primary"></input>
 					</div>
 				</div>
 					
