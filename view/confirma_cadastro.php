@@ -158,17 +158,22 @@ $(document).ready(function(){
 			            dataType : 'html',
 			            success: function(data){
 			                console.log('sucesso'+data)
-			                //$('#erros').html('<img src="data:image/png;base64,'+data+'"/>');
+			                if(data.length > 0){
+			                	var form = {};
+		        				form.email = $('#email').val();
+		                         
+		    					window.location.href ="enviaemail.php?email="+env.email;
+			                }
 			            }, error: function(data) {
 			                console.log(data);
 			                alert("Erro, Houve uma falha ao salvar o registro!");
 			            }
-			    		});
+	    		});
 
-		                var form = {};
-		                form.email = $('#email').val();
-		                                // envia a variavel email por GET   
-		    			location.href="enviaemail.php?email="+env.email;	
+
+	    		
+
+		               	
 
 			
 			});
