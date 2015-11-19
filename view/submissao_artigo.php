@@ -219,7 +219,7 @@ exit;
 	$(document).ready(function(){
 		$(document).on('blur','.cpfcoautor',function(){
 			var env = {};
-				env.cpf = $(this).val();
+				env.cpfa = $(this).val();
 				env.coautor = $('#coautor option:selected').val();
 				var idcoautor = $(this).attr('id');
 				
@@ -232,7 +232,7 @@ exit;
 
 					success: function(data){
 
-						if(env.cpf == data[2]){
+						if(env.cpfa == data[2]){
 							alert('Você não pode se cadastrar como coautor');
 
 							for(count = 1;count < 5;count++){
