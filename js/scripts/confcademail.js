@@ -11,8 +11,10 @@ $(document).ready(function(){
 
                     success: function(data){
                         console.log(data);
+                   
                      alert('Este e-mail já esta cadastrado no sistema');
-                     $('#email').val('');                        
+                     $('#email').val(''); 
+
 
                     },
                     error: function(data){
