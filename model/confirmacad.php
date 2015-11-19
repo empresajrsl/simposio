@@ -45,16 +45,16 @@
 			foreach($infobanco as $resposta){$result = $resposta;}
 
 			if(empty($result)==false){
-				echo json_encode($resposta['email']);
-				echo "<center><h2>Cadastro confirmado com sucesso</h2></center>";
+				
 				updatemysql('emailverificado = 1','sl_cadusu',"email = '".$emaildecod."' ");
 
-				header("location:../index.php");
+				echo '<script>location.href="../index.php";</script>';
+				
 			}
 
 			else{
 				echo "<center><h2>Erro, este email não está cadastrado no sistema</h2></center>";
-				echo $emaildecod;
+				
 			}
 		}
 		?>
