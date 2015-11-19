@@ -1,5 +1,5 @@
 
-<?php header ('Content-type: text/html; charset=UTF-8'); ?>
+
 <?php  
 // guarda o email do usuario 
 $email = $_GET['email'];
