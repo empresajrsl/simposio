@@ -65,13 +65,10 @@
                         </div>
 
                         <div class="col-md-2">
-                            <label>Cadastrar como</label></br>
-                            <select class="form-control" id="tipocadastro" name="tipocadastro">
-                                <option>Academico</option>
-                                <option>Avaliador</option>
-                                <option>Estudante</option>
-                                <option>Profissional</option>
-                            </select>
+                            <label>Cadastrar como*</label></br>
+                            <input type="checkbox" id="autor" class="checkboxcad" value="Autor"> Autor </input><br>
+                            <input type="checkbox" id="avaliador"  class="checkboxcad" value="Avaliador"> Avaliador </input>
+                            <input type="hidden" id="tipocadastro" name="tipocadastro"> </input>
                         </div>
                     </div>
                 </div>
