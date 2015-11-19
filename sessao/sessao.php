@@ -16,13 +16,14 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 				
 				$result = array();
 
-				echo json_encode($busca);
+				
 
 					// verifica se a busca retornou resultados
 					if (empty($busca))
 					{
 						// atribui numero 1 a variavel erro o que indica que o email ou a senha é incorrto
-    					header('Location: ../index.php?erro=1');
+						echo '<script>location.href=" ../index.php?erro=1";</script>';
+    					
     					
     					
 				    }else{ 
@@ -32,7 +33,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 					
 						}
 
-							echo "result".json_encode($result);
+							
 							// atribui cada campo a sua respectiva variavel 
 							$email = $result['email'];
 							$senha = $result['senha'];
@@ -51,7 +52,8 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									
 
 								}else{
-									header('Location: ../index.php?erro=2');
+									echo '<script>location.href=" ../index.php?erro=2";</script>';
+									
 								}
 								// verifica se o usuário esta logado antes de mostrar a pagina 
 								if(isset($_SESSION['logado']) ){
@@ -69,15 +71,18 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									$dados = $rp;
 
 									if($dados == 0){
-										header('location: ../view/regras.php');
+										echo '<script>location.href=" ../view/regras.php";</script>';
+										
 									}else{
-										header('location: ../view/submit.php');
+										echo '<script>location.href=" ../view/submit.php";</script>';
+										
 									}
 
 									
 								}else{
 										// envia mensegem de erro para index 
-										header('Location: ../index.php?erro=2');
+										echo '<script>location.href=" ../index.php?erro=2";</script>';
+									
 								}
 
 					}		
@@ -87,7 +92,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 }else{
 
 		// atribui 2 a variavel erro o que indica que a campos do formulario que não foram preenchidos
-		header('Location: ../index.php?erro=3');
+		echo '<script>location.href=" ../index.php?erro=2";</script>';
 	}
 
   ?>
