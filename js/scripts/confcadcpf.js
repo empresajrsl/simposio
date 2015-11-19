@@ -11,9 +11,10 @@
 
                     success: function(data){
                         console.log(data);
+                        
                      alert('Este cpf já esta cadastrado no sistema');
                      $('#cpf').val('');                        
-
+                
                     },
                     error: function(data){
                         console.log(data);
