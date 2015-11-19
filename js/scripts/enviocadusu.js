@@ -23,8 +23,27 @@
                 env.complemento = $('#complemento').val();
                 env.cep = $('#cep').val();
                 env.bairro = $('#bairro').val();
-                 env.bairro = $('#cargo').val();
-                env.tipocadastro = $('#tipocadastro option:selected').val();
+                env.bairro = $('#cargo').val();
+
+               if ($('#autor').is(':checked') && $('#avaliador').is(':checked') == false ){
+                   $('#tipocadastro').val('Autor');
+                }
+                 if ($('#avaliador').is(':checked') && $('#autor').is(':checked') == false ){
+                    $('#tipocadastro').val('Avaliador');
+
+                }
+
+                if ($('#autor').is(':checked') && $('#avaliador').is(':checked')){
+                     $('#tipocadastro').val('Autor e Avaliador');
+                }
+                if($('#autor').is(':checked') == false && $('#avaliador').is(':checked') == false){ 
+                    alert('você não selecionou nehum opção no campo cadastrar como');
+                    env.tipocadastro = '';
+                   
+                }
+
+
+
 
                 // verifica a idade 
                 var idade = $('#nascimento').val();
