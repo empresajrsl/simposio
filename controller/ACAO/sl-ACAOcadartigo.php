@@ -46,7 +46,7 @@ $rp = select('id_artigo','sl_artigo',"  titulo = '".$titulo."' and resumo = '".$
 
 
 $idtbartigo = $rp[0];
-echo json_encode($idtbartigo['id_artigo']);
+
 
 
 if($coautor != "0"){
@@ -118,8 +118,7 @@ if($coautor != "0"){
  
 ?>
 
-echo "</br>";      
-//echo json_encode($rp);	
+    
 
    
 
