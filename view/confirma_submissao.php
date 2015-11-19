@@ -267,17 +267,19 @@ if($coautor != "0"){
                         dataType : 'html',
                         success: function(data){
                             console.log('sucesso'+data)
-                            //$('#erros').html('<img src="data:image/png;base64,'+data+'"/>');
+                            if(data.length > 0){
+                            	 var form = {};
+                       			 form.titulo = $('#titulo').val();
+                                        
+                         		location.href="fim.php";   
+                            }
                         }, error: function(data) {
                             console.log(data);
                             alert("Erro, Houve uma falha ao salvar o registro!");
                         }
                         });
 
-                        var form = {};
-                        form.titulo = $('#titulo').val();
-                                        
-                         location.href="fim.php";   
+                       
 
 
             
