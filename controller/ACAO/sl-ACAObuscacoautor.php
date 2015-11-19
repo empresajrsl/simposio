@@ -3,13 +3,14 @@
 include ('../funcoes/conexao.php');
 include ('../funcoes/funcoesmysql.php');
 
-$cpf = $_POST['cpf'];
+$cpfa = $_POST['cpfa'];
 $coautor = $_POST['coautor'];
 $info = array();
 session_start();
 $cpfusulogado = $_SESSION['cpf'];
 
-$rp = select('*','sl_cadusu',"cpf = '".$cpf."' ");
+
+$rp = select('*','sl_cadusu',"cpf = '".$cpfa."' ");
 
 if(empty($rp) == false){
 	array_push($info, $rp);
