@@ -74,6 +74,26 @@ exit;
 
 				<div class="row">
 					<h2 class="col-md-12 col-xs-12 col-lg-12"><center>Trabalhos cadastrados até o momento</center><h2>
+					<h3 class="col-md-12 col-xs-12 col-lg-12"><center>
+					<?php  
+						if(isset($_GET['erro'])){
+							$erro = $_GET['erro'];
+							if($erro == 1){
+								echo ("<div class='alert alert-danger' role='alert'><center>Tipo de Arquivo não suportado! <br/> Certifique se o arquivo está no formato PDF.<center></div>");
+							}else{
+								echo ("<div class='alert alert-danger' role='alert'><center>O arquivo excede o tamanho limite!<center></div>");
+							}
+						}
+						if(isset($_GET['msg'])){
+							$msg = $_GET['msg'];
+							if($msg == 1){
+								echo ("<div class='alert alert-success' role='alert'><center>Arquivo enviado com sucesso<center></div>");
+							}
+						}
+
+					?>
+					</center><h3>
+
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-xs-12 col-lg-12">
