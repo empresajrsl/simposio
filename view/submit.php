@@ -38,7 +38,9 @@ exit;
 }
 ?>
 
-<?php $email = $_SESSION['usuario']; ?>
+<?php $email = $_SESSION['usuario']; 
+	  $nome = $_SESSION['nome'];	
+?>
 <head>
 	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>
@@ -73,7 +75,7 @@ exit;
 			<div class="col-md-12 col-xs-12 col-lg-12">
 
 				<div class="row">
-					<h2 class="col-md-12 col-xs-12 col-lg-12"><center>Trabalhos cadastrados até o momento</center><h2>
+					<h2 class="col-md-12 col-xs-12 col-lg-12"><center> <?php echo 'Olá '. $nome.' estes são seus trabalhos cadastrados até o momento'; ?> </center><h2>
 					<h3 class="col-md-12 col-xs-12 col-lg-12"><center>
 					<?php  
 						if(isset($_GET['erro'])){
