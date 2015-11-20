@@ -15,57 +15,52 @@ $nome = 'SGAgro';
 try {
     $mail = new PHPMailer(true); //New instance, with exceptions enabled
     
-    $body = '<html>';
-$body.= '<head>';
-$body.=     '<meta charset="utf-8">';
-$body.=     '<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>';
-$body.=     '<link type="text/css" rel="stylesheet" href="../css/style.css" ></link>';
-$body.=    ' <script src="../js/jquery-2.1.1.min.js"></script>';
-$body.=     '<script src="../js/bootstrap.min.js"></script><script src="../js/tooltip.js"></script>';
-$body.=     '<script src="../plugin/jquery-validate/jquery.validate.min.js"></script>';
-$body.=     '<title>Confirmação por E-mail</title>';
-$body.=    ' <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>';
-$body.= '</head>';
-$body.= '<body>';
-$body.=     '<div class="container">';
+    $body = "
+<html>
+<head>
+   <meta charset='utf-8'>
+   <link type='text/css' rel='stylesheet' href='../css/bootstrap.min.css' ></link>
+   <link type='text/css' rel='stylesheet' href='../css/style.css' ></link>
+   <script src='js/jquery-2.1.1.min.js'></script>
+   <script src='js/bootstrap.min.js'></script><script src='../js/tooltip.js'></script>
+   <script src='plugin/jquery-validate/jquery.validate.min.js'></script>
+   <title>Confirmação por E-mail</title>
+   <link rel='shortcut icon' href='images/SGAGRO LOGO.ico' type='../image/x-icon'/>
+</head>
+<body>
+   <div class='container'>
 
 
-$body.=         '<div class="jumbotron" style="background-image: url("../images/fundo.png"); background-size: cover;">';
-$body.=            ' <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">';
-$body.=                 '<div class="col-md-12 col-xs-12 col-lg-12">';
-$body.=                     '<div class="col-md-4 col-xs-4 col-lg-4">';
-$body.=                        ' <img src="../images/SGAGRO LOGO.png" style="width: 40%; height: 15%;">';
-$body.=                         '<img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">';
-$body.=                     '</div>';
-$body.=                     '<div class="col-md-6 col-xs-6 col-lg-6">';
-$body.=                         '<center><h1><i style="font-family: "Plantagenet Cherokee";"><b>Confirmação por E-mail</b></i></center></h1>';
-$body.=                     '</div>';
-$body.=                 '</div>';
-$body.=             '</div>';
-$body.=         '</div>';
+    <div class='jumbotron' style='background-image: url('../images/fundo.png'); background-size: cover;'>
+        <div class='row' style='margin-left: -6.5%; margin-right: 6.5%'>
+            <div class='col-md-12 col-xs-12 col-lg-12'>
+                <div class='col-md-4 col-xs-4 col-lg-4'>
+                    <img src='../images/SGAGRO LOGO.png' style='width: 40%; height: 15%;'>
+                    <img src='../images/unesp.jpg' style='width: 40%; height: 15%; margin-left: 5%;'>
+                </div>
+                <div class='col-md-6 col-xs-6 col-lg-6'>
+                    <center><h1><i style='font-family: 'Plantagenet Cherokee';'><b>Confirmação por E-mail</b></i></center></h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-$body.=         '<div class="jumbotron">';
-$body.=             '<div>';
+    <div class='jumbotron'>
+        <center>Seu cadastro está quase concluído, após clicar no link o acesso ao sistema será concedido a ".$email." <center>
+        <center>Caso ocorra algum erro, sugerimos que entre em contato com os desenvolvedores do sistema em:</center>
+        </br>
+        <center><b>sigmajr@gmail.com<b></center>
+        <center class='col-md-12 col-xs-12 col-lg-12'><h3>Clique no link abaixo para confirmar seu cadastro.</h3></center>
+        </br>
 
-$body.=                 '<center>Seu cadastro está quase concluído, após clicar no link o acesso ao sistema será concedido a <?php echo "<u>".$email."</u>"; ?>';
-$body.=                 ' Caso ocorra algum erro, sugerimos que entre em contato com os desenvolvedores do sistema em:</center>';
-$body.=             '</div>';
+        <center><a href='../model/confirmacad.php?email= ".$cod."' target='_blank' style='font-size: 20px;'> Confirmar Cadastro </a></center>
+    </div>
 
-$body.=             '</br>';
-
-$body.=             '<center><b>sigmajr@gmail.com<b></center>';
-
-$body.=             '<center class="col-md-12 col-xs-12 col-lg-12"><h3>Clique no link abaixo para confirmar seu cadastro.</h3></center>';
-
-$body.=             '</br>';
-
-$body.=             "<center><?php echo '<a href='../model/confirmacad.php?email='.$cod.'target='_blank' style='font-size: 20px;> Confirmar Cadastro </a>; ?></center>";
-$body.=         '</div>';
-
-$body.=     '</div>';
-$body.= '</body>';
-$body.= '</html>  ';     
+    </div>
+</body>
+</html>
+    ";
 
     $mensagem = 'teste';
      
