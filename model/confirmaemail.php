@@ -1,6 +1,3 @@
-
-<?php header ('Content-type: text/html; charset=UTF-8'); ?>
-
 <?php  
 
 include ('../controller/funcoes/conexao.php');
@@ -37,7 +34,9 @@ if( empty($emailusu['email']) )
 
 // verifica se o email informado é igual ao retornado pela busca
 elseif($emailusu['email'] == $emailsub){
-header('location: ../view/novasenha.php?key='.$key);
+
+echo '<script>location.href="../view/novasenha.php?key='.$key.'";</script>';	
+
 
 }
 
@@ -50,7 +49,7 @@ else
 
 
 
-exit;
+
  
 
 ?>
