@@ -14,20 +14,21 @@ include ('../controller/funcoes/funcoesmysql.php');
 	$info = $resultado[0];
 // se a busca não retornar nada envia a mensagem de email ou cpf incorreto para a pagina
 if(empty($busca))
-{
-	header('location: ../view/verificaremail.php?erro=1');
+{	echo '<script>location.href=" ../view/verificaremail.php?erro=1";</script>';
+	
 }
 // senão, verifica se o usuario esta cadastrado no sistema
 elseif($info['emailverificado'] == 1 )
 {
+	echo '<script>location.href=" ../view/emailsenha.php?email= '.$emailp.'";</script>';
 	
-	header('location: ../view/emailsenha.php?email= '.$emailp.'');
 
 }
 // se o usuario não estiver cadastrado envia a mensagem de erro 
 else
-{
-	header('location: ../view/emailsenha.php?erro=2');
+{	
+	echo '<script>location.href=" ../view/emailsenha.php?erro=2";</script>';
+	
 }
 
  ?>
