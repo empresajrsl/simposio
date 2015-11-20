@@ -23,17 +23,20 @@ include("../funcoes/funcoesmysql.php");
 	{	
 		 $query = updatemysql("senha = $senhap","sl_cadusu","email='$emailp'");
 		if($query){
-		 header('location: ../../view/novasenha.php?msg=1&key='.$key);
+			echo '<script>location.href=" ../../view/novasenha.php?msg=1&key='.$key.'";</script>';	
+		 
 		} else if (!$query){
 			$erro = mysql_error();
-			header('location: ../../view/novasenha.php?erro=2&key='.$key);
+			echo '<script>location.href=" ../../view/novasenha.php?erro=2&key='.$key.'";</script>';	
+			
 		}
-	}else{
-			header('location: ../../view/novasenha.php?erro=2&key='.$key);
+	}else{  
+			echo '<script>location.href=" ../../view/novasenha.php?erro=2&key='.$key.'";</script>';	
+		
 	}
 	if(empty($result))
-	{
-		header('location: ../../view/novasenha.php?erro=3&key='.$key);
+	{	echo '<script>location.href=" ../../view/novasenha.php?erro=3&key='.$key.'";</script>';	
+		
 	}
 	
  ?>
