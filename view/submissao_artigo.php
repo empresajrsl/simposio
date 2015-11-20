@@ -148,10 +148,10 @@ exit;
 
 					</div>
 					<div class="row" id="tipoapresenta" style="margin-top:7px">
-						Resumo Expandido
+						Pôster
 
 					</div>	
-					<input type="hidden" id="apresentacao" name="apresentacao" value="Resumo Expandido"></input>
+					<input type="hidden" id="apresentacao" name="apresentacao" value="Pôster"></input>
 				</div>
 			</div>
 			</div>
