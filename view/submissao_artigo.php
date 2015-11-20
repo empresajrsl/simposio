@@ -110,9 +110,9 @@ exit;
 				<div class="col-md-4" id="categoriadiv">
 					<label>Categoria do trabalho</label></br>
 					<select class="form-control" id="categoria" name="categoria">
-						<option value="Resumo Expandido">Resumo Expandido</option>
-						<option value="Relato Técnico">Relato Técnico</option>
-						<option value="Artigo Completo">Artigo Completo</option>
+						<option value="Pôster">Resumo Expandido</option>
+						<option value="Oral">Relato Técnico</option>
+						<option value="Oral">Artigo Completo</option>
 					</select>
 				</div>
 
