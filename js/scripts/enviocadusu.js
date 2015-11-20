@@ -23,7 +23,7 @@
                 env.complemento = $('#complemento').val();
                 env.cep = $('#cep').val();
                 env.bairro = $('#bairro').val();
-                env.bairro = $('#cargo').val();
+                env.cargo = $('#cargo').val();
 
                if ($('#autor').is(':checked') && $('#avaliador').is(':checked') == false ){
                    $('#tipocadastro').val('Autor');
@@ -61,7 +61,7 @@
                 var count = 0;
                 // verifica quais inputs estão vazios
                 $.each(env, function(key,val){
-                    if (val == '' & key != 'contato' & key != 'complemento'){
+                    if (val == '' & key != 'contato' & key != 'complemento'  & key != 'cargo'){
                         // aplica formatação css os inputs vazios
                         $("#"+key).css({"border" : "2px inset #F00", "padding": "2px"});
                         count++;
