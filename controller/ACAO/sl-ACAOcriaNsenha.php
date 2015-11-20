@@ -4,7 +4,7 @@ include("../funcoes/funcoesmysql.php");
 // recebe via post as variaveis do form 
 	$senhap = $_POST['senha1'];
 	$emailp = $_POST['email'];
-	$cpfp = $_POST['cpf'];
+	
 	$sigla = 'sigmajrsaoluis';
 	$key = base64_encode($sigla);
 
