@@ -1,24 +1,21 @@
-<?php header ('Content-type: text/html; charset=UTF-8'); ?>
-<?php
 
-//Variáveis que irão receber os dados criados no formulario criado.
 
+<?php  
+
+require_once('../PHPMailer/class.phpmailer.php');
 // guarda o email do usuario 
-$email = $_GET['email'];
+$email = $_GET['email'] ;
+
 // concatena uma string com o email
 $string = sha1('sigma').$email.sha1('sigma');
 // cria uma chave publica criptrografada
-$cod= base64_encode($string);
+$cod = base64_encode($string);
+$nome = 'SGAgro';
 
-$data_envio = date('d/m/Y'); // está variavel recebe a data no momento do envio com formato dia/mes/ano
-$hora_envio = date('H:i:s'); // está variavel recebe o horario no momento do envio com formato hora:minuto:segundo
-
-//fim das variaveis
-
-  
-// Compo E-mail
-// Basicamente uma variavel contendo o texto que sera exibido pelo e-mail enviado que neste caso contem formatação css e html e as variaveis acima.
-    $arquivo = "
+try {
+    $mail = new PHPMailer(true); //New instance, with exceptions enabled
+    
+    $body = "
     <html>
     <head>
         <meta charset='utf-8'>
@@ -70,31 +67,39 @@ $hora_envio = date('H:i:s'); // está variavel recebe o horario no momento do en
     </body>
     </html>
     ";
-// fim do campo e-mail
 
-//enviar
+    $mensagem = 'teste';
      
-    // emails para quem será enviado o formulário
-    $emailenviar = "seuemail@seudominio.com.br";
-    $destino = $emailenviar;
-    $assunto = "Contato pelo Site";
- 
-    // É necessário indicar que o formato do e-mail é html
-    $headers  = 'MIME-Version: 1.0' . "\r\n";
-        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $headers .= 'From: seuemail@seudominio.com.br'; //$nome <$email>';
-        $headers .= 'From: $nome <$email>';
-   
-    //$headers .= "Bcc: $EmailPadrao\r\n"; //este daqui é opcional e serve para enviar o mesmo e-mail para outras contas
+    $mail->IsSMTP(); //tell the class to use SMTP
+    $mail->SMTPAuth = true; // enable SMTP authentication
+    $mail->Port = 587; //SMTP porta (as mais utilizadas são '25' e '587'
+    $mail->Host = "smtp.sgagro.org"; // SMTP servidor
+    $mail->Username = "sigmajr@sgagro.org";  // SMTP  usuário
+    $mail->Password = "empresajr1";  // SMTP senha
      
-    $enviaremail = mail($destino, $assunto, $arquivo, $headers);
-    if($enviaremail){
-    $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
-    echo " <meta http-equiv='refresh' content='10;URL=contato.php'>";
-    } else {
-    $mgm = "ERRO AO ENVIAR E-MAIL!";
-    echo "";
+    
+     
+    $mail->AddReplyTo($email); //Responder para..
+    $mail->From = 'sigmajr@sgagro.org'; //e-mail fornecido pelo cliente
+    $mail->FromName   = $nome; //nome fornecido pelo cliente
+     
+    $to = $email; //Enviar para
+    $mail->AddAddress($to);
+    $mail->Subject  = "Confirmação do cadastro"; //Assunto
+    $mail->WordWrap   = 80; // set word wrap
+     
+    $mail->MsgHTML($body);
+     
+    $mail->IsHTML(true); // send as HTML
+     
+    if($mail->Send()){
+    echo 'Mensagem enviada com sucesso teste para  '.$email; 
+    }else{
+        echo 'erro ao enviar o email teste '.$mail->ErrorInfo;
     }
-//fim de enviar
+
+} catch (phpmailerException $e) {
+echo $e->errorMessage(); //retorno devolvido para o ajax caso erro
+}
 
 ?>
