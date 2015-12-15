@@ -33,44 +33,36 @@
 	    <div class="row">
 
 	    	<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-			        <div class="col-md-6 col-xs-6 col-lg-6"><div class="jumbotron">
+			        <div class="col-md-3 col-xs-3 col-lg-3"><div class="jumbotron">
 			               	<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
 			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-			                    		<center><h3>Total de Cadastros:</h3></center>
+			                    		<center><h4>Total de Cadastros:</h4></center>
 			                    </div></div></br>
 
 			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-			                    		<label>Total de Inscritos:</label> php</br>
-			                    		<label>Total de Artigos:</label> php</br>
-			                    		<label>Total de Artigos Aprovados:</label> php</br>
-			                    		<label>Total de Artigos Reprovados:</label> php</br>
-			                    		<label>Total de artigos Não Avaliados:</label> php</br>
-			                    		<label>Total de artigos Avaliados:</label> php</br>
+			                    		teste
 			                    </div></div>
 			                </div></div>
 			        </div></div>
 
-			        <div class="col-md-6 col-xs-6 col-lg-6"><div class="jumbotron">
+			        <div class="col-md-3 col-xs-3 col-lg-3"><div class="jumbotron">
 			               	<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
 			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-			                    		<center><h3>Total de Cadastros por Categoria:</h3></center>
+			                    		<center><h4>Total de Cadastros por Categoria:</h4></center>
 			                    </div></div></br>
 
 			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-			                    		<label>Categoria 1:</label> php</br>
-			                    		<label>Categoria 1:</label> php</br>
-			                    		<label>Categoria 1:</label> php</br>
-			                    		<label>Categoria 1:</label> php</br>
+			                    		teste
 			                    </div></div>
 			                </div></div>
 			        </div></div>
-	    	</div></div>
+	    	<!--/div></div-->
 
-	    	<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-			        <div class="col-md-6 col-xs-6 col-lg-6"><div class="jumbotron">
+	    	<!--div class="row"><div class="col-md-12 col-xs-12 col-lg-12"-->
+			        <div class="col-md-3 col-xs-3 col-lg-3"><div class="jumbotron">
 			               	<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
 			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-			                    		<center><h3>Total de Trabalhos Aprovados:</h3></center>
+			                    		<center><h4>Total de Trabalhos Aprovados:</h4></center>
 			                    </div></div></br>
 
 			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
@@ -79,10 +71,10 @@
 			                </div></div>
 			        </div></div>
 
-			        <div class="col-md-6 col-xs-6 col-lg-6"><div class="jumbotron">
+			        <div class="col-md-3 col-xs-3 col-lg-3"><div class="jumbotron">
 			               	<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
 			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-			                    		<center><h3>Total de Trabalhos Aprovados por Categoria:</h3></center>
+			                    		<center><h4>Total de Trabalhos Aprovados por Categoria:</h4></center>
 			                    </div></div></br>
 
 			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
@@ -91,6 +83,47 @@
 			                </div></div>
 			        </div></div>
 			</div></div>
+
+			<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			        <div class="col-md-6 col-xs-6 col-lg-6"><div class="jumbotron">
+			               	<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			                    		<center><h4>Total de Cadastros por Região:</h4></center>
+			                    </div></div></br>
+
+			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			                    	teste	
+			                    </div></div>
+			                </div></div>
+			        </div></div>
+
+			        <div class="col-md-6 col-xs-6 col-lg-6"><div class="jumbotron">
+			               	<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			                    		<center><h4>Total de Cadastros por Estado:</h4></center>
+			                    </div></div></br>
+
+			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			                    	teste	
+			                    </div></div>
+			                </div></div>
+			        </div></div>
+			</div></div>
+
+			<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			        <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3"><div class="jumbotron">
+			               	<div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			                    		<center><h4>Trabalhos aprovados com inscrições efetuadas e pagas:</h4></center>
+			                    </div></div></br>
+
+			                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
+			                    	teste	
+			                    </div></div>
+			                </div></div>
+			        </div></div>
+			</div></div>
+
 		</div>
 	</div><!--fim container-->
 </body>
