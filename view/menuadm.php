@@ -31,6 +31,7 @@
         
         <div class="row"><!--row nescessaria para deixar os jumbotrons alinhados com o banner-->
 
+
             <div class="col-md-4 col-xs-4 col-lg-4"><!--jumbotron do menu-->
                 <div class="jumbotron">
                     <div class="row">
@@ -44,19 +45,20 @@
 
                             <div class="row">
                                 <div class="col-md-12 col-xs-12 col-lg-12">
-                                    <button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Estatisticas</button>
+                                    <a href="estatisticas.php"><button class="btn btn-primary col-md-12 col-xs-12 col-lg-12"> Estatisticas</button></a>
                                 </div>
                             </div></br>
 
                             <div class="row">
                                 <div class="col-md-12 col-xs-12 col-lg-12">
-                                    <button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Avaliadores</button>
+                                    <a href="avaliadores_cad.php"><button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Avaliadores</button></a>
                                 </div>
                             </div></br>
 
+
                             <div class="row">
                                 <div class="col-md-12 col-xs-12 col-lg-12">
-                                    <button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Novo Avaliador</button>
+                                    <a href="cadadm.php"><button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Novo adminístrador</button></a>
                                 </div>
                             </div></br>
                         
