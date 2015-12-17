@@ -32,9 +32,9 @@
 	    	<div class="row">
 	    		<div class="col-md-12 col-xs-12 col-lg-12">
 	    			<center>
-		    			<table>
-		    				<tr><th>Nome</th>		<th>Cidade</th>		<th>Endereço</th>	<th>Função</th>	<th>Telefone</th>	<th>E-mail</th>	<th>Aprovado</th> <th>Reprovado</th></tr>
-		    				<tr><td>Anderson</td>	<td>Barrinha</td>	<td>Rua Marginal</td><td>Aluno</td>	<td>981334130</td>	<td>anderson@teste.com</td><td>sim</td><td>não</td></tr>
+		    			<table class="table">
+		    				<tr><th>Nome</th>		<th>Cidade</th>		<th>Endereço</th>	<th>Função</th>	<th>Telefone</th>	<th>E-mail</th>	<th>Aprovado</th></tr>
+		    				<tr><td>Anderson</td>	<td>Barrinha</td>	<td>Rua Marginal</td><td>Aluno</td>	<td>981334130</td>	<td>anderson@teste.com</td> <td>Não avaliado</td> <td><button type="button" class="btn btn-success"> Aprovar </button></td><td><button type="button" class="btn btn-danger">Reprovar</button></td></tr>
 		    			</table>
 		    		</center>
 	    		</div>
