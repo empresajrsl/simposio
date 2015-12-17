@@ -29,33 +29,51 @@
         
         <h3><center>Bem vindo ao painel de controle do sistema</center></h3>
         
-        <div class="row">
-            <div class="col-md-4 col-xs-4 col-lg-4"><div class="jumbotron">
-                    <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-                        <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-                        <center><h2>Menu</h2></center>
-                        </div></div></br>
+        <div class="row"><!--row nescessaria para deixar os jumbotrons alinhados com o banner-->
 
-                        <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-                        <button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Estatisticas</button>
-                        </div></div></br>
+            <div class="col-md-4 col-xs-4 col-lg-4"><!--jumbotron do menu-->
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 col-lg-12">
+                            
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12 col-lg-12">
+                                    <center><h2>Menu</h2></center>
+                                </div>
+                            </div></br>
 
-                        <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-                        <button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Avaliadores</button>
-                        </div></div></br>
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12 col-lg-12">
+                                    <button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Estatisticas</button>
+                                </div>
+                            </div></br>
 
-                        <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-                        <button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Novo Avaliador</button>
-                        </div></div></br>
-                    </div></div>
-            </div></div>
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12 col-lg-12">
+                                    <button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Avaliadores</button>
+                                </div>
+                            </div></br>
 
-            <div class="col-md-8 col-xs-8 col-lg-8"><div class="jumbotron"> 
-                <div class="row"><div class="col-md-12 col-xs-12 col-lg-12">
-                    <center><img src="../images/SGAGRO LOGO.png" style="width: 90%; height: 43%;"></center>
-                </div></div> 
-            </div></div>
-        </div>
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12 col-lg-12">
+                                    <button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Novo Avaliador</button>
+                                </div>
+                            </div></br>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div><!--fim do jumbotron do menu-->
+
+            <div class="col-md-8 col-xs-8 col-lg-8"><div class="jumbotron"><!--jumbotron da imagem-->
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 col-lg-12">
+                        <center><img src="../images/SGAGRO LOGO.png" style="width: 90%; height: 43%;"></center>
+                    </div>
+                </div> 
+            </div><!--jumbotron da imagem-->
+
+        </div><!-- fim da row nescessaria para deixar esse jumbotron alinhado com o banner-->
 
 	</div><!--fim container-->
 </body>
