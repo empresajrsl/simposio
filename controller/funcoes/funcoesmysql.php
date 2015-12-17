@@ -74,7 +74,7 @@ function insert($tabela, $campos, $argumentos){
 function select($campos,$tabela,$condicao){
     include "conexao.php";
     $infobanco = array();
-    if(isset($condicao)){
+    if($condicao != ''){
     $query = "SELECT ".$campos." FROM ".$tabela." WHERE ".$condicao;
     }else{
       $query = "SELECT ".$campos." FROM ".$tabela." ";
