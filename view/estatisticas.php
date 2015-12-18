@@ -105,17 +105,23 @@ $totalcad = $busca[0]['total'];
 	                </div>
 	            </div>
         </div>
-			          
+
 
 		<div class="row">
-			<div class="col-md-offset-3 col-md-6 col-xs-6 col-lg-6">
+			<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
 			    <div class="jumbotron">
 			        <center><h4>Trabalhos aprovados com inscrições efetuadas e pagas:</h4></center>
 			        teste
                 </div>
             </div>
-            </br>
         </div>
+
+        <div class="row">
+        	<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
+			    	<button class="btn btn-primary col-md-12 col-xs-12 col-lg-12">Voltar</button>
+                </div>
+            </div>
+        </div></br>
 			                
     <div><!--fim container-->
 </body>
