@@ -45,7 +45,7 @@ $totalcad = $busca[0]['total'];
 
     	
 		<div class="row">
-			
+			<div class ="col-md-12 col-lg-12 col-xs-12"><!--ajuste-->
 				<div class="panel panel-default" style="border-radius:30px">
 					<div class="panel-heading" style="background-color: black; padding:15px; border-radius:30px 30px 0px 0px"></div>
 					
@@ -79,8 +79,8 @@ $totalcad = $busca[0]['total'];
 							<img src="../images/digitos/d2.bmp" style="width:12%; heigth:12%;">
 						</td>
 					</table>
-					
 				</div>
+			</div><!--Ajuste-->
 		</div><br>	
 	    <div class="row">
 
