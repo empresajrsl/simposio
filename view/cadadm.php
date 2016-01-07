@@ -11,6 +11,7 @@
 	<title>Cadastro de Administrador</title>
 </head>
 <body>
+
 	<div class="Container">
 		<!--Banner-->
 	    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
@@ -29,15 +30,16 @@
 	    <!--Fim Banner-->
 
 	    <div class="jumbotron">
-	    	<div class="row">
+	    	<div class="row panel panel-default" style="border-radius:50px">
 	    		<div class="col-md-12 col-xl-12 col-lg-12">
 	    			<form>
 	    				<div class="row">
+	    					<center><h4> Informe os dados abaixo para realizar o cadastro de um novo administrador</h4></center>
 	    					<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
 	    						<label>Nome:</label>
 	    						<div class="input-group">
 	    							<div class="input-group-btn">
-			    						<button type="button" class="btn btn-primary glyphicon glyphicon-user"></button>
+			    						<button type="button" class="btn btn-success glyphicon glyphicon-user"></button>
 			    					</div>	
 			    						<input type="text" id="nome" name="nome" class="form-control">
 		    						
@@ -47,35 +49,51 @@
 
 	    				<div class="row">
 	    					<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
-	    						<label>E-mail:</label></br>
-	    						<input type="text" id="email" name="email" class="form-control">
+	    						<label>E-mail:</label>
+	    						<div class="input-group">
+		    						<div class="input-group-btn">
+				    						<button type="button" class="btn btn-success glyphicon glyphicon-envelope"></button>
+				    					</div>	
+		    						<input type="text" id="email" name="email" class="form-control">
+	    						</div>	
 	    					</div>	
 	    				</div></br>
 
 	    				<div class="row">
 	    					<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
-	    						<label>Senha:</label></br>
-	    						<input type="text" id="senha" name="senha" class="form-control">
+	    						<label>Senha:</label>
+	    					
+	    						<div class="input-group">
+		    						<div class="input-group-btn">
+				    						<button type="button" class="btn btn-success">***</button>
+				    					</div>	
+	    									<input type="password" id="senha" name="senha" class="form-control">
+	    						</div>
 	    					</div>	
 	    				</div></br>
 
 	    				<div class="row">
 	    					<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
-	    						<label>Confirmar Senha:</label></br>
-	    						<input type="text" id="confsenha" name="confsenha" class="form-control">
+	    						<label>Confirmar Senha:</label>
+	    						<div class="input-group">
+		    						<div class="input-group-btn">
+				    						<button type="button" class="btn btn-success">***</button>
+				    					</div>	
+	    									<input type="password" id="confsenha" name="confsenha" class="form-control">
+	    							</div>			
 	    					</div>	
 	    				</div></br>
 
 	    				<div class="row">
 	    					
         					<div class="col-md-3 col-md-offset-3 col-xs-3 col-xs-offset-3 col-lg-3 col-lg-offset-3">
-			    				<a href="menuadm.php"><button type="button" class="btn btn-primary col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home"> Menu</button></a>
+			    				<a href="menuadm.php"><button type="button" class="btn btn-primary col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home" style="border-radius:60px"> Menu</button></a>
                 			</div>
           
         
 
 	    					<div class="col-md-3 col-xs-3 col-lg-3">
-	    						<button type="submit" id="salvar" name="salvar"  class="btn btn-success col-md-12 col-xl-12 col-lg-12 glyphicon glyphicon-floppy-disk"> Salvar</button>
+	    						<button type="submit" id="salvar" name="salvar"  class="btn btn-success col-md-12 col-xl-12 col-lg-12 glyphicon glyphicon-floppy-disk" style="border-radius:60px"> Salvar</button>
 	    						<!--input type="submit" id="salvar" name="salvar" value="Salvar" class="btn btn-success col-md-12 col-xl-12 col-lg-12"-->
 	    					</div>	
 	    				</div>

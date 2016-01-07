@@ -41,8 +41,8 @@
 	    	</div>
 
 	    	<div class="row">
-	        	<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
-				    	<a href="menuadm.php"><button class="btn btn-primary col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home"> Menu</button></a>
+	        	<div class="col-md-2 col-md-offset-5 col-xs-2 col-xs-offset-5 col-lg-2 col-lg-offset-5">
+				    	<a href="menuadm.php"><button class="btn btn-success col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home" style="border-radius:60px"> Menu</button></a>
 	                </div>
 	            </div>
         	</div>
