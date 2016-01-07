@@ -37,7 +37,7 @@
 	    						<label>Nome:</label>
 	    						<div class="input-group">
 	    							<div class="input-group-btn">
-			    						<button type="button" class=" btn btn-primary glyphicon glyphicon-user"></button>
+			    						<button type="button" class="btn btn-primary glyphicon glyphicon-user"></button>
 			    					</div>	
 			    						<input type="text" id="nome" name="nome" class="form-control">
 		    						
