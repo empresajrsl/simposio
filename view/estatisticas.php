@@ -45,8 +45,8 @@ $totalcad = $busca[0]['total'];
     	
 		<div class="row">
 			<div class="row">
-        		<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
-			    	<a href="menuadm.php"><button class="btn btn-primary col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home"> Menu</button></a>
+        		<div class="col-md-2 col-md-offset-5 col-xs-2 col-xs-offset-5 col-lg-2 col-lg-offset-5">
+			    	<a href="menuadm.php"><button class="btn btn-primary col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home" style="border-radius:60px"> Menu</button></a>
                 </div>
             </div></br>
 
@@ -54,28 +54,28 @@ $totalcad = $busca[0]['total'];
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
 					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
-						Total cadastrados
+						Usuários cadastrados
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
 					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
-						Total cadastrados
+						Trabalhos cadastrados
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
 					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
-						Total cadastrados
+						Trabalho aprovados
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
 					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
-						Total cadastrados
+						Inscrições pagas
 					</center>
 				</div>
 			</div>

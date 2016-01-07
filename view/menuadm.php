@@ -9,6 +9,12 @@
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Painel do administrador</title>
+    <style type="text/css"> 
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{ background-color: green}
+    a { color: green;}
+
+    </style>
+</head>    
 <body>
 	<div class="container">
 		<!--Banner-->
@@ -27,52 +33,30 @@
         </div>
         <!--Fim Banner-->
         
-        <h3><center>Bem vindo ao painel de controle do sistema</center></h3>
+        <h3><center>Bem vindo ao painel de controle do sistema</center></h3><br>
         
-        <div class="row" ><!--row nescessaria para deixar os jumbotrons alinhados com o banner-->
+        <div class="row" ><!-- row nescessaria para deixar os jumbotrons alinhados com o banner -->
 
 
-            <div class="col-md-2 col-xs-2 col-lg-2" ><!--jumbotron do menu-->
-                <div class="jumbotron" style="height:440px">
-                  
-                    <div class="row">
-                        
-                            <center><h2>Menu</h2></center>
-                        
-                    </div></br>
-                    
-                    <div class="row">
-                        
-                            <center><a href="estatisticas.php"><button class="btn btn-primary  col-md-12 col-xs-12 col-lg-12" style="width:140px; margin-left:-34px" > Estatisticas</button></a></center>
-                        
-                    </div></br></br>
-
-                    <div class="row">
-                        
-                            <center><a href="avaliadores_cad.php"><button class="btn btn-primary col-md-12 col-xs-12 col-lg-12" style="width:140px; margin-left:-34px">Avaliadores</button></a></center>
-                        
-                    </div></br></br>
-
-
-                    <div class="row">
-                    
-                            <center><a href="cadadm.php"><button class="btn btn-primary col-md-12 col-xs-12 col-lg-12" style="width:140px; margin-left:-34px">Novo adminístrador</button></a></center>
-                      
-                    </div></br></br>
-                    
-                </div>
+             <div class="col-md-2 col-xs-2 col-lg-2">
+                <ul class="nav nav-pills nav-stacked">
+                  <li class="active"><a href="#"><b>Menu</b></a></li>
+                  <li><a href="estatisticas.php"><b>Estatisticas</b></a></li>
+                  <li><a href="avaliadores_cad.php"><b>Avaliadores</b></a></li>
+                  <li><a href="cadadm.php"><b>Novo administrador</b></a></li>
+                </ul>
             
                 
             </div>
 
-            <div class="col-md-10 col-xs-10 col-lg-10"><div class="jumbotron"><!--jumbotron da imagem-->
+            <div class="col-md-10 col-xs-10 col-lg-10"><div class="panel panel-default"><!--jumbotron da imagem-->
                 
-                        <center><img src="../images/SGAGRO LOGO.png" style="width: 100%; height: 43%;"></center>
+                        <h1> Log de atividades ...  <h1>
                   
                 
             </div><!--jumbotron da imagem-->
 
-        </div><!-- fim da row nescessaria para deixar esse jumbotron alinhado com o banner-->
+        </div> <!-- fim da row nescessaria para deixar esse jumbotron alinhado com o banner -->
 
 	</div><!--fim container-->
 </body>

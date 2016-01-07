@@ -7,63 +7,63 @@
     var data = [
         {
             value: 35,
-            color:"#F7464A",
-            highlight: "#FF5A5E",
-            label: "Vermelho"
+            color:"#32CD32",
+            highlight: "#00FF00",
+            label: "Resumo expandido"
         },
         {
             value: 50,
-            color: "#46BFBD",
-            highlight: "#5AD3D1",
-            label: "Azul"
+            color: "#FF6347",
+            highlight: "#FF0000",
+            label: "relato técnico"
         },
         {
             value: 15,
-            color: "#FDB45C",
-            highlight: "#FFC870",
-            label: "Amarelo"
+            color: "#00008B",
+            highlight: "#0000FF",
+            label: "Artigo completo"
         }
     ]
 
     var data2 = [
         {
-            value: 45,
-            color:"#F7464A",
-            highlight: "#FF5A5E",
-            label: "Vermelho"
+            value: 35,
+            color:"#32CD32",
+            highlight: "#00FF00",
+            label: "Resumo expandido"
         },
         {
-            value: 30,
-            color: "#46BFBD",
-            highlight: "#5AD3D1",
-            label: "Azul"
+            value: 50,
+            color: "#FF6347",
+            highlight: "#FF0000",
+            label: "relato técnico"
         },
         {
-            value: 25,
-            color: "#FDB45C",
-            highlight: "#FFC870",
-            label: "Amarelo"
+            value: 15,
+            color: "#00008B",
+            highlight: "#0000FF",
+            label: "Artigo completo"
         }
     ]
 
     var data3 = [
         {
-            value: 45,
-            color:"#F7464A",
-            highlight: "#FF5A5E",
-            label: "Vermelho"
+            value: 35,
+            color:"#32CD32",
+            highlight: "#00FF00",
+            label: "Resumo expandido"
         },
         {
-            value: 30,
-            color: "#46BFBD",
-            highlight: "#5AD3D1",
-            label: "Azul"
+            value: 50,
+            color: "#FF6347",
+            highlight: "#FF0000",
+            label: "relato técnico"
         },
         {
-            value: 25,
-            color: "#FDB45C",
-            highlight: "#FFC870",
-            label: "Amarelo"
+            value: 15,
+            color: "#00008B",
+            highlight: "#0000FF",
+            label: "Artigo completo"
         }
     ]
     
