@@ -10,8 +10,10 @@
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Painel do administrador</title>
     <style type="text/css"> 
-    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{ background-color: #5cb85c;}
-    a { color: #5cb85c;}
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{ background-color: #5cb85c; font-size: 25px;}
+    a { color: #5cb85c; font-size: 18px}
+
+    li > a:hover{ color: green;}
 
     </style>
 </head>    

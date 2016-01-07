@@ -54,28 +54,28 @@ $totalcad = $busca[0]['total'];
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
 					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
-						Usuários cadastrados
+						<b>Usuários cadastrados</b>
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
 					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
-						Trabalhos cadastrados
+						<b>Trabalhos cadastrados</b>
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
 					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
-						Trabalho aprovados
+						<b>Trabalho aprovados</b>
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
 					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
-						Inscrições pagas
+						<b>Inscrições pagas</b>
 					</center>
 				</div>
 			</div>
