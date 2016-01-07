@@ -53,28 +53,28 @@ $totalcad = $busca[0]['total'];
 			<div class="col-md-12 col-xs-12 col-lg-12">
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
-					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
+					style="color: white; background-color: #5cb85c; padding:15px; border-radius:30px 30px 0px 0px">
 						<b>Usuários cadastrados</b>
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
-					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
+					style="color: white; background-color: #5cb85c; padding:15px; border-radius:30px 30px 0px 0px">
 						<b>Trabalhos cadastrados</b>
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
-					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
+					style="color: white; background-color: #5cb85c; padding:15px; border-radius:30px 30px 0px 0px">
 						<b>Trabalho aprovados</b>
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
-					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
+					style="color: white; background-color: #5cb85c; padding:15px; border-radius:30px 30px 0px 0px">
 						<b>Inscrições pagas</b>
 					</center>
 				</div>
@@ -82,7 +82,7 @@ $totalcad = $busca[0]['total'];
 
 			<div class ="col-md-12 col-lg-12 col-xs-12"><!--ajuste-->
 				<div class="panel panel-default" style="border-radius:30px">
-					<div class="panel-heading" style="background-color: black; padding:15px; border-radius:30px 30px 0px 0px"></div>
+					<div class="panel-heading" style="background-color: #5cb85c; padding:15px; border-radius:30px 30px 0px 0px"></div>
 					
 					<table> <!--style="margin-left: 100px">
 						<!-- <th> Total de usuarios cadastrados </th>
