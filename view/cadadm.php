@@ -75,7 +75,8 @@
         
 
 	    					<div class="col-md-3 col-xs-3 col-lg-3">
-	    						<input type="submit" id="salvar" name="salvar" value="Salvar" class="btn btn-success col-md-12 col-xl-12 col-lg-12">
+	    						<button type="submit" id="salvar" name="salvar"  class="btn btn-success col-md-12 col-xl-12 col-lg-12 glyphicon glyphicon-floppy-disk"> Salvar</button>
+	    						<!--input type="submit" id="salvar" name="salvar" value="Salvar" class="btn btn-success col-md-12 col-xl-12 col-lg-12"-->
 	    					</div>	
 	    				</div>
 	    			</form>
