@@ -34,8 +34,14 @@
 	    			<form>
 	    				<div class="row">
 	    					<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
-	    						<label>Nome:</label></br>
-	    						<input type="text" id="nome" name="nome" class="form-control">
+	    						<label>Nome:</label>
+	    						<div class="input-group">
+	    							<div class="input-group-btn">
+			    						<button type="button" class=" btn btn-primary glyphicon glyphicon-user"></button>
+			    					</div>	
+			    						<input type="text" id="nome" name="nome" class="form-control">
+		    						
+	    						</div>
 	    					</div>	
 	    				</div></br>
 
