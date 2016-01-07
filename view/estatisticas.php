@@ -42,46 +42,90 @@ $totalcad = $busca[0]['total'];
 	        </div>
 	    </div>
 	    <!--Fim Banner-->
-
     	
 		<div class="row">
+			<div class="row">
+        		<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
+			    	<a href="menuadm.php"><button class="btn btn-primary col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home"> Menu</button></a>
+                </div>
+            </div></br>
+
+			<div class="col-md-12 col-xs-12 col-lg-12">
+				<div class="col-md-3 col-xs-3 col-lg-3">
+					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
+					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
+						Total cadastrados
+					</center>
+				</div>
+
+				<div class="col-md-3 col-xs-3 col-lg-3">
+					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
+					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
+						Total cadastrados
+					</center>
+				</div>
+
+				<div class="col-md-3 col-xs-3 col-lg-3">
+					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
+					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
+						Total cadastrados
+					</center>
+				</div>
+
+				<div class="col-md-3 col-xs-3 col-lg-3">
+					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
+					style="color: white; background-color: black; padding:15px; border-radius:30px 30px 0px 0px">
+						Total cadastrados
+					</center>
+				</div>
+			</div>
+
 			<div class ="col-md-12 col-lg-12 col-xs-12"><!--ajuste-->
 				<div class="panel panel-default" style="border-radius:30px">
 					<div class="panel-heading" style="background-color: black; padding:15px; border-radius:30px 30px 0px 0px"></div>
 					
-					<table style="margin-left: 100px">
+					<table> <!--style="margin-left: 100px">
 						<!-- <th> Total de usuarios cadastrados </th>
 						<th> Total de trabalhos cadastrados </th>
 						<th> Total de incrições pagas </th>
 						<th> Total trabalhos aprovados </th> -->
 
-						<td>
+						<td class="col-md-3 col-xs-3 col-lg-3">
+							<center>
 							<img src="../images/digitos/d1.bmp" style="width:12%; heigth:12%;">
 							<img src="../images/digitos/d0.bmp" style="width:12%; heigth:12%;">
 							<img src="../images/digitos/d2.bmp" style="width:12%; heigth:12%;">
+							</center>
 						</td>
 
-						<td>		
+						<td class="col-md-3 col-xs-3 col-lg-3">
+							<center>
 							<img src="../images/digitos/d2.bmp" style="width:12%; heigth:12%;">
 							<img src="../images/digitos/d6.bmp" style="width:12%; heigth:12%;">
 							<img src="../images/digitos/d3.bmp" style="width:12%; heigth:12%;">
+							</center>
 						</td>
 
-						<td>		
+						<td class="col-md-3 col-xs-3 col-lg-3">
+							<center>
 							<img src="../images/digitos/d5.bmp" style="width:12%; heigth:12%;">
 							<img src="../images/digitos/d1.bmp" style="width:12%; heigth:12%;">
 							<img src="../images/digitos/d6.bmp" style="width:12%; heigth:12%;">
+							</center>
 						</td>
 
-						<td>		
+						<td class="col-md-3 col-xs-3 col-lg-3">
+							<center>
 							<img src="../images/digitos/d3.bmp" style="width:12%; heigth:12%;">
 							<img src="../images/digitos/d0.bmp" style="width:12%; heigth:12%;">
 							<img src="../images/digitos/d2.bmp" style="width:12%; heigth:12%;">
+							</center>
 						</td>
 					</table>
 				</div>
 			</div><!--Ajuste-->
-		</div><br>	
+		</div><br>
+
 	    <div class="row">
 
 				<!-- <div class="col-md-3 col-xs-3 col-lg-3">
@@ -116,7 +160,6 @@ $totalcad = $busca[0]['total'];
 	                </div>
 	            </div> -->
 		                
-
 		        <div class="col-md-4 col-xs-4 col-lg-">
 		        	<div class="jumbotron">
 	               		
@@ -146,7 +189,6 @@ $totalcad = $busca[0]['total'];
 	            </div>
         </div>
 
-
 		<!-- <div class="row">
 			<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
 			    <div class="jumbotron">
@@ -155,13 +197,6 @@ $totalcad = $busca[0]['total'];
                 </div>
             </div>
         </div> -->
-
-        <div class="row">
-        	<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
-			    	<a href="menuadm.php"><button class="btn btn-primary col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home"> Menu</button></a>
-                </div>
-            </div>
-        </div></br>
 			                
     <div><!--fim container-->
 
