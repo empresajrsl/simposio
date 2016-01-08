@@ -1,16 +1,4 @@
-<?php 
 
-include("../controller/funcoes/funcoesmysql.php");
-
-// conta quantos cadastros existem
-$busca = select('count(id_usuario) as total','sl_cadusu','');
-$totalcad = $busca[0]['total'];
-
-// conta quantos cadastros existem
-$busca = select('count(id_usuario) as total','sl_cadusu','');
-$totalcad = $busca[0]['total'];
-
-?> 
 
 <html>
 <head>
@@ -24,9 +12,22 @@ $totalcad = $busca[0]['total'];
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Painel de Estatisticas</title>
+
+	<style type="text/css"> 
+    .digitos{ 
+    	margin-left: 5px;
+    };
+
+    
+
+
+    </style>
+
 </head>
 <body>
 	<div class="container">
+		
+
 		<!--Banner-->
 	    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
 	        <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">
@@ -43,6 +44,7 @@ $totalcad = $busca[0]['total'];
 	    </div>
 	    <!--Fim Banner-->
     	
+
 		<div class="row">
 			<div class="row">
         		<div class="col-md-2 col-md-offset-5 col-xs-2 col-xs-offset-5 col-lg-2 col-lg-offset-5">
@@ -84,43 +86,32 @@ $totalcad = $busca[0]['total'];
 				<div class="panel panel-default" style="border-radius:30px">
 					<div class="panel-heading" style="background-color: #5cb85c; padding:15px; border-radius:30px 30px 0px 0px"></div>
 					
-					<table> <!--style="margin-left: 100px">
-						<!-- <th> Total de usuarios cadastrados </th>
-						<th> Total de trabalhos cadastrados </th>
-						<th> Total de incrições pagas </th>
-						<th> Total trabalhos aprovados </th> -->
+					<table> 
+						<tr>
+							<td class="col-md-3 col-xs-3 col-lg-3" >
+								<center id="usuarios">
+								
+								</center>
+							</td>
 
-						<td class="col-md-3 col-xs-3 col-lg-3">
-							<center>
-							<img src="../images/digitos/d1.bmp" style="width:12%; heigth:12%;">
-							<img src="../images/digitos/d0.bmp" style="width:12%; heigth:12%;">
-							<img src="../images/digitos/d2.bmp" style="width:12%; heigth:12%;">
-							</center>
-						</td>
+							<td class="col-md-3 col-xs-3 col-lg-3">
+								<center id="trabalhos">
+								
+								</center>
+							</td>
 
-						<td class="col-md-3 col-xs-3 col-lg-3">
-							<center>
-							<img src="../images/digitos/d2.bmp" style="width:12%; heigth:12%;">
-							<img src="../images/digitos/d6.bmp" style="width:12%; heigth:12%;">
-							<img src="../images/digitos/d3.bmp" style="width:12%; heigth:12%;">
-							</center>
-						</td>
+							<td class="col-md-3 col-xs-3 col-lg-3">
+								<center id="trabaprovado">
+								
+								</center>
+							</td>
 
-						<td class="col-md-3 col-xs-3 col-lg-3">
-							<center>
-							<img src="../images/digitos/d5.bmp" style="width:12%; heigth:12%;">
-							<img src="../images/digitos/d1.bmp" style="width:12%; heigth:12%;">
-							<img src="../images/digitos/d6.bmp" style="width:12%; heigth:12%;">
-							</center>
-						</td>
-
-						<td class="col-md-3 col-xs-3 col-lg-3">
-							<center>
-							<img src="../images/digitos/d3.bmp" style="width:12%; heigth:12%;">
-							<img src="../images/digitos/d0.bmp" style="width:12%; heigth:12%;">
-							<img src="../images/digitos/d2.bmp" style="width:12%; heigth:12%;">
-							</center>
-						</td>
+							<td class="col-md-3 col-xs-3 col-lg-3">
+								<center id="inscricao">
+								
+								</center>
+							</td>
+						</tr>
 					</table>
 				</div>
 			</div><!--Ajuste-->
@@ -202,7 +193,12 @@ $totalcad = $busca[0]['total'];
 
     	
 
-<script src="../js/scripts/graficomodular.js"></script>
+    	
+    	
+    <?php include('../controller/funcoes/placar.php'); ?>
+
+    <?php include('../controller/funcoes/graficomodular.php'); ?>
+
 <script src="../js/scripts/graficobarra.js"></script>
 <script type="text/javascript">
 		window.onload = function(){
@@ -222,7 +218,6 @@ $totalcad = $busca[0]['total'];
         var ctx = document.getElementById("GraficoBarra2").getContext("2d");
         var BarChart = new Chart(ctx).Bar(databarra2, options);
     }</script>
-
 
 
 </body>
