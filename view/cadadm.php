@@ -87,13 +87,13 @@
 	    				<div class="row">
 	    					
         					<div class="col-md-3 col-md-offset-3 col-xs-3 col-xs-offset-3 col-lg-3 col-lg-offset-3">
-			    				<a href="menuadm.php"><button type="button" class="btn btn-primary col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home" style="border-radius:60px"> Menu</button></a>
+			    				<a href="menuadm.php"><button type="button" class="btn btn-success col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home" style="border-radius:60px"> Menu</button></a>
                 			</div>
           
         
 
 	    					<div class="col-md-3 col-xs-3 col-lg-3">
-	    						<button type="submit" id="salvar" name="salvar"  class="btn btn-success col-md-12 col-xl-12 col-lg-12 glyphicon glyphicon-floppy-disk" style="border-radius:60px"> Salvar</button>
+	    						<button type="submit" id="salvar" name="salvar"  class="btn btn-primary col-md-12 col-xl-12 col-lg-12 glyphicon glyphicon-floppy-disk" style="border-radius:60px"> Salvar</button>
 	    						<!--input type="submit" id="salvar" name="salvar" value="Salvar" class="btn btn-success col-md-12 col-xl-12 col-lg-12"-->
 	    					</div>	
 	    				</div>
