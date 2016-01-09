@@ -1,6 +1,5 @@
 <?php 
 
-include("funcoesmysql.php");
 
 // conta quantos cadastros existem
 $busca = select('count(id_usuario) as total','sl_cadusu','');
