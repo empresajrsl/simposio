@@ -2,7 +2,7 @@
 
 <?php
 include "config.php";
-header('Content-Type: text/html; charset=utf-8');
+//header('Content-Type: text/html; charset=utf-8');
 
 // Conectamos ao nosso servidor MySQL
 $conect = mysqli_connect($myhostname,$myusuario,$mysenha, $mydatabase);

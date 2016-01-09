@@ -110,9 +110,9 @@ exit;
 				<div class="col-md-4" id="categoriadiv">
 					<label>Categoria do trabalho</label></br>
 					<select class="form-control" id="categoria" name="categoria">
-						<option value="Pôster">Resumo Expandido</option>
-						<option value="Oral">Relato Técnico</option>
-						<option value="Oral">Artigo Completo</option>
+						<option value="Resumo Expandido">Resumo Expandido</option>
+						<option value="Relato Técnico">Relato Técnico</option>
+						<option value="Artigo Completo">Artigo Completo</option>
 					</select>
 				</div>
 
@@ -194,11 +194,22 @@ exit;
 <script type="text/javascript">
 	$(document).ready(function(){
 			$(document).on('change','#categoria',function(){ 
-				$('#tipoapresenta').html('');
-				$('#apresentacao').val('');
 				var categoria = $('#categoria option:selected').val();
-				$('#tipoapresenta').append(categoria);
-				$('#apresentacao').val(categoria);
+				if(categoria = "Resumo Expandido"){
+					console.log("Resumo Expandido");
+					$('#tipoapresenta').attr('Pôster');
+					$('#apresentacao').val('Pôster');
+				}
+				 if(categoria = "Relato Técnico"){
+					console.log("Relato Técnico");
+					$('#tipoapresenta').attr('Oral');
+					$('#apresentacao').val('Oral');
+				}
+				 if(categoria = "Artigo Completo"){
+					console.log("Artigo Completo");
+					$('#tipoapresenta').attr('Oral');
+					$('#apresentacao').val('Oral');
+				}
 
 			});
 		});	
