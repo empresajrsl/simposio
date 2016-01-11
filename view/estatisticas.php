@@ -135,7 +135,7 @@
 		</div>
 </div>
 		<div class="row">
-			<div class="col-md-12 col-xs-12 col-lg-12">
+			<div class="col-md-offset-3 col-md-6 col-xs-6 col-lg-6">
 		        <div class="jumbotron" style="background-color: #fff">
 		           <center><h4>Total de cadastro por região</h4><canvas id="GraficoBarra" style="width:100%"></canvas></center>
 		            	
@@ -147,20 +147,13 @@
          <div class="row">
 		    <div class="col-md-12 col-xs-12 col-lg-12">
 	        	<div class="jumbotron" style="background-color: #fff">
-               	    <center><h4>Total de cadastro por Estado</h4><canvas id="GraficoBarra2" style="width:100%;"></canvas></center>
+               	    <center><h4>Total de cadastro por Estado</h4><canvas id="GraficoBarra2" ></canvas></center>
                	   
                 </div>
             </div>
     	</div>
 
-		<!-- <div class="row">
-			<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
-			    <div class="jumbotron">
-			        <center><h4>Trabalhos aprovados com inscrições efetuadas e pagas:</h4></center>
-			        teste
-                </div>
-            </div>
-        </div> -->
+		
 			                
     <div><!--fim container-->
 
