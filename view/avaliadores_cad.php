@@ -9,6 +9,9 @@
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Avaliadores Cadastrados</title>
+	<style type="text/css">
+
+	</style>
 </head>
 <body>
 	<div class="container">
@@ -29,15 +32,32 @@
 	    <!--Fim Banner-->
 
 	    <div class="jumbotron">
-	    	<div class="row">
-	    		<div class="col-md-12 col-xs-12 col-lg-12">
-	    			<center>
-		    			<table class="table">
-		    				<tr><th>Nome</th>		<th>Cidade</th>		<th>Endereço</th>	<th>Função</th>	<th>Telefone</th>	<th>E-mail</th>	<th>Aprovado</th></tr>
-		    				<tr><td>Anderson</td>	<td>Barrinha</td>	<td>Rua Marginal</td><td>Aluno</td>	<td>981334130</td>	<td>anderson@teste.com</td> <td>Não avaliado</td> <td><button type="button" class="btn btn-success"> Aprovar </button></td><td><button type="button" class="btn btn-danger">Reprovar</button></td></tr>
-		    			</table>
-		    		</center>
-	    		</div>
+	    	
+		    	<div class="row">
+		    		<div class="col-md-12 col-xs-12 col-lg-12">
+		    			<center>
+			    			<table class="table" id="avaliadorescad" style="margin-left:-50px">
+			    			<tr> 
+			    				<th> Nome </th>
+			    				<th> Cidade </th>
+			    				<th> Endereco </th>
+			    				<th> Cargo </th>
+			    				<th> Instituição </th>
+			    				<th> Celular </th>
+			    				<th> telefone </th>
+			    				<th> E-mail </th>
+			    				<th> Status </th>
+			    				<th><th>
+			    				<th></th>	
+			    				
+			    				
+
+
+			    			</tr>	
+			    			</table>
+			    		</center>
+		    		</div>
+	    		
 	    	</div>
 
 	    	<div class="row">
@@ -48,5 +68,41 @@
         	</div>
 	    </div>
 	</div><!--fim container-->
+
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+				var env = {};
+					
+				
+
+				$.ajax({
+		            type: "POST",
+		            url: "../controller/ACAO/avaliadorescad.php",
+		            data: env,
+		            dataType : 'json',
+		            success: function(data){
+		                console.log(data);
+		                
+		                var count = 0;
+		                $.each(data,function(key,val){
+		                	
+		                		console.log(data);
+		                	
+		                	var linha = '<tr id="'+data[count]['idusuario']+'"> <td>'+data[count]['nome']+'</td> <td>'+data[count]['cidade']+'</td> <td>'+data[count]['endereco']+'</td> <td>'+data[count]['cargo']+'</td> <td>'+data[count]['instituicao']+'</td> <td>'+data[count]['telefone']+'</td> <td>'+data[count]['contato']+'</td> <td>'+data[count]['email']+'</td> <td> Não verificado </td> <td> <button class="btn btn-success"> Aprovar </button> </td> <td> <button class="btn btn-danger"> Reprovar </button> </td> </tr>';
+		                	$('#avaliadorescad').append(linha);
+		                	count++;
+		                
+		                });
+		             
+
+		            }, error: function(data) {
+		                	console.log(data);
+		               		$('#avaliadorescad').append('<b>Nenhum avaliador cadastrado até o momento</b>');
+		            	}
+		    		});
+				});
+	</script>
+
 </body>
 </html>
+
