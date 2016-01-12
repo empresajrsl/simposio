@@ -87,8 +87,15 @@
 		                $.each(data,function(key,val){
 		                	
 		                		console.log(data);
+		                		if(data[count]['status'] == 0){
+		                			var status = 'Não verificado';
+		                		}else if(data[count]['status'] == 1){
+		                			var status = 'Aprovado';
+		                		}else if(data[count]['status'] == 2){
+		                			var status = 'Reprovado';
+		                		}
 		                	
-		                	var linha = '<tr id="'+data[count]['idusuario']+'"> <td>'+data[count]['nome']+'</td> <td>'+data[count]['cidade']+'</td> <td>'+data[count]['endereco']+'</td> <td>'+data[count]['cargo']+'</td> <td>'+data[count]['instituicao']+'</td> <td>'+data[count]['telefone']+'</td> <td>'+data[count]['contato']+'</td> <td>'+data[count]['email']+'</td> <td> Não verificado </td> <td> <button class="btn btn-success"> Aprovar </button> </td> <td> <button class="btn btn-danger"> Reprovar </button> </td> </tr>';
+		                	var linha = '<tr id="'+data[count]['idusuario']+'"> <td>'+data[count]['nome']+'</td> <td>'+data[count]['cidade']+'</td> <td>'+data[count]['endereco']+'</td> <td>'+data[count]['cargo']+'</td> <td>'+data[count]['instituicao']+'</td> <td>'+data[count]['telefone']+'</td> <td>'+data[count]['contato']+'</td> <td>'+data[count]['email']+'</td> <td class="status" id="'+data[count]['idusuario']+'" > <b>'+status+'<b> </td> <td> <button id="'+data[count]['idusuario']+'" class="btn btn-success"> Aprovar </button> </td> <td> <button id="'+data[count]['idusuario']+'"  class="btn btn-danger" > Reprovar </button> </td> </tr>';
 		                	$('#avaliadorescad').append(linha);
 		                	count++;
 		                
@@ -101,6 +108,66 @@
 		            	}
 		    		});
 				});
+	</script>
+
+	<script type="text/javascript">
+	$(document).on('click','.btn-success',function(){
+		var env = {};
+		env.id = $(this).attr('id');
+		 			console.log(env.id);
+		 			$.ajax({
+	                    type: 'POST',
+	                    url: '../controller/ACAO/aprovar.php',
+	                    data: env,
+	                    dataType: 'json',
+
+	                    success: function(data){
+	                        console.log(data);
+	                       $('.status').each(function(){
+	                       	if( $(this).attr('id')  == env.id ){
+	                       		$(this).html('');
+	                       		$(this).append('<b>Aprovado</b>');
+	                       	}
+	                       }); 
+	                                       
+	                
+	                    },
+	                    error: function(data){
+	                        console.log(data);
+	                    },
+	                    cache: false
+                	});
+	});
+	</script>
+
+	<script type="text/javascript">
+	$(document).on('click','.btn-danger',function(){
+		var env = {};
+		env.id = $(this).attr('id');
+		 			console.log(env.id);
+		 			$.ajax({
+	                    type: 'POST',
+	                    url: '../controller/ACAO/reprovar.php',
+	                    data: env,
+	                    dataType: 'json',
+
+	                    success: function(data){
+	                        console.log(data);
+	                       $('.status').each(function(){
+	                       	if( $(this).attr('id')  == env.id ){
+	                       		$(this).html('');
+	                       		$(this).append('<b>Reprovado</b>');
+	                       	}
+	                       }); 
+	                                       
+	                
+	                    },
+	                    error: function(data){
+	                        console.log(data);
+	                    },
+	                    cache: false
+                	});
+	});
 	</script>
 
 </body>
