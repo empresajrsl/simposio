@@ -45,17 +45,27 @@
                   <li class="active"><a href="#"><b>Menu</b></a></li>
                   <li><a href="estatisticas.php"><b>Estatisticas</b></a></li>
                   <li><a href="avaliadores_cad.php"><b>Avaliadores</b></a></li>
-                  <li><a href="cadadm.php"><b>Novo administrador</b></a></li>
+                  <li><a href="cadadm.php"><b>Novo Administrador</b></a></li>
                 </ul>
             
                 
             </div>
 
-            <div class="col-md-10 col-xs-10 col-lg-10"><div class="panel panel-default"><!--jumbotron da imagem-->
-                
-                        <h1> Log de atividades ...  <h1>
-                  
-                
+            <div class="col-md-10 col-xs-10 col-lg-10"><!--jumbotron da imagem-->
+                <div class="jumbotron" style="color: white; background-color: #5cb85c">
+                    <center><h2>Lista de Telas</h2></center>
+
+                    <h4>Entenda para que serve cada uma das telas que sera exibida ao clicar em uma das opções do menu a esquerda:</h4>
+                    <h4></br>
+                        <ul>
+                            <li><b>Estatisticas:</b> Exibe informações como, quantidade de usuarios cadastrados no sistema, 
+                                quantidados de trabalhos, além de graficos que exibem informaçõe relativas a cada categortia de trabalho.</li></br>
+                            <li><b>Avaliadores:</b> Exibe informações como, Nome, Cidade, Endereco, Cargo, Instituição, Celular, Telefone, 
+                                E-mail e Status dos avaliadores que se cadastraram no sistema.</li></br>
+                            <li><b>Novo Administrador:</b> Permite adicionar um novo administrador para acessar este menu de administrador.</li>
+                        </ul>
+                    </h4>
+                </div>
             </div><!--jumbotron da imagem-->
 
         </div> <!-- fim da row nescessaria para deixar esse jumbotron alinhado com o banner -->
