@@ -35,7 +35,7 @@
         </div>
         <!--Fim Banner-->
         
-        <h3><center>Bem vindo ao painel de controle do sistema</center></h3><br>
+       
         
         <div class="row" ><!-- row nescessaria para deixar os jumbotrons alinhados com o banner -->
 
@@ -53,7 +53,7 @@
 
             <div class="col-md-10 col-xs-10 col-lg-10"><!--jumbotron da imagem-->
                 <div class="jumbotron" style="color: white; background-color: #5cb85c">
-                    <center><h2>Lista de Telas</h2></center>
+                    <center><h2 style="margin-top:-30px">Bem vindo ao painel de controle do sistema !</h2></center><br>
 
                     <h4>Entenda para que serve cada uma das telas que sera exibida ao clicar em uma das opções do menu a esquerda:</h4>
                     <h4></br>
@@ -62,7 +62,7 @@
                                 quantidados de trabalhos, além de graficos que exibem informaçõe relativas a cada categortia de trabalho.</li></br>
                             <li><b>Avaliadores:</b> Exibe informações como, Nome, Cidade, Endereco, Cargo, Instituição, Celular, Telefone, 
                                 E-mail e Status dos avaliadores que se cadastraram no sistema.</li></br>
-                            <li><b>Novo Administrador:</b> Permite adicionar um novo administrador para acessar este menu de administrador.</li>
+                            <li><b>Novo Administrador:</b> Permite adicionar um novo administrador para acessar este painel de controle.</li>
                         </ul>
                     </h4>
                 </div>
