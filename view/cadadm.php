@@ -32,9 +32,25 @@
 	    <div class="jumbotron">
 	    	<div class="row panel panel-default" style="border-radius:50px">
 	    		<div class="col-md-12 col-xl-12 col-lg-12">
-	    			<form>
+	    			<form action="../controller/ACAO/novoadm.php" method="post">
 	    				<div class="row">
 	    					<center><h4> Informe os dados abaixo para realizar o cadastro de um novo administrador</h4></center>
+	    					<center><h4> <?php 
+	    									if(isset($_GET['msg'])){
+											$msg = $_GET['msg'];
+											if($msg == 1){
+												echo '<div class="alert-success"><center>Cadastro efetuado com sucesso <center></div>';
+											}
+											
+											}
+											if(isset($_GET['erro'])){
+											$erro = $_GET['erro'];
+											if($erro == 1){
+												echo '<div class="alert-danger"><center>As senhas informadas não correspondem verifique e tente novamente <center></div>';
+											}
+											
+											}
+				?>	</h4></center>
 	    					<div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
 	    						<label>Nome:</label>
 	    						<div class="input-group">
@@ -54,7 +70,7 @@
 		    						<div class="input-group-btn">
 				    						<button type="button" class="btn btn-success glyphicon glyphicon-envelope"></button>
 				    					</div>	
-		    						<input type="text" id="email" name="email" class="form-control">
+		    						<input type="email" id="email" name="email" class="form-control">
 	    						</div>	
 	    					</div>	
 	    				</div></br>
@@ -93,8 +109,8 @@
         
 
 	    					<div class="col-md-3 col-xs-3 col-lg-3">
-	    						<button type="submit" id="salvar" name="salvar"  class="btn btn-primary col-md-12 col-xl-12 col-lg-12 glyphicon glyphicon-floppy-disk" style="border-radius:60px"> Salvar</button>
-	    						<!--input type="submit" id="salvar" name="salvar" value="Salvar" class="btn btn-success col-md-12 col-xl-12 col-lg-12"-->
+	    						<input type="submit" id="salvar" name="salvar" value="Salvar"  class="btn btn-primary col-md-12 col-xl-12 col-lg-12 glyphicon glyphicon-floppy-disk" style="border-radius:60px"></input>
+	    						
 	    					</div>	
 	    				</div>
 	    			</form>
