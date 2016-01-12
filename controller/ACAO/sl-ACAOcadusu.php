@@ -23,13 +23,18 @@ $cep = $_POST['cep'];
 $bairro = $_POST['bairro'];
 $tipocadastro = $_POST['tipocadastro'];
 $cargo = $_POST['cargo'];
+$status = 0;
 $criado = date('Y-m-d H:i'); 
 $tabela = 'sl_cadusu';
 $campos = 'senha, nome, sobrenome, nascimento, sexo, pais,cpf, endereco, cidade, estado, instituicao, email, telefone, contato,numero,complemento,cep,bairro,tipocadastro,criado,cargo';
 $argumentos  = "'".$senha."','".$nome."', '".$sobrenome."', '".$nascimento."', '".$sexo."', '".$pais."','".$cpf."', '".$endereco."', '".$cidade."', '".$estado."', '".$instituicao."', '".$email."', '".$telefone."', '".$contato."', '".$numero."', '".$complemento."','".$cep."', '".$bairro."', '".$tipocadastro."', '".$criado."', '".$cargo."'";
-
+$argumentosavaliador  = "'".$nome."','".$cidade."', '".$endereco."', '".$cargo."', '".$instituicao."', '".$telefone."','".$contato."', '".$email."', ".$status." ";
 
 $rp = insert($tabela,$campos,$argumentos);
+
+if($tipocadastro == 'Avaliador' || $tipocadastro == 'Autor e Avaliador'){
+	$resposta = insert('sl_avaliador','nome,cidade,endereco,cargo,instituicao,telefone,contato,email,status',$argumentosavaliador);
+}
 
 echo "</br>";      
 echo json_encode($rp);	
