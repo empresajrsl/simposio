@@ -104,7 +104,7 @@ $sustentabilidade = $areabusca8[0]['total'];
             value: gestao,
             color:"#32CD32",
             highlight: "#00FF00",
-            label: "Gestão de Pessoas e Estudos Organizacionais"
+            label: "Gestão de Pessoas"
         },
         {
             value: desenvolvimento,
@@ -122,13 +122,13 @@ $sustentabilidade = $areabusca8[0]['total'];
             value: empreendedorismo,
             color:"#32CD32",
             highlight: "#00FF00",
-            label: "Empreendedorismo, Inovação e Tecnologia"
+            label: "Empreendedorismo, Inovação"
         },
         {
             value: estrategia,
             color: "#FF6347",
             highlight: "#FF0000",
-            label: "Estratégia, Planejamento e Governança"
+            label: "Estratégia, Planejamento"
         },
         {
             value: logisticas,
@@ -146,25 +146,25 @@ $sustentabilidade = $areabusca8[0]['total'];
             value: sustentabilidade,
             color: "#FF6347",
             highlight: "#FF0000",
-            label: "Sustentabilidade e Responsabilidade Sócio Ambiental"
+            label: "Sustentabilidade e Responsabilidade"
         }
     ]
 
     var data3 = [
         {
-            value: 35,
+            value: 1/100*100,
             color:"#32CD32",
             highlight: "#00FF00",
             label: "Resumo"
         },
         {
-            value: 50,
+            value: 1/100*100,
             color: "#FF6347",
             highlight: "#FF0000",
             label: "Relato Técnico"
         },
         {
-            value: 15,
+            value: 1/100*100,
             color: "#00008B",
             highlight: "#0000FF",
             label: "Artigo Completo"
