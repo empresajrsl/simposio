@@ -36,7 +36,7 @@
 		    	<div class="row">
 		    		<div class="col-md-12 col-xs-12 col-lg-12">
 		    			<center>
-			    			<table class="table" id="avaliadorescad" style="margin-left:-50px">
+			    			<table class="table" id="avaliadorescad" style="margin-left:-50px; overflow: auto;">
 			    			<tr> 
 			    				<th> Nome </th>
 			    				<th> Cidade </th>
