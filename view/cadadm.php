@@ -22,7 +22,7 @@
 	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
 	                </div>
 	                <div class="col-md-6 col-xs-6 col-lg-6">
-	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Cadastro de Administrador</b></i></center></h1>
+	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b></b></i></center></h1>
 	                </div>
 	            </div>
 	        </div>
@@ -57,7 +57,7 @@
 	    							<div class="input-group-btn">
 			    						<button type="button" class="btn btn-success glyphicon glyphicon-user"></button>
 			    					</div>	
-			    						<input type="text" id="nome" name="nome" class="form-control">
+			    						<input type="text" id="nome" name="nome" class="form-control" required>
 		    						
 	    						</div>
 	    					</div>	
@@ -70,7 +70,7 @@
 		    						<div class="input-group-btn">
 				    						<button type="button" class="btn btn-success glyphicon glyphicon-envelope"></button>
 				    					</div>	
-		    						<input type="email" id="email" name="email" class="form-control">
+		    						<input type="email" id="email" name="email" class="form-control" required>
 	    						</div>	
 	    					</div>	
 	    				</div></br>
@@ -83,7 +83,7 @@
 		    						<div class="input-group-btn">
 				    						<button type="button" class="btn btn-success">***</button>
 				    					</div>	
-	    									<input type="password" id="senha" name="senha" class="form-control">
+	    									<input type="password" id="senha" name="senha" class="form-control" required>
 	    						</div>
 	    					</div>	
 	    				</div></br>
@@ -95,7 +95,7 @@
 		    						<div class="input-group-btn">
 				    						<button type="button" class="btn btn-success">***</button>
 				    					</div>	
-	    									<input type="password" id="confsenha" name="confsenha" class="form-control">
+	    									<input type="password" id="confsenha" name="confsenha" class="form-control" required>
 	    							</div>			
 	    					</div>	
 	    				</div></br>

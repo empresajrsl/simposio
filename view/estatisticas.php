@@ -27,7 +27,7 @@
 	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
 	                </div>
 	                <div class="col-md-6 col-xs-6 col-lg-6">
-	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Painel de estatitisticas</b></i></center></h1>
+	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b></b></i></center></h1>
 	                </div>
 	            </div>
 	        </div>
