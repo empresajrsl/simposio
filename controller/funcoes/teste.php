@@ -14,7 +14,7 @@ echo "<br>";
 foreach ($instituicaoautor as $key => $value) {
 	$resultado = preg_match("/".$value."/", $instituicaoavaliador, $matches);
 
-	if($resultado === 1 & $value != 'DE' & $value != 'DO' & $value != 'DA' & $value != ' ' & $value != 'UNIVERSIDADE'   & $value != '-' & $value != 'FACULDADE'  ){
+	if($resultado === 1 & $value != 'DE' & $value != 'DO' & $value != 'DA' & $value != ' ' & $value != 'UNIVERSIDADE'   & $value != '-' & $value != 'FACULDADE' & $value != 'FEDERAL' & $value != 'ESTADUAL'  ){
 		$count++;
 		echo "<br> palavra igual encontrada = ".$value.'<br>';
 		
