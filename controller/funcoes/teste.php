@@ -2,9 +2,9 @@
 <?php 
 
 
-$instituicaoavaliador = strtoupper('UPF - Universidade de Passo Fundo');
+$instituicaoavaliador = strtoupper('UFBA - Universidade Federal da Bahia');
 $palavras = explode(' ', $instituicaoavaliador);
-$instituicao = strtoupper('UNIFOR - Universidade de Fortaleza');
+$instituicao = strtoupper('UFBA - Universidade Federal da Bahia');
 $count = 0;
 $instituicaoautor = explode(' ', $instituicao);
 
@@ -14,7 +14,7 @@ echo "<br>";
 foreach ($instituicaoautor as $key => $value) {
 	$resultado = preg_match("/".$value."/", $instituicaoavaliador, $matches);
 
-	if($resultado === 1 & $value != 'DE' & $value != 'DO' & $value != 'DA' & $value != ' ' & $value != 'UNIVERSIDADE'   & $value != '-' & $value != 'FACULDADE' & $value != 'FEDERAL' & $value != 'ESTADUAL'  ){
+	if($resultado === 1 & $value != 'DE' & $value != 'DO' & $value != 'DA' & $value != ' ' & $value != 'UNIVERSIDADE'   & $value != '-' & $value != 'FACULDADE'  ){
 		$count++;
 		echo "<br> palavra igual encontrada = ".$value.'<br>';
 		
