@@ -12,7 +12,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 		$senhap = $_POST['senha'];
 			
 				// faz um select no banco de dados dos campos email, senha, email verificado e status na tabela usuarios 
-				$busca = select('id_usuario,email, senha, emailverificado,publicado,cpf,nome',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
+				$busca = select('id_usuario,email, senha, emailverificado,publicado,cpf,nome,instituicao',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
 				
 				$result = array();
 
@@ -50,6 +50,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									$_SESSION['idusu'] = $result['id_usuario'];
 									$_SESSION['cpf'] = $result['cpf'];
 									$_SESSION['nome'] = $result['nome'];
+									$_SESSION['instituicao'] = $result['instituicao'];
 
 									
 
