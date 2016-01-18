@@ -48,14 +48,47 @@
 		    		 <div class="col-md-12">
 		     			<div class="form-group">
 		     			<div style="text-align: center">
-		     				<label style="color: #009900"> <h3>Avaliação</h3> </label><br>
-		     				<label style="float: center; color: #009900; "> Nota de 0 a 5 </label>
+		     				<!-- <label style="color: #009900"> <h3>Avaliação</h3> </label><br>
+		     				<label style="float: center; color: #009900; "> Nota de 0 a 5 </label> -->
 		     			</div>
 		     			</div>
 		     		</div>	
+		     	</div>
+
+		     	<div class="jumbotron" style="margin:3px; padding:25px">
+			     	<div class="row">
+			     		<div class="col-md-12">
+			     			<h3>Instruções de como avaliar os trabalhos: <button class="btn btn-primary">Download do arquivo oficial</button></h3>
+			     			<h4>A nota final é a média ponderada baseada em 10 critérios, cada um deles valendo de 0 a 5 pontos</h4>
+			     			<h5>Critério 1: O título do trabalho é conciso e representa o conteúdo do trabalho? (Peso 1)</h5>
+			     			<h5>Critério 2: O resumo apresenta o conteúdo do trabalho de forma adequada e segundo as exigências do evento? (Peso 1)</h5>
+			     			<h5>Critério 3: A introdução contextualiza o problema do trabalho, apresenta a justificativa e relevância teórica e prática da pesquisa? (Peso 2)</h5>
+			     			<h5>Critério 4: A revisão bibliográfica é atualizada, qualificada, adequada à questão do estudo e pertinente? (Peso 1)</h5>
+			     			<h5>Critério 5: Os métodos utilizados são pertinentes a questão de estudo e foram utilizados corretamente? (Peso 2)</h5>
+			     			<h5>Critério 6: Os resultados são analisados corretamente e há condições para replicá-los? (Peso 2)</h5>
+			     			<h5>Critério 7: As conclusões apresentam as implicações teóricas e práticas do estudo? (Peso 1)</h5>
+			     			<h5>Critério 8: O texto é claro, adequado ao idioma e a estrutura das seções são articuladas ao objetivo da pesquisa? (Peso 2)</h5>
+			     			<h5>Critério 9: A formatação do trabalho atende as normas estabelecidas para o evento? (Peso 1)</h5>
+			     			<h5>Critério 10: O estudo é original e contribui para o campo do conhecimento? (Peso 2)   </h5>
+
+			     		</div>	
+		     	</div>	
+
+		     	</div>
+		     	<div class="row" style="margin-top: 35px">
+		     		<div class="col-md-12">
+		     		<table class="table">
+		     			<th>Titulo</th><th>Area</th><th>categroia</th>
+		     			<tr><td> Titulo teste </td><td> Agronegócio </td><td> Resumo expanido </td><td><button class="btn btn-primary">Vizualizar trabalho</button></td><td><button class="btn btn-primary">Download do PDF</button></td></tr>
+		     		</table>
+		     		<table class="table">
+		     			<th>Nota Critério 1 </th><th> Nota critério 2 </th><th>Nota critério 3</th><th>Nota critério 4</th><th>Nota critério 5 </th><th>Nota critério 6 </th><th>Nota critério 7</th><th>Nota critério 8</th><th>Nota critério 9</th><th>Nota critério 10</th>
+		     			<tr><td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td><td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td><td><input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td></tr>	
+		     		</table>
+		     		</div>	
 		     	</div>	
 		     	
-		     	<div class="row">
+		     	<!-- <div class="row">
 		    		 <div class="col-md-12">
 		     			<div class="form-group">
 		     				<label> O título do trabalho é conciso e representa o conteúdo do trabalho?  </label>
@@ -200,7 +233,7 @@
 
 		?>
 
-	</div>
+	</div> -->
 
 
 	    
