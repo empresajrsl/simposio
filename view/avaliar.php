@@ -12,15 +12,8 @@
 	<title>Tela de avaliação</title>
 </head>
 <body>
-	<div class="container">
-		<?php 
-		$id = $_POST['idartigo']; echo "meu id: ".$id;
-		$condicao = "`id_artigo` = '". $id."'";
-		$campo = '*';
-		$tabela = "`sl_artigo`";
-		$arquivos = select($campo, $tabela, $condicao);
-		$arquivo = $arquivos[0];
-		?>
+<div class="container">
+		
 		
 		<!--Banner-->
 	    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
@@ -31,28 +24,15 @@
 	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
 	                </div>
 	                <div class="col-md-6 col-xs-6 col-lg-6">
-	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Titulo <br><?= $arquivo['titulo']; ?></b></i></center></h1>
+	                   
 	                </div>
 	            </div>
 	        </div>
 	    </div>
 	    <!--Fim Banner-->
 	    
-	    <div class="jumbotron">
-	    	<div class="row">
-
-	    		<!-- div class="row">
-		    		<div class="col-md-12">
-		     			<div class="form-group">
-		     			<div style="text-align: center">
-		     				<label style="color: #009900"> <h3>Avaliação</h3> </label><br>
-		     				<label style="float: center; color: #009900; "> Nota de 0 a 5 </label>
-		     			</div>
-		     			</div>
-		     		</div>
-		     	</div-->
-	    		
-	    		<!--div class="jumbotron"> <!--style="margin:3px; padding:25px"-->
+	   
+	    		<div class="jumbotron" style="margin:3px; padding:25px"> 
 			     	<div class="row">
 			     		<div class="col-md-12 col-xs-12 col-lg-12">
 			     			<h3>Instruções de como avaliar os trabalhos: <button class="btn btn-primary">Download do arquivo oficial</button></h3>
@@ -69,155 +49,85 @@
 			     			<h5><b>Critério 10:</b> O estudo é original e contribui para o campo do conhecimento? (Peso 2)   </h5>
 			     		</div>	
 		     		</div>	
-		     	<!--/div--></br>
+		     	</div>
 
-		     	<!--Começo do form-->
-		     	<div class="row"> <!--style="margin-top: 35px"--><!--notas-->
-		     		<form class="col-md-12 col-xs-12 col-lg-12 form-horizontal" action="#" method="post">
+		     	
 
-			     		<table class="table">
-			     			<th>Titulo</th><th>Area</th><th>categroia</th>
-			     			<tr><td> Titulo teste </td><td> Agronegócio </td><td> Resumo expanido </td><td><button class="btn btn-primary">Vizualizar trabalho</button></td><td><button class="btn btn-primary">Download do PDF</button></td></tr>
-			     		</table>
-
-			     		<table class="table">
-			     			<th>Nota Critério 1 </th><th> Nota critério 2 </th><th>Nota critério 3</th><th>Nota critério 4</th><th>Nota critério 5 </th><th>Nota critério 6 </th><th>Nota critério 7</th><th>Nota critério 8</th><th>Nota critério 9</th><th>Nota critério 10</th>
-			     			<tr>
-			     				<td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td>
-			     				<td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td>
-			     				<td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td>
-			     				<td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td>
-			     				<td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td>
-			     				<td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td>
-			     				<td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td>
-			     				<td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td>
-			     				<td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td>
-			     				<td> <input type="number" style="width:35px; margin-bottom:5px">  <button class="btn btn-success" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td>
-			     			</tr>	
-			     		</table>
-
-			     		<!-- <div class="row">
-		    		 <div class="col-md-12">
-		     			<div class="form-group">
-		     				<label> O título do trabalho é conciso e representa o conteúdo do trabalho?  </label>
-		     				<input style="float: right;margin-right:10px" type="number" id="nota1" name="nota1" placeholder="0 a 5" min="0" max="5" > </input>
-		     				<label style="float:right; margin-right:10px">Nota: </label><br>
-		     		<br><br></div>
-		     		</div>	
+		     	
+		     	<div class="row" style="margin-top:20px">
+			     	<div class="col-md-12 col-xs-12 col-lg-12" id="trabalhos">
+			     	</div>	
 		     	</div>	
+		     	
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+				var env = {};
+					
+				
 
-		    
-		     <div class="row">
-		     	<div class="col-md-12">
-		     		<div class="form-group">
-		     			<label>O resumo apresenta o conteúdo do trabalho de forma adequada e segundo as exigências do evento?  </label>
-		     			<input style="float: right;margin-right:10px" type="number" id="nota2" name="nota2" placeholder="0 a 5" min="0" max="5" > </input>
-		     			<label style="float:right; margin-right:10px">Nota: </label><br>
-		     	<br><br></div>
-		     	</div>	
-		     </div>	
-		      
+				$.ajax({
+		            type: "POST",
+		            url: "../controller/ACAO/trabalhoscad.php",
+		            data: env,
+		            dataType : 'json',
+		            success: function(data){
+		                console.log(data);
+		                
+		                var count = 0;
+		                var count2 = 1;
+		                $.each(data,function(key,val){
+		                	
+		                	
+		                	
+						    var linha =     	'<div class="panel panel-primary" style="margin-top:50px">';
+						    linha += 					'<div class="panel-heading">Trabalho '+count2+'</div>';
+							linha +=	     				'<div class="row" >';
+							linha +=	     					'<div class="col-md-12">';
+							linha +=	     						'<table class="table">';
+							linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
+							linha +=	     						'<tr><td> '+data[count]['titulo'] +' </td><td> '+data[count]['area'] +' </td><td> '+data[count]['categoria'] +' </td><td><button class="btn btn-primary">Vizualizar trabalho</button></td><td><button class="btn btn-primary">Download do PDF</button></td></tr>';
+							linha +=	     						'</table>';
+							linha +=	     						'<table class="table">';
+							linha +=	     						'<th>Nota Critério 1 </th><th> Nota critério 2 </th><th>Nota critério 3</th><th>Nota critério 4</th><th>Nota critério 5 </th><th>Nota critério 6 </th><th>Nota critério 7</th><th>Nota critério 8</th><th>Nota critério 9</th><th>Nota critério 10</th>';
+							linha +=	     						'<tr><td> <input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota1">  <button type="button" class="btn btn-success notas" nota="1" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td><td> <input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota2">  <button type="button" class="btn btn-success notas" nota="2" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota3">  <button type="button" class="btn btn-success notas" nota="3" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota4">  <button type="button" class="btn btn-success notas" nota="4" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota5">  <button type="button" class="btn btn-success notas" nota="5" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota6">  <button type="button" class="btn btn-success notas" nota="6" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota7">  <button type="button" class="btn btn-success notas" nota="7" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota8">  <button type="button" class="btn btn-success notas" nota="8" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota9">  <button type="button" class="btn btn-success notas" nota="9" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota10">  <button type="button" class="btn btn-success notas" nota="10" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td></tr>';
+							linha +=	     						'</table>';
+							linha +=	     					'</div>';	
+							linha +=	     				'</div>';
+							linha +=     				'</div>';
+						    linha += 				'</div>';			
+		                	
+		                	
+		                	count++;
+		                	count2++;
 
-		    
-		     <div class="row">
-		     	<div class="col-md-12">
-		     		<div class="form-group">
-		     			<label>A introdução contextualiza o problema do trabalho, apresenta a justificativa e relevância teórica e prática da pesquisa? </label>
-		     			<input style="float: right;margin-right:10px" type="number" id="nota3" name="nota3" placeholder="0 a 5" min="0" max="5" > </input>
-		     			<label style="float:right; margin-right:10px">Nota: </label><br>
-		     	<br><br></div>
-		     	</div>	
-		     </div>	
+		                	$('#trabalhos').append(linha);
+		                
+		                });
+		             
 
-		    
-		     <div class="row">
-		     	<div class="col-md-12">
-		     		<div class="form-group">
-			     		<label>A revisão bibliográfica é atualizada, qualificada, adequada à questão do estudo e pertinente?</label>
-			     		<input style="float: right;margin-right:10px" type="number" id="nota4" name="nota4" placeholder="0 a 5" min="0" max="5" > </input>
-		     			<label style="float:right; margin-right:10px">Nota: </label><br>
-		     	<br><br></div>
-		     	</div>	
-		     </div>	
+		            }, error: function(data) {
+		                	console.log(data);
+		               		$('#trabalhos').append('<b>Nenhum trabalho cadastrado até o momento</b>');
+		            	}
+		    		});
+				});
+	</script>
 
-		    
-		     <div class="row">
-		      	<div class="col-md-12">
-		    		<div class="form-group">
-		     			<label>Os métodos utilizados são pertinentes a questão de estudo e foram utilizados corretamente? </label>
-		     			<input style="float: right;margin-right:10px" type="number" id="nota5" name="nota5" placeholder="0 a 5" min="0" max="5" > </input>
-		     			<label style="float:right; margin-right:10px">Nota: </label><br>
-		     	<br><br></div>
-		     	</div>	
-		     </div>	
+	<script type="text/javascript">
+		$(document).on('click','.notas',function(){
+			console.log('entrou na função');
+			var nota = $(this).attr('nota');
+			var notaatribuida = $("#nota"+nota+"").val();
+			console.log(notaatribuida);
+				
+			
+		});
+	</script>
 
-		    
-		     <div class="row">
-		    	<div class="col-md-12">
-		     		<div class="form-group">
-		     			<label>Os resultados são analisados corretamente e há condições para replicá-los? </label>
-		     			<input style="float: right;margin-right:10px" type="number" id="nota6" name="nota6" placeholder="0 a 5" min="0" max="5" > </input>
-		     			<label style="float:right; margin-right:10px">Nota: </label><br>
-		     	<br><br></div>
-		     	</div>	
-		     </div>	
 
-		    
-		     <div class="row">
-		    	 <div class="col-md-12">
-		     		<div class="form-group">
-		     			<label>As conclusões apresentam as implicações teóricas e práticas do estudo? </label>
-		     			<input style="float: right;margin-right:10px" type="number" id="nota7" name="nota7" placeholder="0 a 5" min="0" max="5" > </input>
-		     			<label style="float:right; margin-right:10px">Nota: </label><br>
-		     	<br><br></div>
-		     	</div>	
-		     </div>	
 
-		    
-		     <div class="row">
-		     	<div class="col-md-12">
-		     		<div class="form-group">
-		     			<label>O texto é claro, adequado ao idioma e a estrutura das seções são articuladas ao objetivo da pesquisa? </label>
-		     			<input style="float: right;margin-right:10px" type="number" id="nota8" name="nota8" placeholder="0 a 5" min="0" max="5" > </input>
-		     			<label style="float:right; margin-right:10px">Nota: </label><br>
-		     	<br><br></div>
-		     	</div>	
-		     </div>	
+	    
+</div>
 
-		    
-		     <div class="row">
-		     	<div class="col-md-12">
-		    		 <div class="form-group">
-		     			<label>A formatação do trabalho atende as normas estabelecidas para o evento?  </label>
-		     			<input style="float: right;margin-right:10px" type="number" id="nota9" name="nota9" placeholder="0 á 5" min="0" max="5" > </input>
-		     			<label style="float:right; margin-right:10px">Nota: </label><br>
-		     	<br><br></div>
-		     	</div>	
-		     </div>	
-
-		    
-		     <div class="row">
-		     	<div class="col-md-12">
-		     		<div class="form-group">
-		     			<label>O estudo é original e contribui para o campo do conhecimento?   </label>
-		     			<input style="float: right;margin-right:10px" type="number" id="nota10" name="nota10" placeholder="0 á 5" min="0" max="5"  > </input>
-		     			<label style="float:right; margin-right:10px">Nota: </label><br>
-		     	<br><br></div>
-		     	</div>	
-		     </div>	
-
-		     <div class="row">
-		     	<div class="col-md-12">
-		     		<div class="form-group" style="text-align:center">
-		     			<input type="submit" class="btn btn-success" value="Avaliar"></input>
-		     	<br><br></div>
-		     	</div>	
-		     </div-->
-		     		</form>	
-		     	</div><!--fim notas-->
-
-	    	</div>
-	    </div>
-	</div>
 </body>
 </html>
