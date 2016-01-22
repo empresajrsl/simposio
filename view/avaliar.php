@@ -9,7 +9,7 @@
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
     <?php include("../controller/funcoes/funcoesmysql.php"); ?>
-	<title>Tela de avaliação</title>
+	<title>sistema de avaliação</title>
 </head>
 <body>
 <div class="container">
@@ -75,9 +75,15 @@
 		                
 		                var count = 0;
 		                var count2 = 1;
+		                var x = 1;
 		                $.each(data,function(key,val){
-		                	
-		                	
+		                	for(x=1;x<11;x++){
+		                		if(data[count][0]['nota'+count] == 0){
+		                			eval(" var nota"+x+'=' "'<input type='number' style='width:35px; margin-bottom:5px'  id="'nota'+x">  <button idtrabalho='"+data[count][0]['id_artigo']+"' type='button' class='btn btn-success notas' email='"+data[count][0]['email']+"' nota="+x+" style='border-radius:80px'><i class='glyphicon glyphicon-ok'></i></button>'" );
+		                		}else{
+		                			eval('var nota'+x+"= <center><p style='font-weight:bold; font-size:22px'>"+data[count][0]['nota'+count]+"   <button class='btn btn-danger editar' idtrabalho="+data[count][0]['id_artigo']+" nota="+x+" email="+data[count][0]['email']+" style='border-radius:80px'><i class='glyphicon glyphicon-pencil'></i></button></p></center>");
+		                		}
+		                	}
 		                	
 						    var linha =     	'<div class="panel panel-primary" style="margin-top:50px">';
 						    linha += 					'<div class="panel-heading">Trabalho '+count2+'</div>';
@@ -85,11 +91,11 @@
 							linha +=	     					'<div class="col-md-12">';
 							linha +=	     						'<table class="table">';
 							linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
-							linha +=	     						'<tr><td> '+data[count]['titulo'] +' </td><td> '+data[count]['area'] +' </td><td> '+data[count]['categoria'] +' </td><td><button class="btn btn-primary">Vizualizar trabalho</button></td><td><button class="btn btn-primary">Download do PDF</button></td></tr>';
+							linha +=	     						'<tr><td> '+data[count][0]['titulo'] +' </td><td> '+data[count][0]['area'] +' </td><td> '+data[count][0]['categoria'] +' </td><td><button class="btn btn-primary">Vizualizar trabalho</button></td><td><button class="btn btn-primary">Download do PDF</button></td></tr>';
 							linha +=	     						'</table>';
-							linha +=	     						'<table class="table">';
-							linha +=	     						'<th>Nota Critério 1 </th><th> Nota critério 2 </th><th>Nota critério 3</th><th>Nota critério 4</th><th>Nota critério 5 </th><th>Nota critério 6 </th><th>Nota critério 7</th><th>Nota critério 8</th><th>Nota critério 9</th><th>Nota critério 10</th>';
-							linha +=	     						'<tr><td> <input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota1">  <button type="button" class="btn btn-success notas" nota="1" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td><td> <input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota2">  <button type="button" class="btn btn-success notas" nota="2" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button> </td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota3">  <button type="button" class="btn btn-success notas" nota="3" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota4">  <button type="button" class="btn btn-success notas" nota="4" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota5">  <button type="button" class="btn btn-success notas" nota="5" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota6">  <button type="button" class="btn btn-success notas" nota="6" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota7">  <button type="button" class="btn btn-success notas" nota="7" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota8">  <button type="button" class="btn btn-success notas" nota="8" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota9">  <button type="button" class="btn btn-success notas" nota="9" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td><td><input type="number" style="width:35px; margin-bottom:5px" idtrabalho="'+data[count]['id_artigo']+'" id="nota10">  <button type="button" class="btn btn-success notas" nota="10" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button></td></tr>';
+							linha +=	     						'<table class="table" id="'+data[count][0]['id_artigo']+'">';
+							linha +=	     						'<th>Nota critério 1 </th><th> Nota critério 2 </th><th>Nota critério 3</th><th>Nota critério 4</th><th>Nota critério 5 </th><th>Nota critério 6 </th><th>Nota critério 7</th><th>Nota critério 8</th><th>Nota critério 9</th><th>Nota critério 10</th>';
+							linha +=	     						'<tr><td id="colunanota1"> '+nota1+' </td><td id="colunanota2"> '+nota2+' </td><td id="colunanota3"> '+nota3+' /td><td id="colunanota4"> '+nota4+' /td><td id="colunanota5"> '+nota5+' /td><td id="colunanota6"> '+nota6+' /td><td id="colunanota7"> '+nota7+' /td><td id="colunanota8"> '+nota8+' /td><td id="colunanota9"> '+nota9+' /td><td id="colunanota10">  '+nota10+' </td></tr>';
 							linha +=	     						'</table>';
 							linha +=	     					'</div>';	
 							linha +=	     				'</div>';
@@ -116,12 +122,53 @@
 	<script type="text/javascript">
 		$(document).on('click','.notas',function(){
 			console.log('entrou na função');
-			var nota = $(this).attr('nota');
-			var notaatribuida = $("#nota"+nota+"").val();
-			console.log(notaatribuida);
-				
-			
+			var env = {};
+			env.nota = $(this).attr('nota');
+			env.idtrabalho = $(this).attr('idtrabalho'); 
+			env.valor = $("#"+env.idtrabalho+" #nota"+env.nota+"").val();
+			env.email = $(this).attr('email');
+			console.log(env.idtrabalho);
+			$('#'+env.idtrabalho+' #colunanota'+env.nota+'').html('');
+			$('#'+env.idtrabalho+' #colunanota'+env.nota+'').append("<center><p style='font-weight:bold; font-size:22px'>"+env.valor+"   <button class='btn btn-danger editar' idtrabalho="+env.idtrabalho+" nota="+env.nota+" email="+env.email+" style='border-radius:80px'><i class='glyphicon glyphicon-pencil'></i></button></p></center> ");
+
+			$.ajax({
+		            type: "POST",
+		            url: "../controller/ACAO/cadnotas.php",
+		            data: env,
+		            dataType : 'json',
+		            success: function(data){
+		            	console.log('sucesso');
+		                console.log(data);
+		            
+		                
+		                
+		                
+		             
+
+		            }, error: function(data) {
+		            		console.log('erro');
+		                	console.log(data);
+		               		
+		            	}
+		    });
 		});
+				
+		
+		
+	</script>
+
+	<script type="text/javascript">
+		$(document).on('click','.editar',function(){
+			var env = {};
+			env.idtrabalho = $(this).attr('idtrabalho');
+			env.nota = $(this).attr('nota');
+			env.email = $(this).attr('email');
+			console.log(env);
+			
+           	$('#'+env.idtrabalho+' #colunanota'+env.nota+'').html('');
+            $('#'+env.idtrabalho+' #colunanota'+env.nota+'').append('<input type="number" style="width:35px; margin-bottom:5px"  id="nota'+env.nota+'"> <button idtrabalho="'+env.idtrabalho+'" type="button" class="btn btn-success notas" email="'+env.email+'" nota="'+env.nota+'" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button>');
+		            
+		});	
 	</script>
 
 
