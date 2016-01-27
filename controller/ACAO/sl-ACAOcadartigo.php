@@ -13,6 +13,7 @@ $descricao = $_POST['descricao'];
 $categoria = $_POST['categoria'];
 session_start();
 $email = $_SESSION['usuario'];
+$instituicao = $_SESSION["instituicao"];
 // recebe as variaveis realcionadas a coautor via post
 if(isset($_POST['cpfcoautor1'])){
 $cpfcoautor1 = $_POST['cpfcoautor1'];
@@ -32,8 +33,8 @@ $cpfcoautor4 = $_POST['cpfcoautor4'];
 
 // variaveis do insert
 				$tabela = 'sl_artigo';
-				$campos = 'titulo, resumo, area, coautor, apresentacao, orientador,descricao,categoria,email';
-				$argumentos  = "'".$titulo."','".$resumo."', '".$area."', '".$coautor."', '".$apresentacao."', '".$orientador."','".$descricao."','".$categoria."','".$email."'";
+				$campos = 'instituicao,titulo, resumo, area, coautor, apresentacao, orientador,descricao,categoria,email';
+				$argumentos  = " '".$instituicao."', '".$titulo."','".$resumo."', '".$area."', '".$coautor."', '".$apresentacao."', '".$orientador."','".$descricao."','".$categoria."','".$email."'";
 
 				$rp = insert($tabela,$campos,$argumentos);
 if($rp){
