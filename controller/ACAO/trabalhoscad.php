@@ -2,30 +2,26 @@
 include ("../funcoes/conexao.php");
 include ("../funcoes/funcoesmysql.php");
 
-$trabalhos = select("id_artigo,titulo,area,categoria,email","sl_artigo","");
+
 $instituicao = array();
 session_start();
 $inst = $_SESSION["instituicao"];
 $id_usuario = $_SESSION['idusu'];
+$emailusu = $_SESSION['usuario'];
 $instituicaoavaliador = strtoupper($inst);
-
+$trabalhos = select("DISTINCT id_artigo,instituicao,idartigo,titulo,area,categoria,email","sl_artigo ",'email != "'.$emailusu.'" LIMIT 8');	
+			 
 
 $trabalhosfiltrado = array();
 
 
-foreach ($trabalhos as $key => $value) {
-	
-$busca = select('instituicao,email','sl_cadusu',' email =   "'.$trabalhos[$key]['email'].'" '." and id_usuario != ".$id_usuario." ");
-if($busca){
-array_push($instituicao, $busca);
-}
-
-}
 
 
-foreach ($instituicao as $indice => $value) {
+
+
+foreach ($trabalhos as $indice => $valor) {
 	$count = 0;
-	$inst = $instituicao[$indice][0]['instituicao'];
+	$inst = $trabalhos[$indice]['instituicao'];
 	$instautor = strtoupper($inst);
 	$instituicaoautor = explode(' ', $instautor);
 			
@@ -47,11 +43,15 @@ foreach ($instituicao as $indice => $value) {
 
 	
 		if($palavrasiguais < 3){
-		$trabalho = select("t.id_artigo,t.titulo,t.area,t.categoria,t.email,n.email,n.nota1,n.nota2,n.nota3,n.nota4,n.nota5,n.nota6,n.nota7,n.nota8,n.nota9,n.nota10","sl_artigo as t INNER JOIN sl_notas as n ON t.email=n.email",'t.email = "'.$instituicao[$indice][0]['email'].'"  ');
-		array_push($trabalhosfiltrado, $trabalho);
+
+		$trabalho = select("DISTINCT t.id_artigo,t.idartigo,t.titulo,t.area,t.categoria,t.email,n.nota1,n.nota2,n.nota3,n.nota4,n.nota5,n.nota6,n.nota7,n.nota8,n.nota9,n.nota10","sl_artigo as t  LEFT OUTER JOIN sl_notas as n ON t.id_artigo=n.id_artigo",'t.id_artigo = "'.$trabalhos[$indice]['id_artigo'].'"   ');
+			array_push($trabalhosfiltrado, $trabalho);
+		
 		}else{
 			
-		}		
+		}
+
+
 }
 
  // echo'<pre>';

@@ -8,7 +8,7 @@
     <script src="../js/tooltip.js"></script>
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
-    <?php include("../controller/funcoes/funcoesmysql.php"); ?>
+    
 	<title>sistema de avaliação</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
 	    		<div class="jumbotron" style="margin:3px; padding:25px"> 
 			     	<div class="row">
 			     		<div class="col-md-12 col-xs-12 col-lg-12">
-			     			<h3>Instruções de como avaliar os trabalhos: <button class="btn btn-primary">Download do arquivo oficial</button></h3>
+			     			<h3>Instruções de como avaliar os trabalhos: <button class="btn btn-primary" id="instrucoes">Vizualizar arquivo oficial de avaliação dos trabalhos</button></h3>
 			     			<h4>A nota final é a média ponderada baseada em 10 critérios, cada um deles valendo de 0 a 5 pontos</h4>
 			     			<h5><b>Critério 1:</b> O título do trabalho é conciso e representa o conteúdo do trabalho? (Peso 1)</h5>
 			     			<h5><b>Critério 2:</b> O resumo apresenta o conteúdo do trabalho de forma adequada e segundo as exigências do evento? (Peso 1)</h5>
@@ -58,6 +58,11 @@
 			     	<div class="col-md-12 col-xs-12 col-lg-12" id="trabalhos">
 			     	</div>	
 		     	</div>	
+	<script type="text/javascript">
+		$(document).on('click','#instrucoes',function(){
+			window.open("../testedownload.php");
+		});
+	</script>	     	
 		     	
 	<script type="text/javascript">
 		$(document).ready(function(){ 
@@ -77,49 +82,59 @@
 		                var count2 = 1;
 		                var x = 1;
 		                $.each(data,function(key,val){
-		                	for(x=1;x<11;x++){
-		                		if(data[count][0]['nota'+count] == 0){
-		                			eval(" var nota"+x+'=' "'<input type='number' style='width:35px; margin-bottom:5px'  id="'nota'+x">  <button idtrabalho='"+data[count][0]['id_artigo']+"' type='button' class='btn btn-success notas' email='"+data[count][0]['email']+"' nota="+x+" style='border-radius:80px'><i class='glyphicon glyphicon-ok'></i></button>'" );
-		                		}else{
-		                			eval('var nota'+x+"= <center><p style='font-weight:bold; font-size:22px'>"+data[count][0]['nota'+count]+"   <button class='btn btn-danger editar' idtrabalho="+data[count][0]['id_artigo']+" nota="+x+" email="+data[count][0]['email']+" style='border-radius:80px'><i class='glyphicon glyphicon-pencil'></i></button></p></center>");
-		                		}
-		                	}
 		                	
+		                	
+		                		
 						    var linha =     	'<div class="panel panel-primary" style="margin-top:50px">';
 						    linha += 					'<div class="panel-heading">Trabalho '+count2+'</div>';
 							linha +=	     				'<div class="row" >';
 							linha +=	     					'<div class="col-md-12">';
 							linha +=	     						'<table class="table">';
 							linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
-							linha +=	     						'<tr><td> '+data[count][0]['titulo'] +' </td><td> '+data[count][0]['area'] +' </td><td> '+data[count][0]['categoria'] +' </td><td><button class="btn btn-primary">Vizualizar trabalho</button></td><td><button class="btn btn-primary">Download do PDF</button></td></tr>';
+							linha +=	     						'<tr><td> '+data[count][0]['titulo'] +' </td><td> '+data[count][0]['area'] +' </td><td> '+data[count][0]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[count][0]['idartigo']+'" >Vizualizar trabalho</button></td></tr>';
 							linha +=	     						'</table>';
 							linha +=	     						'<table class="table" id="'+data[count][0]['id_artigo']+'">';
-							linha +=	     						'<th>Nota critério 1 </th><th> Nota critério 2 </th><th>Nota critério 3</th><th>Nota critério 4</th><th>Nota critério 5 </th><th>Nota critério 6 </th><th>Nota critério 7</th><th>Nota critério 8</th><th>Nota critério 9</th><th>Nota critério 10</th>';
-							linha +=	     						'<tr><td id="colunanota1"> '+nota1+' </td><td id="colunanota2"> '+nota2+' </td><td id="colunanota3"> '+nota3+' /td><td id="colunanota4"> '+nota4+' /td><td id="colunanota5"> '+nota5+' /td><td id="colunanota6"> '+nota6+' /td><td id="colunanota7"> '+nota7+' /td><td id="colunanota8"> '+nota8+' /td><td id="colunanota9"> '+nota9+' /td><td id="colunanota10">  '+nota10+' </td></tr>';
+							linha +=	     						'<th>Nota para o critério 1 </th><th> Nota para o critério 2 </th><th>Nota para o critério 3</th><th>Nota para o critério 4</th><th>Nota para o critério 5 </th><th>Nota para o critério 6 </th><th>Nota para o critério 7</th><th>Nota para o critério 8</th><th>Nota para o critério 9</th><th>Nota para  critério 10</th>';
+							linha +=	     						'<tr><td id="colunanota1">  </td><td id="colunanota2">  </td><td id="colunanota3">  </td><td id="colunanota4">  </td><td id="colunanota5">  </td><td id="colunanota6">  </td><td id="colunanota7">  </td><td id="colunanota8">  </td><td id="colunanota9">  </td><td id="colunanota10">   </td></tr>';
 							linha +=	     						'</table>';
 							linha +=	     					'</div>';	
 							linha +=	     				'</div>';
 							linha +=     				'</div>';
 						    linha += 				'</div>';			
 		                	
+
 		                	
-		                	count++;
-		                	count2++;
 
 		                	$('#trabalhos').append(linha);
-		                
+		                	
+		                	
+		                	var idtrabalho = data[count][0]['id_artigo'];
+
+		                	for(x=1;x<11;x++){
+								if(data[count][0]['nota'+x] == 0 || data[count][0]['nota'+x] == null){
+									$('#'+idtrabalho+' #colunanota'+x).append('<input type="number" min="0" max="5" style="margin-bottom:5px; margin-left:12px"  id="nota'+x+'"><button idtrabalho="'+data[count][0]['id_artigo']+'" type="button" class="btn btn-success notas" email="'+data[count][0]['email']+'" nota="'+x+'" style="border-radius:80px"><i class="glyphicon glyphicon-ok"> Salvar</i> </button>');
+								}else{
+									$('#'+idtrabalho+' #colunanota'+x).append('<center><p style="font-weight:bold; font-size:25px; color:#337ab7">'+data[count][0]['nota'+x]+' <button class="btn btn-danger editar" idtrabalho='+data[count][0]['id_artigo']+' nota='+x+' email='+data[count][0]['email']+' style="border-radius:80px"><i class="glyphicon glyphicon-pencil"> Editar</i></button></p></center>');
+								}
+							}
+
+							count++;
+		                	count2++;	
+			                
+			                
 		                });
 		             
 
 		            }, error: function(data) {
 		                	console.log(data);
-		               		$('#trabalhos').append('<b>Nenhum trabalho cadastrado até o momento</b>');
+		               		$('#trabalhos').append('<h2><b>Nenhum trabalho cadastrado até o momento</b></h2>');
 		            	}
 		    		});
 				});
 	</script>
 
 	<script type="text/javascript">
+
 		$(document).on('click','.notas',function(){
 			console.log('entrou na função');
 			var env = {};
@@ -127,10 +142,11 @@
 			env.idtrabalho = $(this).attr('idtrabalho'); 
 			env.valor = $("#"+env.idtrabalho+" #nota"+env.nota+"").val();
 			env.email = $(this).attr('email');
-			console.log(env.idtrabalho);
-			$('#'+env.idtrabalho+' #colunanota'+env.nota+'').html('');
-			$('#'+env.idtrabalho+' #colunanota'+env.nota+'').append("<center><p style='font-weight:bold; font-size:22px'>"+env.valor+"   <button class='btn btn-danger editar' idtrabalho="+env.idtrabalho+" nota="+env.nota+" email="+env.email+" style='border-radius:80px'><i class='glyphicon glyphicon-pencil'></i></button></p></center> ");
+			console.log(env);
 
+			$('#'+env.idtrabalho+' #colunanota'+env.nota+'').html('');
+            $('#'+env.idtrabalho+' #colunanota'+env.nota+'').append("<center><p style='font-weight:bold; font-size:25px; color:#337ab7'>"+env.valor+"<button class='btn btn-danger editar' idtrabalho="+env.idtrabalho+" nota="+env.nota+" email="+env.email+" style='border-radius:80px'><i class='glyphicon glyphicon-pencil'> Editar</i></button></p></center> ");
+									
 			$.ajax({
 		            type: "POST",
 		            url: "../controller/ACAO/cadnotas.php",
@@ -140,7 +156,6 @@
 		            	console.log('sucesso');
 		                console.log(data);
 		            
-		                
 		                
 		                
 		             
@@ -166,12 +181,19 @@
 			console.log(env);
 			
            	$('#'+env.idtrabalho+' #colunanota'+env.nota+'').html('');
-            $('#'+env.idtrabalho+' #colunanota'+env.nota+'').append('<input type="number" style="width:35px; margin-bottom:5px"  id="nota'+env.nota+'"> <button idtrabalho="'+env.idtrabalho+'" type="button" class="btn btn-success notas" email="'+env.email+'" nota="'+env.nota+'" style="border-radius:80px"><i class="glyphicon glyphicon-ok"></i></button>');
+            $('#'+env.idtrabalho+' #colunanota'+env.nota+'').append('<input type="number" min="0" max="5" style="margin-bottom:5px; margin-left:12px"  id="nota'+env.nota+'"> <button idtrabalho="'+env.idtrabalho+'" type="button" class="btn btn-success notas" email="'+env.email+'" nota="'+env.nota+'" style="border-radius:80px"><i class="glyphicon glyphicon-ok"> Salvar</i></button>');
 		            
 		});	
 	</script>
 
+	<script type="text/javascript">
+		$(document).on('click','.vertrabalho',function(){
+			
+			var idtrabalho = $(this).attr('iddotrab');
+			window.open("../testedownload.php?id="+idtrabalho);
 
+		});
+	</script>
 
 	    
 </div>
