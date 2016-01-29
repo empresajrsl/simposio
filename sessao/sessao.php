@@ -12,7 +12,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 		$senhap = $_POST['senha'];
 			
 				// faz um select no banco de dados dos campos email, senha, email verificado e status na tabela usuarios 
-				$busca = select('id_usuario,email, senha, emailverificado,publicado,cpf,nome,instituicao',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
+				$busca = select('id_usuario,email, senha, emailverificado,publicado,cpf,nome,instituicao,tipocadastro',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
 				
 				$result = array();
 
@@ -38,6 +38,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 							$email = $result['email'];
 							$senha = $result['senha'];
 							$emailchek = $result['emailverificado'];
+							$tipocadastro = $result['tipocadastro'];
 
 							
 								// verifica se o usuario esta cadastrado no sistema
@@ -72,6 +73,9 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									$rp = ($somauser1[0]['qtdd'] + $somauser2[0]['qtdd'] + $somauser3[0]['qtdd'] + $somauser4[0]['qtdd'] + $somauser5[0]['qtdd']);
 
 									$dados = $rp;
+									if($tipocadastro == 'Avaliador'){
+										echo '<script>location.href=" ../view/avaliar.php";</script>';
+									}
 
 									if($dados == 0){
 										echo '<script>location.href=" ../view/regras.php";</script>';
