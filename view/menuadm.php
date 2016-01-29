@@ -44,8 +44,9 @@
                 <ul class="nav nav-pills nav-stacked">
                   <li class="active"><a href="#"><b>Menu</b></a></li>
                   <li><a href="estatisticas.php"><b>Estatisticas</b></a></li>
-                  <li><a href="avaliadores_cad.php"><b>Avaliadores</b></a></li>
                   <li><a href="cadadm.php"><b>Novo Administrador</b></a></li>
+                  <li><a href="avaliadores_cad.php"><b>Aprovar avaliadores</b></a></li>
+                  <li><a href="atribuiravaliador.php"><b>Atribuir avaliadores</b></a></li>
                 </ul>
             
                 
@@ -60,9 +61,10 @@
                         <ul>
                             <li><b>Estatisticas:</b> Exibe informações como, quantidade de usuarios cadastrados no sistema, 
                                 quantidados de trabalhos, além de graficos que exibem informaçõe relativas a cada categortia de trabalho.</li></br>
+                            <li><b>Novo Administrador:</b> Permite adicionar um novo administrador para acessar este painel de controle.</li></br>
                             <li><b>Avaliadores:</b> Exibe informações como, Nome, Cidade, Endereco, Cargo, Instituição, Celular, Telefone, 
-                                E-mail e Status dos avaliadores que se cadastraram no sistema.</li></br>
-                            <li><b>Novo Administrador:</b> Permite adicionar um novo administrador para acessar este painel de controle.</li>
+                                E-mail e Status dos avaliadores que se cadastraram no sistema, possibilitando aprovar ou reprovar seu cadastro</li></br>
+                                <li><b>Atribuir avaliadores:</b> Exibi todos os trabalhos cadastrados para que possam ser atribuidos seus respectivos avaliadores</li>
                         </ul>
                     </h4>
                 </div>
