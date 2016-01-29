@@ -96,7 +96,7 @@
 											linha +=	     				'<div class="row" >';
 											linha +=	     					'<div class="col-md-12">';
 											linha +=	     						'<table class="table" id="'+data['trabalhos'][key]['id_artigo']+'">';
-											linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th><th>Avalidor 1</th><th>Avalidor 1</th>';
+											linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th><th>Avalidor 1</th><th>Avalidor 2</th>';
 											linha +=	     						'<tr><td> '+data['trabalhos'][key]['titulo']+' </td><td> '+data['trabalhos'][key]['area'] +' </td><td> '+data['trabalhos'][key]['categoria'] +' </td><td class="avaliador1"> </td><td class="avaliador2">  </td></tr>';
 											linha +=	     						'</table>';
 											linha +=	     					'</div>';	
