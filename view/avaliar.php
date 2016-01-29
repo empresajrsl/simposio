@@ -81,48 +81,87 @@
 		                var count = 0;
 		                var count2 = 1;
 		                var x = 1;
-		                $.each(data,function(key,val){
+		               
 		                	
-		                	
-		                		
-						    var linha =     	'<div class="panel panel-primary" style="margin-top:50px">';
-						    linha += 					'<div class="panel-heading">Trabalho '+count2+'</div>';
-							linha +=	     				'<div class="row" >';
-							linha +=	     					'<div class="col-md-12">';
-							linha +=	     						'<table class="table">';
-							linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
-							linha +=	     						'<tr><td> '+data[count][0]['titulo'] +' </td><td> '+data[count][0]['area'] +' </td><td> '+data[count][0]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[count][0]['idartigo']+'" >Vizualizar trabalho</button></td></tr>';
-							linha +=	     						'</table>';
-							linha +=	     						'<table class="table" id="'+data[count][0]['id_artigo']+'">';
-							linha +=	     						'<th>Nota para o critério 1 </th><th> Nota para o critério 2 </th><th>Nota para o critério 3</th><th>Nota para o critério 4</th><th>Nota para o critério 5 </th><th>Nota para o critério 6 </th><th>Nota para o critério 7</th><th>Nota para o critério 8</th><th>Nota para o critério 9</th><th>Nota para  critério 10</th>';
-							linha +=	     						'<tr><td id="colunanota1">  </td><td id="colunanota2">  </td><td id="colunanota3">  </td><td id="colunanota4">  </td><td id="colunanota5">  </td><td id="colunanota6">  </td><td id="colunanota7">  </td><td id="colunanota8">  </td><td id="colunanota9">  </td><td id="colunanota10">   </td></tr>';
-							linha +=	     						'</table>';
-							linha +=	     					'</div>';	
-							linha +=	     				'</div>';
-							linha +=     				'</div>';
-						    linha += 				'</div>';			
-		                	
+		                	if(data[0]['vez'] == 1){
+			                	 $.each(data,function(key,val){	
+								    var linha =     	'<div class="panel panel-primary" style="margin-top:50px">';
+								    linha += 					'<div class="panel-heading">Trabalho '+count2+'</div>';
+									linha +=	     				'<div class="row" >';
+									linha +=	     					'<div class="col-md-12">';
+									linha +=	     						'<table class="table">';
+									linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
+									linha +=	     						'<tr><td> '+data[count][0]['titulo'] +' </td><td> '+data[count][0]['area'] +' </td><td> '+data[count][0]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[count][0]['idartigo']+'" >Vizualizar trabalho</button></td></tr>';
+									linha +=	     						'</table>';
+									linha +=	     						'<table class="table" id="'+data[count][0]['id_artigo']+'">';
+									linha +=	     						'<th>Nota para o critério 1 </th><th> Nota para o critério 2 </th><th>Nota para o critério 3</th><th>Nota para o critério 4</th><th>Nota para o critério 5 </th><th>Nota para o critério 6 </th><th>Nota para o critério 7</th><th>Nota para o critério 8</th><th>Nota para o critério 9</th><th>Nota para  critério 10</th>';
+									linha +=	     						'<tr><td id="colunanota1">  </td><td id="colunanota2">  </td><td id="colunanota3">  </td><td id="colunanota4">  </td><td id="colunanota5">  </td><td id="colunanota6">  </td><td id="colunanota7">  </td><td id="colunanota8">  </td><td id="colunanota9">  </td><td id="colunanota10">   </td></tr>';
+									linha +=	     						'</table>';
+									linha +=	     					'</div>';	
+									linha +=	     				'</div>';
+									linha +=     				'</div>';
+								    linha += 				'</div>';			
+				                	
 
-		                	
+				                	
 
-		                	$('#trabalhos').append(linha);
-		                	
-		                	
-		                	var idtrabalho = data[count][0]['id_artigo'];
+				                	$('#trabalhos').append(linha);
+				                	
+				                	
+				                	var idtrabalho = data[count][0]['id_artigo'];
 
-		                	for(x=1;x<11;x++){
-								if(data[count][0]['nota'+x] == 0 || data[count][0]['nota'+x] == null){
-									$('#'+idtrabalho+' #colunanota'+x).append('<input type="number" min="0" max="5" style="margin-bottom:5px; margin-left:12px"  id="nota'+x+'"><button idtrabalho="'+data[count][0]['id_artigo']+'" type="button" class="btn btn-success notas" email="'+data[count][0]['email']+'" nota="'+x+'" style="border-radius:80px"><i class="glyphicon glyphicon-ok"> Salvar</i> </button>');
-								}else{
-									$('#'+idtrabalho+' #colunanota'+x).append('<center><p style="font-weight:bold; font-size:25px; color:#337ab7">'+data[count][0]['nota'+x]+' <button class="btn btn-danger editar" idtrabalho='+data[count][0]['id_artigo']+' nota='+x+' email='+data[count][0]['email']+' style="border-radius:80px"><i class="glyphicon glyphicon-pencil"> Editar</i></button></p></center>');
-								}
-							}
+				                	for(x=1;x<11;x++){
+										if(data[count][0]['nota'+x] == 0 || data[count][0]['nota'+x] == null){
+											$('#'+idtrabalho+' #colunanota'+x).append('<input type="number" min="0" max="5" style="margin-bottom:5px; margin-left:12px"  id="nota'+x+'"><button idtrabalho="'+data[count][0]['id_artigo']+'" type="button" class="btn btn-success notas" email="'+data[count][0]['email']+'" nota="'+x+'" style="border-radius:80px"><i class="glyphicon glyphicon-ok"> Salvar</i> </button>');
+										}else{
+											$('#'+idtrabalho+' #colunanota'+x).append('<center><p style="font-weight:bold; font-size:25px; color:#337ab7">'+data[count][0]['nota'+x]+' <button class="btn btn-danger editar" idtrabalho='+data[count][0]['id_artigo']+' nota='+x+' email='+data[count][0]['email']+' style="border-radius:80px"><i class="glyphicon glyphicon-pencil"> Editar</i></button></p></center>');
+										}
+									}
 
-							count++;
-		                	count2++;	
+									count++;
+				                	count2++;
+				                	});	
+			            }else{
+			            	    $.each(data[0],function(key,val){
+				            		var linha =     	'<div class="panel panel-primary" style="margin-top:50px">';
+								    linha += 					'<div class="panel-heading">Trabalho '+count2+'</div>';
+									linha +=	     				'<div class="row" >';
+									linha +=	     					'<div class="col-md-12">';
+									linha +=	     						'<table class="table">';
+									linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
+									linha +=	     						'<tr><td> '+data[0][count]['titulo']+' </td><td> '+data[0][count]['area'] +' </td><td> '+data[0][count]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[0][count]['idartigo']+'" >Vizualizar trabalho</button></td></tr>';
+									linha +=	     						'</table>';
+									linha +=	     						'<table class="table" id="'+data[0][count]['id_artigo']+'">';
+									linha +=	     						'<th>Nota para o critério 1 </th><th> Nota para o critério 2 </th><th>Nota para o critério 3</th><th>Nota para o critério 4</th><th>Nota para o critério 5 </th><th>Nota para o critério 6 </th><th>Nota para o critério 7</th><th>Nota para o critério 8</th><th>Nota para o critério 9</th><th>Nota para  critério 10</th>';
+									linha +=	     						'<tr><td id="colunanota1">  </td><td id="colunanota2">  </td><td id="colunanota3">  </td><td id="colunanota4">  </td><td id="colunanota5">  </td><td id="colunanota6">  </td><td id="colunanota7">  </td><td id="colunanota8">  </td><td id="colunanota9">  </td><td id="colunanota10">   </td></tr>';
+									linha +=	     						'</table>';
+									linha +=	     					'</div>';	
+									linha +=	     				'</div>';
+									linha +=     				'</div>';
+								    linha += 				'</div>';			
+				                	
+
+				                	
+
+				                	$('#trabalhos').append(linha);
+				                	
+				                	
+				                	var idtrabalho = data[0][count]['id_artigo'];
+
+				                	for(x=1;x<11;x++){
+										if(data[0][count]['nota'+x] == 0 || data[0][count]['nota'+x] == null){
+											$('#'+idtrabalho+' #colunanota'+x).append('<input type="number" min="0" max="5" style="margin-bottom:5px; margin-left:12px"  id="nota'+x+'"><button idtrabalho="'+data[0][count]['id_artigo']+'" type="button" class="btn btn-success notas" email="'+data[0][count]['email']+'" nota="'+x+'" style="border-radius:80px"><i class="glyphicon glyphicon-ok"> Salvar</i> </button>');
+										}else{
+											$('#'+idtrabalho+' #colunanota'+x).append('<center><p style="font-weight:bold; font-size:25px; color:#337ab7">'+data[0][count]['nota'+x]+' <button class="btn btn-danger editar" idtrabalho='+data[0][count]['id_artigo']+' nota='+x+' email='+data[0][count]['email']+' style="border-radius:80px"><i class="glyphicon glyphicon-pencil"> Editar</i></button></p></center>');
+										}
+									}
+
+									count++;
+				                	count2++;	
+			                	});
+			            }    
 			                
-			                
-		                });
+		                
 		             
 
 		            }, error: function(data) {
