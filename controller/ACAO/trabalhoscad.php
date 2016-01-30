@@ -62,12 +62,12 @@ $trabalhos = select("DISTINCT id_artigo,instituicao,idartigo,titulo,area,categor
 	}
 
 }
- echo'<pre>';
- print_r($trabalhosfiltrado);
- echo'</pre>';
+ // echo'<pre>';
+ // print_r($trabalhosfiltrado);
+ // echo'</pre>';
 
 
-// echo json_encode($trabalhosfiltrado);
+echo json_encode($trabalhosfiltrado);
 
 
 ?>
