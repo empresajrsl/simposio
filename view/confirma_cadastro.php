@@ -19,7 +19,12 @@ $cep = $_POST['cep'];
 $bairro = $_POST['bairro'];
 $tipocadastro = $_POST['tipocadastro'];
 $cargo = $_POST['cargo'];
-
+// incluir no servidor
+if(isset($_POST['area'])){
+$arearesp = $_POST['area'];
+}else{
+	$arearesp = 'valido somente para avaliadores';
+}
 
 ?>
 <html>
@@ -175,6 +180,7 @@ $cargo = $_POST['cargo'];
 				                env.cep = "<?php echo $cep; ?>" ;
 				                env.bairro = "<?php echo $bairro; ?>" ;
 				                env.tipocadastro = "<?php echo $tipocadastro; ?>" ;
+				                env.arearesp = "<?php echo $arearesp; ?>" ;
 	                
 								$.ajax({
 							            type: "POST",
