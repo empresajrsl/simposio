@@ -71,6 +71,9 @@
                             <input type="hidden" id="tipocadastro" name="tipocadastro"> </input>
                         </div>
                     </div>
+                    <div class="row" id="rowarea">
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -500,6 +503,33 @@
 <script type="text/javascript" src="../js/scripts/confcademail.js"></script>
 <script type="text/javascript" src="../js/scripts/calculaidade.js"></script>
 <script type="text/javascript" src="../js/scripts/enviocadusu.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(document).on('click','#avaliador',function(){
+            console.log(this);
+            if( $("#avaliador").is(':checked') ){
+           
+                $('#rowarea').html('');
+                $('#rowarea').append('  <div class="col-md-3" id="divarea">'+
+                                        '<label>Área temática que irá avaliar*</label></br>'+
+                                        '<select class="form-control" id="area" name="area">'+
+                                            '<option selected>Gestão de Pessoas e Estudos Organizacionais</option>'+
+                                            '<option>Desenvolvimento e Gestão</option>'+
+                                            '<option>Economia e Finanças</option>'+
+                                            '<option>Empreendedorismo, Inovação e Tecnologia</option>'+
+                                            '<option>Estratégia, Planejamento e Governança</option>'+
+                                            '<option>Logísticas e Operações</option>'+
+                                            '<option>Marketing e Mercados</option>'+
+                                            '<option>Sustentabilidade e Responsabilidade Sócio Ambiental</option>'+
+                                        '</select>'+
+                                    '</div>');
+            }else{
+                $('#divarea').fadeOut('');
+            }
+        });
+    });
+</script>
 
 <script>
     $(document).ready( function(){
