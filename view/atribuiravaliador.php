@@ -244,6 +244,43 @@
 
 				            success: function(data){
 				            	console.log(data);
+				            	if(data['email'] == 'igual'){
+				            		alert('Este avaliador não pode avaliar este trbalho pois é de sua autoria');
+				            		return;
+				            	}
+				            	if(data['instituicao'] == 'igual'){
+				            		var resposta = confirm('O avaliador selecionado faz parte da mesma instituição do autor deste trabalho, deseja confirmar esta atribuição ?');
+				            		if (resposta == true){
+
+					            			$.ajax({
+							                    type: 'POST',
+							                    url: '../controller/ACAO/forcaratribuicao.php',
+							                    data: env,
+							                    dataType: 'json',
+
+							                    success: function(data){
+							                        console.log('atribuição feita com sucesso');
+							                        if(data['avaliador'] == 1){
+									            		$('#'+env.idtrab+' .avaliador1').html('');
+									            		$('#'+env.idtrab+' .avaliador1').append(data[0]['nome']+' <button class="btn btn-danger glyphicon glyphicon-pencil editar" idavaliador='+env.id+' idtrab='+env.idtrab+' avaliador="1"></button> <botton type="botton" class="btn btn-primary glyphicon glyphicon-info-sign info" avaliador="1" ok="sim"  idavaliador='+env.id+'></botton>');
+									            	}else{
+									            		$('#'+env.idtrab+' .avaliador2').html('');
+									            		$('#'+env.idtrab+' .avaliador2').append(data[0]['nome']+' <button class="btn btn-danger glyphicon glyphicon-pencil editar" idavaliador='+env.id+' idtrab='+env.idtrab+' avaliador="2"></button> <botton type="botton" class="btn btn-primary glyphicon glyphicon-info-sign info" avaliador="2" ok="sim"  idavaliador='+env.id+'></botton>');
+									            	}
+							                                      
+							                
+							                    },
+							                    error: function(data){
+							                        console.log(data);
+							                        console.log('erro');
+							                    },
+							                    cache: false
+							                });				            			
+				            		}else{
+				            			return;
+				            		}
+				            	}
+
 				            	if(data['avaliador'] == 1){
 				            		$('#'+env.idtrab+' .avaliador1').html('');
 				            		$('#'+env.idtrab+' .avaliador1').append(data[0]['nome']+' <button class="btn btn-danger glyphicon glyphicon-pencil editar" idavaliador='+env.id+' idtrab='+env.idtrab+' avaliador="1"></button> <botton type="botton" class="btn btn-primary glyphicon glyphicon-info-sign info" avaliador="1" ok="sim"  idavaliador='+env.id+'></botton>');
@@ -256,6 +293,7 @@
 
 				            },error: function(data){
 				            	console.log(data);
+				            	alert('Este avaliador não pode avaliar este trbalho pois é de sua autoria.');
 				            }
 
 
