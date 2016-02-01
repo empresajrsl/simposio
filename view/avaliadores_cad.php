@@ -10,7 +10,19 @@
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Avaliadores Cadastrados</title>
 	<style type="text/css">
-
+		th{
+			font-size: 25px;
+			font-family: cursive;
+		}
+		td{
+			font-size: 20px;
+			font-family: cursive;
+			color: #696969;
+		}
+		table{
+			
+			margin: 5px;
+		}
 	</style>
 </head>
 <body>
@@ -31,34 +43,36 @@
 	    </div>
 	    <!--Fim Banner-->
 
-	    <div class="jumbotron">
+	    <div class="panel panel-success">
 	    	
-		    	<div class="row">
-		    		<div class="col-md-12 col-xs-12 col-lg-12">
+	    	<div class="panel-body">
+	    		
+		    	<div class="row" style="overflow:hidden">
+		    		<div class="col-md-12 col-xs-12 col-lg-12" style="overflow:scroll" >
 		    			<center>
-			    			<table class="table" id="avaliadorescad" style="margin-left:-50px; overflow: auto;">
-			    			<tr> 
-			    				<th> Nome </th>
-			    				<th> Cidade </th>
-			    				<th> Endereco </th>
-			    				<th> Cargo </th>
-			    				<th> Instituição </th>
-			    				<th> Celular </th>
-			    				<th> telefone </th>
-			    				<th> E-mail </th>
-			    				<th> Status </th>
-			    				<th><th>
-			    				<th></th>	
-			    				
-			    				
-
-
-			    			</tr>	
-			    			</table>
+		    				
+				    			<table class="table-hover" id="avaliadorescad" style="width:1500px">
+				    			<tr> 
+				    				<th> Nome </th>
+				    				<th> Cidade </th>
+				    				<th> Endereco </th>
+				    				<th> Cargo </th>
+				    				<th> Instituição </th>
+				    				<th> Celular </th>
+				    				<th> telefone </th>
+				    				<th> E-mail </th>
+				    				<th> Status </th>
+				    				<th><th>
+				    				<th></th>	
+				    			</tr>	
+				    			</table>
+			    			</div>
 			    		</center>
 		    		</div>
 	    		
-	    	</div>
+	    	
+	    	</div>	
+	    	</div>	
 
 	    	<div class="row">
 	        	<div class="col-md-2 col-md-offset-5 col-xs-2 col-xs-offset-5 col-lg-2 col-lg-offset-5">
@@ -88,11 +102,11 @@
 		                	
 		                		console.log(data);
 		                		if(data[count]['status'] == 0){
-		                			var status = 'Não verificado';
+		                			var status = '<p><b>Não verificado<b></p>';
 		                		}else if(data[count]['status'] == 1){
-		                			var status = 'Aprovado';
+		                			var status = '<p style="color:blue"><b>Aprovado</b></p>';
 		                		}else if(data[count]['status'] == 2){
-		                			var status = 'Reprovado';
+		                			var status = '<p style="color:red"><b>Reprovado</b></p>';
 		                		}
 		                	
 		                	var linha = '<tr id="'+data[count]['idusuario']+'"> <td>'+data[count]['nome']+'</td> <td>'+data[count]['cidade']+'</td> <td>'+data[count]['endereco']+'</td> <td>'+data[count]['cargo']+'</td> <td>'+data[count]['instituicao']+'</td> <td>'+data[count]['telefone']+'</td> <td>'+data[count]['contato']+'</td> <td>'+data[count]['email']+'</td> <td class="status" id="'+data[count]['idusuario']+'" > <b>'+status+'<b> </td> <td> <button id="'+data[count]['idusuario']+'" class="btn btn-success"> Aprovar </button> </td> <td> <button id="'+data[count]['idusuario']+'"  class="btn btn-danger" > Reprovar </button> </td> </tr>';
@@ -126,7 +140,7 @@
 	                       $('.status').each(function(){
 	                       	if( $(this).attr('id')  == env.id ){
 	                       		$(this).html('');
-	                       		$(this).append('<b>Aprovado</b>');
+	                       		$(this).append('<p style="color:blue"><b>Aprovado</b></p>');
 	                       	}
 	                       }); 
 	                                       
@@ -156,7 +170,7 @@
 	                       $('.status').each(function(){
 	                       	if( $(this).attr('id')  == env.id ){
 	                       		$(this).html('');
-	                       		$(this).append('<b>Reprovado</b>');
+	                       		$(this).append('<p style="color:red"><b>Reprovado</b></p>');
 	                       	}
 	                       }); 
 	                                       
