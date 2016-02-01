@@ -25,6 +25,8 @@
                 env.bairro = $('#bairro').val();
                 env.cargo = $('#cargo').val();
 
+                
+
                if ($('#autor').is(':checked') && $('#avaliador').is(':checked') == false ){
                    $('#tipocadastro').val('Autor');
                 }
@@ -116,6 +118,6 @@
                     }
                     console.log(env);
 
-                    $("#formcad").submit();
+                    // $("#formcad").submit();
             });
         });
