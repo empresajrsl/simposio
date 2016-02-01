@@ -4,7 +4,8 @@ include ('../funcoes/funcoesmysql.php');
 
 $id = $_POST['id'];
 
-$update = updatemysql('status = 1 ','sl_avaliador',"idusuario = ".$id." ");
+$update = updatemysql('status = 1 ','sl_cadusu',"id_usuario = ".$id." ");
+$update2 = updatemysql('status = 1 ','sl_avaliador',"idusuario = ".$id." ");
 
 if($update){
 	$rp = 'funcionou';
