@@ -525,7 +525,7 @@
                                         '</select>'+
                                     '</div>');
             }else{
-                $('#divarea').fadeOut('');
+                $('#divarea').html('');
             }
         });
     });
