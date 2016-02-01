@@ -23,11 +23,12 @@ $cep = $_POST['cep'];
 $bairro = $_POST['bairro'];
 $tipocadastro = $_POST['tipocadastro'];
 $cargo = $_POST['cargo'];
+$arearesp = $_POST['arearesp'];
 $status = 0;
 $criado = date('Y-m-d H:i'); 
 $tabela = 'sl_cadusu';
-$campos = 'senha, nome, sobrenome, nascimento, sexo, pais,cpf, endereco, cidade, estado, instituicao, email, telefone, contato,numero,complemento,cep,bairro,tipocadastro,criado,cargo';
-$argumentos  = "'".$senha."','".$nome."', '".$sobrenome."', '".$nascimento."', '".$sexo."', '".$pais."','".$cpf."', '".$endereco."', '".$cidade."', '".$estado."', '".$instituicao."', '".$email."', '".$telefone."', '".$contato."', '".$numero."', '".$complemento."','".$cep."', '".$bairro."', '".$tipocadastro."', '".$criado."', '".$cargo."'";
+$campos = 'senha, nome, sobrenome, nascimento, sexo, pais,cpf, endereco, cidade, estado, instituicao, email, telefone, contato,numero,complemento,cep,bairro,tipocadastro,criado,cargo,arearesp';
+$argumentos  = "'".$senha."','".$nome."', '".$sobrenome."', '".$nascimento."', '".$sexo."', '".$pais."','".$cpf."', '".$endereco."', '".$cidade."', '".$estado."', '".$instituicao."', '".$email."', '".$telefone."', '".$contato."', '".$numero."', '".$complemento."','".$cep."', '".$bairro."', '".$tipocadastro."', '".$criado."', '".$cargo."', '".$arearesp."'";
 $argumentosavaliador  = "'".$nome."','".$cidade."', '".$endereco."', '".$cargo."', '".$instituicao."', '".$telefone."','".$contato."', '".$email."', ".$status." ";
 
 $rp = insert($tabela,$campos,$argumentos);
