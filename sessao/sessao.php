@@ -13,13 +13,14 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 			
 				// faz um select no banco de dados dos campos email, senha, email verificado e status na tabela usuarios 
 				$busca = select('id_usuario,email, senha, emailverificado,publicado,cpf,nome,instituicao,tipocadastro',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
+				$buscaadm = select('criado,nome,email,senha',"sl_adm", " email='".$emailp."' and senha = '$senhap' ");
 				
 				$result = array();
-
+				$resultadm = array();	
 				
 
 					// verifica se a busca retornou resultados
-					if (empty($busca))
+					if (empty($busca) && empty($buscaadm))
 					{
 						// atribui numero 1 a variavel erro o que indica que o email ou a senha é incorrto
 						echo '<script>location.href=" ../index.php?erro=1";</script>';
@@ -33,10 +34,17 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 					
 						}
 
+						foreach ($buscaadm as $key => $val) {
+							$resultadm = $val;	
+					
+						}
+
 							
 							// atribui cada campo a sua respectiva variavel 
 							$email = $result['email'];
 							$senha = $result['senha'];
+							$emailadm = $resultadm['email'];
+							$senhaadm = $resultadm['senha'];
 							$emailchek = $result['emailverificado'];
 							$tipocadastro = $result['tipocadastro'];
 
@@ -52,8 +60,12 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									$_SESSION['cpf'] = $result['cpf'];
 									$_SESSION['nome'] = $result['nome'];
 									$_SESSION['instituicao'] = $result['instituicao'];
+								}elseif($emailp == $emailadm and $senhap == $senhaadm){
 
-									
+									$_SESSION['admlogado'] = true;
+									$_SESSION['admusuario'] = $emailadm;
+									$_SESSION['admnome'] = $resultadm['nome'];
+							
 
 								}else{
 									echo '<script>location.href=" ../index.php?erro=2";</script>';
@@ -86,7 +98,13 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									}
 
 									
+								}elseif(isset($_SESSION['admlogado']) ){
+										echo '<script>location.href=" ../view/menuadm.php";</script>';
+
 								}else{
+
+
+								else{
 										// envia mensegem de erro para index 
 										echo '<script>location.href=" ../index.php?erro=2";</script>';
 									
