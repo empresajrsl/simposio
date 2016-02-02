@@ -118,6 +118,6 @@
                     }
                     console.log(env);
 
-                    // $("#formcad").submit();
+                    $("#formcad").submit();
             });
         });
