@@ -112,8 +112,10 @@
 				                	
 				                	var idtrabalho = data[count][0]['id_artigo'];
 
+				                	
+
 				                	for(x=1;x<11;x++){
-										if(data[count][0]['nota'+x] == 0 || data[count][0]['nota'+x] == null){
+										if( data[count][0]['nota'+x] == null){
 											$('#'+idtrabalho+' #colunanota'+x).append('<input type="number" min="0" max="5" style="margin-bottom:5px; margin-left:12px"  id="nota'+x+'"><button idtrabalho="'+data[count][0]['id_artigo']+'" type="button" class="btn btn-success notas" email="'+data[count][0]['email']+'" nota="'+x+'" style="border-radius:80px"><i class="glyphicon glyphicon-ok"> Salvar</i> </button>');
 										}else{
 											$('#'+idtrabalho+' #colunanota'+x).append('<center><p style="font-weight:bold; font-size:25px; color:#337ab7">'+data[count][0]['nota'+x]+' <button class="btn btn-danger editar" idtrabalho='+data[count][0]['id_artigo']+' nota='+x+' email='+data[count][0]['email']+' style="border-radius:80px"><i class="glyphicon glyphicon-pencil"> Editar</i></button></p></center>');
@@ -150,8 +152,10 @@
 				                	
 				                	var idtrabalho = data[0][count]['id_artigo'];
 
+				                	
+
 				                	for(x=1;x<11;x++){
-										if(data[0][count]['nota'+x] == 0 || data[0][count]['nota'+x] == null){
+										if( data[0][count]['nota'+x] == null){
 											$('#'+idtrabalho+' #colunanota'+x).append('<input type="number" min="0" max="5" style="margin-bottom:5px; margin-left:12px"  id="nota'+x+'"><button idtrabalho="'+data[0][count]['id_artigo']+'" type="button" class="btn btn-success notas" email="'+data[0][count]['email']+'" nota="'+x+'" style="border-radius:80px"><i class="glyphicon glyphicon-ok"> Salvar</i> </button>');
 										}else{
 											$('#'+idtrabalho+' #colunanota'+x).append('<center><p style="font-weight:bold; font-size:25px; color:#337ab7">'+data[0][count]['nota'+x]+' <button class="btn btn-danger editar" idtrabalho='+data[0][count]['id_artigo']+' nota='+x+' email='+data[0][count]['email']+' style="border-radius:80px"><i class="glyphicon glyphicon-pencil"> Editar</i></button></p></center>');
