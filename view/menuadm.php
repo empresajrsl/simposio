@@ -13,10 +13,10 @@
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Painel do administrador</title>
     <style type="text/css"> 
-    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{ background-color:  #99cc00; font-size: 25px;}
-    a { color:  #99cc00; font-size: 18px}
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{ background-color:   #86b300; font-size: 25px;}
+    a { color:   #86b300; font-size: 18px}
 
-    li > a:hover{ color:  #99cc00;}
+    li > a:hover{ color:   #86b300;}
 
     </style>
 </head>    
@@ -56,7 +56,7 @@
             </div>
 
             <div class="col-md-10 col-xs-10 col-lg-10"><!--jumbotron da imagem-->
-                <div class="jumbotron" style="color: white; background-color:  #99cc00">
+                <div class="jumbotron" style="color: white; background-color:   #86b300">
                     <center><h2 style="margin-top:-30px">Bem vindo ao painel de controle do sistema !</h2></center><br>
 
                     <h4>Entenda para que serve cada uma das telas que sera exibida ao clicar em uma das opções do menu a esquerda:</h4>
