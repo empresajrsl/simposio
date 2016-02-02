@@ -21,7 +21,7 @@
     </style>
 </head>    
 <body>
-	<div class="container-fluid">
+	<div class="container">
 		<!--Banner-->
         <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
             <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">
@@ -56,20 +56,21 @@
             </div>
 
             <div class="col-md-10 col-xs-10 col-lg-10"><!--jumbotron da imagem-->
-                <div class="jumbotron" style="color: white; background-color:   #86b300">
-                    <center><h2 style="margin-top:-30px">Bem vindo ao painel de controle do sistema !</h2></center><br>
-
+                <div class="jumbotron" style="color: white; background-color:   #86b300;">
+                    <center><h2 style="margin-top:-3%">Bem vindo ao painel de controle do sistema!</h2></center></br>
+                    <div style="margin: -2%">
                     <h4>Entenda para que serve cada uma das telas que sera exibida ao clicar em uma das opções do menu a esquerda:</h4>
-                    <h4></br>
+                    <h4>
                         <ul>
-                            <li><b>Estatisticas:</b> Exibe informações como, quantidade de usuarios cadastrados no sistema, 
-                                quantidados de trabalhos, além de graficos que exibem informaçõe relativas a cada categortia de trabalho.</li></br>
-                            <li><b>Novo Administrador:</b> Permite adicionar um novo administrador para acessar este painel de controle.</li></br>
-                            <li><b>Avaliadores:</b> Exibe informações como, Nome, Cidade, Endereco, Cargo, Instituição, Celular, Telefone, 
-                                E-mail e Status dos avaliadores que se cadastraram no sistema, possibilitando aprovar ou reprovar seu cadastro</li></br>
-                                <li><b>Atribuir avaliadores:</b> Exibi todos os trabalhos cadastrados para que possam ser atribuidos seus respectivos avaliadores</li>
+                            <li style="margin-top: 1%"><b>Estatisticas:</b> Exibe informações como, quantidade de usuarios cadastrados no sistema, 
+                                quantidados de trabalhos, além de graficos que exibem informaçõe relativas a cada categortia de trabalho.</li>
+                            <li style="margin-top: 1%"><b>Novo Administrador:</b> Permite adicionar um novo administrador para acessar este painel de controle.</li>
+                            <li style="margin-top: 1%"><b>Avaliadores:</b> Exibe informações como, Nome, Cidade, Endereco, Cargo, Instituição, Celular, Telefone, 
+                                E-mail e Status dos avaliadores que se cadastraram no sistema, possibilitando aprovar ou reprovar seu cadastro.</li>
+                            <li style="margin-top: 1%"><b>Atribuir avaliadores:</b> Exibe todos os trabalhos cadastrados para que possam ser atribuidos a seus respectivos avaliadores.</li>
                         </ul>
                     </h4>
+                    </div>
                 </div>
             </div><!--jumbotron da imagem-->
 
