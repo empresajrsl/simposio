@@ -20,8 +20,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 				
 
 					// verifica se a busca retornou resultados
-					if (empty($busca) && empty($buscaadm))
-					{
+					if (empty($busca) and empty($buscaadm)){
 						// atribui numero 1 a variavel erro o que indica que o email ou a senha é incorrto
 						echo '<script>location.href=" ../index.php?erro=1";</script>';
     					
@@ -39,18 +38,21 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 					
 						}
 
-							
+					
 							// atribui cada campo a sua respectiva variavel 
+						if (!empty($busca)){
 							$email = $result['email'];
 							$senha = $result['senha'];
-							$emailadm = $resultadm['email'];
-							$senhaadm = $resultadm['senha'];
 							$emailchek = $result['emailverificado'];
 							$tipocadastro = $result['tipocadastro'];
+						}elseif(!empty($buscaadm)){
+							$emailadm = $resultadm['email'];
+							$senhaadm = $resultadm['senha'];
+						}
 
 							
 								// verifica se o usuario esta cadastrado no sistema
-								if($emailp == $email and $senhap == $senha and $emailchek == 1 )
+								if(isset($email) and isset($senha) and $emailp == $email and $senhap == $senha and $emailchek == 1 )
 								{
 									session_start();
 									// atribui true a variavel de sessão logado
@@ -60,7 +62,9 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									$_SESSION['cpf'] = $result['cpf'];
 									$_SESSION['nome'] = $result['nome'];
 									$_SESSION['instituicao'] = $result['instituicao'];
-								}elseif($emailp == $emailadm and $senhap == $senhaadm){
+								}
+
+								elseif(isset($emailadm) and isset($senhaadm) and $emailp == $emailadm and $senhap == $senhaadm){
 
 									$_SESSION['admlogado'] = true;
 									$_SESSION['admusuario'] = $emailadm;
