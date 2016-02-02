@@ -27,21 +27,21 @@ function placar(total,id){
 			var tres = string.charAt(2);
 
 			for(x=0;x<10;x++){
-				console.log("loop"+x);
+				
 				if(um == x){
 					$("#"+id).append('<img src="../images/digitos/d'+x+'.bmp" style="width:18%; heigth:18%;" class="digitos">');
 				}
 			}
 
 			for(x=0;x<10;x++){
-				console.log("loop"+x);
+				
 				if(dois == x){
 					$("#"+id).append('<img src="../images/digitos/d'+x+'.bmp" style="width:18%; heigth:18%;" class="digitos">');
 				}
 			}
 
 			for(x=0;x<10;x++){
-				console.log("loop"+x);
+				
 				if(tres == x){
 					$("#"+id).append('<img src="../images/digitos/d'+x+'.bmp" style="width:18%; heigth:18%;" class="digitos">');
 				}
@@ -55,14 +55,14 @@ function placar(total,id){
 			var tres = string.charAt(2);
 
 			for(x=0;x<10;x++){
-				console.log("loop"+x);
+				
 				if(um == x){
 					$("#"+id).append('<img src="../images/digitos/d'+x+'.bmp" style="width:18%; heigth:18%;" class="digitos">');
 				}
 			}
 
 			for(x=0;x<10;x++){
-				console.log("loop"+x);
+				
 				if(dois == x){
 					$("#"+id).append('<img src="../images/digitos/d'+x+'.bmp" style="width:18%; heigth:18%;" class="digitos">');
 				}
