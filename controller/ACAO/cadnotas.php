@@ -4,7 +4,8 @@ include ('../funcoes/conexao.php');
 include ('../funcoes/funcoesmysql.php');
 
 $numeronota = $_POST['nota'];
-$valornota = $_POST['valor'];
+$valornotabruta = $_POST['valor'];
+$valornota = number_format($valornotabruta, 2,'.','');
 $idtrabalho = $_POST['idtrabalho'];
 $email = $_POST['email'];
 session_start();
