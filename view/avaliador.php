@@ -1,3 +1,4 @@
+<?php include("verificasessao.php"); ?>
 
 <html>
 <head>

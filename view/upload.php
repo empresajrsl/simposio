@@ -1,4 +1,4 @@
-<?php header ('Content-type: text/html; charset=UTF-8'); ?>
+<?php include("verificasessao.php"); ?>
 
 <?php include("../controller/funcoes/funcoesmysql.php"); ?>
 <?php

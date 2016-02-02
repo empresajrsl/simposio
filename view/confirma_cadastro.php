@@ -1,3 +1,5 @@
+<?php include("verificasessao.php"); ?>
+
 <?php
 $senha = $_POST['senha'];
 $nome = $_POST['nome'];
