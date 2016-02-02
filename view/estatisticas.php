@@ -136,7 +136,20 @@
 		<div class="row">
 			<div class="col-md-12 col-xs-12 col-lg-12">
 		        <div class="jumbotron" style="background-color: #fff">
-		           <center><h4>Total de cadastro por</h4><select class="form-control" id="opcao"><option id="regiao">Região</option><option id="estado">Estado</option></select><canvas id="GraficoBarra" style="width:100%"></canvas></center>
+		           <center>
+		           		<h4>Total de cadastro por</h4>
+		           		<select class="form-control" id="opcao">
+		           			<option id="regiao">Região</option>
+		           			<option id="estado">Estado</option>
+		           		</select>
+		           		<div class="row" id="grafico1">
+		           			<canvas id="GraficoBarra" style="width:100%"></canvas>
+		           		</div>
+		           		<div class="row" style="display:none" id="grafico2">
+		           			<canvas id="GraficoBarra2" style="width:100%"></canvas>
+		           		</div>	
+
+		           </center>
 		            	
                 </div>
                 			
@@ -158,38 +171,45 @@
     <?php include('../controller/funcoes/graficobarra.php'); ?>
 
 <script type="text/javascript">
-		window.onload = function(){
+		
+	$(document).ready(function(){ 
+	        var ctx = document.getElementById("GraficoDonut").getContext("2d");
+	        var PizzaChart = new Chart(ctx).Doughnut(data, options);
 
-        var ctx = document.getElementById("GraficoDonut").getContext("2d");
-        var PizzaChart = new Chart(ctx).Doughnut(data, options);
+	        var ctx = document.getElementById("GraficoDonut2").getContext("2d");
+	        var PizzaChart = new Chart(ctx).Doughnut(data2, options);
 
-        var ctx = document.getElementById("GraficoDonut2").getContext("2d");
-        var PizzaChart = new Chart(ctx).Doughnut(data2, options);
+	        var ctx = document.getElementById("GraficoDonut3").getContext("2d");
+	        var PizzaChart = new Chart(ctx).Doughnut(data3, options);
 
-        var ctx = document.getElementById("GraficoDonut3").getContext("2d");
-        var PizzaChart = new Chart(ctx).Doughnut(data3, options);
+	        var ctx = document.getElementById("GraficoBarra").getContext("2d");
+	        var BarChart = new Chart(ctx).Bar(databarra, options);
+	});        
 
-        var ctx = document.getElementById("GraficoBarra").getContext("2d");
-        var BarChart = new Chart(ctx).Bar(databarra, options);
-
-        var ctx = document.getElementById("GraficoBarra2").getContext("2d");
-        var BarChart = new Chart(ctx).Bar(databarra2, options);
-    }</script>
+    </script>
 
     <script type="text/javascript">
-    	$(document).on('change','#opcao',function(){ 
-    		var opcao = $('#opcao option:selected').val();
+		$(document).ready(function(){ 
+	    	$(document).on('change','#opcao',function(){ 
+	    		var opcao = $('#opcao option:selected').val();
+	    		console.log(opcao);
 
-    		if(opcao == 'Região'){
-    			var ctx = document.getElementById("GraficoBarra").getContext("2d");
-        		var BarChart = new Chart(ctx).Bar(databarra, options);
-    		}
-
-    		if(opcao == 'Estado'){
-    			var ctx = document.getElementById("GraficoBarra").getContext("2d");
-       			var BarChart = new Chart(ctx).Bar(databarra2, options);
-    		}
-    	});
+	    		if(opcao == 'Região'){
+	    			$('#grafico1').fadeIn();
+	    			$('#grafico2').fadeOut();
+	    			var ctx = document.getElementById("GraficoBarra").getContext("2d");
+	        		var BarChart = new Chart(ctx).Bar(databarra, options);
+	        		return;
+	    		}else{
+	    			
+	    			$('#grafico2').fadeIn();
+	    			$('#grafico1').fadeOut();
+	    			var ctx = document.getElementById("GraficoBarra2").getContext("2d");
+	       			var BarChart = new Chart(ctx).Bar(databarra2, options);
+	       			return;
+	    		}
+	    	});
+	    });	
     </script>
 
 
