@@ -102,9 +102,6 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 										echo '<script>location.href=" ../view/menuadm.php";</script>';
 
 								}else{
-
-
-								else{
 										// envia mensegem de erro para index 
 										echo '<script>location.href=" ../index.php?erro=2";</script>';
 									
