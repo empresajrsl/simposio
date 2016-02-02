@@ -61,7 +61,7 @@ $sustentabilidade = $areabusca8[0]['total'];
     totalrelato = totalrelato/100*100;
     totalartigo = totalartigo/100*100;
 
-    console.log(totalresumo+"-----"+totalrelato+"-----"+totalartigo);
+    
     var options = {
         responsive:true        
     };
