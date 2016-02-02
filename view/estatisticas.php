@@ -106,7 +106,7 @@
 			</div><!--Ajuste-->
 		</div><br>
 <div class="jumbotron" style="background-color: #fff">
-	   <h3>	Grafico por Cadastro de Trabalhos </h3>
+	   
 	    <div class="row">
 
 		        <div class="col-md-4 col-xs-4 col-lg-4">
@@ -134,23 +134,16 @@
 		</div>
 </div>
 		<div class="row">
-			<div class="col-md-offset-3 col-md-6 col-xs-6 col-lg-6">
+			<div class="col-md-12 col-xs-12 col-lg-12">
 		        <div class="jumbotron" style="background-color: #fff">
-		           <center><h4>Total de cadastro por região</h4><canvas id="GraficoBarra" style="width:100%"></canvas></center>
+		           <center><h4>Total de cadastro por</h4><select class="form-control" id="opcao"><option id="regiao">Região</option><option id="estado">Estado</option></select><canvas id="GraficoBarra" style="width:100%"></canvas></center>
 		            	
                 </div>
                 			
             </div>
         </div>
 
-         <div class="row">
-		    <div class="col-md-12 col-xs-12 col-lg-12">
-	        	<div class="jumbotron" style="background-color: #fff">
-               	    <center><h4>Total de cadastro por Estado</h4><canvas id="GraficoBarra2" ></canvas></center>
-               	   
-                </div>
-            </div>
-    	</div>
+         
 
 		
 			                
@@ -182,6 +175,22 @@
         var ctx = document.getElementById("GraficoBarra2").getContext("2d");
         var BarChart = new Chart(ctx).Bar(databarra2, options);
     }</script>
+
+    <script type="text/javascript">
+    	$(document).on('change','#opcao',function(){ 
+    		var opcao = $('#opcao option:selected').val();
+
+    		if(opcao == 'Região'){
+    			var ctx = document.getElementById("GraficoBarra").getContext("2d");
+        		var BarChart = new Chart(ctx).Bar(databarra, options);
+    		}
+
+    		if(opcao == 'Estado'){
+    			var ctx = document.getElementById("GraficoBarra").getContext("2d");
+       			var BarChart = new Chart(ctx).Bar(databarra2, options);
+    		}
+    	});
+    </script>
 
 
 </body>
