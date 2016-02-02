@@ -65,7 +65,8 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 								}
 
 								elseif(isset($emailadm) and isset($senhaadm) and $emailp == $emailadm and $senhap == $senhaadm){
-
+										
+									session_start();
 									$_SESSION['admlogado'] = true;
 									$_SESSION['admusuario'] = $emailadm;
 									$_SESSION['admnome'] = $resultadm['nome'];

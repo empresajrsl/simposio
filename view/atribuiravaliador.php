@@ -1,4 +1,4 @@
-<?php include("verificasessao.php"); ?>
+<?php include("verificasessaoadm.php"); ?>
 <html>
 <head>
 	<meta charset="UTF-8">

@@ -1,5 +1,6 @@
 <?php include("verificasessaoadm.php"); ?>
 
+<?php echo $_SESSION['admlogado']; ?>
 <html>
 <head>
 	<meta charset="utf-8">
