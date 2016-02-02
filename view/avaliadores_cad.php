@@ -13,17 +13,29 @@
 	<title>Avaliadores Cadastrados</title>
 	<style type="text/css">
 		th{
-			font-size: 25px;
-			font-family: cursive;
+			font-size: 23px;
+			
 		}
 		td{
 			font-size: 20px;
-			font-family: cursive;
+			
 			color: #696969;
 		}
 		table{
 			
 			margin: 5px;
+
+		}
+		td{
+			padding: 11px;
+		}
+		#divavaliadores{
+			
+
+		}
+		.table-striped{
+			width: 1500px;
+
 		}
 	</style>
 </head>
@@ -45,15 +57,12 @@
 	    </div>
 	    <!--Fim Banner-->
 
-	    <div class="panel panel-success">
-	    	
-	    	<div class="panel-body">
-	    		
-		    	<div class="row" style="overflow:hidden">
-		    		<div class="col-md-12 col-xs-12 col-lg-12" style="overflow:scroll" >
-		    			<center>
-		    				
-				    			<table class="table-hover" id="avaliadorescad" style="width:1500px">
+	    
+	    
+		    <div class="row" id="divavaliadores">
+			    <div class="col-md-12" style="overflow:scroll" >			
+								   					
+			    			<table class="table-striped" id="avaliadorescad">
 				    			<tr> 
 				    				<th> Nome </th>
 				    				<th> Cidade </th>
@@ -67,14 +76,11 @@
 				    				<th><th>
 				    				<th></th>	
 				    			</tr>	
-				    			</table>
-			    			</div>
-			    		</center>
-		    		</div>
-	    		
-	    	
-	    	</div>	
-	    	</div>	
+			    			</table>
+			    	
+		    	</div>	
+    		</div>
+    				
 
 	    	<div class="row">
 	        	<div class="col-md-2 col-md-offset-5 col-xs-2 col-xs-offset-5 col-lg-2 col-lg-offset-5">
