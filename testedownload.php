@@ -34,7 +34,7 @@
 		<div class="jumbotron" style="background-color: white">
 			<div class="row">
 				<h3 class="col-md-12 col-xs-12 col-lg-12">
-					<center>Para realizar o downlod do arquivo, clique sobre o icone disquete localizado na parte superior (Mozilla Firefox e Google Chrome) ou inferior (Opera) do documento.</center>
+					<center>Para realizar o downlod do arquivo, clique sobre o icone disquete localizado na parte superior do documento (Mozilla Firefox e Google Chrome) ou inferior (Opera).</center>
 				</h3>
 			</div>   
 
