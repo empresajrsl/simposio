@@ -79,7 +79,7 @@ function placar(total,id){
 			for(x=0;x<10;x++){
 				
 				if(um == x){
-	$("#"+id).append('<img src="../images/digitos/d'+x+'.bmp" style="width:18%; heigth:18%; margin-left:50px; margin-right:60px">');
+	$("#"+id).append('<img src="../images/digitos/d'+x+'.bmp" style="width:18%; heigth:18%; margin-left:110px; margin-right:60px">');
 				}
 			}
 
