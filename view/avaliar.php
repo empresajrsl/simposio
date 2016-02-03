@@ -1,5 +1,5 @@
 <?php include("verificasessao.php"); ?>
-
+<?php $nome = $_SESSION['nome']; ?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -12,26 +12,42 @@
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
     
 	<title>sistema de avaliação</title>
+	<style type="text/css">
+        li{
+            font-size: 18px
+        }
+        nav{
+            margin-top: -5px;
+        }
+        #msg{
+        	font-size: 25px;
+        }
+        #nomeevento{
+        	font-size: 32px;
+        }
+
+    </style>
 </head>
 <body>
-<div class="container">
+	<nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#" style="font-size:28px" id="nomeevento">Sgagro</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li id="msg" class="active"><a href="estatisticas.php">Olá avaliador(a): <?php echo $nome;  ?>, seja bem vindo ao sitema de avaliação dos trabalhos </a></li>
+              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              
+              <li><a href="../sessao/fecharsessao.php"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+            </ul>
+          </div>
+        </nav>
+<div class="container-fluid">
 		
 		
-		<!--Banner-->
-	    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
-	        <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">
-	            <div class="col-md-12 col-xs-12 col-lg-12">
-	                <div class="col-md-4 col-xs-4 col-lg-4">
-	                    <img src="../images/SGAGRO LOGO.png" style="width: 40%; height: 15%;">
-	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
-	                </div>
-	                <div class="col-md-6 col-xs-6 col-lg-6">
-	                   
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	    <!--Fim Banner-->
+		
 	    
 	   
 	    		<div class="jumbotron" style="margin:3px; padding:25px"> 
