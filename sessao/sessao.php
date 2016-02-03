@@ -104,7 +104,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 
 									
 								}elseif(isset($_SESSION['admlogado']) ){
-										echo '<script>location.href=" ../view/menuadm.php";</script>';
+										echo '<script>location.href=" ../view/estatisticas.php";</script>';
 
 								}else{
 										// envia mensegem de erro para index 
