@@ -11,61 +11,55 @@
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Painel de Estatisticas</title>
+	<style type="text/css">
+		#grafico1{
+			height: 300px;
+		}
+		#grafico2{
+			height: 300px;
+		}
+		
+		
+	</style>
 
 </head>
 <body>
-	<div class="container">
+
+<?php include("menuadm.php"); ?>
+	
+
+	<div class="container-fluid">
+		
+	
 		
 
-		<!--Banner-->
-	    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
-	        <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">
-	            <div class="col-md-12 col-xs-12 col-lg-12">
-	                <div class="col-md-4 col-xs-4 col-lg-4">
-	                    <img src="../images/SGAGRO LOGO.png" style="width: 40%; height: 15%;">
-	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
-	                </div>
-	                <div class="col-md-6 col-xs-6 col-lg-6">
-	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b></b></i></center></h1>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	    <!--Fim Banner-->
-    	
-
-		<div class="row" >
-			<div class="row">
-        		<div class="col-md-2 col-md-offset-5 col-xs-2 col-xs-offset-5 col-lg-2 col-lg-offset-5" style="background-color: #fff">
-			    	<a href="menuadm.php"><button class="btn btn-success col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home" style="border-radius:0px 0px 30px 30px; margin-top:-30px"> Menu</button></a>
-                </div>
-            </div></br>
-
+        <div class="row" >
+			
 			<div class="col-md-12 col-xs-12 col-lg-12">
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
-					style="color: white; background-color: #5cb85c  ; padding:15px; border-radius:30px 30px 0px 0px">
+					style="color: white; background-color: green ; padding:15px; border-radius:30px 30px 0px 0px">
 						<b>Usuários cadastrados</b>
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
-					style="color: white; background-color: #5cb85c  ; padding:15px; border-radius:30px 30px 0px 0px">
+					style="color: white; background-color: green ; padding:15px; border-radius:30px 30px 0px 0px">
 						<b>Trabalhos cadastrados</b>
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
-					style="color: white; background-color: #5cb85c  ; padding:15px; border-radius:30px 30px 0px 0px">
+					style="color: white; background-color: green ; padding:15px; border-radius:30px 30px 0px 0px">
 						<b>Trabalho aprovados</b>
 					</center>
 				</div>
 
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
-					style="color: white; background-color: #5cb85c  ; padding:15px; border-radius:30px 30px 0px 0px">
+					style="color: white; background-color: green ; padding:15px; border-radius:30px 30px 0px 0px">
 						<b>Inscrições pagas</b>
 					</center>
 				</div>
@@ -73,7 +67,7 @@
 
 			<div class ="col-md-12 col-lg-12 col-xs-12"><!--ajuste-->
 				<div class="panel panel-default" style="border-radius:30px">
-					<div class="panel-heading" style="background-color: #5cb85c  ; padding:15px; border-radius:30px 30px 0px 0px"></div>
+					<div class="panel-heading" style="background-color: green ; padding:15px; border-radius:30px 30px 0px 0px"></div>
 					
 					<table> 
 						<tr>
@@ -105,19 +99,27 @@
 				</div>
 			</div><!--Ajuste-->
 		</div><br>
+
+   	</div>	
+		
+   	
+	    
+    	
+   	<div class="container">
+		
 <div class="jumbotron" style="background-color: #fff">
 	   
 	    <div class="row">
 
 		        <div class="col-md-4 col-xs-4 col-lg-4">
 		        	<div class="jumbotron box-chart">
-		               	 <center><h4>Total de trabalhos cadastrados por categoria</h4><canvas id="GraficoDonut" style="width:100%;heigth:300px;"></canvas></center>
+		               	 <center><h4>Total de trabalhos cadastrados por categoria</h4><canvas id="GraficoDonut" ></canvas></center>
 	                </div>
 	        	</div>
 
 	        	 <div class="col-md-4 col-xs-4 col-lg-4">
 		        	<div class="jumbotron box-chart">
-		               	 <center><h4>Total de trabalhos cadastrados por Área temática</h4><canvas id="GraficoDonut2" style="width:100%;heigth:300px;"></canvas></center>
+		               	 <center><h4>Total de trabalhos cadastrados por Área temática</h4><canvas id="GraficoDonut2" ></canvas></center>
 	                </div>
 	        	</div>
 		 
@@ -125,7 +127,7 @@
 		        <div class="col-md-4 col-xs-4 col-lg-">
 		        	<div class="jumbotron">
 	               		
-		                    <center><h4>Total de trabalhos aprovados por categoria<br/><br/></h4><canvas id="GraficoDonut3" style="width:100%;heigth:300px;"></canvas></center>
+		                    <center><h4>Total de trabalhos aprovados por categoria</h4><br><canvas id="GraficoDonut3" ></canvas></center>
 	                    
 	                    	
 	    	        </div>
@@ -143,10 +145,10 @@
 		           			<option id="estado">Estado</option>
 		           		</select>
 		           		<div class="row" id="grafico1">
-		           			<canvas id="GraficoBarra" style="width:100%"></canvas>
+		           			<canvas id="GraficoBarra" height="80" ></canvas>
 		           		</div>
 		           		<div class="row" style="display:none" id="grafico2">
-		           			<canvas id="GraficoBarra2" style="width:100%"></canvas>
+		           			<canvas id="GraficoBarra2" height="80" ></canvas>
 		           		</div>	
 
 		           </center>

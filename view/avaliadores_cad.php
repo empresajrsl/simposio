@@ -40,22 +40,13 @@
 	</style>
 </head>
 <body>
-	<div class="container">
-		<!--Banner-->
-	    <div class="jumbotron" style="background-image: url('../images/fundo.png'); background-size: cover;">
-	        <div class="row" style="margin-left: -6.5%; margin-right: 6.5%">
-	            <div class="col-md-12 col-xs-12 col-lg-12">
-	                <div class="col-md-4 col-xs-4 col-lg-4">
-	                    <img src="../images/SGAGRO LOGO.png" style="width: 40%; height: 15%;">
-	                    <img src="../images/unesp.jpg" style="width: 40%; height: 15%; margin-left: 5%;">
-	                </div>
-	                <div class="col-md-6 col-xs-6 col-lg-6">
-	                    <center><h1><i style="font-family: 'Plantagenet Cherokee';"><b>Avaliadores Cadastrados</b></i></center></h1>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	    <!--Fim Banner-->
+
+	<?php include("menuadm.php"); ?>
+        <br>
+        <br>
+        <br>
+	<div class="container-fluid">
+		
 
 	    
 	    
@@ -82,12 +73,7 @@
     		</div>
     				
 
-	    	<div class="row">
-	        	<div class="col-md-2 col-md-offset-5 col-xs-2 col-xs-offset-5 col-lg-2 col-lg-offset-5">
-				    	<a href="menuadm.php"><button class="btn btn-success col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home" style="border-radius:60px"> Menu</button></a>
-	                </div>
-	            </div>
-        	</div>
+	    	
 	    </div>
 	</div><!--fim container-->
 
