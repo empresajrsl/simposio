@@ -17,6 +17,9 @@
       text-align: center;
       font-size: 30px;
   }
+  .modal-lg{
+  	width: 1350px;
+  }
     </style>
 	<title>Envio do trabalho</title>
 </head>
@@ -180,8 +183,8 @@
 
 								var	linha  = '<div class="col-md-12">';
 									linha += 	'<table class="table">';
-									linha += 	'<th>Nome</th><th>Cidade</th><th>Endereço</th><th>Cargo</th><th>Instituição</th><th>Celular</th><th>Tel</th><th>E-mail</th>';
-									linha += 	'<tr><td> '+data[0]['nome'] +' </td><td> '+data[0]['cidade'] +' </td><td> '+data[0]['endereco']+'</td><td> '+data[0]['cargo']+'</td> <td> '+data[0]['instituicao']+'</td><td> '+data[0]['telefone']+'</td><td> '+data[0]['contato']+'</td><td> '+data[0]['email']+'</td>';
+									linha += 	'<th>Nome</th><th>Cidade</th><th>Endereço</th><th>Cargo</th><th>Area temática</th><th>Instituição</th><th>Celular</th><th>Tel</th><th>E-mail</th>';
+									linha += 	'<tr><td> '+data[0]['nome'] +' </td><td> '+data[0]['cidade'] +' </td><td> '+data[0]['endereco']+'</td><td> '+data[0]['cargo']+'</td> <td> '+data[0]['arearesp']+'</td> <td> '+data[0]['instituicao']+'</td><td> '+data[0]['telefone']+'</td><td> '+data[0]['contato']+'</td><td> '+data[0]['email']+'</td>';
 									linha += 	'</table>';
 									linha += '</div>';	
 									  
@@ -235,8 +238,8 @@
 
 				            success: function(data){
 				            	console.log(data);
-				            	if(data['email'] == 'igual'){
-				            		alert('Este avaliador não pode avaliar este trbalho pois é de sua autoria');
+				            	if(data['verificacao'] == 1){
+				            		alert('Os avaliadores 1 e 2 não podem ser os mesmos !!!');
 				            		return;
 				            	}
 				            	if(data['instituicao'] == 'igual'){
