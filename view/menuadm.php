@@ -22,7 +22,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $nome;  ?>  </a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+              <li><a href="../sessao/fecharsessao.php"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
             </ul>
           </div>
         </nav>
