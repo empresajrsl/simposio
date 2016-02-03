@@ -12,7 +12,7 @@
 		<nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#" style="font-size:28px">Sgagro</a>
+              <a class="navbar-brand" href="#" style="font-size:28px;color:white">SGAgro</a>
             </div>
             <ul class="nav navbar-nav">
               <li><a href="estatisticas.php"><span class="glyphicon glyphicon-stats" ></span> Estatisticas</a></li>
