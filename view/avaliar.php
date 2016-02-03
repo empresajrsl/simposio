@@ -18,6 +18,7 @@
         }
         nav{
             margin-top: -5px;
+
         }
         #msg{
         	font-size: 25px;
@@ -44,6 +45,10 @@
             </ul>
           </div>
         </nav>
+        <br>
+        <br>
+        <br>
+        <br>
 <div class="container-fluid">
 		
 		
