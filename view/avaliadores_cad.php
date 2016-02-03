@@ -27,7 +27,7 @@
 
 		}
 		td{
-			padding: 11px;
+			padding: 6px;
 		}
 		#divavaliadores{
 			
@@ -59,6 +59,7 @@
 				    				<th> Cidade </th>
 				    				<th> Endereco </th>
 				    				<th> Cargo </th>
+				    				<th> Area temática </th>
 				    				<th> Instituição </th>
 				    				<th> Celular </th>
 				    				<th> telefone </th>
@@ -103,7 +104,7 @@
 		                			var status = '<p style="color:red"><b>Reprovado</b></p>';
 		                		}
 		                	
-		                	var linha = '<tr id="'+data[count]['idusuario']+'"> <td>'+data[count]['nome']+'</td> <td>'+data[count]['cidade']+'</td> <td>'+data[count]['endereco']+'</td> <td>'+data[count]['cargo']+'</td> <td>'+data[count]['instituicao']+'</td> <td>'+data[count]['telefone']+'</td> <td>'+data[count]['contato']+'</td> <td>'+data[count]['email']+'</td> <td class="status" id="'+data[count]['idusuario']+'" > <b>'+status+'<b> </td> <td> <button id="'+data[count]['idusuario']+'" class="btn btn-success"> Aprovar </button> </td> <td> <button id="'+data[count]['idusuario']+'"  class="btn btn-danger" > Reprovar </button> </td> </tr>';
+		                	var linha = '<tr id="'+data[count]['id_usuario']+'"> <td>'+data[count]['nome']+'</td> <td>'+data[count]['cidade']+'</td> <td>'+data[count]['endereco']+'</td> <td>'+data[count]['cargo']+'</td> <td>'+data[count]['arearesp']+'</td> <td>'+data[count]['instituicao']+'</td> <td>'+data[count]['telefone']+'</td> <td>'+data[count]['contato']+'</td> <td>'+data[count]['email']+'</td> <td class="status" id="'+data[count]['id_usuario']+'" > <b>'+status+'<b> </td> <td> <button id="'+data[count]['id_usuario']+'" class="btn btn-success"> Aprovar </button> </td> <td> <button id="'+data[count]['id_usuario']+'"  class="btn btn-danger" > Reprovar </button> </td> </tr>';
 		                	$('#avaliadorescad').append(linha);
 		                	count++;
 		                
