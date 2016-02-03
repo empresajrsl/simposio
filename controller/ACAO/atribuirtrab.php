@@ -9,6 +9,24 @@ $avaliador = $_POST['avaliador'];
 $avaliador1  = array('avaliador' => 1 , );
 $avaliador2 = array('avaliador' => 2 , );
 
+if($avaliador == 1){
+	$verifica= select('id_avaliador2','sl_artigo',"id_artigo = ".$idtrab." LIMIT 1 ");
+	if($verifica[0]['id_avaliador2'] == $id){
+		$verificacao = array('verificacao' => 1);
+		echo json_encode($verificacao);
+		exit();
+	}
+}
+
+if($avaliador == 2){
+	$verifica= select('id_avaliador1','sl_artigo',"id_artigo = ".$idtrab." LIMIT 1 ");
+	if($verifica[0]['id_avaliador1'] == $id){
+		$verificacao = array('verificacao' => 1);
+		echo json_encode($verificacao);
+		exit();
+	}
+}
+
 $busca = select('email','sl_cadusu',"id_usuario = ".$id." ");
 $emailavaliador = $busca[0]['email'];
 
