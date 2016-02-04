@@ -19,6 +19,7 @@
   }
   .modal-lg{
   	width: 1350px;
+  	margin-top: 100px;
   }
     </style>
 	<title>Envio do trabalho</title>
