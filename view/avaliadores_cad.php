@@ -20,13 +20,13 @@
 		.table-striped{width: 1500px;}
 	</style>
 </head>
-<body>
+<body style="overflow:hidden">
 	<div class="container-fluid">
 		<?php include("menuadm.php"); ?>
 		<div class="container-fluid">
 			<div class="jumbotron">
 				<div class="row" id="divavaliadores">
-				    <div class="col-md-12"style="overflow: scroll; height: 350px">								   					
+				    <div class="col-md-12"style="overflow: scroll; height: 550px">								   					
 		    			<table class="table table-striped table-condensed table-responsive" id="avaliadorescad">
 			    			<tr>
 			    				<th> Nome </th>
