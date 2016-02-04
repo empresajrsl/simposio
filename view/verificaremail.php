@@ -1,4 +1,3 @@
-<?php include("verificasessao.php"); ?>
 <html lang="en-us" id="lock-page">
 <head>
 	<meta charset="utf-8">

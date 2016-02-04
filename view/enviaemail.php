@@ -1,4 +1,3 @@
-<?php include("verificasessao.php"); ?>
 
 <?php  
 // guarda o email do usuario 
