@@ -28,8 +28,8 @@
 			<div class="jumbotron">
 				<div class="row" id="divavaliadores">
 				    <div class="col-md-12"style="overflow: scroll;">									   					
-		    			<table class="table table-striped" id="avaliadorescad">
-			    			<tr> 
+		    			<table class="table table-striped table-condensed table-responsive" id="avaliadorescad">
+			    			<tr style="font-size:15px;"> 
 			    				<th> Nome </th>
 			    				<th> Cidade </th>
 			    				<th> Endereco </th>
@@ -69,11 +69,11 @@
 		                	
 		                		console.log(data);
 		                		if(data[count]['status'] == 0){
-		                			var status = '<p><b>Não verificado<b></p>';
+		                			var status = '<span><b>Não verificado<b></span>';
 		                		}else if(data[count]['status'] == 1){
-		                			var status = '<p style="color:blue"><b>Aprovado</b></p>';
+		                			var status = '<span style="color:blue"><b>Aprovado</b></span>';
 		                		}else if(data[count]['status'] == 2){
-		                			var status = '<p style="color:red"><b>Reprovado</b></p>';
+		                			var status = '<span style="color:red"><b>Reprovado</b></span>';
 		                		}
 		                	
 		                	var linha = '<tr id="'+data[count]['id_usuario']+'"> <td>'+data[count]['nome']+'</td> <td>'+data[count]['cidade']+'</td> <td>'+data[count]['endereco']+'</td> <td>'+data[count]['cargo']+'</td> <td>'+data[count]['arearesp']+'</td> <td>'+data[count]['instituicao']+'</td> <td>'+data[count]['telefone']+'</td> <td>'+data[count]['contato']+'</td> <td>'+data[count]['email']+'</td> <td class="status" id="'+data[count]['id_usuario']+'" > <b>'+status+'<b> </td> <td> <button id="'+data[count]['id_usuario']+'" class="btn btn-success"> Aprovar </button> </td> <td> <button id="'+data[count]['id_usuario']+'"  class="btn btn-danger" > Reprovar </button> </td> </tr>';
