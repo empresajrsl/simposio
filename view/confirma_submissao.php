@@ -1,5 +1,5 @@
 
-<?php include("verificasessao.php"); ?>
+
 
 <?php
 $search = array("\n","\r");
