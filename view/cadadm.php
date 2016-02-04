@@ -17,12 +17,6 @@
 	<?php include("menuadm.php"); ?>
 
 	<div class="Container-fluid">
-		
-		
-    	<br>
-    	<br>
-    	<br>
-    	<br>
 
 	    <div class="jumbotron">
 	    	<div class="row panel panel-default" style="border-radius:50px">

@@ -11,71 +11,45 @@
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Avaliadores Cadastrados</title>
-	<style type="text/css">
-		th{
-			font-size: 23px;
-			
-		}
-		td{
-			font-size: 20px;
-			
-			color: #696969;
-		}
-		table{
-			
-			margin: 5px;
-
-		}
-		td{
-			padding: 6px;
-		}
-		#divavaliadores{
-			
-
-		}
-		.table-striped{
-			width: 1500px;
-
-		}
-	</style>
+	<!--style type="text/css">
+		th{font-size: 23px;}
+		td{font-size: 20px; color: #696969;}
+		table{margin: 5px;}
+		td{padding: 6px;}
+		#divavaliadores{}
+		.table-striped{width: 1500px;}
+	</style-->
 </head>
 <body>
-
-	<?php include("menuadm.php"); ?>
-        <br>
-        <br>
-        <br>
+	<div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div>
+	<br><br><br>
 	<div class="container-fluid">
-		
-
-	    
-	    
-		    <div class="row" id="divavaliadores">
-			    <div class="col-md-12" style="overflow:scroll" >			
+		<div class="container-fluid">
+		<div class="jumbotron">
+			<div class="row" id="divavaliadores">
+			    <div class="col-md-12"style="overflow: scroll;">
 								   					
-			    			<table class="table-striped" id="avaliadorescad">
-				    			<tr> 
-				    				<th> Nome </th>
-				    				<th> Cidade </th>
-				    				<th> Endereco </th>
-				    				<th> Cargo </th>
-				    				<th> Area temática </th>
-				    				<th> Instituição </th>
-				    				<th> Celular </th>
-				    				<th> telefone </th>
-				    				<th> E-mail </th>
-				    				<th> Status </th>
-				    				<th><th>
-				    				<th></th>	
-				    			</tr>	
-			    			</table>
+	    			<table class="table table-striped" id="avaliadorescad">
+		    			<tr> 
+		    				<th> Nome </th>
+		    				<th> Cidade </th>
+		    				<th> Endereco </th>
+		    				<th> Cargo </th>
+		    				<th> Area temática </th>
+		    				<th> Instituição </th>
+		    				<th> Celular </th>
+		    				<th> telefone </th>
+		    				<th> E-mail </th>
+		    				<th> Status </th>
+		    				<th><th>
+		    				<th></th>	
+		    			</tr>	
+	    			</table>
 			    	
 		    	</div>	
     		</div>
-    				
-
-	    	
-	    </div>
+		</div>
+		</div>
 	</div><!--fim container-->
 
 	<script type="text/javascript">
