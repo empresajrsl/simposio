@@ -26,7 +26,7 @@
 		<div class="container-fluid">
 			<div class="jumbotron">
 				<div class="row" id="divavaliadores">
-				    <div class="col-md-12"style="overflow: scroll; height: 550px">								   					
+				    <div class="col-md-12"style="overflow: scroll; height: 400px">								   					
 		    			<table class="table table-striped table-condensed table-responsive" id="avaliadorescad">
 			    			<tr>
 			    				<th> Nome </th>
