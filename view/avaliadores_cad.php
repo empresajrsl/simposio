@@ -25,30 +25,28 @@
 	<br><br><br>
 	<div class="container-fluid">
 		<div class="container-fluid">
-		<div class="jumbotron">
-			<div class="row" id="divavaliadores">
-			    <div class="col-md-12"style="overflow: scroll;">
-								   					
-	    			<table class="table table-striped" id="avaliadorescad">
-		    			<tr> 
-		    				<th> Nome </th>
-		    				<th> Cidade </th>
-		    				<th> Endereco </th>
-		    				<th> Cargo </th>
-		    				<th> Area temática </th>
-		    				<th> Instituição </th>
-		    				<th> Celular </th>
-		    				<th> telefone </th>
-		    				<th> E-mail </th>
-		    				<th> Status </th>
-		    				<th><th>
-		    				<th></th>	
-		    			</tr>	
-	    			</table>
-			    	
-		    	</div>	
-    		</div>
-		</div>
+			<div class="jumbotron">
+				<div class="row" id="divavaliadores">
+				    <div class="col-md-12"style="overflow: scroll;">									   					
+		    			<table class="table table-striped" id="avaliadorescad">
+			    			<tr> 
+			    				<th> Nome </th>
+			    				<th> Cidade </th>
+			    				<th> Endereco </th>
+			    				<th> Cargo </th>
+			    				<th> Area temática </th>
+			    				<th> Instituição </th>
+			    				<th> Celular </th>
+			    				<th> telefone </th>
+			    				<th> E-mail </th>
+			    				<th> Status </th>
+			    				<th><th>
+			    				<th></th>	
+			    			</tr>	
+		    			</table>
+			    	</div>	
+	    		</div>
+			</div>
 		</div>
 	</div><!--fim container-->
 
