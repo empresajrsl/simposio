@@ -11,25 +11,24 @@
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Avaliadores Cadastrados</title>
-	<!--style type="text/css">
-		th{font-size: 23px;}
-		td{font-size: 20px; color: #696969;}
+	<style type="text/css">
+		th{font-size: 20px;}
+		td{font-size: 18px; color: #696969;}
 		table{margin: 5px;}
-		td{padding: 6px;}
+		td{padding: 3px;}
 		#divavaliadores{}
 		.table-striped{width: 1500px;}
-	</style-->
+	</style>
 </head>
 <body>
-	<div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div>
-	<br><br><br>
 	<div class="container-fluid">
+		<?php include("menuadm.php"); ?>
 		<div class="container-fluid">
 			<div class="jumbotron">
 				<div class="row" id="divavaliadores">
-				    <div class="col-md-12"style="overflow: scroll;">									   					
+				    <div class="col-md-12"style="overflow: scroll; height: 500px">									   					
 		    			<table class="table table-striped table-condensed table-responsive" id="avaliadorescad">
-			    			<tr style="font-size:15px;"> 
+			    			<tr>
 			    				<th> Nome </th>
 			    				<th> Cidade </th>
 			    				<th> Endereco </th>
