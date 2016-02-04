@@ -1,4 +1,4 @@
-<?php include("verificasessao.php"); ?>
+
 
 <?php  
 

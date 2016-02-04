@@ -1,4 +1,5 @@
 
+
 <?php  
 // guarda o email do usuario 
 $email = $_GET['email'];
