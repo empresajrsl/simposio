@@ -21,6 +21,12 @@
   	width: 1350px;
   	margin-top: 100px;
   }
+
+  .panel-heading{
+        	background-color: green;
+        	border-color:#4cae4c; 
+        	color: white;
+        }
     </style>
 	<title>Envio do trabalho</title>
 </head>
@@ -88,7 +94,7 @@
 				                console.log(data);
 				                $.each(data['trabalhos'],function(key,val){
 				                var n = key + 1;	
-				                var linha =     	'<div class="panel panel-primary" style="margin-top:50px">';
+				                var linha =     	'<div class="panel panel-succsess" style="margin-top:50px">';
 										    linha += 					'<div class="panel-heading">Trabalho '+n+' </div>';
 											linha +=	     				'<div class="row" >';
 											linha +=	     					'<div class="col-md-12">';
