@@ -9,6 +9,8 @@ $totalcad = $busca[0]['total'];
 $busca = select('count(id_artigo) as total','sl_artigo','');
 $totaltrab = $busca[0]['total'];
 
+$trabalhos = select('count(id_artigo) as total','sl_artigo',"status = 1 ");
+$trabalhosAprovados = $trabalhos[0]['total'];
 
 
 ?> 
@@ -92,10 +94,11 @@ function placar(total,id){
 
 var usuarios = <?php echo "'$totalcad'"; ?>;
 var trabalhos = <?php echo "'$totaltrab'"; ?>;
+var trabalhosAprovados = <?php echo "'$trabalhosAprovados'"; ?>;
 
 placar(usuarios,"usuarios");
 placar(trabalhos,"trabalhos");
-placar(0,"trabaprovado");
+placar(trabalhosAprovados,"trabaprovado");
 placar(0,"inscricao");
 
 </script>
