@@ -92,6 +92,10 @@
 
 	<script type="text/javascript">
 	$(document).on('click','.btn-success',function(){
+		var resposta = confirm('Tem certeza que deseja aprovar o cadastro deste avalidaor ?');
+		if(resposta == false){
+			return;
+		}
 		var env = {};
 		env.id = $(this).attr('id');
 		 			console.log(env.id);
@@ -106,7 +110,7 @@
 	                       $('.status').each(function(){
 	                       	if( $(this).attr('id')  == env.id ){
 	                       		$(this).html('');
-	                       		$(this).append('<p style="color:blue"><b>Aprovado</b></p>');
+	                       		$(this).append('<span style="color:blue"><b>Aprovado</b></span>');
 	                       	}
 	                       }); 
 	                                       
@@ -122,6 +126,10 @@
 
 	<script type="text/javascript">
 	$(document).on('click','.btn-danger',function(){
+		var resposta = confirm('Tem certeza que deseja reprovar o cadastro deste avalidaor ?');
+		if(resposta == false){
+			return;
+		}
 		var env = {};
 		env.id = $(this).attr('id');
 		 			console.log(env.id);
@@ -136,7 +144,7 @@
 	                       $('.status').each(function(){
 	                       	if( $(this).attr('id')  == env.id ){
 	                       		$(this).html('');
-	                       		$(this).append('<p style="color:red"><b>Reprovado</b></p>');
+	                       		$(this).append('<span style="color:red"><b>Reprovado</b></span>');
 	                       	}
 	                       }); 
 	                                       
