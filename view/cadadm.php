@@ -11,6 +11,18 @@
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Cadastro de Administrador</title>
+	<style type="text/css">
+		.panel-default{
+			height: 560px;
+		}
+		.btn-success{
+
+        	background-color: green;
+        	border-color:#4cae4c; 
+        	color: white;
+        
+		}
+	</style>
 </head>
 <body>
 
@@ -22,6 +34,7 @@
 	    	<div class="row panel panel-default" style="border-radius:50px">
 	    		<div class="col-md-12 col-xl-12 col-lg-12">
 	    			<form action="../controller/ACAO/novoadm.php" method="post">
+	    				<br><br><br><br>
 	    				<div class="row">
 	    					<center><h4> Informe os dados abaixo para realizar o cadastro de um novo administrador</h4></center>
 	    					<center><h4> <?php 
@@ -91,14 +104,12 @@
 
 	    				<div class="row">
 	    					
-        					<div class="col-md-3 col-md-offset-3 col-xs-3 col-xs-offset-3 col-lg-3 col-lg-offset-3">
-			    				<a href="menuadm.php"><button type="button" class="btn btn-success col-md-12 col-xs-12 col-lg-12 glyphicon glyphicon-home" style="border-radius:60px"> Menu</button></a>
-                			</div>
+        					
           
         
 
-	    					<div class="col-md-3 col-xs-3 col-lg-3">
-	    						<input type="submit" id="salvar" name="salvar" value="Salvar"  class="btn btn-primary col-md-12 col-xl-12 col-lg-12 glyphicon glyphicon-floppy-disk" style="border-radius:60px"></input>
+	    					<div class="col-md-offset-5 col-md-2 col-xs-2 col-lg-2">
+	    						<button type="submit" id="salvar" name="salvar"  class="btn btn-success col-md-12 col-xl-12 col-lg-12 glyphicon glyphicon-floppy-disk" style="border-radius:60px; font-weight: bold"> Salvar</button>
 	    						
 	    					</div>	
 	    				</div>
