@@ -38,7 +38,7 @@ $idtbartigo = $_POST['idartigo'];
 						$pasta = '../uploads/'.$id;
 
 						if($arqerro == 0){
-							session_start();
+							
 							    $upload = move_uploaded_file($nametemp,$pasta);
 							    $idart = explode(".", $id);
 							    
