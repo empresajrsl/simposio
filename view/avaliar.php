@@ -85,7 +85,8 @@
 		     	</div>	
 	<script type="text/javascript">
 		$(document).on('click','#instrucoes',function(){
-			window.open("../testedownload.php");
+			var acao = 'instrucoes';
+			window.open("visualizartrabalho.php?ver="+acao);
 		});
 	</script>	     	
 		     	
@@ -276,7 +277,8 @@
 		$(document).on('click','.vertrabalho',function(){
 			
 			var idtrabalho = $(this).attr('iddotrab');
-			window.open("../testedownload.php?id="+idtrabalho);
+
+			window.open("visualizartrabalho.php?id="+idtrabalho);
 
 		});
 	</script>
