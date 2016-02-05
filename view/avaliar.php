@@ -22,7 +22,10 @@
         }
         #msg{
         	font-size: 25px;
+        	color: white;
+
         }
+
         #nomeevento{
         	font-size: 32px;
         }
@@ -30,27 +33,24 @@
     </style>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#" style="font-size:28px" id="nomeevento">Sgagro</a>
-            </div>
-            <ul class="nav navbar-nav">
-              <li id="msg" class="active"><a href="estatisticas.php">Olá avaliador(a): <?php echo $nome;  ?>, seja bem vindo ao sitema de avaliação dos trabalhos </a></li>
-              
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              
-              <li><a href="../sessao/fecharsessao.php"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
-            </ul>
-          </div>
-        </nav>
-        <br>
-        <br>
-        <br>
-        <br>
+	
+        
 <div class="container-fluid">
-		
+			
+			<nav class="navbar navbar-inverse">
+	          	<div class="container-fluid">
+	            <div class="navbar-header">
+	              <a class="navbar-brand" href="#" style="font-size:28px" id="nomeevento">Sgagro</a>
+	            </div>
+	            <ul class="nav navbar-nav">
+	            	<li ><a href="estatisticas.php" id="msg">Olá avaliador(a): <?php echo $nome;  ?>, seja bem vindo ao sitema de avaliação dos trabalhos</a></li>
+	            </ul>
+	            <ul class="nav navbar-nav navbar-right">
+	              
+	              <li><a href="../sessao/fecharsessao.php"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+	            </ul>
+	          </div>
+        	</nav>
 		
 		
 	    
