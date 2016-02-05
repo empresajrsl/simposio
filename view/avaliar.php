@@ -30,6 +30,10 @@
         	font-size: 32px;
         }
 
+        .panel-succsess{
+        	background-color: #5cb85c;
+        }
+
     </style>
 </head>
 <body>
@@ -108,7 +112,7 @@
 		                	
 		                	if(data[0]['vez'] == 1){
 			                	 $.each(data,function(key,val){	
-								    var linha =     	'<div class="panel panel-primary" style="margin-top:50px">';
+								    var linha =     	'<div class="panel panel-succsess" style="margin-top:50px">';
 								    linha += 					'<div class="panel-heading">Trabalho '+count2+'</div>';
 									linha +=	     				'<div class="row" >';
 									linha +=	     					'<div class="col-md-12">';
