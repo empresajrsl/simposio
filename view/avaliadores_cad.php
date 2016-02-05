@@ -24,9 +24,9 @@
 	<div class="container-fluid">
 		<?php include("menuadm.php"); ?>
 		<div class="container-fluid">
-			<div class="jumbotron">
+			<div class="jumbotron" style="overflow:hidden">
 				<div class="row" id="divavaliadores">
-				    <div class="col-md-12"style="overflow: scroll; height: 400px">								   					
+				    <div class="col-md-12"style="overflow: scroll; height: 600px">								   					
 		    			<table class="table table-striped table-condensed table-responsive" id="avaliadorescad">
 			    			<tr>
 			    				<th> Nome </th>
