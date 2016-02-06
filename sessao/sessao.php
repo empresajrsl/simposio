@@ -12,7 +12,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 		$senhap = $_POST['senha'];
 			
 				// faz um select no banco de dados dos campos email, senha, email verificado e status na tabela usuarios 
-				$busca = select('id_usuario,email, senha, emailverificado,publicado,cpf,nome,instituicao,tipocadastro',"sl_cadusu", " email='".$emailp."' and senha = ".$senhap." ");
+				$busca = select('id_usuario,email, senha, emailverificado,publicado,cpf,nome,instituicao,tipocadastro',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
 				$buscaadm = select('criado,nome,email,senha',"sl_adm", " email='".$emailp."' and senha = '$senhap' ");
 				
 				$result = array();
@@ -62,6 +62,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									$_SESSION['cpf'] = $result['cpf'];
 									$_SESSION['nome'] = $result['nome'];
 									$_SESSION['instituicao'] = $result['instituicao'];
+									$_SESSION['tipocadastro'] = $result['tipocadastro'];
 								}
 
 								elseif(isset($emailadm) and isset($senhaadm) and $emailp == $emailadm and $senhap == $senhaadm){
@@ -92,14 +93,16 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									$dados = $rp;
 									if($tipocadastro == 'Avaliador'){
 										echo '<script>location.href=" ../view/avaliar.php";</script>';
-									}
+									}elseif($tipocadastro == 'Autor e Avaliador'){
+										echo '<script>location.href=" ../view/avaliar.php";</script>';
+									}elseif($tipocadastro == 'Autor'){
 
 									if($dados == 0){
 										echo '<script>location.href=" ../view/regras.php";</script>';
 										
 									}else{
 										echo '<script>location.href=" ../view/submit.php";</script>';
-										
+										 }
 									}
 
 									
