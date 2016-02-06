@@ -21,6 +21,15 @@
   	width: 1350px;
   	margin-top: 100px;
   }
+  select{
+  	width: 100px;
+  }
+  td + .avaliador1{
+  	width: 210px;
+  }
+   td + .avaliador2{
+  	width: 210px;
+  }
 
   .panel-heading{
         	background-color: green;
@@ -99,8 +108,8 @@
 											linha +=	     				'<div class="row" >';
 											linha +=	     					'<div class="col-md-12">';
 											linha +=	     						'<table class="table" id="'+data['trabalhos'][key]['id_artigo']+'">';
-											linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th><th>Avalidor 1</th><th>Avalidor 2</th>';
-											linha +=	     						'<tr><td> '+data['trabalhos'][key]['titulo']+' </td><td> '+data['trabalhos'][key]['area'] +' </td><td> '+data['trabalhos'][key]['categoria'] +' </td><td class="avaliador1"> </td><td class="avaliador2">  </td></tr>';
+											linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th><th>Instituição</th><th>Avalidor 1</th><th>Avalidor 2</th>';
+											linha +=	     						'<tr><td> '+data['trabalhos'][key]['titulo']+' </td><td> '+data['trabalhos'][key]['area'] +' </td><td> '+data['trabalhos'][key]['categoria'] +' </td><td> '+data['trabalhos'][key]['instituicao'] +' </td><td class="avaliador1"> </td><td class="avaliador2">  </td></tr>';
 											linha +=	     						'</table>';
 											linha +=	     					'</div>';	
 											linha +=	     				'</div>';
@@ -110,7 +119,7 @@
 				                			$('#trabalhos').append(linha);
 				                			if(data['trabalhos'][key]['id_avaliador1'] == 0){
 
-				                				var select = '<select style="width:100px" class="selectavaliador1">';
+				                				var select = '<select  class="selectavaliador1">';
 						                				$.each(data['avaliadores'],function(indice,valor) { 
 						                					select+= '<option idava='+data['avaliadores'][indice]['id_usuario']+'>'+data['avaliadores'][indice]['nome']+'</option>';
 						                				});
@@ -130,7 +139,7 @@
 						                	}
 						                	if(data['trabalhos'][key]['id_avaliador2'] == 0){
 
-						                		var select = '<select style="width:100px" class="selectavaliador2">';
+						                		var select = '<select  class="selectavaliador2">';
 						                				$.each(data['avaliadores'],function(indice,valor) { 
 						                					select+= '<option idava='+data['avaliadores'][indice]['id_usuario']+'>'+data['avaliadores'][indice]['nome']+'</option>';
 						                				});
@@ -323,7 +332,7 @@
 				            	console.log(data);
 				            	if(data['avaliadorn']['avaliador'] == 1){
 					            	$('#'+env.idtrab+' .avaliador1').html('');
-					            	var select = '<select style="width:100px" class="selectavaliador1">';
+					            	var select = '<select  class="selectavaliador1">';
 							               				$.each(data['avaliadores'],function(indice,valor) { 
 							               					select+= '<option idava='+data['avaliadores'][indice]['id_usuario']+'>'+data['avaliadores'][indice]['nome']+'</option>';
 							               				});
@@ -331,7 +340,7 @@
 					                				$('#'+env.idtrab+' .avaliador1').append(select+' <botton type="botton" class="btn btn-success glyphicon glyphicon-ok-sign confirma" avaliador="1" idtrab='+env.idtrab+'></botton> <botton type="botton" class="btn btn-primary glyphicon glyphicon-info-sign info" avaliador="1" ok="nao" idtrab='+env.idtrab+'></botton>');
 				            	}else{
 					            		$('#'+env.idtrab+' .avaliador2').html('');
-					            		var select = '<select style="width:100px" class="selectavaliador2">';
+					            		var select = '<select  class="selectavaliador2">';
 							               				$.each(data['avaliadores'],function(indice,valor) { 
 							               					select+= '<option idava='+data['avaliadores'][indice]['id_usuario']+'>'+data['avaliadores'][indice]['nome']+'</option>';
 							               				});
