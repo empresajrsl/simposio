@@ -1,5 +1,6 @@
 <?php include("verificasessao.php"); ?>
 <?php $nome = $_SESSION['nome']; ?>
+<?php $tipocadastro = $_SESSION['tipocadastro']; ?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -21,7 +22,7 @@
 
         }
         #msg{
-        	font-size: 25px;
+        	font-size: 20px;
         	color: white;
 
         }
@@ -48,11 +49,16 @@
 	            	<li ><a href="estatisticas.php" id="msg">Olá avaliador(a): <?php echo $nome;  ?>, seja bem vindo ao sitema de avaliação dos trabalhos</a></li>
 	            </ul>
 	            <ul class="nav navbar-nav navbar-right">
-	              
-	              <li><a href="../sessao/fecharsessao.php"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
-	            </ul>
-	          </div>
-        	</nav>
+              <li><a href="../sessao/fecharsessao.php"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+            </ul>
+            <?php 
+            if($tipocadastro == "Autor e Avaliador"){
+	           echo' <ul class="nav navbar-nav navbar-right">
+	              <li><a href="regras.php"><span class="glyphicon glyphicon-log-in"></span> Entrar como autor</a></li>
+	            </ul>';
+        	} ?>
+          </div>
+        </nav>
 		
 		
 	    
@@ -60,7 +66,7 @@
 	    		<div class="jumbotron" style="margin:3px; padding:25px"> 
 			     	<div class="row">
 			     		<div class="col-md-12 col-xs-12 col-lg-12">
-			     			<h3>Instruções de como avaliar os trabalhos: <button class="btn btn-primary" id="instrucoes">Vizualizar arquivo oficial de avaliação dos trabalhos</button></h3>
+			     			<h3>Instruções de como avaliar os trabalhos: <button class="btn btn-primary" id="instrucoes">Visualizar arquivo oficial de avaliação dos trabalhos</button></h3>
 			     			<h4>A nota final é a média ponderada baseada em 10 critérios, cada um deles valendo de 0 a 5 pontos</h4>
 			     			<h5><b>Critério 1:</b> O título do trabalho é conciso e representa o conteúdo do trabalho? (Peso 1)</h5>
 			     			<h5><b>Critério 2:</b> O resumo apresenta o conteúdo do trabalho de forma adequada e segundo as exigências do evento? (Peso 1)</h5>
@@ -117,7 +123,7 @@
 									linha +=	     					'<div class="col-md-12">';
 									linha +=	     						'<table class="table">';
 									linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
-									linha +=	     						'<tr><td> '+data[count][0]['titulo'] +' </td><td> '+data[count][0]['area'] +' </td><td> '+data[count][0]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[count][0]['idartigo']+'" >Vizualizar trabalho</button></td></tr>';
+									linha +=	     						'<tr><td> '+data[count][0]['titulo'] +' </td><td> '+data[count][0]['area'] +' </td><td> '+data[count][0]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[count][0]['idartigo']+'" >Visualizar trabalho</button></td></tr>';
 									linha +=	     						'</table>';
 									linha +=	     						'<table class="table" id="'+data[count][0]['id_artigo']+'">';
 									linha +=	     						'<th>Nota para o critério 1 </th><th> Nota para o critério 2 </th><th>Nota para o critério 3</th><th>Nota para o critério 4</th><th>Nota para o critério 5 </th><th>Nota para o critério 6 </th><th>Nota para o critério 7</th><th>Nota para o critério 8</th><th>Nota para o critério 9</th><th>Nota para  critério 10</th> <th>Média final</th>';
@@ -165,7 +171,7 @@
 									linha +=	     					'<div class="col-md-12">';
 									linha +=	     						'<table class="table">';
 									linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
-									linha +=	     						'<tr><td> '+data[0][count]['titulo']+' </td><td> '+data[0][count]['area'] +' </td><td> '+data[0][count]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[0][count]['idartigo']+'" >Vizualizar trabalho</button></td></tr>';
+									linha +=	     						'<tr><td> '+data[0][count]['titulo']+' </td><td> '+data[0][count]['area'] +' </td><td> '+data[0][count]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[0][count]['idartigo']+'" >Visualizar trabalho</button></td></tr>';
 									linha +=	     						'</table>';
 									linha +=	     						'<table class="table" id="'+data[0][count]['id_artigo']+'">';
 									linha +=	     						'<th>Nota para o critério 1 </th><th> Nota para o critério 2 </th><th>Nota para o critério 3</th><th>Nota para o critério 4</th><th>Nota para o critério 5 </th><th>Nota para o critério 6 </th><th>Nota para o critério 7</th><th>Nota para o critério 8</th><th>Nota para o critério 9</th><th>Nota para  critério 10</th><th>Média final</th>';
