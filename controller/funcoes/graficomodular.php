@@ -15,33 +15,33 @@ $totalartigo = $busca3[0]['total'];
 // Conta Quantos cadastros existem por area
 
 //$areabusca = select("count(id_artigo) as total","sl_artigo","area = 'Gestão de Pessoas e Estudos Organizacionais'" );
-$areabusca = select("count(id_artigo) as total","sl_artigo","area = 'Gestão de Pessoas e '" );
+$areabusca = select("count(id_artigo) as total","sl_artigo","area = 'Gestão de Pessoas e Estudos Organizacionais'" );
 $gestao = $areabusca[0]['total'];
 
 //$areabusca2 = select("count(id_artigo) as total","sl_artigo","area = 'Desenvolvimento e Gestão'" );
-$areabusca2 = select("count(id_artigo) as total","sl_artigo","area = 'Desenvolvimento e Ge'" );
+$areabusca2 = select("count(id_artigo) as total","sl_artigo","area = 'Desenvolvimento e Gestão'" );
 $desenvolvimento = $areabusca2[0]['total'];
 
 $areabusca3 = select("count(id_artigo) as total","sl_artigo","area = 'Economia e Finanças'" );
 $economia = $areabusca3[0]['total'];
 
 //$areabusca4 = select("count(id_artigo) as total","sl_artigo","area = 'Empreendedorismo, Inovação e Tecnologia'" );
-$areabusca4 = select("count(id_artigo) as total","sl_artigo","area = 'Empreendedorismo, In'" );
+$areabusca4 = select("count(id_artigo) as total","sl_artigo","area = 'Empreendedorismo, Inovação e Tecnologia'" );
 $empreendedorismo = $areabusca4[0]['total'];
 
 //$areabusca5 = select("count(id_artigo) as total","sl_artigo","area = 'Estratégia, Planejamento e Governança'" );
-$areabusca5 = select("count(id_artigo) as total","sl_artigo","area = 'Estratégia, Planejam'" );
+$areabusca5 = select("count(id_artigo) as total","sl_artigo","area = 'Estratégia, Planejamento e Governança'" );
 $estrategia = $areabusca5[0]['total'];
 
 //$areabusca6 = select("count(id_artigo) as total","sl_artigo","area = 'Logísticas e Operações'" );
-$areabusca6 = select("count(id_artigo) as total","sl_artigo","area = 'Logísticas e Operaçõ'" );
+$areabusca6 = select("count(id_artigo) as total","sl_artigo","area = 'Logísticas e Operações'" );
 $logisticas = $areabusca6[0]['total'];
 
 $areabusca7 = select("count(id_artigo) as total","sl_artigo","area = 'Marketing e Mercados'" );
 $marketing = $areabusca7[0]['total'];
 
 //$areabusca8 = select("count(id_artigo) as total","sl_artigo","area = 'Sustentabilidade e Responsabilidade Sócio Ambiental'" );
-$areabusca8 = select("count(id_artigo) as total","sl_artigo","area = 'Sustentabilidade e R'" );
+$areabusca8 = select("count(id_artigo) as total","sl_artigo","area = 'Sustentabilidade e Responsabilidade Sócio Ambiental'" );
 $sustentabilidade = $areabusca8[0]['total'];
 
 // conta quantos trbalhos foram aprovados por categoria
