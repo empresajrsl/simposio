@@ -54,7 +54,7 @@
             <?php 
             if($tipocadastro == "Autor e Avaliador"){
 	           echo' <ul class="nav navbar-nav navbar-right">
-	              <li><a href="regras.php"><span class="glyphicon glyphicon-log-in"></span> Entrar como autor</a></li>
+	              <li><a href="submit.php"><span class="glyphicon glyphicon-log-in"></span> Entrar como autor</a></li>
 	            </ul>';
         	} ?>
           </div>
