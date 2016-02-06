@@ -30,7 +30,9 @@ $somaqtdd = $qtdd + $qtdd2;
 // echo $qtdd.' '.$qtdd2.'<br>';
 // echo $somaqtdd;
 
-if($trabalhosava1 && $qtdd > 0 && $trabalhosava2 & $qtdd2 > 0   ){
+
+
+if($trabalhosava1 && $qtdd > 0 && $trabalhosava2 & $qtdd2 > 0 ){
 	
 	$todostrab = array_merge($trabalhosava1, $trabalhosava2); 
 	array_push($trabalhosfiltrado, $todostrab);
@@ -39,19 +41,21 @@ if($trabalhosava1 && $qtdd > 0 && $trabalhosava2 & $qtdd2 > 0   ){
 		
 }
 
-if($trabalhosava1 && $qtdd2 = 0 && $qtdd > 0  ){
+if($trabalhosava1 && $qtdd2 == 0 && $qtdd > 0  ){
 	
 	array_push($trabalhosfiltrado, $trabalhosava1);
+	
 		
 }
-if($trabalhosava2 && $qtdd = 0  && $qtdd2 > 0 ){
+if($trabalhosava2 && $qtdd == 0  && $qtdd2 > 0 ){
 	
 	array_push($trabalhosfiltrado, $trabalhosava2);
-		
+	
 }
 
 
 if( $somaqtdd < 8  ){
+		
 
 
 $trabalhos = select("DISTINCT id_artigo,instituicao,idartigo,titulo,area,categoria,email","sl_artigo ",'email != "'.$emailusu.'" AND id_avaliador1 = 0 AND id_avaliador2 <> '.$id_usuario.' AND area = "'.$arearesp.'" LIMIT '.$limiteatrib.' ');	
@@ -59,7 +63,7 @@ $trabalhos = select("DISTINCT id_artigo,instituicao,idartigo,titulo,area,categor
 $qtddtrabalho = count($trabalhos);
 	
 	if($qtddtrabalho > 0){
-
+		
 		foreach ($trabalhos as $indice => $valor) {
 			$count = 0;
 			$inst = $trabalhos[$indice]['instituicao'];
@@ -100,7 +104,7 @@ $qtddtrabalho = count($trabalhos);
 		}
 
 	}else{
-
+		
 		$trabalhos = select("DISTINCT id_artigo,instituicao,idartigo,titulo,area,categoria,email","sl_artigo ",'email != "'.$emailusu.'" AND id_avaliador2 = 0 AND id_avaliador1 <> '.$id_usuario.' AND area = "'.$arearesp.'" LIMIT '.$limiteatrib.' ');	
 
 		$qtddtrabalho = count($trabalhos);
@@ -158,6 +162,8 @@ $qtddtrabalho = count($trabalhos);
  // echo'<pre>';
  // print_r($trabalhosfiltrado);
  // echo'</pre>';
+
+ 
 
 
 echo json_encode($trabalhosfiltrado);
