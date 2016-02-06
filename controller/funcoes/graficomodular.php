@@ -107,19 +107,19 @@ $artigoAprovado = $artigo[0]['total'];
     var data = [
         {
             value: totalresumo,
-            color:"#32CD32",
-            highlight: "#00FF00",
+            color:"#990000",
+            highlight: "#ff0000",
             label: "Resumo"
         },
         {
             value: totalrelato,
-            color: "#FF6347",
-            highlight: "#FF0000",
+            color: "#009900",
+            highlight: "#00ff00",
             label: "Relato Técnico"
         },
         {
             value: totalartigo,
-            color: "#00008B",
+            color: "#000099",
             highlight: "#0000FF",
             label: "Artigo Completo"
         }
@@ -179,19 +179,19 @@ $artigoAprovado = $artigo[0]['total'];
     var data3 = [
         {
             value: resumoAprovado,
-            color:"#32CD32",
-            highlight: "#00FF00",
+            color:"#990000",
+            highlight: "#ff0000",
             label: "Resumo"
         },
         {
             value: relatoAprovado,
-            color: "#FF6347",
-            highlight: "#FF0000",
+            color: "#009900",
+            highlight: "#00ff00",
             label: "Relato Técnico"
         },
         {
             value: artigoAprovado,
-            color: "#00008B",
+            color: "#000099",
             highlight: "#0000FF",
             label: "Artigo Completo"
         }
