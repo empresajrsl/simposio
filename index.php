@@ -61,6 +61,9 @@
 					if($erro == 3){
 						echo '<div class="alert-warning"><center> Preencha todos os campos antes de continuar.<center></div>';
 					}
+					if($erro == 4){
+						echo '<div class="alert-danger"><center>Seu cadastro como avaliador não foi aprovado<center></div>';
+					}
 					}
 				?>	
 				</div>
