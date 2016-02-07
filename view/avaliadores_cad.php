@@ -26,7 +26,8 @@
 		<div class="container-fluid">
 			<div class="jumbotron" style="overflow:hidden">
 				<div class="row" id="divavaliadores">
-				    <div class="col-md-12"style="overflow: scroll; height: 70%">								   					
+					<h3>Clique em aprovar ou reprovar na extremidade direita da tabela, para validar ou não a inscrição do avaliador.</h3>
+				    <div class="col-md-12"style="overflow: scroll; height: 65%">								   					
 		    			<table class="table table-striped table-condensed table-responsive" id="avaliadorescad">
 			    			<tr>
 			    				<th> Nome </th>
