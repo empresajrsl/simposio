@@ -12,7 +12,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 		$senhap = $_POST['senha'];
 			
 				// faz um select no banco de dados dos campos email, senha, email verificado e status na tabela usuarios 
-				$busca = select('id_usuario,email, senha, emailverificado,publicado,cpf,nome,instituicao,tipocadastro',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
+				$busca = select('id_usuario,email, senha, emailverificado,publicado,cpf,nome,instituicao,tipocadastro,status',"sl_cadusu", " email='".$emailp."' and senha = '$senhap' ");
 				$buscaadm = select('criado,nome,email,senha',"sl_adm", " email='".$emailp."' and senha = '$senhap' ");
 				
 				$result = array();
@@ -45,6 +45,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 							$senha = $result['senha'];
 							$emailchek = $result['emailverificado'];
 							$tipocadastro = $result['tipocadastro'];
+							$status = $result['status'];
 						}elseif(!empty($buscaadm)){
 							$emailadm = $resultadm['email'];
 							$senhaadm = $resultadm['senha'];
@@ -92,17 +93,35 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 
 									$dados = $rp;
 									if($tipocadastro == 'Avaliador'){
-										echo '<script>location.href=" ../view/avaliar.php";</script>';
-									}elseif($tipocadastro == 'Autor e Avaliador'){
-										echo '<script>location.href=" ../view/avaliar.php";</script>';
-									}elseif($tipocadastro == 'Autor'){
-
-									if($dados == 0){
-										echo '<script>location.href=" ../view/regras.php";</script>';
+										if($status == 1){
+											echo '<script>location.href=" ../view/avaliar.php";</script>';
+										}else{
+											echo '<script>location.href=" ../index.php?erro=4";</script>';
+										}
 										
-									}else{
-										echo '<script>location.href=" ../view/submit.php";</script>';
-										 }
+									}
+									if($tipocadastro == 'Autor e Avaliador'){
+										if($status == 1){
+											echo '<script>location.href=" ../view/avaliar.php";</script>';
+										}else{
+											if($dados == 0){
+												echo '<script>location.href=" ../view/regras.php";</script>';
+												
+											}else{
+												echo '<script>location.href=" ../view/submit.php";</script>';
+										 	}
+										}
+										
+									}
+									
+									if($tipocadastro == 'Autor'){
+
+										if($dados == 0){
+											echo '<script>location.href=" ../view/regras.php";</script>';
+											
+										}else{
+											echo '<script>location.href=" ../view/submit.php";</script>';
+											 }
 									}
 
 									
