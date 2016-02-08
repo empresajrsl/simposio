@@ -87,7 +87,7 @@ $qtddtrabalho = count($trabalhos);
 			
 
 			
-				if($palavrasiguais < 2){
+				if($palavrasiguais < 1){
 				$vez = array('vez' => 1 );
 
 				updatemysql("id_avaliador1 = ".$id_usuario." ",'sl_artigo'," id_artigo = ".$trabalhos[$indice]['id_artigo']." ");
