@@ -39,7 +39,7 @@
 				<div class="col-md-3 col-xs-3 col-lg-3">
 					<center class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1" 
 					style="color: white; background-color: green ; padding:15px; border-radius:30px 30px 0px 0px">
-						<b>Usuários cadastrados</b>
+						<b>Autores cadastrados</b>
 					</center>
 				</div>
 
