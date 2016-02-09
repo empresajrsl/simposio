@@ -21,8 +21,8 @@
 	</style>
 </head>
 <body>
+	<div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div><br><br><br>
 	<div class="container-fluid">
-		<?php include("menuadm.php"); ?>
 		<div class="container-fluid">
 			<div class="jumbotron" style="overflow:hidden">
 				<div class="row" id="divavaliadores">
