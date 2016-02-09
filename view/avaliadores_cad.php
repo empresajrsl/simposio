@@ -49,8 +49,9 @@
 			</div>
 
 
-			    	<?php include("testeavaliadores.php"); ?>
+		<?php include("testeavaliadores.php"); ?>	    	
 		</div>
+		
 	</div><!--fim container-->
 
 	<script type="text/javascript">
