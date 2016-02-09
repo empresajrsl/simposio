@@ -26,10 +26,10 @@
 </head>
 <body>
 
-	<?php include("menuadm.php"); ?>
+	<div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div><br><br><br>
 
 	<div class="Container-fluid">
-
+		<div class="Container-fluid">
 	    <div class="jumbotron">
 	    	<div class="row panel panel-default" style="border-radius:50px">
 	    		<div class="col-md-12 col-xl-12 col-lg-12">
@@ -117,6 +117,7 @@
 	    		</div>
 	    	</div>
 	    </div>
+		</div>
 	</div>
 </body>
 </html>
