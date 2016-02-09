@@ -121,6 +121,11 @@
 		                var count2 = 1;
 		                var x = 1;
 		               		
+		               		if(data.length == 0){
+		               			
+		               			$('#trabalhos').append('<h2><b>Nenhum trabalho Disponível no momento</b></h2>');
+		               			return;
+		               		}
 		                	
 		                	if(data[0]['vez'] == 1){
 			                	 $.each(data,function(key,val){	
