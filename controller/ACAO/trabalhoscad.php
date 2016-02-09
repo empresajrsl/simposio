@@ -17,8 +17,8 @@ $atribuicoes = select('count("id_avaliador1") as natrib','sl_artigo','id_avaliad
 $atribuicoes2 = select('count("id_avaliador2") as natrib','sl_artigo','id_avaliador2 = '.$id_usuario.' ');
 $natribuicao = $atribuicoes[0]['natrib'] + $atribuicoes2[0]['natrib'];
 $limiteatrib = 8 - $natribuicao;
-$trabalhosava1 = select("DISTINCT t.avaliacao_concluida1, t.id_artigo,t.idartigo,t.titulo,t.area,t.categoria,t.email,n.nota1,n.nota2,n.nota3,n.nota4,n.nota5,n.nota6,n.nota7,n.nota8,n.nota9,n.nota10,n.notafinal","sl_artigo as t  LEFT OUTER JOIN sl_notas as n ON t.id_artigo=n.id_artigo",'t.email != "'.$emailusu.'" AND t.id_avaliador1 = '.$id_usuario.'   LIMIT 8') + $vez;	
-$trabalhosava2 = select("DISTINCT t.avaliacao_concluida2, t.id_artigo,t.idartigo,t.titulo,t.area,t.categoria,t.email,n.nota1,n.nota2,n.nota3,n.nota4,n.nota5,n.nota6,n.nota7,n.nota8,n.nota9,n.nota10,n.notafinal","sl_artigo as t  LEFT OUTER JOIN sl_notas2 as n ON t.id_artigo=n.id_artigo",'t.email != "'.$emailusu.'" AND t.id_avaliador2 = '.$id_usuario.'   LIMIT 8') + $vez;				 
+$trabalhosava1 = select("DISTINCT t.avaliacao_concluida1, t.id_artigo,t.idartigo,t.titulo,t.area,t.categoria,t.email,n.nota1,n.nota2,n.nota3,n.nota4,n.nota5,n.nota6,n.nota7,n.nota8,n.nota9,n.nota10,n.notafinal","sl_artigo as t  LEFT OUTER JOIN sl_notas as n ON t.id_artigo=n.id_artigo",'t.email != "'.$emailusu.'" AND (t.id_avaliador1 = '.$id_usuario.') AND (t.idartigo <> "")  LIMIT 8') + $vez;	
+$trabalhosava2 = select("DISTINCT t.avaliacao_concluida2, t.id_artigo,t.idartigo,t.titulo,t.area,t.categoria,t.email,n.nota1,n.nota2,n.nota3,n.nota4,n.nota5,n.nota6,n.nota7,n.nota8,n.nota9,n.nota10,n.notafinal","sl_artigo as t  LEFT OUTER JOIN sl_notas2 as n ON t.id_artigo=n.id_artigo",'t.email != "'.$emailusu.'" AND (t.id_avaliador2 = '.$id_usuario.') AND (t.idartigo <> "")  LIMIT 8') + $vez;				 
 
 
 
@@ -58,7 +58,7 @@ if( $somaqtdd < 8  ){
 		
 
 
-$trabalhos = select("DISTINCT id_artigo,instituicao,idartigo,titulo,area,categoria,email,avaliacao_concluida1","sl_artigo ",'email != "'.$emailusu.'" AND id_avaliador1 = 0 AND id_avaliador2 <> '.$id_usuario.' AND area = "'.$arearesp.'" LIMIT '.$limiteatrib.' ');	
+$trabalhos = select("DISTINCT id_artigo,instituicao,idartigo,titulo,area,categoria,email,avaliacao_concluida1","sl_artigo ",'email != "'.$emailusu.'" AND id_avaliador1 = 0 AND id_avaliador2 <> '.$id_usuario.' AND area = "'.$arearesp.'" AND idartigo <> "" LIMIT '.$limiteatrib.' ');	
 
 $qtddtrabalho = count($trabalhos);
 	
@@ -92,7 +92,7 @@ $qtddtrabalho = count($trabalhos);
 
 				updatemysql("id_avaliador1 = ".$id_usuario." ",'sl_artigo'," id_artigo = ".$trabalhos[$indice]['id_artigo']." ");
 
-				$trabalho = select("DISTINCT t.avaliacao_concluida1, t.id_artigo,t.idartigo,t.titulo,t.area,t.categoria,t.email,n.nota1,n.nota2,n.nota3,n.nota4,n.nota5,n.nota6,n.nota7,n.nota8,n.nota9,n.nota10,n.notafinal","sl_artigo as t  LEFT OUTER JOIN sl_notas as n ON t.id_artigo=n.id_artigo",'t.id_artigo = "'.$trabalhos[$indice]['id_artigo'].'"   ') + $vez;
+				$trabalho = select("DISTINCT t.avaliacao_concluida1, t.id_artigo,t.idartigo,t.titulo,t.area,t.categoria,t.email,n.nota1,n.nota2,n.nota3,n.nota4,n.nota5,n.nota6,n.nota7,n.nota8,n.nota9,n.nota10,n.notafinal","sl_artigo as t  LEFT OUTER JOIN sl_notas as n ON t.id_artigo=n.id_artigo",'t.id_artigo = "'.$trabalhos[$indice]['id_artigo'].'" AND t.idartigo <> ""   ') + $vez;
 					array_push($trabalhosfiltrado, $trabalho);
 					
 					
@@ -105,7 +105,7 @@ $qtddtrabalho = count($trabalhos);
 
 	}else{
 		
-		$trabalhos = select("DISTINCT avaliacao_concluida2, id_artigo,instituicao,idartigo,titulo,area,categoria,email","sl_artigo ",'email != "'.$emailusu.'" AND id_avaliador2 = 0 AND id_avaliador1 <> '.$id_usuario.' AND area = "'.$arearesp.'" LIMIT '.$limiteatrib.' ');	
+		$trabalhos = select("DISTINCT avaliacao_concluida2, id_artigo,instituicao,idartigo,titulo,area,categoria,email","sl_artigo ",'email != "'.$emailusu.'" AND id_avaliador2 = 0 AND id_avaliador1 <> '.$id_usuario.' AND area = "'.$arearesp.'" AND idartigo <> "" LIMIT '.$limiteatrib.' ');	
 
 		$qtddtrabalho = count($trabalhos);
 	
@@ -139,7 +139,7 @@ $qtddtrabalho = count($trabalhos);
 
 					updatemysql("id_avaliador2 = ".$id_usuario." ",'sl_artigo'," id_artigo = ".$trabalhos[$indice]['id_artigo']." ");
 
-					$trabalho = select("DISTINCT t.avaliacao_concluida2, t.id_artigo,t.idartigo,t.titulo,t.area,t.categoria,t.email,n.nota1,n.nota2,n.nota3,n.nota4,n.nota5,n.nota6,n.nota7,n.nota8,n.nota9,n.nota10,n.notafinal","sl_artigo as t  LEFT OUTER JOIN sl_notas2 as n ON t.id_artigo=n.id_artigo",'t.id_artigo = "'.$trabalhos[$indice]['id_artigo'].'"   ') + $vez;
+					$trabalho = select("DISTINCT t.avaliacao_concluida2, t.id_artigo,t.idartigo,t.titulo,t.area,t.categoria,t.email,n.nota1,n.nota2,n.nota3,n.nota4,n.nota5,n.nota6,n.nota7,n.nota8,n.nota9,n.nota10,n.notafinal","sl_artigo as t  LEFT OUTER JOIN sl_notas2 as n ON t.id_artigo=n.id_artigo",'t.id_artigo = "'.$trabalhos[$indice]['id_artigo'].'" AND t.idartigo <> ""   ') + $vez;
 						array_push($trabalhosfiltrado, $trabalho);
 						
 						
