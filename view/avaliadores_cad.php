@@ -20,7 +20,7 @@
 		.table-striped{width: 1500px;}
 	</style>
 </head>
-<body style="overflow:hidden">
+<body>
 	<div class="container-fluid">
 		<?php include("menuadm.php"); ?>
 		<div class="container-fluid">
@@ -47,6 +47,9 @@
 			    	</div>	
 	    		</div>
 			</div>
+
+
+			    	<?php include("testeavaliadores.php"); ?>
 		</div>
 	</div><!--fim container-->
 
