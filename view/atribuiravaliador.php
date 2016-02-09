@@ -30,6 +30,13 @@
    td + .avaliador2{
   	width: 210px;
   }
+  h3{
+  	margin-left: 8px;
+
+  }
+  #legenda{
+  	padding: 2px;
+  }
 
   .panel-heading{
         	background-color: green;
@@ -52,9 +59,14 @@
 			<div class="row">
 			<div class="col-md-12 col-xs-12 col-lg-12">
 
-				<div class="row">
-					
-
+				<div class="row" >
+					<div class="col-md-12 col-xs-12 col-lg-12">
+						<div style="background-color:white" id="legenda">
+							<h3>Clique em  <botton type="botton" class="btn btn-success glyphicon glyphicon-ok-sign"></botton> para atribuir o trabalho ao avaliador selecionado.<h3>
+							<h3>Clique em  <botton type="botton" class="btn btn-danger glyphicon glyphicon-pencil"></botton> para desfazer a atribuição.<h3>
+							<h3>Clique em  <botton type="botton" class="btn btn-primary glyphicon glyphicon-info-sign"></botton> visualizar informaçãoes sobre o avaliador selecionado.<h3>	
+						</div>
+					</div>	
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-xs-12 col-lg-12" id="trabalhos" name="trabalhos">

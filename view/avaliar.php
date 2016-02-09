@@ -37,6 +37,13 @@
         	color: blue;
         }
 
+        h4{
+        	margin-left: 8px;
+        }
+  		#legenda{
+  			padding: 2px;
+  			
+  		}
 
        
 
@@ -70,7 +77,9 @@
 		
 	    
 	   
-	    		<div class="jumbotron" style="margin:3px; padding:25px"> 
+	    		<div class="jumbotron" style="margin:3px; padding:25px">
+
+	    			
 			     	<div class="row">
 			     		<div class="col-md-12 col-xs-12 col-lg-12">
 			     			<h3>Instruções de como avaliar os trabalhos: <button class="btn btn-primary" id="instrucoes">Visualizar arquivo oficial de avaliação dos trabalhos</button></h3>
@@ -86,8 +95,20 @@
 			     			<h5><b>Critério 9:</b> A formatação do trabalho atende as normas estabelecidas para o evento? (Peso 1)</h5>
 			     			<h5><b>Critério 10:</b> O estudo é original e contribui para o campo do conhecimento? (Peso 2)   </h5>
 			     		</div>	
-		     		</div>	
+		     		</div>
 		     	</div>
+		     	<br>
+		     	<br>
+		     	<div class="row" >
+					<div class="col-md-12 col-xs-12 col-lg-12">
+						<div style="background-color:white" id="legenda">
+							<h4>Clique em  <botton type="botton" class="btn btn-success glyphicon glyphicon-ok"> Salvar</botton> para atribuir a nota ao critério</h4>
+							<h4>Clique em  <botton type="botton" class="btn btn-danger glyphicon glyphicon-pencil"> Eiditar</botton> para alterar a nota.</h4>
+							<h4>Clique em  <botton type="botton" class="btn btn-primary ">Concluir<br> avaliação</botton> Para concluir a avaliação do trabalho</h4>
+							<h4>Clique em  <botton type="botton" class="btn btn-danger">Retomar<br> avaliação</botton> para retomar a avaliação</h4>	
+						</div>
+					</div>	
+				</div>
 
 		     	
 
