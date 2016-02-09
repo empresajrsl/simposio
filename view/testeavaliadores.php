@@ -9,22 +9,23 @@
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Avaliadores Cadastrados</title>
 	<style type="text/css">
-		th{font-size: 20px;}
-		td{font-size: 18px; color: #696969;}
+		th{font-size: 24px;}
+		td{font-size: 20px; color: #696969;}
 		table{margin: 5px;}
 		td{padding: 3px;}
 		#divavaliadores{}
-		.table-striped{width: 1500px;}
+		
 	</style>
 </head>
-	<div class="row">
-		<div class="col-md-12">
-			<div class="jumbotron">
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-md-12">
+			
 				<table class="table table-striped table-condensed" id="resultadoavaliadores"> 
 					<tr>
 						<th><center>Nome do avaliador</center></th>
-						<th><center>Quantidade de trabalhos atribuídos</center></th>
-						<th><center>Quantidade de artigos com avaliação concluída</center></th>
+						<th><center>Trabalhos atribuídos</center></th>
+						<th><center>Avaliações concluídas</center></th>
 					</tr>
 				</table>
 			</div>
