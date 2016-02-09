@@ -2,7 +2,7 @@
 
 
 // conta quantos cadastros existem
-$busca = select('count(id_usuario) as total','sl_cadusu','');
+$busca = select('count(id_usuario) as total','sl_cadusu','tipocadastro = "Autor" OR tipocadastro = "Autor e Avaliador"  ');
 $totalcad = $busca[0]['total'];
 
 // conta quantos cadastros existem
