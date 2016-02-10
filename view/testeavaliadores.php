@@ -20,8 +20,8 @@
 	<div class="jumbotron">
 		<div class="row">
 			<div class="col-md-12">
-			<h3 style="text-align:center"> Andamento das avaliações </h3><br>
-				<table class="table table-striped table-condensed" id="resultadoavaliadores"> 
+			<h3 style="text-align:center"> Progresso das avaliações </h3><br>
+				<table class="table table-striped table-condensed table-bordered" id="resultadoavaliadores"> 
 					<tr>
 						<th><center>Nome do avaliador</center></th>
 						<th><center>Trabalhos atribuídos</center></th>
