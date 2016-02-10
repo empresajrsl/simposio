@@ -19,10 +19,10 @@
 		<div class="container-fluid">
 			<div class="jumbotron" style="overflow:hidden">
 				<div class="row" id="divavaliadores">
-				<div style="background-color:white; text-align:left" id="legenda"><br>
-				<h3 style="margin-left:50px;">Legenda:</h3>
-							<h3 style="margin-left:50px;">Clique em  <botton class="glyphicon glyphicon-ok btn btn-success"></botton> para Aprovar trabalho<h3>
-							<h3 style="margin-left:50px;">Clique em  <botton class=" btn btn-danger glyphicon glyphicon-remove"></botton> para Reprovar o trabalho.<h3>	
+				<div style="background-color:white" id="legenda"><br>
+				
+							<h3>Clique em  <botton class="glyphicon glyphicon-ok btn btn-success"></botton> para Aprovar trabalho ou <botton class=" btn btn-danger glyphicon glyphicon-remove"></botton> para Reprovar o trabalho.<h3>
+							
 						<br></div
 					<div class="col-md-12"style="overflow: scroll; height: 65%">								   					
 		    			<table class="tabela1 table table-striped table-condensed table-bordered" id="avaliadorescad">
@@ -52,12 +52,15 @@
 	</div><!--fim container-->
 
 	<style type="text/css">
-	body{text-align: center;}
+	/*body{text-align: center;}*/
 		th{font-size:1em; text-align: center;}
 		table.tabela1 td{font-size: 0.9em; color: #696969; font-weight: bold}
 		table{margin: 5px;}
 		td{padding: 0px;}
 		#divavaliadores{}
+		h3{
+			margin-left: 8px;
+		}
 	</style>
 
 
