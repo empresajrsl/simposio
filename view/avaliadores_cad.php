@@ -11,14 +11,7 @@
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Avaliadores Cadastrados</title>
-	<style type="text/css">
-		th{font-size: 20px;}
-		td{font-size: 18px; color: #696969;}
-		table{margin: 5px;}
-		td{padding: 3px;}
-		#divavaliadores{}
-		.table-striped{width: 1500px;}
-	</style>
+	
 </head>
 <body>
 	<div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div><br><br><br>
@@ -26,9 +19,13 @@
 		<div class="container-fluid">
 			<div class="jumbotron" style="overflow:hidden">
 				<div class="row" id="divavaliadores">
-					<h3>Clique em aprovar ou reprovar na extremidade direita da tabela, para validar ou não a inscrição do avaliador.</h3>
-				    <div class="col-md-12"style="overflow: scroll; height: 65%">								   					
-		    			<table class="table table-striped table-condensed table-responsive" id="avaliadorescad">
+				<div style="background-color:white; text-align:left" id="legenda"><br>
+				<h3 style="margin-left:50px;">Legenda:</h3>
+							<h3 style="margin-left:50px;">Clique em  <botton class="glyphicon glyphicon-ok btn btn-success"></botton> para Aprovar trabalho<h3>
+							<h3 style="margin-left:50px;">Clique em  <botton class=" btn btn-danger glyphicon glyphicon-remove"></botton> para Reprovar o trabalho.<h3>	
+						<br></div
+					<div class="col-md-12"style="overflow: scroll; height: 65%">								   					
+		    			<table class="tabela1 table table-striped table-condensed table-bordered" id="avaliadorescad">
 			    			<tr>
 			    				<th> Nome </th>
 			    				<th> Cidade </th>
@@ -40,8 +37,8 @@
 			    				<th> telefone </th>
 			    				<th> E-mail </th>
 			    				<th> Status </th>
-			    				<th><th>
-			    				<th></th>	
+			    				<th>A</th>
+			    				<th>R</th>
 			    			</tr>	
 		    			</table>
 			    	</div>	
@@ -53,6 +50,16 @@
 		</div>
 		
 	</div><!--fim container-->
+
+	<style type="text/css">
+	body{text-align: center;}
+		th{font-size:1em; text-align: center;}
+		table.tabela1 td{font-size: 0.9em; color: #696969; font-weight: bold}
+		table{margin: 5px;}
+		td{padding: 0px;}
+		#divavaliadores{}
+	</style>
+
 
 	<script type="text/javascript">
 		$(document).ready(function(){ 
@@ -80,7 +87,7 @@
 		                			var status = '<span style="color:red"><b>Reprovado</b></span>';
 		                		}
 		                	
-		                	var linha = '<tr id="'+data[count]['id_usuario']+'"> <td>'+data[count]['nome']+'</td> <td>'+data[count]['cidade']+'</td> <td>'+data[count]['endereco']+'</td> <td>'+data[count]['cargo']+'</td> <td>'+data[count]['arearesp']+'</td> <td>'+data[count]['instituicao']+'</td> <td>'+data[count]['telefone']+'</td> <td>'+data[count]['contato']+'</td> <td>'+data[count]['email']+'</td> <td class="status" id="'+data[count]['id_usuario']+'" > <b>'+status+'<b> </td> <td> <button id="'+data[count]['id_usuario']+'" class="btn btn-success"> Aprovar </button> </td> <td> <button id="'+data[count]['id_usuario']+'"  class="btn btn-danger" > Reprovar </button> </td> </tr>';
+		                	var linha = '<tr id="'+data[count]['id_usuario']+'"> <td>'+data[count]['nome']+'</td> <td>'+data[count]['cidade']+'</td> <td>'+data[count]['endereco']+'</td> <td>'+data[count]['cargo']+'</td> <td>'+data[count]['arearesp']+'</td> <td>'+data[count]['instituicao']+'</td> <td>'+data[count]['telefone']+'</td> <td>'+data[count]['contato']+'</td> <td>'+data[count]['email']+'</td> <td class="status" id="'+data[count]['id_usuario']+'" > <b>'+status+'<b> </td> <td> <button id="'+data[count]['id_usuario']+'" class="btn btn-success glyphicon glyphicon-ok"> </button> </td> <td> <button id="'+data[count]['id_usuario']+'"  class="btn btn-danger glyphicon glyphicon-remove" > </button> </td> </tr>';
 		                	$('#avaliadorescad').append(linha);
 		                	count++;
 		                
