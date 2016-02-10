@@ -45,6 +45,9 @@
   			
   		}
 
+  		.conclui{
+  			margin-left: 15px;
+  		}
        
 
     </style>
@@ -102,8 +105,8 @@
 		     	<div class="row" >
 					<div class="col-md-12 col-xs-12 col-lg-12">
 						<div style="background-color:white" id="legenda">
-							<h4>Clique em  <botton type="botton" class="btn btn-success glyphicon glyphicon-ok"> Salvar</botton> para atribuir a nota ao critério</h4>
-							<h4>Clique em  <botton type="botton" class="btn btn-danger glyphicon glyphicon-pencil"> Editar</botton> para alterar a nota.</h4>
+							<h4>Clique em  <botton type="botton" class="btn btn-success glyphicon glyphicon-ok" style="border-radius:80px;"> Salvar</botton> para atribuir a nota ao critério</h4>
+							<h4>Clique em  <botton type="botton" class="btn btn-danger glyphicon glyphicon-pencil" style="border-radius:80px"> Editar</botton> para alterar a nota.</h4>
 							<h4>Clique em  <botton type="botton" class="btn btn-primary ">Concluir<br> avaliação</botton> Para concluir a avaliação do trabalho</h4>
 							<h4>Clique em  <botton type="botton" class="btn btn-danger">Retomar<br> avaliação</botton> para retomar a avaliação</h4>	
 						</div>
