@@ -103,7 +103,7 @@
 					<div class="col-md-12 col-xs-12 col-lg-12">
 						<div style="background-color:white" id="legenda">
 							<h4>Clique em  <botton type="botton" class="btn btn-success glyphicon glyphicon-ok"> Salvar</botton> para atribuir a nota ao critério</h4>
-							<h4>Clique em  <botton type="botton" class="btn btn-danger glyphicon glyphicon-pencil"> Eiditar</botton> para alterar a nota.</h4>
+							<h4>Clique em  <botton type="botton" class="btn btn-danger glyphicon glyphicon-pencil"> Editar</botton> para alterar a nota.</h4>
 							<h4>Clique em  <botton type="botton" class="btn btn-primary ">Concluir<br> avaliação</botton> Para concluir a avaliação do trabalho</h4>
 							<h4>Clique em  <botton type="botton" class="btn btn-danger">Retomar<br> avaliação</botton> para retomar a avaliação</h4>	
 						</div>
@@ -157,7 +157,7 @@
 										linha +=	     				'<div class="row" >';
 										linha +=	     					'<div class="col-md-12">';
 										linha +=	     						'<table class="table">';
-										linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
+										linha +=	     						'<th>Título</th><th>Área</th><th>Categoria</th>';
 										linha +=	     						'<tr><td> '+data[count][0]['titulo'] +' </td><td> '+data[count][0]['area'] +' </td><td> '+data[count][0]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[count][0]['idartigo']+'" >Visualizar trabalho <i class="glyphicon glyphicon-eye-open"></i></button></td></tr>';
 										linha +=	     						'</table>';
 										linha +=	     						'<table class="table" id="'+data[count][0]['id_artigo']+'">';
@@ -210,7 +210,7 @@
 											linha +=	     				'<div class="row" >';
 											linha +=	     					'<div class="col-md-12">';
 											linha +=	     						'<table class="table">';
-											linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
+											linha +=	     						'<th>Título</th><th>Área</th><th>Categoria</th>';
 											linha +=	     						'<tr><td> '+data[count][0]['titulo'] +' </td><td> '+data[count][0]['area'] +' </td><td> '+data[count][0]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[count][0]['idartigo']+'" >Visualizar trabalho <i class="glyphicon glyphicon-eye-open"></i></button></td></tr>';
 											linha +=	     						'</table>';
 											linha +=	     						'<table class="table" id="'+data[count][0]['id_artigo']+'">';
@@ -237,7 +237,7 @@
 										linha +=	     				'<div class="row" >';
 										linha +=	     					'<div class="col-md-12">';
 										linha +=	     						'<table class="table">';
-										linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
+										linha +=	     						'<th>Título</th><th>Área</th><th>Categoria</th>';
 										linha +=	     						'<tr><td> '+data[0][count]['titulo']+' </td><td> '+data[0][count]['area'] +' </td><td> '+data[0][count]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[0][count]['idartigo']+'" >Visualizar trabalho <i class="glyphicon glyphicon-eye-open"></i></button></td></tr>';
 										linha +=	     						'</table>';
 										linha +=	     						'<table class="table" id="'+data[0][count]['id_artigo']+'">';
@@ -288,7 +288,7 @@
 											linha +=	     				'<div class="row" >';
 											linha +=	     					'<div class="col-md-12">';
 											linha +=	     						'<table class="table">';
-											linha +=	     						'<th>Título</th><th>Área</th><th>categroia</th>';
+											linha +=	     						'<th>Título</th><th>Área</th><th>Categoria</th>';
 											linha +=	     						'<tr><td> '+data[0][count]['titulo'] +' </td><td> '+data[0][count]['area'] +' </td><td> '+data[0][count]['categoria'] +' </td><td><button class="btn btn-primary vertrabalho " iddotrab="'+data[0][count]['idartigo']+'" >Visualizar trabalho <i class="glyphicon glyphicon-eye-open"></i></button></td></tr>';
 											linha +=	     						'</table>';
 											linha +=	     						'<table class="table" id="'+data[0][count]['id_artigo']+'">';
