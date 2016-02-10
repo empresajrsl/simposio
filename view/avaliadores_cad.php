@@ -21,7 +21,7 @@
 				<div class="row" id="divavaliadores">
 				<div style="background-color:white" id="legenda"><br>
 				
-							<h3>Clique em  <botton class="glyphicon glyphicon-ok btn btn-success"></botton> para Aprovar trabalho ou <botton class=" btn btn-danger glyphicon glyphicon-remove"></botton> para Reprovar o trabalho.<h3>
+							<h3>Clique em  <botton class="glyphicon glyphicon-ok btn btn-success"></botton> para Aprovar o cadastro do avaliador ou <botton class=" btn btn-danger glyphicon glyphicon-remove"></botton> para Reprovar.<h3>
 							
 						<br></div
 					<div class="col-md-12"style="overflow: scroll; height: 65%">								   					
