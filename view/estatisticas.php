@@ -31,7 +31,14 @@
 
 	<div class="container-fluid">
 	
-		
+		<!--div class="row">
+			<table>
+				<tr><th>Total de trabalhos cadastrados por categoria</th>	<th>Total de trabalhos cadastrados por Área temática</th>	<th>Total de trabalhos aprovados por categoria</th></tr>
+				<tr><td>Resumo expandido</td></tr>
+				<tr><td>Relato técnico</td></tr>
+				<tr><td>Artigo completo</td></tr>
+			</table>
+		</div-->
 
         <div class="row" >
 			
@@ -113,21 +120,49 @@
 
 		        <div class="col-md-4 col-xs-4 col-lg-4">
 		        	<div class="jumbotron box-chart">
-		               	 <center><h4>Total de trabalhos cadastrados por categoria</h4><canvas id="GraficoDonut" ></canvas></center>
+		               	<center>
+		               		<h4>Total de trabalhos cadastrados por categoria</h4>
+		               		<div>
+		        				<li style="color: #990000">Resumo expandido</li>
+								<li style="color: #009900">Relato técnico</li>
+								<li style="color: #000099">Artigo completo</li>
+		        			</div></br>
+		               		<canvas id="GraficoDonut" ></canvas>
+		               	</center>
 	                </div>
 	        	</div>
 
 	        	 <div class="col-md-4 col-xs-4 col-lg-4">
 		        	<div class="jumbotron box-chart">
-		               	 <center><h4>Total de trabalhos cadastrados por Área temática</h4><canvas id="GraficoDonut2" ></canvas></center>
+		        		<center>
+		        			<h4>Total de trabalhos cadastrados por Área temática</h4>
+		        			<div>
+		        				<li style="color: #990000">Gestão de Pessoas</li><!--Gestão de Pessoas e Estudos Organizacionais</div-->
+								<li style="color: #009900">Desenvolvimento e Gestão</li><!--Desenvolvimento e Gestão</div-->
+								<li style="color: #000099">Economia e Finanças</li><!--Economia e Finanças</div-->
+								<li style="color: #999900">Empreendedorismo</li><!--Empreendedorismo, Inovação e Tecnologia</div-->
+								<li style="color: #990099">Estratégia, Planejamento</li><!--Estratégia, Planejamento e Governança</div-->
+								<li style="color: #009999">Logísticas e Operações</li><!--Logísticas e Operações</div-->
+								<li style="color: #999999">Marketing e Mercados</li><!--Marketing e Mercados</div-->
+								<li style="color: #000000">Sustentabilidade</li><!--Sustentabilidade e Responsabilidade Sócio Ambiental</div-->
+		        			</div></br>
+		        			<canvas id="GraficoDonut2" ></canvas>
+		        		</center>
 	                </div>
 	        	</div>
 		 
 		                
 		        <div class="col-md-4 col-xs-4 col-lg-">
 		        	<div class="jumbotron">
-	               		
-		                    <center><h4>Total de trabalhos aprovados por categoria</h4><canvas id="GraficoDonut3" ></canvas></center>
+	               		<center>
+	               			<h4>Total de trabalhos aprovados por categoria</h4>
+	               			<div>
+		        				<li style="color: #990000">Resumo expandido</li>
+								<li style="color: #009900">Relato técnico</li>
+								<li style="color: #000099">Artigo completo</li>
+		        			</div></br>
+	               			<canvas id="GraficoDonut3" ></canvas>
+	               		</center>
 	                    
 	                    	
 	    	        </div>
