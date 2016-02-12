@@ -42,6 +42,7 @@
         	background-color: green;
         	border-color:#4cae4c; 
         	color: white;
+        	font-weight: bold;
         }
     </style>
 	<title>Envio do trabalho</title>
