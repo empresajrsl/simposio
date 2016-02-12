@@ -23,8 +23,8 @@
 				
 							<h3>Clique em  <botton class="glyphicon glyphicon-ok btn btn-success"></botton> para Aprovar o cadastro do avaliador ou <botton class=" btn btn-danger glyphicon glyphicon-remove"></botton> para Reprovar.<h3>
 							
-						<br></div
-					<div class="col-md-12"style="overflow: scroll; height: 65%">								   					
+						<br></div>
+					<div> <!--class="col-md-12"style="overflow: scroll; height: 65%"-->								   					
 		    			<table class="tabela1 table table-striped table-condensed table-bordered" id="avaliadorescad">
 			    			<tr>
 			    				<th> Nome </th>
@@ -45,10 +45,9 @@
 	    		</div>
 			</div>
 
+			<?php include("testeavaliadores.php"); ?>
 
-		<?php include("testeavaliadores.php"); ?>	    	
 		</div>
-		
 	</div><!--fim container-->
 
 	<style type="text/css">
