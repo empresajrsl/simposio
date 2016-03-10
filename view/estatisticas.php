@@ -114,62 +114,59 @@
     	
    	<div class="container-fluid">
 		
-<div class="jumbotron" style="background-color: #fff">
+<!--div class="jumbotron" style="background-color: #fff"-->
 	   
 	    <div class="row">
 
-		        <div class="col-md-4 col-xs-4 col-lg-4">
-		        	<div class="jumbotron box-chart">
-		               	<center>
-		               		<h4>Total de trabalhos cadastrados por categoria</h4>
-		               		<div>
-		        				<li style="color: #990000">Resumo expandido</li>
-								<li style="color: #009900">Relato técnico</li>
-								<li style="color: #000099">Artigo completo</li>
-		        			</div></br>
-		               		<canvas id="GraficoDonut" ></canvas>
-		               	</center>
+	        	<div class="col-md-4 col-xs-4 col-lg-4">
+	        		<div class="jumbotron" style="background-color: #fff">
+	        			<div class="row">
+	        				<center><h4>Total de trabalhos cadastrados por categoria</h4></center></br>
+	        				<div class="col-md-3 col-xs-3 col-lg-3">
+	        					<div style="color: #990000">Resumo expandido</div></br>
+								<div style="color: #009900">Relato técnico</div></br>
+								<div style="color: #000099">Artigo completo</div>
+	        				</div>
+	        				<div class="col-md-9 col-xs-9 col-lg-9"><canvas id="GraficoDonut"></canvas></div>
+	        			</div>
+	        		</div>
+	        	</div>
+
+	        	<div class="col-md-4 col-xs-4 col-lg-4">
+		        	<div class="jumbotron" style="background-color: #fff">
+		        		<div class="row">
+		        			<center><h4>Total de trabalhos cadastrados por Área temática</h4></center></br>
+		        			<div class="col-md-3 col-xs-3 col-lg-3">
+		        				<div style="color: #990000">Gestão</div>
+								<div style="color: #009900">Desenvolvimento</div>
+								<div style="color: #000099">Economia</div>
+								<div style="color: #999900">Empreendedorismo</div>
+								<div style="color: #990099">Estratégia</div>
+								<div style="color: #009999">Logísticas</div>
+								<div style="color: #999999">Marketing</div>
+								<div style="color: #000000">Sustentabilidade</div>
+		        			</div>
+		        			<div class="col-md-9 col-xs-9 col-lg-9"><canvas id="GraficoDonut2"></canvas></div>
+		        		</div>
 	                </div>
 	        	</div>
 
-	        	 <div class="col-md-4 col-xs-4 col-lg-4">
-		        	<div class="jumbotron box-chart">
-		        		<center>
-		        			<h4>Total de trabalhos cadastrados por Área temática</h4>
-		        			<div>
-		        				<li style="color: #990000">Gestão de Pessoas</li><!--Gestão de Pessoas e Estudos Organizacionais</div-->
-								<li style="color: #009900">Desenvolvimento e Gestão</li><!--Desenvolvimento e Gestão</div-->
-								<li style="color: #000099">Economia e Finanças</li><!--Economia e Finanças</div-->
-								<li style="color: #999900">Empreendedorismo</li><!--Empreendedorismo, Inovação e Tecnologia</div-->
-								<li style="color: #990099">Estratégia, Planejamento</li><!--Estratégia, Planejamento e Governança</div-->
-								<li style="color: #009999">Logísticas e Operações</li><!--Logísticas e Operações</div-->
-								<li style="color: #999999">Marketing e Mercados</li><!--Marketing e Mercados</div-->
-								<li style="color: #000000">Sustentabilidade</li><!--Sustentabilidade e Responsabilidade Sócio Ambiental</div-->
-		        			</div></br>
-		        			<canvas id="GraficoDonut2" ></canvas>
-		        		</center>
-	                </div>
+	        	<div class="col-md-4 col-xs-4 col-lg-4">
+	        		<div class="jumbotron" style="background-color: #fff">
+	        			<div class="row">
+	        				<center><h4>Total de trabalhos aprovados por categoria</h4></center></br>
+	        				<div class="col-md-3 col-xs-3 col-lg-3">
+	        					<div style="color: #990000">Resumo expandido</div></br>
+								<div style="color: #009900">Relato técnico</div></br>
+								<div style="color: #000099">Artigo completo</div>
+	        				</div>
+	        				<div class="col-md-9 col-xs-9 col-lg-9"><canvas id="GraficoDonut3"></canvas></div>
+	        			</div>
+	        		</div>
 	        	</div>
-		 
-		                
-		        <div class="col-md-4 col-xs-4 col-lg-">
-		        	<div class="jumbotron">
-	               		<center>
-	               			<h4>Total de trabalhos aprovados por categoria</h4>
-	               			<div>
-		        				<li style="color: #990000">Resumo expandido</li>
-								<li style="color: #009900">Relato técnico</li>
-								<li style="color: #000099">Artigo completo</li>
-		        			</div></br>
-	               			<canvas id="GraficoDonut3" ></canvas>
-	               		</center>
-	                    
-	                    	
-	    	        </div>
-	    	    </div>
 			                
 		</div>
-</div>
+<!--/div-->
 		<div class="row">
 			<div class="col-md-12 col-xs-12 col-lg-12">
 		        <div class="jumbotron" style="background-color: #fff">
