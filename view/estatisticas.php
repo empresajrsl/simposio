@@ -12,14 +12,16 @@
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Painel de Estatisticas</title>
 	<style type="text/css">
-		#grafico1{
-			height: 350px;
-		}
-		#grafico2{
-			height: 350px;
-		}
-		
-		
+		#grafico1{height: 350px;}
+		#grafico2{height: 350px;}
+		#box1{background-color: #990000; color: white; border-radius: 4px; font-size: 14px;}
+		#box2{background-color: #009900; color: white; border-radius: 4px; font-size: 14px;}
+		#box3{background-color: #000099; color: white; border-radius: 4px; font-size: 14px;}
+		#box4{background-color: #999900; color: white; border-radius: 4px; font-size: 14px;}
+		#box5{background-color: #990099; color: white; border-radius: 4px; font-size: 14px;}
+		#box6{background-color: #009999; color: white; border-radius: 4px; font-size: 14px;}
+		#box7{background-color: #999999; color: white; border-radius: 4px; font-size: 14px;}
+		#box8{background-color: #000000; color: white; border-radius: 4px; font-size: 14px;}
 	</style>
 
 </head>
@@ -123,9 +125,9 @@
 	        			<div class="row">
 	        				<center><h4>Total de trabalhos cadastrados por categoria</h4></center></br>
 	        				<div class="col-md-3 col-xs-3 col-lg-3">
-	        					<div style="color: #990000">Resumo expandido</div></br>
-								<div style="color: #009900">Relato técnico</div></br>
-								<div style="color: #000099">Artigo completo</div>
+	        					<spam id="box1">Resumo</spam><span id="box1"> Expandido</span></br>
+								<spam id="box2">Relato</spam><span id="box2"> Técnico</span></br>
+								<spam id="box3">Artigo</spam><span id="box3"> Completo</span></br></br></br>
 	        				</div>
 	        				<div class="col-md-9 col-xs-9 col-lg-9"><canvas id="GraficoDonut"></canvas></div>
 	        			</div>
@@ -137,14 +139,14 @@
 		        		<div class="row">
 		        			<center><h4>Total de trabalhos cadastrados por Área temática</h4></center></br>
 		        			<div class="col-md-3 col-xs-3 col-lg-3">
-		        				<div style="color: #990000">Gestão</div>
-								<div style="color: #009900">Desenvolvimento</div>
-								<div style="color: #000099">Economia</div>
-								<div style="color: #999900">Empreendedorismo</div>
-								<div style="color: #990099">Estratégia</div>
-								<div style="color: #009999">Logísticas</div>
-								<div style="color: #999999">Marketing</div>
-								<div style="color: #000000">Sustentabilidade</div>
+		        				<spam id="box1">Gestão</spam></br>
+								<spam id="box2">Desenvolvimento</spam></br>
+								<spam id="box3">Economia</spam></br>
+								<spam id="box4">Empreendedorismo</spam></br>
+								<spam id="box5">Estratégia</spam></br>
+								<spam id="box6">Logísticas</spam></br>
+								<spam id="box7">Marketing</spam></br>
+								<spam id="box8">Sustentabilidade</spam></br>
 		        			</div>
 		        			<div class="col-md-9 col-xs-9 col-lg-9"><canvas id="GraficoDonut2"></canvas></div>
 		        		</div>
@@ -156,9 +158,9 @@
 	        			<div class="row">
 	        				<center><h4>Total de trabalhos aprovados por categoria</h4></center></br>
 	        				<div class="col-md-3 col-xs-3 col-lg-3">
-	        					<div style="color: #990000">Resumo expandido</div></br>
-								<div style="color: #009900">Relato técnico</div></br>
-								<div style="color: #000099">Artigo completo</div>
+	        					<spam id="box1">Resumo</spam><span id="box1"> Expandido</span></br>
+								<spam id="box2">Relato</spam><span id="box2"> Técnico</span></br>
+								<spam id="box3">Artigo</spam><span id="box3"> Completo</span></br></br></br>
 	        				</div>
 	        				<div class="col-md-9 col-xs-9 col-lg-9"><canvas id="GraficoDonut3"></canvas></div>
 	        			</div>
