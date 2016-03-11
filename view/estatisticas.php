@@ -14,14 +14,14 @@
 	<style type="text/css">
 		#grafico1{height: 350px;}
 		#grafico2{height: 350px;}
-		#box1{background-color: #990000; color: white; border-radius: 4px; font-size: 14px;}
-		#box2{background-color: #009900; color: white; border-radius: 4px; font-size: 14px;}
-		#box3{background-color: #000099; color: white; border-radius: 4px; font-size: 14px;}
-		#box4{background-color: #999900; color: white; border-radius: 4px; font-size: 14px;}
-		#box5{background-color: #990099; color: white; border-radius: 4px; font-size: 14px;}
-		#box6{background-color: #009999; color: white; border-radius: 4px; font-size: 14px;}
-		#box7{background-color: #999999; color: white; border-radius: 4px; font-size: 14px;}
-		#box8{background-color: #000000; color: white; border-radius: 4px; font-size: 14px;}
+		#box1{background-color: #990000; color: white; border-radius: 4px; font-size: 14px; font-weight: bold; }
+		#box2{background-color: #009900; color: white; border-radius: 4px; font-size: 14px; font-weight: bold; }
+		#box3{background-color: #000099; color: white; border-radius: 4px; font-size: 14px; font-weight: bold; }
+		#box4{background-color: #999900; color: white; border-radius: 4px; font-size: 14px; font-weight: bold; }
+		#box5{background-color: #990099; color: white; border-radius: 4px; font-size: 14px; font-weight: bold; }
+		#box6{background-color: #009999; color: white; border-radius: 4px; font-size: 14px; font-weight: bold; }
+		#box7{background-color: #999999; color: white; border-radius: 4px; font-size: 14px; font-weight: bold; }
+		#box8{background-color: #000000; color: white; border-radius: 4px; font-size: 14px; font-weight: bold; }
 	</style>
 
 </head>
@@ -124,12 +124,14 @@
 	        		<div class="jumbotron" style="background-color: #fff">
 	        			<div class="row">
 	        				<center><h4>Total de trabalhos cadastrados por categoria</h4></center></br>
-	        				<div class="col-md-3 col-xs-3 col-lg-3">
-	        					<spam id="box1">Resumo</spam><span id="box1"> Expandido</span></br>
-								<spam id="box2">Relato</spam><span id="box2"> Técnico</span></br>
-								<spam id="box3">Artigo</spam><span id="box3"> Completo</span></br></br></br>
+	        				<div class="col-md-6 col-xs-6 col-lg-6" style="margin-left:-40px">
+	        					<br>
+	        					<br>
+	        					<p id="box1">Resumo Expandido</p>
+								<p id="box2">Relato Técnico</p>
+								<p id="box3">Artigo Completo</p>
 	        				</div>
-	        				<div class="col-md-9 col-xs-9 col-lg-9"><canvas id="GraficoDonut"></canvas></div>
+	        				<div class="col-md-6 col-xs-6 col-lg-6"><canvas id="GraficoDonut" height="320"></canvas></div>
 	        			</div>
 	        		</div>
 	        	</div>
@@ -138,7 +140,7 @@
 		        	<div class="jumbotron" style="background-color: #fff">
 		        		<div class="row">
 		        			<center><h4>Total de trabalhos cadastrados por Área temática</h4></center></br>
-		        			<div class="col-md-3 col-xs-3 col-lg-3">
+		        			<div class="col-md-6 col-xs-6 col-lg-6" style="margin-left:-40px">
 		        				<spam id="box1">Gestão</spam></br>
 								<spam id="box2">Desenvolvimento</spam></br>
 								<spam id="box3">Economia</spam></br>
@@ -148,7 +150,7 @@
 								<spam id="box7">Marketing</spam></br>
 								<spam id="box8">Sustentabilidade</spam></br>
 		        			</div>
-		        			<div class="col-md-9 col-xs-9 col-lg-9"><canvas id="GraficoDonut2"></canvas></div>
+		        			<div class="col-md-6 col-xs-6 col-lg-6"><canvas id="GraficoDonut2" height="320"></canvas></div>
 		        		</div>
 	                </div>
 	        	</div>
@@ -157,12 +159,14 @@
 	        		<div class="jumbotron" style="background-color: #fff">
 	        			<div class="row">
 	        				<center><h4>Total de trabalhos aprovados por categoria</h4></center></br>
-	        				<div class="col-md-3 col-xs-3 col-lg-3">
-	        					<spam id="box1">Resumo</spam><span id="box1"> Expandido</span></br>
-								<spam id="box2">Relato</spam><span id="box2"> Técnico</span></br>
-								<spam id="box3">Artigo</spam><span id="box3"> Completo</span></br></br></br>
+	        				<div class="col-md-6 col-xs-6 col-lg-6" style="margin-left:-40px">
+	        					<br>
+	        					<br>
+	        					<p id="box1">Resumo Expandido</p>
+								<p id="box2">Relato Técnico</p>
+								<p id="box3">Artigo Completo</p>
 	        				</div>
-	        				<div class="col-md-9 col-xs-9 col-lg-9"><canvas id="GraficoDonut3"></canvas></div>
+	        				<div class="col-md-6 col-xs-6 col-lg-6"><canvas id="GraficoDonut3" height="320"></canvas></div>
 	        			</div>
 	        		</div>
 	        	</div>
