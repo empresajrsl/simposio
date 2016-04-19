@@ -1,0 +1,130 @@
+.navbar {
+	margin-top: 10px;
+    margin-bottom: 0;
+    background-color: #fff;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #303030 !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #A8C660 !important;
+}
+
+.navbar-nav li a{
+	
+    padding-top: 10px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.dropdown-menu{
+    font-size: 12px;
+}
+
+#first{
+   color: lightgreen;
+}
+
+.navbar-nav{
+    margin-top: 100px;
+}
+
+.navbar-header img {
+    width: 70%;
+	height: 70%;
+}
+
+.navbar  .container{
+   width: 100%;
+}
+
+.navbar-right {
+    margin-right: 0px;
+}
+
+hr{
+    color: #A8C660;
+    background-color: #A8C660;
+    height: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+hr:nth-of-type(2){
+    margin-top: -10px;    
+    height: 3px;
+    width: 100%;
+}
+
+#main_content{
+    font-size: 19px;    
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #FAF6F5;
+
+}
+
+.jumbotron{
+    background-color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+	padding-top: 0px;
+   
+}
+
+.jumbotron .topicos{
+    font-weight: bold;
+    margin-bottom: -30px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+
+.table tbody tr td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table thead tr th{
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #A8C660;
+}
+
+.destacado{
+    font-weight: bold;
+}
+
+.table-small{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.jumbotron p{
+    font-size: 16px;   
+}
+
+.nota{
+    border: 1px solid #999;
+    box-shadow: -0px -0px 45px #999;
+    text-align: justify; 
+    
+
+}
+
+h5{
+    margin-left: 15px;
+}	
