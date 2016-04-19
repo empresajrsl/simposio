@@ -78,53 +78,55 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 									echo '<script>location.href=" ../index.php?erro=2";</script>';
 									
 								}
-								// verifica se o usuário esta logado antes de mostrar a pagina 
-								if(isset($_SESSION['logado']) ){
+								// verifica se o usuário esta logado antes de mostrar a pagina
+								if($busca){ 
+									if(isset($_SESSION['logado']) ){
 
-									$email = $_SESSION['usuario'];
-									$id = $_SESSION['idusu'];
+										$email = $_SESSION['usuario'];
+										$id = $_SESSION['idusu'];
 
-									$somauser1 = select("count(*) as qtdd","sl_grupo","id_usuario1 =".$id."");
-									$somauser2 = select("count(*) as qtdd","sl_grupo","id_usuario2 =".$id."");
-									$somauser3 = select("count(*) as qtdd","sl_grupo","id_usuario3 =".$id."");
-									$somauser4 = select("count(*) as qtdd","sl_grupo","id_usuario4 =".$id."");
-									$somauser5 = select("count(*) as qtdd","sl_grupo","id_usuario5 =".$id."");
-									$rp = ($somauser1[0]['qtdd'] + $somauser2[0]['qtdd'] + $somauser3[0]['qtdd'] + $somauser4[0]['qtdd'] + $somauser5[0]['qtdd']);
+										$somauser1 = select("count(*) as qtdd","sl_grupo","id_usuario1 =".$id."");
+										$somauser2 = select("count(*) as qtdd","sl_grupo","id_usuario2 =".$id."");
+										$somauser3 = select("count(*) as qtdd","sl_grupo","id_usuario3 =".$id."");
+										$somauser4 = select("count(*) as qtdd","sl_grupo","id_usuario4 =".$id."");
+										$somauser5 = select("count(*) as qtdd","sl_grupo","id_usuario5 =".$id."");
+										$rp = ($somauser1[0]['qtdd'] + $somauser2[0]['qtdd'] + $somauser3[0]['qtdd'] + $somauser4[0]['qtdd'] + $somauser5[0]['qtdd']);
 
-									$dados = $rp;
-									if($tipocadastro == 'Avaliador'){
-										if($status == 1){
-											echo '<script>location.href=" ../view/avaliar.php";</script>';
-										}else{
-											echo '<script>location.href=" ../index.php?erro=4";</script>';
+										$dados = $rp;
+										if($tipocadastro == 'Avaliador'){
+											if($status == 1){
+												echo '<script>location.href=" ../view/avaliar.php";</script>';
+											}else{
+												echo '<script>location.href=" ../index.php?erro=4";</script>';
+											}
+											
+										}
+										if($tipocadastro == 'Autor e Avaliador'){
+											if($status == 1){
+												echo '<script>location.href=" ../view/avaliar.php";</script>';
+											}else{
+												if($dados == 0){
+													echo '<script>location.href=" ../view/regras.php";</script>';
+													
+												}else{
+													echo '<script>location.href=" ../view/submit.php";</script>';
+											 	}
+											}
+											
 										}
 										
-									}
-									if($tipocadastro == 'Autor e Avaliador'){
-										if($status == 1){
-											echo '<script>location.href=" ../view/avaliar.php";</script>';
-										}else{
+										if($tipocadastro == 'Autor'){
+
 											if($dados == 0){
 												echo '<script>location.href=" ../view/regras.php";</script>';
 												
 											}else{
 												echo '<script>location.href=" ../view/submit.php";</script>';
-										 	}
+												 }
 										}
+
 										
 									}
-									
-									if($tipocadastro == 'Autor'){
-
-										if($dados == 0){
-											echo '<script>location.href=" ../view/regras.php";</script>';
-											
-										}else{
-											echo '<script>location.href=" ../view/submit.php";</script>';
-											 }
-									}
-
-									
 								}elseif(isset($_SESSION['admlogado']) ){
 										echo '<script>location.href=" ../view/estatisticas.php";</script>';
 
