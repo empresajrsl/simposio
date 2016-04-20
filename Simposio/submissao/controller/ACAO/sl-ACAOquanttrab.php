@@ -13,6 +13,7 @@ session_start();
 $email = $_SESSION['usuario'];
 $id = $_SESSION['idusu'];
 $info = array();
+$dados = array();
 
 $somauser1 = select("id_artigo","sl_grupo","id_usuario1 =".$id."");
 if(empty($somauser1) == false){
@@ -20,9 +21,26 @@ if(empty($somauser1) == false){
 
 	foreach ($somauser1 as $key => $value) {
 	 	$rp = select('*','sl_artigo',"id_artigo = ".$somauser1[$count]['id_artigo']." ");
+	 	$trabcorrigido = select("id_arquivo","sl_trabcorrigido"," id_arquivo = ".$somauser1[$count]['id_artigo']." ");
+
 	 	if(empty($rp) == false){
-	 	 array_push($info,$rp);
+
+	 		if($trabcorrigido){
+	 		$correcao = array('flag' => 1 , );
+	 		$dados = array_merge($rp,$correcao);
+	 		array_push($info, $dados);
+	 		
+		 	}else{
+		 		$correcao = array('flag' => 2 , );
+		 		$dados = array_merge($rp,$correcao);
+	 			array_push($info, $dados);
+		 		
+		 	}
+
+	 	
 	 	}
+
+
 	$count++;
 	}
  	
@@ -34,9 +52,26 @@ if(empty($somauser2) == false){
 
 	foreach ($somauser2 as $key => $value) {
 	 	$rp = select('*','sl_artigo',"id_artigo = ".$somauser2[$count]['id_artigo']." ");
+	 	$trabcorrigido = select("id_arquivo","sl_trabcorrigido"," id_arquivo = ".$somauser2[$count]['id_artigo']." ");
+
 	 	if(empty($rp) == false){
-	 	 array_push($info,$rp);
+
+	 		if($trabcorrigido){
+	 		$correcao = array('flag' => 1 , );
+	 		$dados = array_merge($rp,$correcao);
+	 		array_push($info, $dados);
+	 		
+		 	}else{
+		 		$correcao = array('flag' => 2 , );
+		 		$dados = array_merge($rp,$correcao);
+	 			array_push($info, $dados);
+		 		
+		 	}
+
+	 	
 	 	}
+
+	 	
 	$count++;
 	}
  	
@@ -49,9 +84,26 @@ if(empty($somauser3) == false){
 
 	foreach ($somauser3 as $key => $value) {
 	 	$rp = select('*','sl_artigo',"id_artigo = ".$somauser3[$count]['id_artigo']." ");
+	 	$trabcorrigido = select("id_arquivo","sl_trabcorrigido"," id_arquivo = ".$somauser3[$count]['id_artigo']." ");
+
 	 	if(empty($rp) == false){
-	 	 array_push($info,$rp);
+
+	 		if($trabcorrigido){
+	 		$correcao = array('flag' => 1 , );
+	 		$dados = array_merge($rp,$correcao);
+	 		array_push($info, $dados);
+	 		
+		 	}else{
+		 		$correcao = array('flag' => 2 , );
+		 		$dados = array_merge($rp,$correcao);
+	 			array_push($info, $dados);
+		 		
+		 	}
+
+	 	
 	 	}
+
+	 	
 	$count++;
 	}
  	
@@ -63,9 +115,26 @@ if(empty($somauser4) == false){
 
 	foreach ($somauser4 as $key => $value) {
 	 	$rp = select('*','sl_artigo',"id_artigo = ".$somauser4[$count]['id_artigo']." ");
+	 	$trabcorrigido = select("id_arquivo","sl_trabcorrigido"," id_arquivo = ".$somauser4[$count]['id_artigo']." ");
+
 	 	if(empty($rp) == false){
-	 	 array_push($info,$rp);
+
+	 		if($trabcorrigido){
+	 		$correcao = array('flag' => 1 , );
+	 		$dados = array_merge($rp,$correcao);
+	 		array_push($info, $dados);
+	 		
+		 	}else{
+		 		$correcao = array('flag' => 2 , );
+		 		$dados = array_merge($rp,$correcao);
+	 			array_push($info, $dados);
+		 		
+		 	}
+
+	 	
 	 	}
+
+	 	
 	$count++;
 	}
  	
@@ -77,9 +146,26 @@ if(empty($somauser5) == false){
 
 	foreach ($somauser5 as $key => $value) {
 	 	$rp = select('*','sl_artigo',"id_artigo = ".$somauser5[$count]['id_artigo']." ");
+	 	$trabcorrigido = select("id_arquivo","sl_trabcorrigido"," id_arquivo = ".$somauser5[$count]['id_artigo']." ");
+
 	 	if(empty($rp) == false){
-	 	 array_push($info,$rp);
+
+	 		if($trabcorrigido){
+	 		$correcao = array('flag' => 1 , );
+	 		$dados = array_merge($rp,$correcao);
+	 		array_push($info, $dados);
+	 		
+		 	}else{
+		 		$correcao = array('flag' => 2 , );
+		 		$dados = array_merge($rp,$correcao);
+	 			array_push($info, $dados);
+		 		
+		 	}
+
+	 	
 	 	}
+
+	 	
 	$count++;
 	}
  	

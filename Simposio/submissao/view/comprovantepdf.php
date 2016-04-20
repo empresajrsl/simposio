@@ -1,31 +1,57 @@
 <?php
   include('../MPDF60/mpdf.php');
 
-  $nomeartigo = "asdafdfsdfgfhgghfgjhjhjjjkgjklghk lgkjljlkjçjklçlkçkljçklçklçjklçklç jklçjklçklçjlçljkl lçjjçkjklklçklçlkçklçkljçlkçlkç";
-  $categoria = "Marketing e Negocios";
-  $area = "Iniciação Cientifica";
+  include ("../controller/funcoes/funcoesmysql.php");
 
-  $nome1 = "Anderson Cardoso Lima ";
-  $cpf1 = "1232456789";
-  $filiacao1 = "FESLJ - Faculdade São Luis de Jaboticabal";
+  $idartigo = $_GET['id'];
+  $campos = "t.coautor,t.titulo,t.area,t.categoria,g.id_usuario1, g.id_usuario2, g.id_usuario3, g.id_usuario4,g.id_usuario5,
+  (SELECT CONCAT(nome,' ',sobrenome) FROM sl_cadusu WHERE id_usuario = g.id_usuario1) as nome1,
+  (SELECT CONCAT(nome,' ',sobrenome) FROM sl_cadusu WHERE id_usuario = g.id_usuario2) as nome2,
+  (SELECT CONCAT(nome,' ',sobrenome) FROM sl_cadusu WHERE id_usuario = g.id_usuario3) as nome3,
+  (SELECT CONCAT(nome,' ',sobrenome) FROM sl_cadusu WHERE id_usuario = g.id_usuario4) as nome4,
+  (SELECT CONCAT(nome,' ',sobrenome) FROM sl_cadusu WHERE id_usuario = g.id_usuario5) as nome5,
+  (SELECT cpf FROM sl_cadusu WHERE id_usuario = g.id_usuario1) as cpf1,
+  (SELECT cpf FROM sl_cadusu WHERE id_usuario = g.id_usuario2) as cpf2,
+  (SELECT cpf FROM sl_cadusu WHERE id_usuario = g.id_usuario3) as cpf3,
+  (SELECT cpf FROM sl_cadusu WHERE id_usuario = g.id_usuario4) as cpf4,
+  (SELECT cpf FROM sl_cadusu WHERE id_usuario = g.id_usuario5) as cpf5,
+  (SELECT instituicao FROM sl_cadusu WHERE id_usuario = g.id_usuario1) as inst1,
+  (SELECT instituicao FROM sl_cadusu WHERE id_usuario = g.id_usuario2) as inst2,
+  (SELECT instituicao FROM sl_cadusu WHERE id_usuario = g.id_usuario3) as inst3,
+  (SELECT instituicao FROM sl_cadusu WHERE id_usuario = g.id_usuario4) as inst4,
+  (SELECT instituicao FROM sl_cadusu WHERE id_usuario = g.id_usuario5) as inst5";
+  $tabela = "sl_artigo as t INNER JOIN sl_cadusu as c ON t.email = c.email INNER JOIN sl_grupo as g ON g.id_artigo = t.id_artigo";
+  $condicao = "t.id_artigo = ".$idartigo." AND t.status = 1 AND t.avaliacao_concluida1 = 1 AND avaliacao_concluida2 = 1 ORDER BY t.titulo";
+  $trabalhos = select($campos,$tabela,$condicao);
 
-  $nome2 = "Pedro Henrique";
-  $cpf2 = "1232456789";
-  $filiacao2 = "FESLJ - Faculdade São Luis de Jaboticabal";
 
-  $nome3 = "Carlos Eduardo";
-  $cpf3 = "1232456789";
-  $filiacao3 = "FESLJ - Faculdade São Luis de Jaboticabal";
 
-  $nome4 = "João Paulo da Silva";
-  $cpf4 = "1232456789";
-  $filiacao4 = "FESLJ - Faculdade São Luis de Jaboticabal";
+  
+  $nomeartigo = $trabalhos[0]['titulo'];
+  $categoria = $trabalhos[0]['categoria'];
+  $area = $trabalhos[0]['area'];
 
-  $nome5 = "Timoteo Teotoneo Tavarez";
-  $cpf5 = "1232456789";
-  $filiacao5 = "FESLJ - Faculdade São Luis de Jaboticabal";
+  $nome1 = $trabalhos[0]['nome1'];
+  $cpf1 = $trabalhos[0]['cpf1'];
+  $filiacao1 = $trabalhos[0]['inst1'];
 
-  $qtdcoautores = 4;
+  $nome2 = $trabalhos[0]['nome2'];
+  $cpf2 = $trabalhos[0]['cpf2'];
+  $filiacao2 = $trabalhos[0]['inst2'];
+
+  $nome3 = $trabalhos[0]['nome3'];
+  $cpf3 = $trabalhos[0]['cpf3'];
+  $filiacao3 = $trabalhos[0]['inst3'];
+
+  $nome4 = $trabalhos[0]['nome4'];
+  $cpf4 = $trabalhos[0]['cpf4'];
+  $filiacao4 = $trabalhos[0]['inst4'];
+
+  $nome5 = $trabalhos[0]['nome5'];
+  $cpf5 = $trabalhos[0]['cpf5'];
+  $filiacao5 = $trabalhos[0]['inst5'];
+
+  $qtdcoautores = $trabalhos[0]['coautor'];
 
   $opc1 ="
   <div><b>Coautor 1: </b>".$nome2."</div>
@@ -78,6 +104,7 @@
         <div><b>Titulo do Artigo: </b>".$nomeartigo."</div>
         <div><b>Categoria: </b>".$categoria."</div>
         <div><b>Area: </b>".$area."</div>
+        <div><b>Situação: </b>Aprovado</div>
       </div>
     </div><br/>
 
