@@ -51,6 +51,16 @@ exit;
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Area do autor</title>
+	<style type="text/css">
+		#legenda>h4{
+			margin: 10px 10px 10px 10px;
+			padding: 4px;
+		}
+		#legenda{
+			padding: 4px;
+			margin-bottom: 20px;
+		}
+	</style>
 </head>
 <body>
 	<div class="container">
@@ -97,6 +107,15 @@ exit;
 					</center><h3>
 
 				</div>
+				<div class="row" >
+					<div class="col-md-12 col-xs-12 col-lg-12">
+						<div style="background-color:white" id="legenda">
+							<h4>Clique em  <button type="button" class="btn btn-primary">Clique aqui <i class="glyphicon glyphicon-file"></i></button> para Gerar o PDF do comprovante de aprovação</h4>
+							<h4>Clique em <button type="button" style="font-size:14px">Escolher arquivo</button> para selecionar o trabalho corrigido a ser enviado</h4>
+							<h4>Clique em  <button type="button" class="btn btn-success">Enivar trabalho corrigido</button> para enviar o trabalho</h4>						
+						</div>
+					</div>	
+				</div>
 				<div class="row">
 					<div class="col-md-12 col-xs-12 col-lg-12">
 						<table id="trabalhos" name="trabalhos" class="table table-striped">			
@@ -137,7 +156,7 @@ exit;
 		            data: env,
 		            dataType : 'json',
 		            success: function(data){
-		                console.log(data[0]['flag']);
+		                console.log(data);
 		                
 		                var count = 0;
 		                $.each(data,function(key,val){
@@ -153,11 +172,15 @@ exit;
 
 		                	}
 
-		                	if(data[count]['flag'] == 2){
-		                	var correcao = '<form method="POST" action="../controller/ACAO/uptrabcorrigido.php" enctype="multipart/form-data" id="form'+count+'"> <input type="file" class="enviar btn btn-success" id="enviar'+count+'" name="arquivo"></input> <br> <input type="submit" class="enviar btn btn-success" id="enviar'+count+'" value=" Enviar trabalho corrigido "> </input> <input type="hidden" name="idartigo" value="'+data[count][0]['id_artigo']+'"</input></form>'; 
-		                	}else{
-		                	var correcao = '<p style="color:blue; font-size:18px"><b>Enviada</b></p>';;	
-		                	}
+		                	if(data[count][0]['status'] == 1){
+			                	if(data[count]['flag'] == 2){
+			                	var correcao = '<form method="POST" action="../controller/ACAO/uptrabcorrigido.php" enctype="multipart/form-data" id="form'+count+'"> <input type="file" class="enviar btn btn-success" id="enviar'+count+'" name="arquivo"></input> <br> <input type="submit" class="enviar btn btn-success" id="enviar'+count+'" value=" Enviar trabalho corrigido "> </input> <input type="hidden" name="idartigo" value="'+data[count][0]['id_artigo']+'"</input></form>'; 
+			                	}else{
+			                	var correcao = '<p style="color:blue; font-size:18px"><b>Enviada</b></p>';
+			                	}
+			                }else{
+			                	var correcao = 'Válido somente para trabalhos aprovados';
+			                }	
 		                	var linha = '<tr id="'+data[count][0]['id_artigo']+'"> <td>'+data[count][0]['titulo']+'</td> <td>'+status+'</td><td>'+comprovante+'</td><td>'+correcao+'</td> </tr>';
 		                	$('#trabalhos').append(linha);
 		                	count++;

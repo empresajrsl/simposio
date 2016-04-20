@@ -109,7 +109,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 													echo '<script>location.href=" ../view/regras.php";</script>';
 													
 												}else{
-													echo '<script>location.href=" ../view/submit.php";</script>';
+													echo '<script>location.href=" ../view/correcao.php";</script>';
 											 	}
 											}
 											
@@ -121,7 +121,7 @@ if (empty($_POST['email']) == false  and empty($_POST['senha']) ==false )
 												echo '<script>location.href=" ../view/regras.php";</script>';
 												
 											}else{
-												echo '<script>location.href=" ../view/submit.php";</script>';
+												echo '<script>location.href=" ../view/correcao.php";</script>';
 												 }
 										}
 

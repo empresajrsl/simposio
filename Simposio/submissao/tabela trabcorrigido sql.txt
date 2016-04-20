@@ -1,0 +1,13 @@
+-- Estrutura da tabela `sl_trabcorrigido`
+--
+
+CREATE TABLE IF NOT EXISTS `sl_trabcorrigido` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_arquivo` int(11) NOT NULL,
+  `enviado` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Extraindo dados da tabela `sl_trabcorrigido`
+--
