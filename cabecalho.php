@@ -12,48 +12,66 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+    	.nav>li>a {
+    font-size: 13px;
+    padding: 8px 7px;
+    font-family:arial,sans-serif;
+    letter-spacing:1px;
+
+    
+}
+    </style>
    
 	<title>SGAgro</title>
 </head>
 <body>
 	<header>
 		<div class="container-fluid">
-               <div class="alert alert-info" role="alert">
-                 <center><h4>Comunicado:</h4>
-                <h4><br><a href="resultado.php">Clique aqui para visualizar os resultados</a></center></h4> 
-               </div>
-			<nav class="navbar navbar-default">
-			  <div class="container">
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span> 
-			      </button>
-			      <img id="logo" src="images/logo.png" class="navbar-brand img-responsive"  alt="Logo">
-			      
-			    </div>
-			    <div class="collapse navbar-collapse" id="myNavbar">
+			
+	               <div class="alert alert-info" role="alert">
+	                 <center><h4>Comunicado:</h4>
+	                <h4><br><a href="resultado.php">Clique aqui para visualizar os resultados</a></center></h4> 
+	               </div>
+	            <div class="col-md-12 col-lg-12 col-xs-12">   
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span> 
+				      </button>
+				       <a class="navbar-brand" rel="home" href="#">
+         				<img id="logo" src="images/logo.png" style="width:200px; height:120px" alt="Logo">
+    					</a>
+				     
+				  	
+				    </div>
 
-			      <ul class="nav navbar-nav navbar-right">
-			        <li class="active"><a href="Simposio/submissao/index.php">SISTEMA</a></li>
-			        <li><a href="evento.php">EVENTO</a></li>
-			        <li><a href="programacao.php">PROGRAMAÇÃO</a></li>
-			        <li><a href="inscricao.php"><b>INSCRIÇÃO</b></a></li>
-			        <li><a href="areas.php">ÁREAS</a></li>
-			        <li><a href="trabalhos.php">TRABALHOS</a></li>
-			        <li><a href="anais.php">Anais</a></li>
-			        <li><a href="datasimportantes.php">DATAS IMPORTANTES</a></li>
-			        <li><a href="goagro.php">GOAgro</a></li>
-			        <li><a href="contato.php">CONTATO</a></li>		            
-			          </ul>
-			        </li>		    
-			      </ul>
-			    </div>
-			    <hr><br>
-			    <hr>
-			  </div>
-			</nav>
+				    <div class="collapse navbar-collapse" id="myNavbar">
+
+				      <ul class="nav navbar-nav navbar-center">
+				        <li ><a href="Simposio/submissao/index.php">SISTEMA</a></li>
+				        <li><a href="evento.php">EVENTO</a></li>
+				        <li><a href="programacao.php">PROGRAMAÇÃO</a></li>
+				        <li class="active"><a href="inscricao.php">INSCRIÇÃO</a></li>
+				        <li><a href="areas.php">�?REAS</a></li>
+				        <li><a href="trabalhos.php">TRABALHOS</a></li>
+				        <li><a href="anais.php">ANAIS</a></li>
+				        <li><a href="datasimportantes.php">DATAS IMPORTANTES</a></li>
+				        <li><a href="goagro.php">GOAgro</a></li>
+				        <li><a href="contato.php">CONTATO</a></li>		            
+				          </ul>
+				        </li>		    
+				      </ul>
+				    </div>
+				    <hr><br>
+				    <hr>
+				  </div>
+				</nav>
+			</div>	
 		</div>
 	</header>
 	<section>				
