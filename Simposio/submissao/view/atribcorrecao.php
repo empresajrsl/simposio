@@ -19,6 +19,10 @@
             margin-top: -25px;
         }
 
+    .tdcorrecao{
+  	width: 150px;
+  }
+
     </style>
 </head>
 <body>
@@ -53,7 +57,7 @@
 						
 						<table class="tabela1 table table-striped table-condensed table-bordered">
 							<thead>
-								<th>Título</th><th>Área</th><th>Categoria</th><th>Nome</th><th>E-mail</th><th colspan="2">Possui Correções?</th><th>Trabalho</th><th>Correção</th>
+								<th>Título</th><th>Área</th><th>Categoria</th><th>Nome</th><th>E-mail</th><th>Possui Correções?</th><th>Trabalho</th><th>Correção</th>
 							</thead>
 							<tbody id="trabaprovado">
 							</tbody>
@@ -71,7 +75,7 @@
 			var env = {};
 			$.ajax({
 		            type: "POST",
-		            url: "../controller/ACAO/trabalhosap.php",
+		            url: "../controller/ACAO/statuscorrecao.php",
 		            data: env,
 		            dataType : 'json',
 		            success: function(data){
@@ -95,6 +99,21 @@
 		                		if(indice== "sobrenome"){
 		                			return;
 		                		}
+
+		                		if(indice== "statuscorre"){
+		                			if(valor == 1){
+		                				linha+= "<td width=160><center>Com correção</center></td>";
+		                				return;
+		                			}
+		                			if(valor == 2){
+		                				linha+= "<td width=160><center>Sem correção</center></td>";
+		                				return;
+		                			}
+		                			if(valor == null){
+		                				linha+="<td width=160 class='tdcorrecao"+data[key]['id_artigo']+"'>  <input style='margin-left:20px;margin-right:10px' type='button' id='"+data[key]['id_artigo']+"' class='btn btn-success comcorrecao' value='Sim'><input type='button' id='"+data[key]['id_artigo']+"' class='btn btn-danger semcorrecao' value='Não'></td>";
+		                				return;
+		                			}
+		                		}
 		                	
 
 		                		if(indice == "id_artigo"){
@@ -107,13 +126,14 @@
 		                		if(indice == "nota2"){
 		                			return;
 		                		}
+
 		                		
 		                		linha+="<td>"+valor+"</td>";
 		                		
 		                	});
 
 
-		                	linha+="<td id='tdcomcorrecao"+data[key]['id_artigo']+"'><input type='button' id='"+data[key]['id_artigo']+"' class='btn btn-success comcorrecao' value='Sim'></td><td id='tdsemcorrecao"+data[key]['id_artigo']+"'><input type='button' id='"+data[key]['id_artigo']+"' class='btn btn-danger semcorrecao' value='Não'></td>";
+		                	
 		                	linha+="<td colspan='1' ><input type='submit' id='trabalho"+data[key]['id_artigo']+"' class='btn btn-primary vertrab' value='Abrir'></td>";
 		                	linha+="<td colspan='1' ><input type='submit' id='correcao"+data[key]['id_artigo']+"' class='btn btn-primary vercor' value='Abrir'></td></tr>";
 		                	$("#trabaprovado").append(linha);
@@ -154,9 +174,10 @@
 				              		 console.log("error");
 				            		}
 				    				});
-								$("#tdcomcorrecao"+env.id).html("<text class='text text-success'>Com Correções</text>");
-								$("#tdcomcorrecao"+env.id).attr('colspan',2);
-								$("#tdsemcorrecao"+env.id).fadeOut('fast');
+								$(".tdcorrecao"+env.id).html(" ");
+								$(".tdcorrecao"+env.id).html("<center>Com correção</center>");
+								
+								
 								} else {
 								    return;
 								}
@@ -184,10 +205,8 @@
 				              		 console.log("error");
 				            		}
 				    				});
-								$("#tdsemcorrecao"+env.id).html("<text class='text text-success'>Sem correções</text>");
-								$("#tdsemcorrecao"+env.id).attr('colspan',2);
-								$("#tdcomcorrecao"+env.id).fadeOut('fast');
-								$("#correcao"+env.id).fadeOut('fast');
+								$(".tdcorrecao"+env.id).html(" ");
+								$(".tdcorrecao"+env.id).html("<center>Sem correção</center>");
 								} else {
 								    return;
 								}
