@@ -4,21 +4,10 @@ body{text-align: left;}
 th{text-align: center; background-color: #A8C660;color: #fff}
 th a {color: #fff}
 
-		
-
-		<h4><b>Prof. Ph.D. Marcus V. Braga Alves</b></h4>
-		<h5>College of Business Administration</h5>
-		<h5>University of Akron - Estados Unidos da América</h5>
-		<h5>Tema da Palestra: Contratos Futuros, Opções e Gerenciamento de Riscos no
 </style>
 
 <div id="main_content" class="container-fluid">
 
-		<h4><b>Prof. Dr. Mário Otávio Batalha</b></h4>
-		<h5>Departamento de Engenharia de Produção</h5>
-		<h5>Universidade Federal de São Carlos - Brasil</h5>
-		<h5>Tema da Palestra: Competitividade dos Setores Agroindustriais do Brasil</h5></br>
-		<!--p> 
 	<table class=" table table-bordered table-condensed">
 		<tr><th>Horario</th><th><a href="#primeiro">Quarta-feira<br>08/06/2016</a></th><th><a href="#segundo">Quinta-feira<br>09/06/2016</a></th><th><a href="#terceiro">Sexta-feira<br>10/06/2016</a></th></tr>
 		<tr><td>09:00</td><td rowspan="5">Credenciamento</td><td rowspan="3">Sessões com apresentações de trabalho</td><td rowspan="3">Mini-Cursos</td></tr>
