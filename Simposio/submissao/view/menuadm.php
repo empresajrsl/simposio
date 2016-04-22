@@ -1,12 +1,14 @@
 
-<?php $nome = $_SESSION['admnome']; ?>
+<?php if(isset($_SESSION['admnome'])){
+        $nome = $_SESSION['admnome'];
+      } ?>
 	<style type="text/css">
         li{
             font-size: 16px;
             font-weight: 700;
         }
         nav{
-            margin-top: -5px;
+           
         }
 
     </style>
@@ -22,11 +24,10 @@
               <li><a href="atribuiravaliador.php"><span class="glyphicon glyphicon-star" ></span> Atribuir avaliadores</a></li>
               <li><a href="trabalhos.php"><span class="glyphicon glyphicon-search" ></span> Trabalhos</a></li>
               <li><a href="atribcorrecao.php"><span class="glyphicon glyphicon-pencil" ></span> Notificar correções </a></li>
-              <li><a href="resultado.php"><span class="glyphicon glyphicon-search" ></span> Resultado</a></li>
               <li><a href="cadadm.php"><span class="glyphicon glyphicon-plus" ></span> Novo Administrador</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right"style="margin-right: 1%">
-              <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $nome;  ?>  </a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?phpif(isset($_SESSION['admnome'])){ echo $nome;}  ?>  </a></li>
               <li><a href="../sessao/fecharsessao.php"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
             </ul>
         </nav>
