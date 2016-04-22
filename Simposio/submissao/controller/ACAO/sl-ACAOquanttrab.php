@@ -20,22 +20,12 @@ if(empty($somauser1) == false){
  $count = 0;
 
 	foreach ($somauser1 as $key => $value) {
-	 	$rp = select('*','sl_artigo',"id_artigo = ".$somauser1[$count]['id_artigo']." ");
+	 	$rp = select('t.titulo,t.status,t.id_artigo,tc.enviado,co.status as correcao','sl_artigo as t LEFT JOIN  sl_correcoes as co ON t.id_artigo = co.id_trabalho LEFT JOIN sl_trabcorrigido as tc ON t.id_artigo = tc.id_arquivo',"t.id_artigo = ".$somauser1[$count]['id_artigo']." ");
 	 	$trabcorrigido = select("id_arquivo","sl_trabcorrigido"," id_arquivo = ".$somauser1[$count]['id_artigo']." ");
 
 	 	if(empty($rp) == false){
 
-	 		if($trabcorrigido){
-	 		$correcao = array('flag' => 1 , );
-	 		$dados = array_merge($rp,$correcao);
-	 		array_push($info, $dados);
-	 		
-		 	}else{
-		 		$correcao = array('flag' => 2 , );
-		 		$dados = array_merge($rp,$correcao);
-	 			array_push($info, $dados);
-		 		
-		 	}
+	 		 array_push($info,$rp);
 
 	 	
 	 	}
@@ -51,22 +41,12 @@ if(empty($somauser2) == false){
  $count = 0;
 
 	foreach ($somauser2 as $key => $value) {
-	 	$rp = select('*','sl_artigo',"id_artigo = ".$somauser2[$count]['id_artigo']." ");
+	 	$rp = select('t.titulo,t.status,t.id_artigo,tc.enviado,co.status as correcao','sl_artigo as t LEFT JOIN  sl_correcoes as co ON t.id_artigo = co.id_trabalho LEFT JOIN sl_trabcorrigido as tc ON t.id_artigo = tc.id_arquivo',"t.id_artigo = ".$somauser2[$count]['id_artigo']." ");
 	 	$trabcorrigido = select("id_arquivo","sl_trabcorrigido"," id_arquivo = ".$somauser2[$count]['id_artigo']." ");
 
 	 	if(empty($rp) == false){
 
-	 		if($trabcorrigido){
-	 		$correcao = array('flag' => 1 , );
-	 		$dados = array_merge($rp,$correcao);
-	 		array_push($info, $dados);
-	 		
-		 	}else{
-		 		$correcao = array('flag' => 2 , );
-		 		$dados = array_merge($rp,$correcao);
-	 			array_push($info, $dados);
-		 		
-		 	}
+	 		array_push($info,$rp);
 
 	 	
 	 	}
@@ -83,22 +63,12 @@ if(empty($somauser3) == false){
  $count = 0;
 
 	foreach ($somauser3 as $key => $value) {
-	 	$rp = select('*','sl_artigo',"id_artigo = ".$somauser3[$count]['id_artigo']." ");
+	 	$rp = select('t.titulo,t.status,t.id_artigo,tc.enviado,co.status as correcao','sl_artigo as t LEFT JOIN  sl_correcoes as co ON t.id_artigo = co.id_trabalho LEFT JOIN sl_trabcorrigido as tc ON t.id_artigo = tc.id_arquivo',"t.id_artigo = ".$somauser3[$count]['id_artigo']." ");
 	 	$trabcorrigido = select("id_arquivo","sl_trabcorrigido"," id_arquivo = ".$somauser3[$count]['id_artigo']." ");
 
 	 	if(empty($rp) == false){
 
-	 		if($trabcorrigido){
-	 		$correcao = array('flag' => 1 , );
-	 		$dados = array_merge($rp,$correcao);
-	 		array_push($info, $dados);
-	 		
-		 	}else{
-		 		$correcao = array('flag' => 2 , );
-		 		$dados = array_merge($rp,$correcao);
-	 			array_push($info, $dados);
-		 		
-		 	}
+	 		array_push($info,$rp);
 
 	 	
 	 	}
@@ -114,22 +84,12 @@ if(empty($somauser4) == false){
  $count = 0;
 
 	foreach ($somauser4 as $key => $value) {
-	 	$rp = select('*','sl_artigo',"id_artigo = ".$somauser4[$count]['id_artigo']." ");
+	 	$rp = select('t.titulo,t.status,t.id_artigo,tc.enviado,co.status as correcao','sl_artigo as t LEFT JOIN  sl_correcoes as co ON t.id_artigo = co.id_trabalho LEFT JOIN sl_trabcorrigido as tc ON t.id_artigo = tc.id_arquivo',"t.id_artigo = ".$somauser4[$count]['id_artigo']." ");
 	 	$trabcorrigido = select("id_arquivo","sl_trabcorrigido"," id_arquivo = ".$somauser4[$count]['id_artigo']." ");
 
 	 	if(empty($rp) == false){
 
-	 		if($trabcorrigido){
-	 		$correcao = array('flag' => 1 , );
-	 		$dados = array_merge($rp,$correcao);
-	 		array_push($info, $dados);
-	 		
-		 	}else{
-		 		$correcao = array('flag' => 2 , );
-		 		$dados = array_merge($rp,$correcao);
-	 			array_push($info, $dados);
-		 		
-		 	}
+	 		array_push($info,$rp);
 
 	 	
 	 	}
@@ -145,22 +105,12 @@ if(empty($somauser5) == false){
  $count = 0;
 
 	foreach ($somauser5 as $key => $value) {
-	 	$rp = select('*','sl_artigo',"id_artigo = ".$somauser5[$count]['id_artigo']." ");
+	 	$rp = select('t.titulo,t.status,t.id_artigo,tc.enviado,co.status as correcao','sl_artigo as t LEFT JOIN  sl_correcoes as co ON t.id_artigo = co.id_trabalho LEFT JOIN sl_trabcorrigido as tc ON t.id_artigo = tc.id_arquivo',"t.id_artigo = ".$somauser5[$count]['id_artigo']." ");
 	 	$trabcorrigido = select("id_arquivo","sl_trabcorrigido"," id_arquivo = ".$somauser5[$count]['id_artigo']." ");
 
 	 	if(empty($rp) == false){
 
-	 		if($trabcorrigido){
-	 		$correcao = array('flag' => 1 , );
-	 		$dados = array_merge($rp,$correcao);
-	 		array_push($info, $dados);
-	 		
-		 	}else{
-		 		$correcao = array('flag' => 2 , );
-		 		$dados = array_merge($rp,$correcao);
-	 			array_push($info, $dados);
-		 		
-		 	}
+	 		array_push($info,$rp);
 
 	 	
 	 	}

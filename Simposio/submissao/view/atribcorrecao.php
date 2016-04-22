@@ -19,9 +19,7 @@
             margin-top: -25px;
         }
 
-    .tdcorrecao{
-  	width: 150px;
-  }
+
 
     </style>
 </head>
@@ -57,7 +55,7 @@
 						
 						<table class="tabela1 table table-striped table-condensed table-bordered">
 							<thead>
-								<th>Título</th><th>Área</th><th>Categoria</th><th>Nome</th><th>E-mail</th><th>Possui Correções?</th><th>Trabalho</th><th>Correção</th>
+								<th>Título</th><th>Área</th><th>Categoria</th><th>Nome</th><th>E-mail</th><th>Possui Correções?</th><th>Trabalho corrigido</th><th>Trabalho</th>
 							</thead>
 							<tbody id="trabaprovado">
 							</tbody>
@@ -102,11 +100,11 @@
 
 		                		if(indice== "statuscorre"){
 		                			if(valor == 1){
-		                				linha+= "<td width=160><center>Com correção</center></td>";
+		                				linha+= "<td width=160><center style='color:green;font-weight:800'><h3>Sim</h3></center></td>";
 		                				return;
 		                			}
 		                			if(valor == 2){
-		                				linha+= "<td width=160><center>Sem correção</center></td>";
+		                				linha+= "<td width=160><center style='color:red;font-weight:800'><h3>Não</h3></center></td>";
 		 
 		                				return;
 		                			}
@@ -114,6 +112,26 @@
 		                				linha+="<td width=160 class='tdcorrecao"+data[key]['id_artigo']+"'>  <input style='margin-left:20px;margin-right:10px' type='button' id='"+data[key]['id_artigo']+"' class='btn btn-success comcorrecao' value='Sim'><input type='button' id='"+data[key]['id_artigo']+"' class='btn btn-danger semcorrecao' value='Não'></td>";
 		                				return;
 		                			}
+		                		}
+
+		                		if(indice == 'enviado'){
+		                			if(valor == 1){
+		                				linha+="<td colspan='1' ><input type='submit' id='"+data[key]['id_artigo']+"' class='btn btn-primary vercor' value='Abrir'></td>";
+		                				return;
+	                				}
+	                				if(valor == null && data[key]['statuscorre'] == 1){
+	                					linha+="<td class='tdtrabc"+data[key]['id_artigo']+"'>Não enviado</td>";
+	                					return;
+	                				}
+	                				if(data[key]['statuscorre'] == 2){
+	                					linha+="<td class='tdtrabc"+data[key]['id_artigo']+"'>Sem correção</td>";
+	                					return;
+	                				}
+	                				if(valor == null){
+	                					linha+="<td class='tdtrabc"+data[key]['id_artigo']+"'>Opção não selecionada</td>";
+	                					return;
+	                				}
+	                				
 		                		}
 		                	
 		                		if(indice == "idartigo"){
@@ -137,8 +155,8 @@
 
 
 		                	
-		                	linha+="<td colspan='1' ><input type='submit' id='"+data[key]['idartigo']+"' class='btn btn-primary vertrab' value='Abrir'></td>";
-		                	linha+="<td id='td"+data[key]['id_artigo']+"' colspan='1' ><input type='submit' id='"+data[key]['id_artigo']+"' class='btn btn-primary vercor' value='Abrir'></td></tr>";
+		                	
+		                	linha+="<td id='td"+data[key]['id_artigo']+"' colspan='1' ><input type='submit' id='"+data[key]['idartigo']+"' class='btn btn-primary vertrab' value='Abrir'></td></tr>";
 		                	$("#trabaprovado").append(linha);
 
 		                		
@@ -178,7 +196,7 @@
 				            		}
 				    				});
 								$(".tdcorrecao"+env.id).html(" ");
-								$(".tdcorrecao"+env.id).html("<center>Com correção</center>");
+								$(".tdcorrecao"+env.id).html("<center style='color:green;font-weight:800'><h3>Sim</h3></center>");
 								
 								
 								} else {
@@ -209,7 +227,9 @@
 				            		}
 				    				});
 								$(".tdcorrecao"+env.id).html(" ");
-								$(".tdcorrecao"+env.id).html("<center>Sem correção</center>");
+								$(".tdcorrecao"+env.id).html("<center style='color:red;font-weight:800'><h3>Não</h3></center>");
+								$(".tdtrabc"+env.id).html(" ");
+								$(".tdtrabc"+env.id).html("Sem correção");
 								} else {
 								    return;
 								}

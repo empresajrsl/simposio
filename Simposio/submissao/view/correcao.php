@@ -171,16 +171,19 @@ exit;
 		                		var comprovante = 'Trabalhos reprovados não tem comprovante';
 
 		                	}
-
-		                	if(data[count][0]['status'] == 1){
-			                	if(data[count]['flag'] == 2){
-			                	var correcao = '<form method="POST" action="../controller/ACAO/uptrabcorrigido.php" enctype="multipart/form-data" id="form'+count+'"> <input type="file" class="enviar btn btn-success" id="enviar'+count+'" name="arquivo"></input> <br> <input type="submit" class="enviar btn btn-success" id="enviar'+count+'" value=" Enviar trabalho corrigido "> </input> <input type="hidden" name="idartigo" value="'+data[count][0]['id_artigo']+'"</input></form>'; 
-			                	}else{
-			                	var correcao = '<p style="color:blue; font-size:18px"><b>Enviada</b></p>';
-			                	}
-			                }else{
-			                	var correcao = 'Válido somente para trabalhos aprovados';
-			                }	
+		                	if(data[count][0]['correcao'] == 1){
+			                	if(data[count][0]['status'] == 1){
+				                	if(data[count][0]['enviado'] != 1){
+				                	var correcao = '<form method="POST" action="../controller/ACAO/uptrabcorrigido.php" enctype="multipart/form-data" id="form'+count+'"> <input type="file" class="enviar btn btn-success" id="enviar'+count+'" name="arquivo"></input> <br> <input type="submit" class="enviar btn btn-success" id="enviar'+count+'" value=" Enviar trabalho corrigido "> </input> <input type="hidden" name="idartigo" value="'+data[count][0]['id_artigo']+'"</input></form>'; 
+				                	}else{
+				                	var correcao = '<p style="color:blue; font-size:18px"><b>Enviada</b></p>';
+				                	}
+				                }else{
+				                	var correcao = 'Válido somente para trabalhos aprovados';
+				                }
+				            }else{
+				            	var correcao = 'Não possui correções';
+				            }    	
 		                	var linha = '<tr id="'+data[count][0]['id_artigo']+'"> <td>'+data[count][0]['titulo']+'</td> <td>'+status+'</td><td>'+comprovante+'</td><td>'+correcao+'</td> </tr>';
 		                	$('#trabalhos').append(linha);
 		                	count++;
