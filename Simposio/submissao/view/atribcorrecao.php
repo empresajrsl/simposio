@@ -175,7 +175,7 @@
 								$(".tdcorrecao"+env.id).html(" ");
 								$(".tdcorrecao"+env.id).html("<center style='color:green;font-weight:800'><h3>Sim</h3><button class='editar btn btn-danger glyphicon glyphicon-pencil' id='"+env.id+"' ></button></center>");
 								$(".tdtrabc"+env.id).html(" ");
-								$(".tdtrabc"+env.id).html("Não enviada pelo autor");
+								$(".tdtrabc"+env.id).html("Não enviado pelo autor");
 								
 								
 								} else {
