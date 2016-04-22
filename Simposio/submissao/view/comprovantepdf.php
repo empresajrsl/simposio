@@ -95,7 +95,7 @@
       <div style='margin: 2%;'>
         <img src='../images/SGAGRO LOGO.png' style='width: 10%; height: 10%;'>
         <img src='../images/unesp.jpg' style='width: 10%; height: 10%;'>
-        <h2 style='margin-left: 25%; margin-top: -7%; color: green;'>Comprovante de Participação</h2>
+        <h2 style='margin-left: 25%; margin-top: -7%; color: green;'>Aceite de Artigo para Apresentação</h2>
       </div>
     </div><br/>
 
@@ -105,6 +105,8 @@
         <div><b>Categoria: </b>".$categoria."</div>
         <div><b>Area: </b>".$area."</div>
         <div><b>Situação: </b>Aprovado</div>
+        <div><b>Data do Evento: </b>08 a 10 de junho de 2016</div>
+        <div><b>Local: </b>UNESP FCAV - Jaboticanal-SP</div>
       </div>
     </div><br/>
 
