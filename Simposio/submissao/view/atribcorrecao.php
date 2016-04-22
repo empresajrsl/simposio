@@ -77,11 +77,11 @@
 
 		                		if(indice== "statuscorre"){
 		                			if(valor == 1){
-		                				linha+= "<td width=160><center style='color:green;font-weight:800'><h3>Sim</h3></center></td>";
+		                				linha+= "<td width=160><center style='color:green;font-weight:800'><h3>Sim</h3><button class='editar btn btn-danger glyphicon glyphicon-pencil' id='"+data[key]['id_artigo']+"' ></button></center></td>";
 		                				return;
 		                			}
 		                			if(valor == 2){
-		                				linha+= "<td width=160><center style='color:red;font-weight:800'><h3>Não</h3></center></td>";
+		                				linha+= "<td width=160><center style='color:red;font-weight:800'><h3>Não</h3><button class='editar btn btn-danger glyphicon glyphicon-pencil' id='"+data[key]['id_artigo']+"' ></button></center></td>";
 		 
 		                				return;
 		                			}
@@ -97,7 +97,7 @@
 		                				return;
 	                				}
 	                				if(valor == null && data[key]['statuscorre'] == 1){
-	                					linha+="<td class='tdtrabc"+data[key]['id_artigo']+"'>Não enviado</td>";
+	                					linha+="<td class='tdtrabc"+data[key]['id_artigo']+"'>Não enviado pelo autor</td>";
 	                					return;
 	                				}
 	                				if(data[key]['statuscorre'] == 2){
@@ -173,9 +173,9 @@
 				            		}
 				    				});
 								$(".tdcorrecao"+env.id).html(" ");
-								$(".tdcorrecao"+env.id).html("<center style='color:green;font-weight:800'><h3>Sim</h3></center>");
+								$(".tdcorrecao"+env.id).html("<center style='color:green;font-weight:800'><h3>Sim</h3><button class='editar btn btn-danger glyphicon glyphicon-pencil' id='"+env.id+"' ></button></center>");
 								$(".tdtrabc"+env.id).html(" ");
-								$(".tdtrabc"+env.id).html("Não enviada");
+								$(".tdtrabc"+env.id).html("Não enviada pelo autor");
 								
 								
 								} else {
@@ -206,7 +206,7 @@
 				            		}
 				    				});
 								$(".tdcorrecao"+env.id).html(" ");
-								$(".tdcorrecao"+env.id).html("<center style='color:red;font-weight:800'><h3>Não</h3></center>");
+								$(".tdcorrecao"+env.id).html("<center style='color:red;font-weight:800'><h3>Não</h3><button class='editar btn btn-danger glyphicon glyphicon-pencil' id='"+env.id+"' ></button></center>");
 								$(".tdtrabc"+env.id).html(" ");
 								$(".tdtrabc"+env.id).html("Sem correção");
 								} else {
@@ -231,7 +231,18 @@
 		});
 </script>
 
+<script type="text/javascript">
+	$(document).on("click",".editar",function(){
+		var r = confirm("deseja alterar sua opção ?");
+			if(r == true){
+				var id = $(this).attr('id');
+				location.href ="../controller/ACAO/editaropc.php?id="+id;
 
+			}else{
+				return;
+			}
+		});
+</script>
 
 </div>
 </body>
