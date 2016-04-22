@@ -107,6 +107,7 @@
 		                			}
 		                			if(valor == 2){
 		                				linha+= "<td width=160><center>Sem correção</center></td>";
+		 
 		                				return;
 		                			}
 		                			if(valor == null){
@@ -115,7 +116,9 @@
 		                			}
 		                		}
 		                	
-
+		                		if(indice == "idartigo"){
+		                			return;
+		                		}
 		                		if(indice == "id_artigo"){
 		                			return;
 		                		}
@@ -134,8 +137,8 @@
 
 
 		                	
-		                	linha+="<td colspan='1' ><input type='submit' id='trabalho"+data[key]['id_artigo']+"' class='btn btn-primary vertrab' value='Abrir'></td>";
-		                	linha+="<td colspan='1' ><input type='submit' id='correcao"+data[key]['id_artigo']+"' class='btn btn-primary vercor' value='Abrir'></td></tr>";
+		                	linha+="<td colspan='1' ><input type='submit' id='"+data[key]['idartigo']+"' class='btn btn-primary vertrab' value='Abrir'></td>";
+		                	linha+="<td id='td"+data[key]['id_artigo']+"' colspan='1' ><input type='submit' id='"+data[key]['id_artigo']+"' class='btn btn-primary vercor' value='Abrir'></td></tr>";
 		                	$("#trabaprovado").append(linha);
 
 		                		
@@ -215,7 +218,21 @@
 		});
 	</script>
 
-	
+<script type="text/javascript">
+		$(document).on("click",".vertrab",function(){
+		var id = $(this).attr("id");
+			window.open("vertrabalho.php?id="+id);
+		});
+</script>
+
+<script type="text/javascript">
+		$(document).on("click",".vercor",function(){
+		var id = $(this).attr("id");
+			window.open("vercorrecao.php?id="+id);
+		});
+</script>
+
+
 
 </div>
 </body>

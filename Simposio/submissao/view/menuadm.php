@@ -21,7 +21,7 @@
               <li><a href="avaliadores_cad.php"><span class="glyphicon glyphicon-education" ></span> Avaliadores </a></li>
               <li><a href="atribuiravaliador.php"><span class="glyphicon glyphicon-star" ></span> Atribuir avaliadores</a></li>
               <li><a href="trabalhos.php"><span class="glyphicon glyphicon-search" ></span> Trabalhos</a></li>
-              <li><a href="atribcorrecao.php"><span class="glyphicon glyphicon-pencil" ></span> Notificar correções</a></li>
+              <li><a href="atribcorrecao.php"><span class="glyphicon glyphicon-pencil" ></span> Notificar correções </a></li>
               <li><a href="resultado.php"><span class="glyphicon glyphicon-search" ></span> Resultado</a></li>
               <li><a href="cadadm.php"><span class="glyphicon glyphicon-plus" ></span> Novo Administrador</a></li>
             </ul>
