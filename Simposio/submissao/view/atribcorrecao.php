@@ -67,6 +67,11 @@
 
 		                	$.each(data[key],function(indice,valor){
 
+		                		if(indice == "titulo"){
+		                			var titulom = valor.toUpperCase();
+		                			linha+="<td>"+titulom+"</td>";
+		                			return;
+		                		}
 		                		if(indice=="nome"){
 		                		linha+="<td>"+data[key]['nome']+ " " + data[key]['sobrenome'] + "</td>";
 		                		return	
