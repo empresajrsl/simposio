@@ -111,8 +111,11 @@ exit;
 					<div class="col-md-12 col-xs-12 col-lg-12">
 						<div style="background-color:white" id="legenda">
 							<h4>Clique em  <button type="button" class="btn btn-primary">Clique aqui <i class="glyphicon glyphicon-file"></i></button> para Gerar o PDF do comprovante de aprovação</h4>
+							<h4>Caso exista correções para o trabalho:</h4>
 							<h4>Clique em <button type="button" style="font-size:14px">Escolher arquivo</button> para selecionar o trabalho corrigido a ser enviado</h4>
 							<h4>Clique em  <button type="button" class="btn btn-success">Enivar trabalho corrigido</button> para enviar o trabalho</h4>						
+							<h4>O envio do trabalho corrigido só podera ser realizado uma vez, portanto certique se é o arquivo correto antes de enviar</h4>
+							<h4>Agradecemos a compreensão</h4>
 						</div>
 					</div>	
 				</div>
