@@ -106,7 +106,7 @@
         <div><b>Area: </b>".$area."</div>
         <div><b>Situação: </b>Aprovado</div>
         <div><b>Data do Evento: </b>08 a 10 de junho de 2016</div>
-        <div><b>Local: </b>UNESP FCAV - Jaboticanal-SP</div>
+        <div><b>Local: </b>UNESP FCAV - Jaboticabal-SP</div>
       </div>
     </div><br/>
 
