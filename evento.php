@@ -1,8 +1,26 @@
 <?php require_once('cabecalho.php') ?>
 <br>
-<br>
-<br>
+
 <div class="container-fluid">
+
+<div class="container text-justify">
+	<div class="col-md-12">	
+		<h3>Dicas para a apresentação do artigo e do relato técnico</h3>
+		 
+		<h4>Dicas para a apresentação!!</h4>
+		<h4>Caros participantes,
+		Como sugestão, a apresentação do trabalho deve sintetizar os principais itens abordados no texto. Uma proposta para estruturar a apresentação é organizá-la nos seguintes itens: Contextualização, Objetivo, Metodologia, Análise e Considerações Finais. Ao final, também é necessário ressaltar as principais referências bibliográficas utilizadas na elaboração do trabalho.
+		Importante: O tempo máximo para a apresentação dos artigos e relatos técnicos é de 15 minutos, devendo ser finalizada, impreterivelmente, dentro do tempo estipulado.</h4>
+		 
+		<h3>Dicas para a apresentação do painel</h3>
+		<h4>Dicas para o painel!!
+		Caros participantes,
+		O painel deverá ser confeccionado pelos autores de cada trabalho seguindo o modelo disposto no link abaixo, obecendo as seguontes dimensões: de 0,9m de largura  x 1,20m de altura <button class="btn btn-primary" id="btnmod"> Modelo do painel </button><h4>
+
+	</div>
+</div>
+<br>
+
 	<div id="main_content" class="row">
 		<div class="row" style="margin-bottom: 10px">
 		<iframe  class="col-md-offset-1 col-md-10" src="PROGRAMACAO DAS APRESENTACOES-Disponibilizada.pdf" height="1000"> </iframe>
@@ -75,6 +93,11 @@
 
 		</div>
 </div>
+<script type="text/javascript">
+	$(document).on("click","#btnmod",function(){
+		 window.open('modeloPainel.php', '_blank');
+	});
+</script>
 <br>
 <br>
 <?php require_once('rodape.php') ?>			
