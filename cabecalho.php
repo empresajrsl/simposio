@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Sistema especialista em SimpÛsios">
     <meta name="keywords" content="sgagro, AgronegÛcios,Faculdade de CiÍncias Agr·rias e Veterin·rias, Universidade Estadual Paulista (FCAV/UNESP), FCAV,UNESP,Gest„o do AgronegÛcio,SimpÛsio em Gest„o do AgronegÛcio, SimpÛsio, UNESP: C‚mpus de Jaboticabal, jaboticabal">
+    <meta charset="UTF-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -15,10 +16,10 @@
 
     <style type="text/css">
     	.nav>li>a {
-    font-size: 13px;
-    padding: 8px 7px;
+    font-size: 12px;
+    padding: 6px 5px;
     font-family:arial,sans-serif;
-    letter-spacing:1px;
+    letter-spacing:0px;
 
     
 }
@@ -52,18 +53,20 @@
 
 				    <div class="collapse navbar-collapse" id="myNavbar">
 
-				      <ul class="nav navbar-nav navbar-center">
+				      <ul class="nav navbar-nav navbar-right">
 				        <li ><a href="Simposio/submissao/index.php">SISTEMA</a></li>
-				        <li><a href="evento.php">EVENTO</a></li>
+				        <li><a href="evento.php">APRESENTA√á√ÉO</a></li>
 				        <li><a href="programacao.php">PROGRAMA√á√ÉO</a></li>
 				        <li class="active"><a href="inscricao.php">INSCRI√á√ÉO</a></li>
 				        <li><a href="areas.php">√ÅREAS</a></li>
-				        <li><a href="trabalhos.php">TRABALHOS</a></li>
-				        <li><a href="anais.php">ANAIS</a></li>
+				        <li><a href="trabalhos.php">NORMAS PARA PUBLICA√á√ÉO</a></li>
+				        <li><a href="anais.php">EDI√á√ÉO ATUAL</a></li>
+				        <li><a href="edicaoant.php">EDI«’ES ANTERIORES</a></li>
 				        <li><a href="datasimportantes.php">DATAS IMPORTANTES</a></li>
 				        <li><a href="goagro.php">GOAgro</a></li>
+				        <li><a href="expediente.php">EXPEDIENTE</a></li>
 				        <li><a href="contato.php">CONTATO</a></li>		            
-				          </ul>
+				      </ul>
 				        </li>		    
 				      </ul>
 				    </div>

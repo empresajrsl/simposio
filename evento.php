@@ -4,7 +4,7 @@
 
 	<div class="jumbotron text-justify">
 	<h3>Evento</h3><br>
-	<!--p> O I Simpósio em Gestão do Agronegócio procura criar um espaço para difusão de conhecimento técnico-científico na área de Gestão do Agronegócio e constituir um ambiente que favoreça a formação da rede de relacionamento universidade-empresa, contribuindo para a formação de recursos humanos nas atividades empresariais do agronegócio.
+	<!--p> O Simpósio em Gestão do Agronegócio procura criar um espaço para difusão de conhecimento técnico-científico na área de Gestão do Agronegócio e constituir um ambiente que favoreça a formação da rede de relacionamento universidade-empresa, contribuindo para a formação de recursos humanos nas atividades empresariais do agronegócio.
             O público alvo do evento são profissionais e pesquisadores na área do agronegócio e que demandam espaços de discussão de técnicas e processos de gestão que incrementem à competitividade das organizações pertencentes às cadeias produtivas do agronegócio.</p>
 
     <p><br><h4>Local do evento:</h4>
@@ -12,7 +12,7 @@
 	Endereço: Via de acesso Prof. Paulo Donato Castellane s/n<br>
 	Jaboticabal - SP</p-->
 
-	<p>O I Simpósio em Gestão do Agronegócio é organizado pelo Programa de Pós-
+	<p>O Simpósio em Gestão do Agronegócio é organizado pelo Programa de Pós-
 	Graduação em Administração com área de concentração em Gestão de 
 	Organizações Agroindustriais junto a Faculdade de Ciências Agrárias e 
 	Veterinárias da Universidade Estadual Paulista (FCAV/UNESP).</p>

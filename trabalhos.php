@@ -4,7 +4,7 @@
 	<div id="main_content">
 	<div class="jumbotron text-justify">
 
-	<p>O I SGAgro receberá para trabalhos em formato completo para apresentação oral ou em formato de resumo expandido para apresentação em painel estudos ou relatos tecnológicos na área de Gestão do Agronegócio.</p>
+	<p>O SGAgro receberá para trabalhos em formato completo para apresentação oral ou em formato de resumo expandido para apresentação em painel estudos ou relatos tecnológicos na área de Gestão do Agronegócio.</p>
 	<p>Todos os trabalhos serão encaminhados para processo de dupla avaliação às cegas. Somente os trabalhos aprovados pelos avaliadores e inscritos nos programas serão publicados nos Anais do simpósio.</p>
 	<p>Os melhores trabalhos serão encaminhados para revistas parceiras do evento em processo fast track, logo, caso sejam aceitos pelo sistema de avaliação destes periódicos os trabalhos poderão ser publicados nas revistas.</p>
 	<p>As opções de fast track são:</p>

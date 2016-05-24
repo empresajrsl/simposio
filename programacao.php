@@ -104,7 +104,7 @@ Doutoranda em Direito do Trabalho – Faculdade Autônoma de Direito de São Pau
 Prof. Dr. Marco Túlio Ospina Patino (Universidade Estadual de Campinas - Brasil)
 Doutor em Agronomia (Energia na Agricultura) – Universidade Estadual Paulista “Júlio de Mesquita Filho” - Brasil.</p>
 
-<p><b>Mini-curso 2:</b> Tema e instrutor em definição.</p>
+<p><b>Mini-curso 2:</b> <i>Tema:</i> Tendências no consumo de alimentos e inovação em produtos. Flaviane Tavanti Castilho (Consultora de Negócios - Sebrae/SP).</p>
 
 
 <p>Sessões com apresentações de trabalhos <b>(14 às 17h)</b></p>
