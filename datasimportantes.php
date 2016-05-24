@@ -31,11 +31,11 @@
 					<td>Divulgação de trabalhos aprovados</td>
 				</tr>
 				<tr>
-					<td>15 de Abril a 30 de Abril</td>
+					<td>15 de Abril a 16 de Maio</td>
 					<td>Inscrições com desconto</td>
 				</tr>
 				<tr>
-					<td>30 de Abril a 20 de Maio</td>
+					<td>16 de Maio a 30 de Maio</td>
 					<td>Inscrições sem desconto</td>
 				</tr>
 				<tr>

@@ -43,8 +43,10 @@ th a {color: #fff}
 
 <p><b>Mini- cursos <i>(15h às 18h)</i></b></p>
 
-<p><b>Mini-curso 1:</b> Tema e instrutor em definição</p>
-<p><b>Mini-curso 2:</b> Tema e instrutor em definição</p>
+<p><b>Mini-curso 1 Tema:</b> Simulações de Crédito para Produtores Rurais Nelson dos Santos Gimenez (Proprietário da NG Agro Consultoria e Projetos Agrícolas).</p>
+<p><b>Mini-curso 2 Tema:</b> Como transformar o bem estar animal em vantagem competitiva Maria Lúcia Pereira Lima (Pesquisadora Científica da Secretaria de Agricultura e Abastecimento de São Paulo).
+</p>
+
 
 
 

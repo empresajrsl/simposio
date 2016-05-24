@@ -34,8 +34,10 @@
 	apresentação de trabalhos científicos e tecnológicos e workshops em temas 
 	atuais no agronegócio (certificações, sustentabilidade, inovação, 
 	empreendedorismos, legislação ambiental e trabalhista, entre outras).</p>
+	<br>
+	<br>
 
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-md-4">
 			<img src="images/logo50a.png"  width="420" height="350" style="margin-top:35px">
 		</div>
@@ -45,8 +47,46 @@
 		<div class="col-md-4">
 			<img src="images/unesp40a.png"  width="400" height="420">
 		</div>
-	</div>
-</div>
+	</div> -->
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0"  class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+     <center><img src="images/logo50a.png"  width="1100" height="500" ></center>
+    </div>
+
+    <div class="item">
+      <center><img src="images/fachada.jpg"  width="1100" height="500" ></center>
+    </div>
+
+    <div class="item">
+      <center><img src="images/unesp40a.png" width="350" height="500" ></center>
+    </div>
+
+    
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
 </div>
 
+</div>
+</div>
+<br>
+<br>
 <?php require_once('rodape.php') ?>			

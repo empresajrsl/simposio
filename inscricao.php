@@ -15,8 +15,8 @@
 						
 						<thead>
 							<th>Participante</th>
-							<th>Inscrições até 30/04<br>Com desconto</th>
-							<th>Inscrições até 20/05<br>Sem desconto</th>
+							<th>Inscrições até 16/05<br>Com desconto</th>
+							<th>Inscrições até 30/05<br>Sem desconto</th>
 						</thead>
 						<tbody>
 							<tr>

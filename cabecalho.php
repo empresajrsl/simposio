@@ -44,7 +44,7 @@
 				        <span class="icon-bar"></span> 
 				      </button>
 				       <a class="navbar-brand" rel="home" href="#">
-         				<img id="logo" src="images/logo.png" style="width:200px; height:120px" alt="Logo">
+         				<img id="logo" src="images/logo.png" style="width:130px; height:120px" alt="Logo">
     					</a>
 				     
 				  	
@@ -57,7 +57,7 @@
 				        <li><a href="evento.php">EVENTO</a></li>
 				        <li><a href="programacao.php">PROGRAMAÇÃO</a></li>
 				        <li class="active"><a href="inscricao.php">INSCRIÇÃO</a></li>
-				        <li><a href="areas.php">�?REAS</a></li>
+				        <li><a href="areas.php">ÁREAS</a></li>
 				        <li><a href="trabalhos.php">TRABALHOS</a></li>
 				        <li><a href="anais.php">ANAIS</a></li>
 				        <li><a href="datasimportantes.php">DATAS IMPORTANTES</a></li>

@@ -43,8 +43,7 @@
 						
 						<table class="tabela1 table table-striped table-condensed table-bordered">
 							<thead>
-								<th>Titulo</th><th>Área</th><th>Categoria</th>
-                <!-- <th>Autor 1</th><th>Autor 2</th><th>Autor 3</th><th>Autor 4</th><th>Autor 5</th> -->
+								<th>Titulo</th><th>Área</th><th>Categoria</th><th>Autor 1</th><th>Autor 2</th><th>Autor 3</th><th>Autor 4</th><th>Autor 5</th>
 							</thead>
 							<tbody id="trabaprovado">
 							</tbody>
