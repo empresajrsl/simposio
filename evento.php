@@ -15,7 +15,7 @@
 		<h3>Dicas para a apresentação do painel</h3>
 		<h4>Dicas para o painel!!
 		Caros participantes,
-		O painel deverá ser confeccionado pelos autores de cada trabalho seguindo o modelo disposto no link abaixo, obecendo as seguontes dimensões: de 0,9m de largura  x 1,20m de altura <button class="btn btn-primary" id="btnmod"> Modelo do painel </button><h4>
+		O painel deverá ser confeccionado pelos autores de cada trabalho seguindo o modelo disposto no link abaixo, obecendo as seguontes dimensões: de 0,9m de largura  x 1,20m de altura <button class="btn btn-primary" id="btnmod">Clique aqui para ver o modelo do painel </button><h4>
 
 	</div>
 </div>
