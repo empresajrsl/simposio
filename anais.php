@@ -6,10 +6,9 @@
      	<br>
      
      	<div class="col-md-8 col-md-offset-2">
-
      		<form>
      		<div class="row">
-     			<div class="col-md-3">
+     			<div class="col-md-3 col-md-offset-5">
      				<select class="form-control">
      					<option>Autor ou Cooautor</option>
      					<option>Titulo</option>
@@ -17,13 +16,14 @@
      				</select>
      			</div>
 
-     			<div class="col-md-6">
-     				<input type="text" name="pesquisa" class="form-control">
-     			</div>
-
-     			<div class="col-md-1">
-     				<button class="btn btn-success">Pesquisar</button>
-     			</div>
+                    <div class="col-md-4">
+                         <div class="input-group">
+                              <input type="text" name="pesquisa" class="form-control">
+                              <span class="input-group-btn">
+                                   <button class="btn btn-success"><icone class="glyphicon glyphicon-search"/></button>
+                              </span>
+                         </div>
+                    </div>
      		</div>
      		</form><br>
 
@@ -74,7 +74,7 @@
      		</div><br>
 
      		<div class="row">
-     			<button type="button" class= "btn btn-success col-md-6 col-md-offset-3">
+     			<button type="button" class= "btn btn-success col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
      				Buscar
      			</button>
      			
