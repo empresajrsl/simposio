@@ -6,9 +6,10 @@
      	<br>
      
      	<div class="col-md-8 col-md-offset-2">
+               <center><b>Pesquise aqui por nome do autor ou cooautor, titulo, ou palavras chave</b></center><br>
      		<form>
      		<div class="row">
-     			<div class="col-md-3 col-md-offset-5">
+     			<div class="col-md-3">
      				<select class="form-control">
      					<option>Autor ou Cooautor</option>
      					<option>Titulo</option>
@@ -16,17 +17,18 @@
      				</select>
      			</div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-9">
                          <div class="input-group">
-                              <input type="text" name="pesquisa" class="form-control">
+                              <input type="text" name="pesquisa" class="form-control" placeholder="Digite aqui o que deseja pesquisar e clique na lupa.">
                               <span class="input-group-btn">
                                    <button class="btn btn-success"><icone class="glyphicon glyphicon-search"/></button>
                               </span>
                          </div>
                     </div>
      		</div>
-     		</form><br>
+     		</form><br><br>
 
+               <center><b>Aqui é possivel ver todos os artigos organizados por ano do evento, edição, categoria e área. Basta selecionalos e clicar em Buscar</b></center><br>
      		<form>
      		<div class="row">
      			<div class="col-md-12">
