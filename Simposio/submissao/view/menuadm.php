@@ -7,16 +7,21 @@
             font-size: 16px;
             font-weight: 700;
         }
-        nav{
-           
-        }
+        .nav>li>a {
+        font-size: 14px;
+        padding: 6px 5px;
+        font-family:arial,sans-serif;
+        letter-spacing:0px;
+      }
+
+
 
     </style>
     
     <div class="container-fluid">
     <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#" style="font-size:28px;color:white">SGAgro</a>
+              <a class="navbar-brand" href="#" style="font-size:22px;color:white">SGAgro</a>
             </div>
             <ul class="nav navbar-nav">
               <li><a href="estatisticas.php"><span class="glyphicon glyphicon-stats" ></span> Estatisticas</a></li>
