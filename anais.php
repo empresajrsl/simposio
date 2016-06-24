@@ -6,7 +6,7 @@
      	<br>
      
      	<div class="col-md-8 col-md-offset-2">
-               <center><b>Pesquise aqui por nome do autor ou cooautor, titulo, ou palavras chave</b></center><br>
+               <center><b>Pesquise aqui por nome do autor, cooautor, titulo, ou palavras chave</b></center><br>
      		<form>
      		<div class="row">
      			<div class="col-md-3">
