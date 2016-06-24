@@ -2,10 +2,7 @@
 include ("../funcoes/conexao.php");
 include ("../funcoes/funcoesmysql.php");
 
-$campos = "t.titulo,t.area,t.categoria,g.id_usuario1, g.id_usuario2, g.id_usuario3, g.id_usuario4,g.id_usuario5,(SELECT CONCAT(nome,' ',sobrenome) FROM sl_cadusu WHERE id_usuario = g.id_usuario1) as nome1,(SELECT CONCAT(nome,' ',sobrenome) FROM sl_cadusu WHERE id_usuario = g.id_usuario2) as nome2, (SELECT CONCAT(nome,' ',sobrenome) FROM sl_cadusu WHERE id_usuario = g.id_usuario3) as nome3, (SELECT CONCAT(nome,' ',sobrenome) FROM sl_cadusu WHERE id_usuario = g.id_usuario4) as nome4,(SELECT CONCAT(nome,' ',sobrenome) FROM sl_cadusu WHERE id_usuario = g.id_usuario5) as nome5  ";
-$tabela = "sl_artigo as t INNER JOIN sl_cadusu as c ON t.email = c.email INNER JOIN sl_grupo as g ON g.id_artigo = t.id_artigo";
-$condicao = "t.status = 1 AND t.avaliacao_concluida1 = 1 AND avaliacao_concluida2 = 1 ORDER BY t.titulo";
-$trabalhos = select($campos,$tabela,$condicao);
+$trabalhos = select("t.id_artigo,t.titulo,t.area,t.categoria,c.nome,c.sobrenome,t.email,n.notafinal,n2.notafinal as nota2","sl_artigo as t INNER JOIN sl_cadusu as c ON t.email = c.email INNER JOIN sl_notas as n ON t.id_artigo = n.id_artigo INNER JOIN sl_notas2 as n2 ON t.id_artigo = n2.id_artigo","t.status = 1 AND t.avaliacao_concluida1 = 1 AND avaliacao_concluida2 = 1 ORDER BY t.titulo");
 
 if($trabalhos){
 echo json_encode($trabalhos);
