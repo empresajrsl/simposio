@@ -8,10 +8,13 @@
             font-weight: 700;
         }
         .nav>li>a {
+        margin-top: 3px;
         font-size: 14px;
-        padding: 6px 5px;
         font-family:arial,sans-serif;
-        letter-spacing:0px;
+        
+      }
+      .nav-brand{
+        font-size: 14px;
       }
 
 
