@@ -14,12 +14,14 @@
 		table{margin: 5px;}
 		td{padding: 3px;}
 		#divavaliadores{}
+		#progAva{height: 300px; overflow: auto;}
+		.jumbotron{overflow: hidden}
 		
 	</style>
 </head>
 	<div class="jumbotron">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12" id="progAva">
 			<h3 style="text-align:center"> Progresso das avaliações </h3><br>
 				<table class="table table-striped table-condensed table-bordered" id="resultadoavaliadores"> 
 					<tr>
