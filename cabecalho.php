@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Sistema especialista em Simpósios">
     <meta name="keywords" content="sgagro, Agronegócios,Faculdade de Ciências Agrárias e Veterinárias, Universidade Estadual Paulista (FCAV/UNESP), FCAV,UNESP,Gestão do Agronegócio,Simpósio em Gestão do Agronegócio, Simpósio, UNESP: Câmpus de Jaboticabal, jaboticabal">
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8"> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -30,11 +30,14 @@
 <body>
 	<header>
 		<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+
+							<div align=center><h4>Número de vizualizações do site:</h4><img src='http://contador.s12.com.br/img-16364A05-26.gif' border='0' alt='contador de visitantes'><script type='text/javascript' src='http://contador.s12.com.br/ad.js?id=16364A05'></script></div>
+						</div>
+					 </div>
 			
-	               <div class="alert alert-info" role="alert">
-	                 <center><h4>Comunicado:</h4>
-	                <h4><br><a href="resultado.php">Clique aqui para visualizar os resultados</a></center></h4> 
-	               </div>
+	               
 	            <div class="col-md-12 col-lg-12 col-xs-12">   
 				<nav class="navbar navbar-default">
 				  <div class="container-fluid">
