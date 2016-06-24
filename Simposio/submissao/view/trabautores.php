@@ -10,6 +10,19 @@
     <script src="../plugin/jquery-validate/jquery.validate.min.js"></script>
     <link rel="shortcut icon" href="../images/SGAGRO LOGO.ico" type="image/x-icon"/>
 	<title>Trabalhos</title>
+	<style type="text/css">
+		.panel-body{
+			overflow: hidden;
+		}
+		#divtable{
+			height: 480px;
+			overflow: auto;
+		}
+		body{
+			overflow: hidden;
+		}
+		
+	</style>
 
 	
 </head>
@@ -25,7 +38,7 @@
 	    		<div class="panel-heading"><h3>Relação de autores dos trabalhos</h3></div>
 	    		<div class="panel-body">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12" >
 							
 							<div class="input-group">
 						      <input id="titulo" name="titulo" type="text" class="form-control" placeholder="Informe o título do trabalho ou uma palavra contida no mesmo">
@@ -34,13 +47,16 @@
 						      </span>
 						    </div>
 						    <br>
-							<table class="tabela1 table table-striped table-condensed table-bordered">
-								<thead>
-									<th>Título</th><th>Área</th><th>Categoria</th><th>Autor 1</th><th>Autor 2</th><th>Autor 3</th><th>Autor 4</th><th>Autor 5</th>
-								</thead>
-								<tbody id="trabaprovado">
-								</tbody>
-							</table>
+						    <div class="col-md-12" id="divtable" >
+						    	
+								<table class="tabela1 table table-condensed table-bordered table-hover"  id="tabelaautores">
+									<thead>
+										<th>Título</th><th>Área</th><th>Categoria</th><th>Autor 1</th><th>Autor 2</th><th>Autor 3</th><th>Autor 4</th><th>Autor 5</th>
+									</thead>
+									<tbody id="trabaprovado">
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
