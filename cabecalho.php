@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Sistema especialista em SimpÛsios">
     <meta name="keywords" content="sgagro, AgronegÛcios,Faculdade de CiÍncias Agr·rias e Veterin·rias, Universidade Estadual Paulista (FCAV/UNESP), FCAV,UNESP,Gest„o do AgronegÛcio,SimpÛsio em Gest„o do AgronegÛcio, SimpÛsio, UNESP: C‚mpus de Jaboticabal, jaboticabal">
-    <!-- <meta charset="UTF-8"> -->
+    <!--<meta charset="utf-8">-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -30,54 +30,44 @@
 <body>
 	<header>
 		<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-12">
-
-							<div align=center><h4>N˙mero de vizualizaÁıes do site:</h4><img src='http://contador.s12.com.br/img-16364A05-26.gif' border='0' alt='contador de visitantes'><script type='text/javascript' src='http://contador.s12.com.br/ad.js?id=16364A05'></script></div>
-						</div>
-					 </div>
 			
-	               
-	            <div class="col-md-12 col-lg-12 col-xs-12">   
-				<nav class="navbar navbar-default">
-				  <div class="container-fluid">
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span> 
-				      </button>
-				       <a class="navbar-brand" rel="home" href="#">
-         				<img id="logo" src="images/logo.png" style="width:130px; height:120px" alt="Logo">
-    					</a>
-				     
-				  	
-				    </div>
+           	<div class="row">
+				<div class="col-md-12">
+					<div align=center><b>N˙mero de vizualizaÁıes do site: </b><img src='http://contador.s12.com.br/img-16364A05-26.gif' border='0' alt='contador de visitantes'><script type='text/javascript' src='http://contador.s12.com.br/ad.js?id=16364A05'></script></div>
+				</div>
+			</div>
 
-				    <div class="collapse navbar-collapse" id="myNavbar">
+	    	<nav class="navbar navbar-default">
 
-				      <ul class="nav navbar-nav navbar-right">
-				        <li ><a href="Simposio/submissao/index.php">SISTEMA</a></li>
-				        <li><a href="evento.php">APRESENTA√á√ÉO</a></li>
-				        <li><a href="programacao.php">PROGRAMA√á√ÉO</a></li>
-				        <li class="active"><a href="inscricao.php">INSCRI√á√ÉO</a></li>
-				        <li><a href="areas.php">√ÅREAS</a></li>
-				        <li><a href="trabalhos.php">NORMAS PARA PUBLICA√á√ÉO</a></li>
-				        <li><a href="anais.php">EDI√á√ÉO ATUAL</a></li>
-				        <li><a href="edicaoant.php">EDI«’ES ANTERIORES</a></li>
-				        <li><a href="datasimportantes.php">DATAS IMPORTANTES</a></li>
-				        <li><a href="goagro.php">GOAgro</a></li>
-				        <li><a href="expediente.php">EXPEDIENTE</a></li>
-				        <li><a href="contato.php">CONTATO</a></li>		            
-				      </ul>
-				        </li>		    
-				      </ul>
-				    </div>
-				    <hr><br>
-				    <hr>
-				  </div>
-				</nav>
-			</div>	
+	    		<div style="position: absolute;">
+	    			<a class="navbar-brand" rel="home" href="#">
+		       			<img id="logo" src="images/logo.png" style="width:130px; height:110px;" alt="Logo"/>
+					</a>
+	    		</div>
+
+	    		<center style="position: absolute; z-index: 5; botton: 100%; margin-left: 25%; color: OliveDrab">
+	    			<h1>SimpÛsio em Gest„o do AgronegÛcio</h1>
+	    		</center>
+
+		      	<ul class="nav navbar-nav navbar-right">
+		      		<li ><a href="Simposio/submissao/index.php">SISTEMA</a></li>
+			        <li><a href="evento.php">APRESENTA√á√ÉO</a></li>
+			        <li><a href="programacao.php">PROGRAMA√á√ÉO</a></li>
+			        <li class="active"><a href="inscricao.php">INSCRI√á√ÉO</a></li>
+			        <li><a href="areas.php">√ÅREAS</a></li>
+			        <li><a href="trabalhos.php">NORMAS PARA PUBLICA√á√ÉO</a></li>
+			        <li><a href="anais.php">EDI√á√ÉO ATUAL</a></li>
+			        <li><a href="edicaoant.php">EDI«’ES ANTERIORES</a></li>
+			        <li><a href="datasimportantes.php">DATAS IMPORTANTES</a></li>
+			        <li><a href="goagro.php">GOAgro</a></li>
+			        <li><a href="expediente.php">EXPEDIENTE</a></li>
+			        <li><a href="contato.php">CONTATO</a></li>
+		      	</ul>
+		    </nav>
+			    
+			<hr><br><hr>
+        </div>
+	        
 		</div>
 	</header>
-	<section>				
+	<section>
