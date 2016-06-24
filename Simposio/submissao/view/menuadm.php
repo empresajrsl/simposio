@@ -25,6 +25,7 @@
               <li><a href="trabalhos.php"><span class="glyphicon glyphicon-search" ></span> Trabalhos</a></li>
               <li><a href="atribcorrecao.php"><span class="glyphicon glyphicon-pencil" ></span> Notificar correções </a></li>
               <li><a href="cadadm.php"><span class="glyphicon glyphicon-plus" ></span> Novo Administrador</a></li>
+              <li><a href="trabautores.php">Autores</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right"style="margin-right: 1%">
               <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php if(isset($_SESSION['admnome'])){ echo $nome;}  ?>  </a></li>
