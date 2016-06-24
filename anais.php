@@ -1,7 +1,7 @@
 
 <?php require_once('cabecalho.php') ?>
 	
-    <div class="container-fluid">
+     <div class="container-fluid">
      	<!--center><h1>2016</h1></center-->
      	<br>
      
@@ -28,16 +28,16 @@
      		</div>
      		</form><br><br>
 
-               <center><b>Aqui é possivel ver todos os artigos organizados por ano do evento, edição, categoria e área. Basta selecionalos e clicar em Buscar</b></center><br>
+               <center><b>Aqui é possivel ver todos os artigos deste ano organizados por edição, categoria e área. Basta selecionalos e clicar em Buscar</b></center><br>
      		<form>
-     		<div class="row">
+     		<!--div class="row">
      			<div class="col-md-12">
      				<LABEL>Selecione o ano do evento:</LABEL>
      				<select class="form-control">
      					<option>2015</option>
      				</select>
      			</div>
-     		</div><br>
+     		</div><br-->
 
      		<div class="row">
      			<div class="col-md-12">
