@@ -1,4 +1,4 @@
-<<html>
+<html>
 <head>
 	<meta charset="utf-8">
 	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" ></link>
@@ -124,6 +124,11 @@
 		                		if(indice == "nota2"){
 		                			return;
 		                		}
+                                                
+                                                if(indice == "id_artigo"){
+		                			return;
+		                		}
+
 		                		
 		                		linha+="<td>"+valor+"</td>";
 		                		
@@ -281,4 +286,4 @@
 
 </div>
 </body>
-</html>
+</html>	
