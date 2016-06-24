@@ -14,17 +14,15 @@
 	
 </head>
 <body>
-	<div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div><br><br><br>
+	<div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div><br><br>
 	<div class="container-fluid">
-		<div class="container-fluid">
+		<br>
 			<div class="jumbotron" style="overflow:hidden">
-				<div class="row" id="divavaliadores">
+				<div class="col-md-12"style="overflow: scroll" id="tabAva">
 				<div style="background-color:white" id="legenda"><br>
-				
-							<h3>Clique em  <botton class="glyphicon glyphicon-ok btn btn-info" style="background-color: #5cb85c; border-color: #4cae4c;"></botton> para Aprovar o cadastro do avaliador ou <botton class=" btn btn-info glyphicon glyphicon-remove" style="background-color: #d9534f; border-color: #d43f3a;" ></botton> para Reprovar.<h3>
-							
-						<br></div
-					<div class="col-md-12"style="overflow: scroll; height: 65%">								   					
+					<h3>Clique em  <botton class="glyphicon glyphicon-ok btn btn-info" style="background-color: #5cb85c; border-color: #4cae4c;"></botton> para Aprovar o cadastro do avaliador ou <botton class=" btn btn-info glyphicon glyphicon-remove" style="background-color: #d9534f; border-color: #d43f3a;" ></botton> para Reprovar.<h3>
+				</div>
+												   					
 		    			<table class="tabela1 table table-striped table-condensed table-bordered" id="avaliadorescad">
 			    			<tr>
 			    				<th> Nome </th>
@@ -41,7 +39,7 @@
 			    				<th>R</th>
 			    			</tr>	
 		    			</table>
-			    	</div>	
+			    		
 	    		</div>
 			</div>
 
@@ -49,17 +47,18 @@
 		<?php include("testeavaliadores.php"); ?>	    	
 		</div>
 		
-	</div><!--fim container-->
+	
 
 	<style type="text/css">
 	/*body{text-align: center;}*/
 		th{font-size:1em; text-align: center;}
-		table.tabela1 td{font-size: 0.9em; color: #696969; font-weight: bold}
-		table{margin: 5px;}
+		table.tabela1 td{font-size: 0.8em; color: #696969; font-weight: bold}
+		/*table{margin: 5px;}*/
 		td{padding: 0px;}
-		#divavaliadores{}
+		#tabAva{height: 400px;}
 		h3{
-			margin-left: 8px;
+			text-align: center;
+			padding-bottom: 5px;
 		}
 	</style>
 
