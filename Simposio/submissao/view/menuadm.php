@@ -16,6 +16,10 @@
       .nav-brand{
         font-size: 14px;
       }
+      .navbar{
+        padding-bottom: 5px;
+        
+      }
 
 
 
@@ -41,6 +45,7 @@
             </ul>
         </nav>
         </div>
+       
 
 		<!--nav class="navbar navbar-inverse">
           <div class="container-fluid">

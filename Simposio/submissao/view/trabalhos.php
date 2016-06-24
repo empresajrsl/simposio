@@ -18,14 +18,15 @@
 	
     
 <div class="container-fluid">
-    <?php require_once("menuadm.php") ?>
+    <div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div>
+    <br><br><br><br><br>
    
     <div class="jumbotron">
     	<div class="panel panel-primary">
     		<div class="panel-heading"><h3>Trabalhos aprovados</h3></div>
-    		<div class="panel-body">
+    		<div class="panel-body" style="overflow: hidden">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12" style="overflow:auto;height: 300px">
 						
 						<table class="tabela1 table table-striped table-condensed table-bordered">
 							<thead>
@@ -41,9 +42,9 @@
 
 		<div class="panel panel-primary">
     		<div class="panel-heading"><h3>Trabalhos Reprovados</h3></div>
-    		<div class="panel-body">
+    		<div class="panel-body" style="overflow: hidden">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12" style="overflow:auto;height: 300px">
 						
 						<table class="tabela1 table table-striped table-condensed table-bordered">
 							<thead>
@@ -59,9 +60,9 @@
 
 		<div class="panel panel-primary">
     		<div class="panel-heading"><h3>Trabalhos com avaliações 1 pendentes</h3></div>
-    		<div class="panel-body">
+    		<div class="panel-body" style="overflow: hidden">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12" style="overflow:auto;height: 300px">
 						
 						<table class="tabela1 table table-striped table-condensed table-bordered">
 							<thead>
@@ -77,9 +78,9 @@
 
 		<div class="panel panel-primary">
     		<div class="panel-heading"><h3>Trabalhos com avaliações 2 pendentes</h3></div>
-    			<div class="panel-body">
+    			<div class="panel-body"  style="overflow: hidden">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12" style="overflow:auto;height: 300px">
 						
 						<table class="tabela1 table table-striped table-condensed table-bordered">
 							<thead>

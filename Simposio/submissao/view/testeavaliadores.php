@@ -14,7 +14,7 @@
 		table{margin: 5px;}
 		td{padding: 3px;}
 		#divavaliadores{}
-		#progAva{height: 300px; overflow: auto;}
+		#progAva{height: 400px; overflow: auto;}
 		.jumbotron{overflow: hidden}
 		
 	</style>

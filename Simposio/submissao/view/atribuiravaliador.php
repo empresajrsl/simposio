@@ -32,6 +32,8 @@
   }
   h3{
   	margin-left: 8px;
+  	font-size: 18px;
+  	font-weight: bold;
 
   }
   #legenda{
@@ -50,7 +52,7 @@
 <body>
 
 	<div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div>
-	<br><br><br>
+	<br><br><br><br><br>
 
 	<div class="container-fluid">
 	<div class="container-fluid">
@@ -58,10 +60,10 @@
 
 	    <div class="jumbotron">
 			<div class="row">
-			<div class="col-md-12 col-xs-12 col-lg-12">
+			<div class="col-md-12 col-xs-12 col-lg-12" style="overflow: hidden">
 
 				<div class="row" >
-					<div class="col-md-12 col-xs-12 col-lg-12">
+					<div class="col-md-12 col-xs-12 col-lg-12" >
 						<div style="background-color:white" id="legenda">
 							<h3>Clique em  <button type="button" class="btn btn-success glyphicon glyphicon-ok-sign"></button> para atribuir o trabalho ao avaliador selecionado.<h3>
 							<h3>Clique em  <button type="button" class="btn btn-danger glyphicon glyphicon-pencil"></button> para desfazer a atribuição.<h3>
@@ -69,7 +71,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="row">
+				<div class="row" style="height: 370px;overflow:auto">
 					<div class="col-md-12 col-xs-12 col-lg-12" id="trabalhos" name="trabalhos">
 						
 					</div>

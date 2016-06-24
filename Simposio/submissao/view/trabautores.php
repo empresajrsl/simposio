@@ -15,7 +15,7 @@
 			overflow: hidden;
 		}
 		#divtable{
-			height: 480px;
+			height: 370px;
 			overflow: auto;
 		}
 		body{
@@ -31,7 +31,8 @@
 	
     
 	<div class="container-fluid">
-	    <?php require_once("menuadm.php") ?>
+	   <div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div>
+    <br><br><br><br><br>
 	   
 	    <div class="jumbotron">
 	    	<div class="panel panel-primary">

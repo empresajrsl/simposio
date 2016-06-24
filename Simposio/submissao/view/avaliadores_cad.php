@@ -14,9 +14,10 @@
 	
 </head>
 <body>
-	<div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div><br><br>
+	
 	<div class="container-fluid">
-		<br>
+		<div class="col-md-12" style="position: fixed; z-index: 9999;"><?php include("menuadm.php"); ?></div>
+		<br><br><br><br><br>
 			<div class="jumbotron" style="overflow:hidden">
 				<div class="col-md-12"style="overflow: scroll" id="tabAva">
 				<div style="background-color:white" id="legenda"><br>
