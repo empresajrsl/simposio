@@ -1,4 +1,4 @@
-<?php require_once('cabecalho.php') ?>
+<?php require_once('estruturaHeader.php') ?>
 
 <div id="main_content">
 	<div class="jumbotron text-justify">

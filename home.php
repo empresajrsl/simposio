@@ -1,6 +1,5 @@
-<?php require_once('cabecalho.php') ?>
-
-	<div id="main_content" class="row">
+<?php require_once('estruturaHeader.php') ?>
+<div id="main_content" class="row">
 		<div class="jumbotron text-justify">
 			<h3>Dicas para a apresentação do artigo e do relato técnico</h3>
 			<p>Caros participantes,</br>
@@ -22,3 +21,5 @@
 	</div>
 
 <?php require_once('rodape.php') ?>
+
+	

@@ -1,2 +1,3 @@
-<?php require_once('evento.php') ?>
+<?php require_once('pageMain.php') ?>
+
 

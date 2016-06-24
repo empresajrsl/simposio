@@ -24,6 +24,15 @@
     
 }
     </style>
+
+    <script type="text/javascript">
+    	$(document).on("click","li",function(){
+    		$("li").each(function(){
+    			$(this).removeClass("active");
+    		});
+    		$(this).addClass("active");
+    	});
+    </script>
    
 	<title>SGAgro</title>
 </head>
@@ -37,7 +46,7 @@
 				</div>
 			</div>
 
-	    	<nav class="navbar navbar-default">
+	    	<div class="navbar navbar-default">
 
 	    		<div style="position: absolute;">
 	    			<a class="navbar-brand" rel="home" href="#">
@@ -49,21 +58,22 @@
 	    			<h1>Simp�sio em Gest�o do Agroneg�cio</h1>
 	    		</center>
 
-		      	<ul class="nav navbar-nav navbar-right">
-		      		<li ><a href="Simposio/submissao/index.php">SISTEMA</a></li>
-			        <li><a href="evento.php">APRESENTAÇÃO</a></li>
-			        <li><a href="programacao.php">PROGRAMAÇÃO</a></li>
-			        <li class="active"><a href="inscricao.php">INSCRIÇÃO</a></li>
-			        <li><a href="areas.php">ÁREAS</a></li>
-			        <li><a href="trabalhos.php">NORMAS PARA PUBLICAÇÃO</a></li>
-			        <li><a href="anais.php">EDIÇÃO ATUAL</a></li>
-			        <li><a href="edicaoant.php">EDI��ES ANTERIORES</a></li>
-			        <li><a href="datasimportantes.php">DATAS IMPORTANTES</a></li>
-			        <li><a href="goagro.php">GOAgro</a></li>
-			        <li><a href="expediente.php">EXPEDIENTE</a></li>
-			        <li><a href="contato.php">CONTATO</a></li>
+		      	<ul class="nav navbar-nav  navbar-right">
+		      		<li ><a href="home.php" target="iframe_container">HOME</a></li>
+		      		<li ><a href="Simposio/submissao/index.php" target="iframe_container">SISTEMA</a></li>
+			        <li><a href="evento.php" target="iframe_container">APRESENTAÇÃO</a></li>
+			        <li><a href="programacao.php" target="iframe_container">PROGRAMAÇÃO</a></li>
+			        <li><a href="inscricao.php" target="iframe_container">INSCRIÇÃO</a></li>
+			        <li><a href="areas.php" target="iframe_container">ÁREAS</a></li>
+			        <li><a href="trabalhos.php" target="iframe_container">NORMAS PARA PUBLICAÇÃO</a></li>
+			        <li><a href="anais.php" target="iframe_container">EDIÇÃO ATUAL</a></li>
+			        <li><a href="edicaoant.php" target="iframe_container">EDI��ES ANTERIORES</a></li>
+			        <li><a href="datasimportantes.php" target="iframe_container">DATAS IMPORTANTES</a></li>
+			        <li><a href="goagro.php" target="iframe_container">GOAgro</a></li>
+			        <li><a href="expediente.php" target="iframe_container">EXPEDIENTE</a></li>
+			        <li><a href="contato.php" target="iframe_container">CONTATO</a></li>
 		      	</ul>
-		    </nav>
+		    </div>
 			    
 			<hr><br><hr>
         </div>

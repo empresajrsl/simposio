@@ -1,4 +1,4 @@
-<?php require_once('cabecalho.php') ?>
+<?php require_once('estruturaHeader.php') ?>
 <style type="text/css">
 body{text-align: left;}
 th{text-align: center; background-color: #A8C660;color: #fff}
