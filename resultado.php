@@ -29,12 +29,13 @@
 </head>
 <body>
 
-	
+	<?php require_once('estruturaHeader.php') ?>
+  <div id="main_content" class="row">
     
 <div class="container-fluid">
    
    
-    <!-- <div class="jumbotron"> -->
+    <!-- <div class="jumbotron"> --><p>
     	<div class="panel panel-success">
     		<div class="panel-heading"><h3><b>Trabalhos aprovados</b></h3></div>
     		<div class="panel-body">
@@ -52,7 +53,7 @@
 				</div>
 			</div>
 		</div>
-  <!-- </div> -->
+  <!-- </div> --></p>
 
   <script type="text/javascript">
     $(document).ready(function(){
