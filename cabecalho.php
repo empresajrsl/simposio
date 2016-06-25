@@ -50,7 +50,7 @@
 
 	    		<div style="position: absolute;">
 	    			<a class="navbar-brand" rel="home" href="#">
-		       			<img id="logo" src="images/logo.png" style="width:130px; height:110px;" alt="Logo"/>
+		       			<img id="logo" src="images/logo.png" style="width: 60%; height: 450%;" alt="Logo"/>
 					</a>
 	    		</div>
 
