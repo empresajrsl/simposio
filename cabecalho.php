@@ -41,8 +41,8 @@
 		<div class="container-fluid">
 			
            	<div class="row">
-				<div class="col-md-12">
-					<div align=center><b>N˙mero de vizualizaÁıes do site: </b><img src='http://contador.s12.com.br/img-16364A05-26.gif' border='0' alt='contador de visitantes'><script type='text/javascript' src='http://contador.s12.com.br/ad.js?id=16364A05'></script></div>
+				<div class="col-md-3 col-md-offset-9" style="font-size: 10px" >
+					<div align=center><b>N˙mero de visualizaÁıes do site: </b><img src='http://contador.s12.com.br/img-16364A05-26.gif' border='0' alt='contador de visitantes'><script type='text/javascript' src='http://contador.s12.com.br/ad.js?id=16364A05'></script></div>
 				</div>
 			</div>
 
@@ -70,7 +70,7 @@
 			        <li><a href="anais.php" target="iframe_container">EDI√á√ÉO ATUAL</a></li>
 			        <li><a href="edicaoant.php" target="iframe_container">EDI√á√ÉO ANTERIORES</a></li>
 			        <li><a href="inscricao.php" target="iframe_container">INSCRI√á√ÉO</a></li>
-			        <!--li><a href="areas.php" target="iframe_container">√ÅREAS</a></li-->
+			        <!--li><a href="areas.php" target="iframe_container">√?REAS</a></li-->
 			        <!--li><a href="goagro.php" target="iframe_container">GOAgro</a></li-->
 			        <li><a href="contato.php" target="iframe_container">CONTATO</a></li>
 		      		<li ><a href="Simposio/submissao/index.php" target="iframe_container">SISTEMA</a></li>
