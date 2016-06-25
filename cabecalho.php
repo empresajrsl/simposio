@@ -69,7 +69,7 @@
 			        <li><a href="anais.php" target="iframe_container">EDI√á√ÉO ATUAL</a></li>
 			        <li><a href="edicaoant.php" target="iframe_container">EDI«’ES ANTERIORES</a></li>
 			        <li><a href="datasimportantes.php" target="iframe_container">DATAS IMPORTANTES</a></li>
-			        <li><a href="goagro.php" target="iframe_container">GOAgro</a></li>
+			        <!--li><a href="goagro.php" target="iframe_container">GOAgro</a></li-->
 			        <li><a href="expediente.php" target="iframe_container">EXPEDIENTE</a></li>
 			        <li><a href="contato.php" target="iframe_container">CONTATO</a></li>
 		      	</ul>
