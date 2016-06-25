@@ -59,20 +59,21 @@
 	    		</center>
 
 		      	<ul class="nav navbar-nav  navbar-right">
+		      	
 		      		<li ><a href="home.php" target="iframe_container">HOME</a></li>
-		      		<li ><a href="Simposio/submissao/index.php" target="iframe_container">SISTEMA</a></li>
 			        <li><a href="evento.php" target="iframe_container">APRESENTAÇÃO</a></li>
+			        <li><a href="datasimportantes.php" target="iframe_container">DATAS IMPORTANTES</a></li>
+			        <li><a href="trabalhos.php" target="iframe_container">SUBMISSÃO</a></li>
+			        <li><a href="resultado.php" target="iframe_container">RESULTADOS</a></li>
 			        <li><a href="programacao.php" target="iframe_container">PROGRAMAÇÃO</a></li>
+			        <li><a href="expediente.php" target="iframe_container">EXPEDIENTE</a></li>
+			        <li><a href="anais.php" target="iframe_container">EDIÇÃO ATUAL</a></li>
+			        <li><a href="edicaoant.php" target="iframe_container">EDIÇÃO ANTERIORES</a></li>
 			        <li><a href="inscricao.php" target="iframe_container">INSCRIÇÃO</a></li>
 			        <!--li><a href="areas.php" target="iframe_container">ÁREAS</a></li-->
-			        <li><a href="trabalhos.php" target="iframe_container">NORMAS PARA PUBLICAÇÃO</a></li>
-			        <li><a href="anais.php" target="iframe_container">EDIÇÃO ATUAL</a></li>
-			        <li><a href="edicaoant.php" target="iframe_container">EDI��ES ANTERIORES</a></li>
-			        <li><a href="datasimportantes.php" target="iframe_container">DATAS IMPORTANTES</a></li>
 			        <!--li><a href="goagro.php" target="iframe_container">GOAgro</a></li-->
-			        <li><a href="resultado.php" target="iframe_container">RESULTADOS</a></li>
-			        <li><a href="expediente.php" target="iframe_container">EXPEDIENTE</a></li>
 			        <li><a href="contato.php" target="iframe_container">CONTATO</a></li>
+		      		<li ><a href="Simposio/submissao/index.php" target="iframe_container">SISTEMA</a></li>
 		      	</ul>
 		    </div>
 			    
