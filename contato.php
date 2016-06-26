@@ -2,8 +2,10 @@
 
 <div id="main_content">
 	<div class="jumbotron text-justify">
-	<h3>Fale conosco</h3><br>
-	<p><div class="container-fluid">	  
+	<p><div class="container-fluid">
+		<div class="row">
+	    	<div class="col-sm-5"><p style="font-size: 24px"><b>Fale Conosco</b></p></div>
+		</div>
 	  <div class="row">
 	    <div class="col-sm-5">
 	      <p class="destacado">SGAgro</p>
