@@ -4,8 +4,14 @@
 	<div class="container-fluid">
      	<!--center><h1>2016</h1></center-->
      	<br>
+
+          <div class="row">
+               <div class="col-md-12">
+                    <center><p>Está é a primeira edição do Simpósio, portanto não há edições anteriores, para consultar a edição atual clique em (Edição atual) no menu</p></center>
+               </div>
+          </div>
      
-     	<div class="col-md-8 col-md-offset-2">
+     	<!-- <div class="col-md-8 col-md-offset-2">
                <center><b>Pesquise aqui por nome do autor ou cooautor, titulo, ou palavras chave</b></center><br>
      		<form>
      		<div class="row">
@@ -84,6 +90,6 @@
      		</form>
      	</div>
 
-    </div> 
+    </div>  -->
     
 <?php require_once('rodape.php') ?>    
