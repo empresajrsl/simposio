@@ -47,19 +47,14 @@
 			</div>
 
 	    	<div class="navbar navbar-default">
-
-	    		<div style="position: absolute;">
-	    			<a class="navbar-brand" rel="home" href="#">
-		       			<img id="logo" src="images/logo.png" style="width: 60%; height: 450%;" alt="Logo"/>
-					</a>
-	    		</div>
-
-	    		<center style="position: absolute; z-index: 5; botton: 100%; margin-left: 25%; color: OliveDrab">
-	    			<h1>Simpósio em Gestão do Agronegócio</h1>
-	    		</center>
-
-		      	<ul class="nav navbar-nav  navbar-right">
-		      	
+    		
+    			<div class="col-md-1">
+		      			<img id="logo" src="images/logo.png" style="width: 160%; height: 160%;" alt="Logo"/>	
+		      	</div>
+		      	<div class="col-md-11">
+		      		<center><h1 style="color: OliveDrab">Simpósio em Gestão do Agronegócio</h1></center>
+		      	</div>
+		      	<ul class="nav navbar-nav navbar-right">
 		      		<li ><a href="home.php" target="iframe_container">HOME</a></li>
 			        <li><a href="evento.php" target="iframe_container">APRESENTAÃ‡ÃƒO</a></li>
 			        <li><a href="datasimportantes.php" target="iframe_container">DATAS IMPORTANTES</a></li>
@@ -75,6 +70,7 @@
 			        <li><a href="contato.php" target="iframe_container">CONTATO</a></li>
 		      		<li ><a href="Simposio/submissao/index.php" target="iframe_container">SISTEMA</a></li>
 		      	</ul>
+		      	
 		    </div>
 			    
 			<hr><br><hr>

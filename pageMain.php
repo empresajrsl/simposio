@@ -9,7 +9,7 @@
 	</style>
 </head>
 <body>
-<iframe width="100%" height="32%" src="cabecalho.php" style="border: none" name="iframe_a"></iframe>
-<iframe width="100%" height="68%" src="home.php" style="border: none" name="iframe_container"></iframe>
+<iframe width="100%" height="25%" src="cabecalho.php" style="border: none" name="iframe_a"></iframe>
+<iframe width="100%" height="74%" src="home.php" style="border: none" name="iframe_container"></iframe>
 </body>
 </html>
