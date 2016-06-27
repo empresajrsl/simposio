@@ -68,7 +68,7 @@
 			        <!--li><a href="areas.php" target="iframe_container">Ã?REAS</a></li-->
 			        <!--li><a href="goagro.php" target="iframe_container">GOAgro</a></li-->
 			        <li><a href="contato.php" target="iframe_container">CONTATO</a></li>
-		      		<li ><a href="Simposio/submissao/index.php" target="iframe_container">SISTEMA</a></li>
+		      		<li ><a href="Simposio/submissao/index.php" target="blank">SISTEMA</a></li>
 		      	</ul>
 		      	
 		    </div>
