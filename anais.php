@@ -137,7 +137,7 @@
                                              linha +=       '<div id="tituloTrab" class="panel-heading" style="font-size:18px">'+data[key]['titulo']+'</div>';
                                                   linha +=       '<div class="panel-body">';
                                                        
-                                                            linha +=       '<div id="dadosTrab" class="row" style="font-size:16px;margin-left:10px"><b>Autores:</b> '+data[key]['autor_1']+', '+data[key]['autor_2']+ ', '+data[key]['autor_3']+', '+data[key]['autor_4']+', ' +data[key]['autor_5']+'  <br> <b>Categoria:</b> '+data[key]['categoria'] +' <br> <b>Subárea:</b> '+data[key]['area'] +' <br> <b>Instituição:</b> '+data[key]['instituicao'] +'<br><br><b>Resumo:</b>'+data[key]['resumo']+'<br> <button class="btn btn-success" type="button" id="'+data[key]['idartigo']+'">Visualizar trabalho </button></div>';
+                                                            linha +=       '<div id="dadosTrab" class="row" style="font-size:16px;margin-left:10px"><b>Autores:</b> '+data[key]['autor_1']+', '+data[key]['autor_2']+ ', '+data[key]['autor_3']+', '+data[key]['autor_4']+', ' +data[key]['autor_5']+'  <br> <b>Categoria:</b> '+data[key]['categoria'] +' <br> <b>Subárea:</b> '+data[key]['area'] +' <br> <b>Instituição:</b> '+data[key]['instituicao'] +'<br><br><b>Resumo:</b>'+data[key]['resumo']+'<br> <button class="btn btn-success visuTrab" type="button" id="'+data[key]['idartigo']+'">Visualizar trabalho </button></div>';
                                                        linha +=    '</div>';
                                                        linha+=        '</div>';
                                                   linha+=   '</div>';                                    
@@ -217,7 +217,7 @@
                                         linha +=       '<div id="tituloTrab" class="panel-heading" style="font-size:18px">'+data[key]['titulo']+'</div>';
                                              linha +=       '<div class="panel-body">';
                                                   
-                                                       linha +=       '<div id="dadosTrab" class="row" style="font-size:16px;margin-left:10px"><b>Autores:</b> '+data[key]['autor_1']+', '+data[key]['autor_2']+ ', '+data[key]['autor_3']+', '+data[key]['autor_4']+', ' +data[key]['autor_5']+'  <br> <b>Categoria:</b> '+data[key]['categoria'] +' <br> <b>Subárea:</b> '+data[key]['area'] +' <br> <b>Instituição:</b> '+data[key]['instituicao'] +'<br><br><b>Resumo:</b>'+data[key]['resumo']+'<br> <button class="btn btn-success" type="button" id="'+data[key]['idartigo']+'">Visualizar trabalho </button></div>';
+                                                       linha +=       '<div id="dadosTrab" class="row" style="font-size:16px;margin-left:10px"><b>Autores:</b> '+data[key]['autor_1']+', '+data[key]['autor_2']+ ', '+data[key]['autor_3']+', '+data[key]['autor_4']+', ' +data[key]['autor_5']+'  <br> <b>Categoria:</b> '+data[key]['categoria'] +' <br> <b>Subárea:</b> '+data[key]['area'] +' <br> <b>Instituição:</b> '+data[key]['instituicao'] +'<br><br><b>Resumo:</b>'+data[key]['resumo']+'<br> <button class="btn btn-success visuTrab" type="button" id="'+data[key]['idartigo']+'">Visualizar trabalho </button></div>';
                                                   linha +=    '</div>';
                                                   linha+=        '</div>';
                                              linha+=   '</div>';                                    
@@ -292,6 +292,14 @@
                     '</form>';
           $('#formularioBuca').append(linha);          
 
+     });
+</script>
+
+<script type="text/javascript">
+     $(document).on("click",".visuTrab",function(){
+          var id = $(this).attr('id');
+
+          window.open("visualizartrabalho.php?id="+id);
      });
 </script>                     
     
