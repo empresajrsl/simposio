@@ -9,6 +9,7 @@ th a {color: #fff}
 <?php require_once('estruturaHeader.php') ?>
 <div id="main_content" class="row">
 	<div class="jumbotron text-justify">
+	<h3>Programação</h3><br>
 
 		<table class=" table table-bordered table-condensed">
 			<p>

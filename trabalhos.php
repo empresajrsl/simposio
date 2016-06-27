@@ -3,6 +3,7 @@
 <body>
 	<div id="main_content">
 	<div class="jumbotron text-justify">
+	<h3>Trabalhos</h3><br>
 
 	<p>O SGAgro receberá para trabalhos em formato completo para apresentação oral ou em formato de resumo expandido para apresentação em painel estudos ou relatos tecnológicos na área de Gestão do Agronegócio.</p>
 	<p>Todos os trabalhos serão encaminhados para processo de dupla avaliação às cegas. Somente os trabalhos aprovados pelos avaliadores e inscritos nos programas serão publicados nos Anais do simpósio.</p>

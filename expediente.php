@@ -4,6 +4,7 @@
 <!--div class="container-fluid"-->
 	<div id="main_content" class="row">
 		<div class="jumbotron text-justify">
+		<h3>Expediente</h3><br>
 		 	 
 		 	<p><b>Corpo Editorial do Simpósio em Gestão do Agronegócio:</b></p><br/>
 
