@@ -26,9 +26,6 @@
      	<div class="col-md-8 col-md-offset-2">
                <center><b>Pesquise aqui por nome do autor, cooautor, titulo, ou palavras chave</b></center><br>
      		<form>
-     		<div class="row">
-     			
-
                     <div class="col-md-12">
                          <div class="input-group">
                               <input type="text" name="pesquisa" class="form-control" id="pesquisa" placeholder="Digite aqui o que deseja pesquisar e clique na lupa.">
@@ -37,8 +34,8 @@
                               </span>
                          </div>
                     </div>
-     		</div>
-     		</form><br><br>
+     		</form><br><br><br>
+
                <div id="formularioBuca" class="col-md-12">
                     <center><b>Aqui é possivel ver todos os artigos deste ano organizados por edição, categoria e área. Basta selecionalos e clicar em Buscar</b></center><br>
           		<form>
@@ -248,14 +245,15 @@
           var linha = '<center><b>Aqui é possivel ver todos os artigos deste ano organizados por edição, categoria e área. Basta selecionalos e clicar em Buscar</b></center><br>'+
                     '<form>'+
                     
-                    '<div class="row">'+
+                    /*'<div class="row">'+
                          '<div class="col-md-12">'+
                               '<label>Selecione a edição:</label>'+
                               '<select class="form-control">'+
                                    '<option>Edição Completa - Volume 1.</option>'+
                               '</select>'+
                          '</div>'+
-                    '</div><br>'+
+                    '</div><br>'+*/
+
 
                     '<div class="row">'+
                          '<div class="col-md-12">'+
