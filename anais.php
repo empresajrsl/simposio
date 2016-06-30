@@ -53,6 +53,7 @@
           			<div class="col-md-12">
           				<label>Selecione a categoria:</label>
           				<select class="form-control" id="selectCat">
+                                   <option>Todas</option>
           					<option>Artigo Completo</option>
           					<option>Relato Técnico</option>
           					<option>Resumo Expandido.</option>
@@ -64,6 +65,7 @@
           			<div class="col-md-12">
           				<label>Selecione a Área:</label>
           				<select class="form-control" id="selectArea">
+                                   <option>Todas</option>
           					<option>Desenvolvimento e Gestão</option>
           					<option>Economia e Finanças</option>
           					<option>Empreendedorismo, Inovação e Finanças</option>
@@ -259,6 +261,7 @@
                          '<div class="col-md-12">'+
                               '<label>Selecione a categoria:</label>'+
                               '<select class="form-control" id="selectCat">'+
+                                   ' <option>Todas</option>'+
                                    '<option>Artigo Completo</option>'+
                                    '<option>Relato Técnico</option>'+
                                    '<option>Resumo Expandido.</option>'+
@@ -270,6 +273,7 @@
                          '<div class="col-md-12">'+
                               '<label>Selecione a Área:</label>'+
                               '<select class="form-control" id="selectArea">'+
+                                   ' <option>Todas</option>'+
                                    '<option>Desenvolvimento e Gestão</option>'+
                                    '<option>Economia e Finanças</option>'+
                                    '<option>Empreendedorismo, Inovação e Finanças</option>'+
