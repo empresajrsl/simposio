@@ -9,6 +9,12 @@
 				<h3 class="col-md-12 col-xs-12 col-lg-12">
 					<center>Para realizar o downlod do arquivo, clique sobre o icone disquete localizado na parte superior do documento (Mozilla Firefox e Google Chrome) ou inferior (Opera).</center>
 				</h3>
+			</div>
+
+			<div class="row"><br>
+				<center class="col-md-12 col-xs-12 col-lg-12">
+					<button type="button" id="voltar" name="voltar" class="col-md-3 col-md-offset-4 btn btn-danger glyphicon glyphicon-off" onclick="window.close()"> Fechar</button>
+				</center>
 			</div>   
 
 			<div class="row"><br>	    
@@ -47,11 +53,7 @@
 				?>
 			</div>
 
-			<div class="row"><br>
-				<center class="col-md-12 col-xs-12 col-lg-12">
-					<button type="button" id="voltar" name="voltar" class="col-md-3 col-md-offset-4 btn btn-danger glyphicon glyphicon-off" onclick="window.close()"> Fechar</button>
-				</center>
-			</div>
+			
 		</div>
 
 	</div><!-- fecha container-->
