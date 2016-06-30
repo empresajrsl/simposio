@@ -17,7 +17,23 @@ if(isset($_POST['form']) ){
 	$area = $_POST['area'];
 	$categoria = $_POST['categoria'];
 
-	$condicao = "area LIKE '%".$area."%' AND categoria LIKE  '%".$categoria."%' ORDER BY titulo ";
+	if($area == 'Todas' AND $categoria == 'Todas'){
+
+		$condicao =  ' 1 ORDER BY titulo';
+
+	}elseif ($area == 'Todas' AND $categoria != 'Todas') {
+
+		$condicao = "categoria LIKE  '%".$categoria."%' ORDER BY titulo ";
+
+	}elseif($categoria == 'Todas' AND $area != 'Todas'){
+
+		$condicao = "area LIKE '%".$area."%' ORDER BY titulo ";
+
+	}elseif ($area != 'Todas' AND $categoria != 'Todas') {
+
+		$condicao = "area LIKE '%".$area."%' AND categoria LIKE  '%".$categoria."%' ORDER BY titulo ";
+	}
+	
 
 
 
