@@ -13,7 +13,7 @@
 
 			<div class="row"><br>
 				<center class="col-md-12 col-xs-12 col-lg-12">
-					<button type="button" id="voltar" name="voltar" class="col-md-3 col-md-offset-4 btn btn-danger glyphicon glyphicon-off" onclick="window.close()"> Fechar</button>
+					<button type="button" id="voltar" name="voltar" class="col-md-4 col-md-offset-4 btn btn-danger glyphicon glyphicon-off" onclick="window.close()"> Fechar</button>
 				</center>
 			</div>   
 
