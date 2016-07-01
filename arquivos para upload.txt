@@ -1,0 +1,41 @@
+não se esqueçam de importar as views que eu criei no banco de dados para o bancod e dados do servidor, pois é extremamente necessário para que tudo funcione 
+
+Arquivos que eu modifiquei ou adicionei:
+
+/visualizar trabalho .php   e   /simposio/submissao/view/visualizartrabalho.php  (obs: são dois arquivos)
+
+/buscaTrabalhos.php
+
+/anais.php
+
+/cabecalho.php
+
+/edicaoant
+
+/areas.php
+
+/contato.php
+
+/datasimportantes.php
+
+/estruturaHeader.php
+
+/evento.php
+
+/goagro.php
+
+/home.php
+
+/index.php
+
+/inscricao.php
+
+/pageMain.php
+
+/programacao.php
+
+/trabalho.php
+
+/Simposio/submissao/controller/ACAO/trabalhosap.php
+
+expediente.php
