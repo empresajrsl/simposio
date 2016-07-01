@@ -26,7 +26,7 @@
 						if(!empty($id)){
 						echo '
 							<div class="row">
-				 				<iframe  class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1"src="Simposio/submissao/uploads/'.$id.'.pdf" height="1200"> </iframe>
+				 				<iframe  class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1"src="Simposio/submissao/Trabalhos 2016/'.$id.'.pdf" height="1200"> </iframe>
 				 			</div><br/><br/>'; 
 				 		}else{
 				 			echo'
