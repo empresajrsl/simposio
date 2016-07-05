@@ -64,7 +64,7 @@
 
                         <div class="col-md-2">
                             <label>Cadastrar como*</label></br>
-                            <!-- <input type="checkbox" id="autor" class="checkboxcad" value="Autor"> Autor </input><br> -->
+                            <input type="checkbox" id="autor" class="checkboxcad" value="Autor"> Autor </input><br>
                             <input type="checkbox" id="avaliador"  class="checkboxcad" value="Avaliador"> Avaliador </input>
                             <input type="hidden" id="tipocadastro" name="tipocadastro"> </input>
                         </div>

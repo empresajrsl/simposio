@@ -111,7 +111,7 @@ exit;
 				<div class="row">
 					<div class="col-md-12 col-xs-12 col-lg-12">
 						<input type="button" id="sair" name="sair" value="Sair" class="btn btn-primary" style="width:150px"></input>
-						<!--<input type="button" id="cad" name="cad" value="Cadastrar um novo trabalho" class="btn btn-primary"></input>-->
+						<input type="button" id="cad" name="cad" value="Cadastrar um novo trabalho" class="btn btn-primary"></input>
 					</div>
 				</div>
 					
@@ -140,8 +140,9 @@ $(document).ready(function(){
 		                
 		                var count = 0;
 		                $.each(data,function(key,val){
-		                	if(data[count][0]['idartigo'] != ''){
-		                		
+		                	if(data[count][0]['idartigo'] == ''){
+		                		var status = '<td>Pendente, arquivo PDF não enviado</td> <td> <form  method="POST" action="upload.php" enctype="multipart/form-data" id="form'+count+'"> <input type="file" class="enviar btn btn-success" id="enviar'+count+'" name="arquivo"></input> <br> <input type="submit" class="enviar btn btn-success" id="enviar'+count+'" value=" Enviar trabalho "> </input> <input type="hidden" name="idartigo" value="'+data[count][0]['id_artigo']+'"</input></form></td>';
+		                	}else{
 		                		var status = '<td>Arquivo PDF enviado com sucesso. Por favor aguarde o resultado. </td> <td><form method="POST" action="viewartigo.php"> <input type="submit" class="verartigo btn btn-primary" id="veratigo'+count+'" value="Vizualizar trabalho" >  </input> <input type="hidden" name="idartigo" value="'+data[count][0]['id_artigo']+'"</input> </form></td>';
 		                	}
 		                	
